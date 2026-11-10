@@ -3,6 +3,7 @@ import { type State, type YM, fresh, stats, toCSV, fmt, addM, homeAt, setBirth, 
 import { START, TOPICS, normalize, current, answer, skip, pending, goTopic, resume } from './script';
 import { encode, decode } from './share';
 import Grid from './Grid';
+import Timeline from './Timeline';
 import { photosLink } from './photos';
 import Question from './Question';
 
@@ -15,12 +16,28 @@ const load = (): State => {
   const s = fresh(START); normalize(s); return s;
 };
 
+const NEXT = { grid: 'h', h: 'hw', hw: 'v', v: 'grid' } as const;
+const VIEW_NAME = { grid: 'the grid', h: 'horizontal timeline', hw: 'timeline with world events', v: 'vertical timeline' } as const;
 const WIDE = '(min-width: 760px)';
 const VIEWING = location.hash.startsWith('#s.'); // a shared link: read-only, nothing stored on this device
+
+// navigator.clipboard only exists on https and localhost; over plain http (a LAN or Tailscale
+// address) fall back to selecting a hidden textarea and using the old copy command.
+async function copyText(text: string): Promise<boolean> {
+  try { if (navigator.clipboard) { await navigator.clipboard.writeText(text); return true; } } catch { /* fall through */ }
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.readOnly = true; ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+  document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, text.length);
+  let ok = false;
+  try { ok = document.execCommand('copy'); } catch { /* not supported */ }
+  ta.remove();
+  return ok;
+}
 
 export default function App() {
   const [s, setS] = useState<State>(() => (VIEWING ? fresh([]) : load()));
   const [read, setRead] = useState(false);
+  const [mode, setMode] = useState<'grid' | 'h' | 'hw' | 'v'>('grid'); // the sheet, or the same events as a timeline
   const [editing, setEditing] = useState<YM | null>(null);
   const [link, setLink] = useState('');
   const [copied, setCopied] = useState(false);
@@ -116,11 +133,20 @@ export default function App() {
         {!VIEWING && <button className="icon" onClick={() => setMenu(!menu)} aria-label="Menu"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>}
         <h1>{title}</h1>
         {s.birth && panel && <div className="meter" title="Confirmed cells out of months lived"><b>{st.pct}%</b><span>{st.filled}{st.placeholders ? ` + ${st.placeholders}?` : ''} / {st.total}</span></div>}
-        <button className="icon" onClick={() => setRead(!read)} disabled={!s.birth} aria-label={read ? 'Overview' : 'Read the words'} title={read ? 'Overview' : 'Read the words'}>
+        <button className="icon" onClick={() => setMode(NEXT[mode])} disabled={!s.birth} aria-label={`Switch to ${VIEW_NAME[NEXT[mode]]}`} title={`Switch to ${VIEW_NAME[NEXT[mode]]}`}>
+          <svg viewBox="0 0 24 24" width="24" height="24">{NEXT[mode] === 'h'
+            ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M7 12a.6.6 0 1 0 .01 0M12 12a.6.6 0 1 0 .01 0M17 12a.6.6 0 1 0 .01 0" />
+            : NEXT[mode] === 'hw'
+              ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M9.5 12v5M14.5 12v6" />
+            : NEXT[mode] === 'v'
+              ? <path d="M7 3v18M7 7h5M7 12h9M7 17h6" />
+              : <path d="M4 4h16v16H4zM4 9.3h16M4 14.7h16M9.3 4v16M14.7 4v16" />}</svg>
+        </button>
+        {mode === 'grid' && <button className="icon" onClick={() => setRead(!read)} disabled={!s.birth} aria-label={read ? 'Overview' : 'Read the words'} title={read ? 'Overview' : 'Read the words'}>
           <svg viewBox="0 0 24 24" width="24" height="24">{read
             ? <path d="M4 5h4v4H4zM10 5h4v4h-4zM16 5h4v4h-4zM4 10h4v4H4zM10 10h4v4h-4zM16 10h4v4h-4zM4 15h4v4H4zM10 15h4v4h-4zM16 15h4v4h-4z" />
             : <path d="M4 6h16M4 10h11M4 14h16M4 18h9" />}</svg>
-        </button>
+        </button>}
         {document.fullscreenEnabled && (
           <button className="icon" onClick={toggleFs} aria-label={fs ? 'Exit full screen' : 'Full screen'} title={fs ? 'Exit full screen' : 'Full screen'}>
             <svg viewBox="0 0 24 24" width="22" height="22">{fs
@@ -130,8 +156,10 @@ export default function App() {
       </header>
 
       <div className={`body${panel ? ' asking' : ''}`}>
-        <main><Grid s={s} read={read} full={!panel} onCell={VIEWING ? undefined : setEditing} /></main>
-        {s.birth && (
+        <main>{mode === 'grid'
+          ? <Grid s={s} read={read} full={!panel} onCell={VIEWING ? undefined : setEditing} />
+          : <Timeline s={s} dir={mode === 'v' ? 'v' : 'h'} world={mode === 'hw'} onCell={VIEWING ? undefined : setEditing} />}</main>
+        {s.birth && mode !== 'h' && mode !== 'hw' && ( // the horizontal timeline names each home on its own band
           <aside className="legend">
             {places(s).map((p) => <span key={p}><i style={{ background: colorOf(s, p) }} />{short(p)}</span>)}
             {!VIEWING && menu && st.placeholders > 0 && <span className="key"><i className="k-ph" />to confirm</span>}
@@ -190,7 +218,7 @@ export default function App() {
             {s.birth && <div className="field"><label>Share link — read-only, shows everything in the grid</label>
               <div className="ymf two">
                 <input readOnly value={link} onFocus={(e) => e.target.select()} />
-                <button className="ghost" onClick={() => { navigator.clipboard?.writeText(link).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1500); }); }}>{copied ? 'Copied' : 'Copy'}</button>
+                <button className="ghost" onClick={() => { copyText(link).then((ok) => { if (!ok) return; setCopied(true); setTimeout(() => setCopied(false), 1500); }); }}>{copied ? 'Copied' : 'Copy'}</button>
               </div></div>}
             <span className="grow" />
             {s.birth && <button className="link" onClick={download}>Download CSV</button>}

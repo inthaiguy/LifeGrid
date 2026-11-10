@@ -188,3 +188,51 @@ main { border-top: 0; }
 .photos:hover { opacity: .75; }
 .scrim:not(.side) { z-index: 15; }
 @media (min-width: 760px) { .app.docked > .scrim:not(.side) { left: var(--shelf); } }
+
+/* The month in progress: the box is a progress bar for the month, with a small countdown that links to a timer. */
+.nowcell { position: relative; min-width: 0; }
+.nowcell .cell { width: 100%; }
+.cell.now { background: linear-gradient(90deg, var(--c) var(--p), color-mix(in srgb, var(--c) 22%, transparent) var(--p)); outline: 1px solid color-mix(in srgb, var(--c) 70%, var(--ink)); outline-offset: -1px; }
+.cell.now span { color: var(--ink); font-style: normal; padding-right: 22px; }
+.nowcell .left { position: absolute; right: 2px; bottom: 1px; font-size: 8.5px; line-height: 1; font-variant-numeric: tabular-nums; color: var(--dim); background: color-mix(in srgb, var(--bg, #fff) 78%, transparent); border-radius: 3px; padding: 1px 2px; text-decoration: none; }
+.nowcell .left:hover, .nowcell .left:focus-visible { color: var(--ink); text-decoration: underline; }
+.grid.read .nowcell .left { font-size: 10px; right: 3px; bottom: 3px; }
+
+/* Timelines: the same cells as dated events. */
+.tl button { height: auto; font: inherit; background: none; border: 0; border-radius: 0; padding: 0; color: inherit; text-align: left; cursor: pointer; }
+.tl.v button { white-space: normal; overflow: visible; }
+.viewing .tl button { cursor: default; }
+.tl.v { max-width: 620px; margin: 0 auto; padding: 8px 16px 40px; }
+.tl.v section { display: grid; grid-template-columns: 64px 1fr; }
+.tl.v h3 { margin: 0; padding-top: 5px; font-size: 13px; line-height: 1.2; text-align: right; padding-right: 14px; }
+.tl.v h3 b { display: block; font-variant-numeric: tabular-nums; }
+.tl.v h3 span { font-weight: 400; font-size: 11px; color: var(--dim); }
+.tl.v ol { list-style: none; margin: 0; padding: 0 0 10px; }
+.tl.v li { position: relative; display: flex; align-items: baseline; gap: 8px; padding: 4px 0 4px 18px; border-left: 3px solid var(--c); font-size: 14px; }
+.tl.v li::before { content: ''; position: absolute; left: -7px; top: 9px; width: 11px; height: 11px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 2px var(--bg); }
+.tl.v li.ph::before { background: var(--bg); box-shadow: inset 0 0 0 2px var(--c), 0 0 0 2px var(--bg); }
+.tl.v li.ph button { font-style: italic; color: var(--dim); }
+.tl.v time { flex: none; width: 28px; font-size: 11px; color: var(--dim); text-transform: uppercase; letter-spacing: .04em; }
+.tl.v em { flex: none; margin-left: auto; font-style: normal; font-size: 11px; padding: 1px 7px; border-radius: 9px; }
+main:has(.tl.h) { min-width: 0; }
+/* Fills the rest of the screen so its scroll bar sits at the bottom of the page. */
+.tl.h { overflow-x: auto; overflow-y: hidden; padding: 12px 12px 20px; box-sizing: border-box; min-height: calc(100dvh - var(--tl-top, 58px)); display: flex; align-items: center; cursor: ew-resize; }
+.tl-in { flex: none; margin-bottom: 6vh; }
+.tl-in { position: relative; }
+.tl.h .ev { position: absolute; height: 20px; line-height: 20px; font-size: 11px; padding: 0 6px 0 7px; box-sizing: border-box; border-left: 2px solid var(--c); background: color-mix(in srgb, var(--c) 16%, var(--bg)); border-radius: 0 4px 4px 0; z-index: 1; }
+.tl.h .ev span { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl.h .ev::after { content: ''; position: absolute; left: -2px; top: 100%; width: 2px; height: var(--stem); background: color-mix(in srgb, var(--c) 55%, transparent); }
+.tl.h .ev.ph { font-style: italic; color: var(--dim); background: var(--bg); border-left-style: dashed; }
+.tl.h .ev:hover { z-index: 2; width: auto !important; background: var(--surface); box-shadow: 0 1px 6px rgba(0,0,0,.18); }
+.tl.h .band { position: absolute; left: 0; right: 0; height: 18px; }
+.tl.h .band div { position: absolute; top: 0; height: 18px; font-size: 10.5px; line-height: 18px; padding-left: 6px; white-space: nowrap; overflow: hidden; box-sizing: border-box; }
+.tl.h .band div:first-child { border-radius: 9px 0 0 9px; } .tl.h .band div:last-child { border-radius: 0 9px 9px 0; }
+.tl.h .tick { position: absolute; border-left: 1px solid var(--line); padding: 2px 0 0 4px; height: 12px; font-size: 10px; line-height: 1.15; color: var(--dim); font-variant-numeric: tabular-nums; }
+.tl.h .tick b, .tl.h .tick span { display: none; font-weight: 400; }
+.tl.h .tick.major { height: 30px; } .tl.h .tick.major b { display: block; color: var(--ink); } .tl.h .tick.major span { display: block; }
+.tl.h .tick.major span::before { content: 'age '; }
+
+/* World events on the parallel timeline: grey, below the axis, stems reaching up to it. */
+.tl.h .ev.w { --c: var(--dim); color: var(--dim); background: var(--bg); cursor: default; }
+.tl.h .ev.w::after { top: auto; bottom: 100%; background: color-mix(in srgb, var(--dim) 35%, transparent); }
+.tl.h .tick { background: var(--bg); z-index: 1; }
