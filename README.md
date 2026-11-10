@@ -7,8 +7,50 @@ single most memorable thing from that month — a trip, a life event, a weekend 
 in one to three words. Cells are tinted by where you were living at the time. The goal
 is a fully filled grid, and the product's job is to help you get there.
 
-Origin: a personal spreadsheet kept in this format for years (see `docs/reference-sheet.png`
-once added). The empty cells are the problem this project exists to solve.
+Origin: a personal spreadsheet kept in this format for years. The empty cells are the
+problem this project exists to solve, so the measure of the product is how many cells it
+fills for how few questions asked.
+
+## Status
+
+A working web app (Phase 1). It runs entirely in the browser with no backend.
+
+- **Onboarding questions** fill the grid from a short script, by topic: Homes, School,
+  Traditions, Work, People, Anchor dates, Firsts, Trips, Eras, Shared events. One answer
+  often fills many cells (a yearly tradition fills that month in every year).
+- **The life sheet**: rows are years with an age column, columns are months, cells are
+  tinted by home. Two modes, Read (headlines visible) and Overview (whole life on one
+  screen), plus full screen and a hover tooltip on every cell.
+- **Season colours**: homes and the age column run along a spring → summer → fall →
+  winter ramp, to match the season of a person's life.
+- **Shelf menu** (slides in from the left) holds all the work: questions, completion
+  stats, jump to a topic, sharing, undo, CSV download, start over. Closed, only the
+  sheet shows. On a phone the questions sit in a bottom panel that swipes away and back.
+- **Cell editor**: click a cell to set its headline. A Google Photos icon opens your own
+  photos for that month and year.
+- **Sharing**: the whole grid lives in the URL. Your own link reopens the grid for
+  editing on another device, with unanswered topics carried along. The share link is
+  read-only, with no menu, and stores nothing on the viewer's device.
+
+## Run it
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+Then open http://localhost:5173. `npm run build` type-checks and builds to `dist/`.
+
+## Privacy
+
+- The app has no server and sends your grid nowhere. It is kept in your browser's
+  local storage and in the URL.
+- Anyone with a link can read the whole grid it carries.
+- In development only, each run is also written to `data/private/` on your own machine
+  for review. That folder is ignored by git. `data/sample-life*.csv` is fictional.
 
 ## Goals
 
@@ -32,13 +74,13 @@ once added). The empty cells are the problem this project exists to solve.
 
 ## Phases
 
-### Phase 0 — Mockups (first)
+### Phase 0 — Mockups (skipped in favour of the working app)
 - Static mockup of the grid view (desktop and phone widths), location colouring, legend, age column.
 - Mockup of the cell editor and of a suggestion being accepted.
 - Mockup of the onboarding flow, with the question script written out.
 - Sketches of the timeline and parallel-timeline views.
 
-### Phase 1 — Web app, data in the URL
+### Phase 1 — Web app, data in the URL (built, except CSV import)
 - Static single-page app, no backend. The whole grid is compressed into the URL fragment
   and unpacked on load; every edit rewrites the URL. Sharing the URL shares the grid.
 - Grid view with editing, home-location spans, completeness counter.
@@ -81,6 +123,9 @@ See `docs/open-questions.md`. Settled choices are in `docs/decisions.md`.
 ## Layout
 
 ```
-docs/       scope notes, question scripts, decisions
-mockups/    static HTML mockups (Phase 0)
+src/        the app: App.tsx (layout, shelf, cell editor), Grid.tsx (the sheet),
+            script.ts (question script), model.ts (state, colours),
+            share.ts (URL encoding), photos.ts (Google Photos links)
+data/       fictional sample data; private/ is local only and ignored by git
+docs/       scope notes, question script, decisions
 ```
