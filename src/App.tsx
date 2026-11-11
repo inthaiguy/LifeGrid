@@ -4,7 +4,8 @@ import { START, TOPICS, normalize, current, answer, skip, pending, goTopic, resu
 import { encode, decode } from './share';
 import Grid from './Grid';
 import Timeline from './Timeline';
-import { photosLink } from './photos';
+import { photosLink, googleCalLink, appleCalLink, gmailLink, GMAIL_START, IS_IOS } from './photos';
+import { NOFILL } from './nofill';
 import Question from './Question';
 
 const KEY = 'life-grid';
@@ -43,20 +44,20 @@ export default function App() {
   const [copied, setCopied] = useState(false);
   const [bad, setBad] = useState(false);
   const hist = useRef<string[]>(VIEWING ? [] : loadHist());
-  const [open, setOpen] = useState(() => !s.done); // question panel; closed = grid fills the page
-  // On a wide screen the questions live in the left shelf, docked beside the grid, instead of the bottom panel.
+  // Questions live in the left shelf at every size. On a wide screen it docks beside the grid; on a phone it slides over it.
   const [wide, setWide] = useState(() => matchMedia(WIDE).matches);
   useEffect(() => { const m = matchMedia(WIDE), f = () => setWide(m.matches); m.addEventListener('change', f); return () => m.removeEventListener('change', f); }, []);
-  const [menu, setMenu] = useState(() => !VIEWING && matchMedia(WIDE).matches && !s.done);
+  const [menu, setMenu] = useState(() => !VIEWING && !s.done);
   const t0 = useRef<[number, number]>([0, 0]);
   const [fs, setFs] = useState(false);
   useEffect(() => { const f = () => setFs(!!document.fullscreenElement); document.addEventListener('fullscreenchange', f); return () => document.removeEventListener('fullscreenchange', f); }, []);
   const toggleFs = () => { if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen().then(() => setMenu(false)).catch(() => {}); };
+  // A sideways swipe: to the left on the shelf puts it away.
   const swipe = (dir: 1 | -1, fn: () => void) => ({
     onTouchStart: (e: React.TouchEvent) => { t0.current = [e.touches[0].clientX, e.touches[0].clientY]; },
     onTouchEnd: (e: React.TouchEvent) => {
       const dx = e.changedTouches[0].clientX - t0.current[0], dy = e.changedTouches[0].clientY - t0.current[1];
-      if (dy * dir > 40 && Math.abs(dy) > Math.abs(dx) * 1.5) fn();
+      if (dx * dir > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) fn();
     },
   });
 
@@ -65,7 +66,7 @@ export default function App() {
     if (VIEWING) { decode(h.slice(2)).then((p) => { if (!p) return setBad(true); const { t, ...g } = p; setS((cur) => ({ ...cur, ...g, done: true })); }); return; }
     // An owner's own address also opens as a finished grid, but never over a grid already on this device.
     if (!h || localStorage.getItem(KEY)) return;
-    decode(h).then((p) => { if (!p) return; const { t, ...g } = p; const d: State = { ...structuredClone(s), ...g, queue: [], done: true }; if (t?.length) resume(d, t); setS(d); if (!d.done) { setOpen(true); setMenu(matchMedia(WIDE).matches); } });
+    decode(h).then((p) => { if (!p) return; const { t, ...g } = p; const d: State = { ...structuredClone(s), ...g, queue: [], done: true }; if (t?.length) resume(d, t); setS(d); if (!d.done) { setMenu(true); } });
   }, []);
 
   useEffect(() => {
@@ -89,12 +90,11 @@ export default function App() {
   const view = !s.done && !s.conflicts.length ? current(s) : null;
   const conflict = s.conflicts[0];
   const last = s.changed[0];
-  const asking = !VIEWING && (!!view || !!conflict); // there is something for the bottom panel to show
-  const panel = asking && open && !wide;
+  const asking = !VIEWING && (!!view || !!conflict); // there is a question for the shelf to show
   const docked = wide && menu;
 
   // With the questions put away, the back swipe (from the left edge) brings them back instead of undoing.
-  const onPop = useRef(() => {}); onPop.current = () => { if (asking && !(wide ? menu : open)) { history.pushState(null, '', location.href); wide ? setMenu(true) : setOpen(true); } else back(); };
+  const onPop = useRef(() => {}); onPop.current = () => { if (asking && !menu) { history.pushState(null, '', location.href); setMenu(true); } else back(); };
   useEffect(() => {
     if (VIEWING) return;
     const f = () => onPop.current();
@@ -130,9 +130,8 @@ export default function App() {
   return (
     <div className={`app${VIEWING ? ' viewing' : ''}${docked ? ' docked' : ''}${fs ? ' fs' : ''}`}>
       <header>
-        {!VIEWING && <button className="icon" onClick={() => setMenu(!menu)} aria-label="Menu"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>}
+        {!VIEWING && <button className={`icon${asking && !menu ? ' todo' : ''}`} onClick={() => setMenu(!menu)} aria-label={asking && !menu ? 'Menu — questions waiting' : 'Menu'}><svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>}
         <h1>{title}</h1>
-        {s.birth && panel && <div className="meter" title="Confirmed cells out of months lived"><b>{st.pct}%</b><span>{st.filled}{st.placeholders ? ` + ${st.placeholders}?` : ''} / {st.total}</span></div>}
         <button className="icon" onClick={() => setMode(NEXT[mode])} disabled={!s.birth} aria-label={`Switch to ${VIEW_NAME[NEXT[mode]]}`} title={`Switch to ${VIEW_NAME[NEXT[mode]]}`}>
           <svg viewBox="0 0 24 24" width="24" height="24">{NEXT[mode] === 'h'
             ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M7 12a.6.6 0 1 0 .01 0M12 12a.6.6 0 1 0 .01 0M17 12a.6.6 0 1 0 .01 0" />
@@ -155,9 +154,9 @@ export default function App() {
           </button>)}
       </header>
 
-      <div className={`body${panel ? ' asking' : ''}`}>
+      <div className="body">
         <main>{mode === 'grid'
-          ? <Grid s={s} read={read} full={!panel} onCell={VIEWING ? undefined : setEditing} />
+          ? <Grid s={s} read={read} full onCell={VIEWING ? undefined : setEditing} />
           : <Timeline s={s} dir={mode === 'v' ? 'v' : 'h'} world={mode === 'hw'} onCell={VIEWING ? undefined : setEditing} />}</main>
         {s.birth && mode !== 'h' && mode !== 'hw' && ( // the horizontal timeline names each home on its own band
           <aside className="legend">
@@ -166,27 +165,12 @@ export default function App() {
           </aside>)}
       </div>
 
-      {last && panel && (
-        <div className="ticker" key={last + s.log.length}>
-          <b>{fmt(last)}</b> {s.cells[last]?.t}{s.changed.length > 1 && <em> +{s.changed.length - 1} more cells</em>}
-        </div>)}
-
-      {asking && !open && !wide && (
-        <button className="peek" onClick={() => setOpen(true)} {...swipe(-1, () => setOpen(true))} aria-label="Show questions">
-          <i /><span>{conflict ? 'One to settle' : <>Continue <b>· {view!.stage}</b></>}</span>
-        </button>)}
-      {panel && (
-      <section className="panel" {...swipe(1, () => setOpen(false))}>
-        <button className="grab" onClick={() => setOpen(false)} aria-label="Hide questions"><i /></button>
-        {ask}
-      </section>)}
-
       {editing && <CellEditor s={s} at={editing} onClose={() => setEditing(null)}
         onSave={(t) => { commit((d) => { if (t.trim()) d.cells[editing] = { t: t.trim() }; else delete d.cells[editing]; d.changed.push(editing); }); setEditing(null); }} />}
 
       {!VIEWING && (
         <div className={`scrim side${menu ? ' show' : ''}`} onClick={() => setMenu(false)} aria-hidden={!menu}>
-          <nav className="shelf" onClick={(e) => e.stopPropagation()}>
+          <nav className="shelf" onClick={(e) => e.stopPropagation()} {...swipe(-1, () => setMenu(false))}>
             <div className="shelf-head"><h3>{title}</h3><button className="ghost sm" onClick={() => setMenu(false)} aria-label="Close menu">✕</button></div>
             {s.birth ? (
               <div className="stats">
@@ -195,13 +179,14 @@ export default function App() {
                 {s.log.length > 0 && <p className="dim">{s.done ? 'Setup complete. ' : ''}{answered} {answered === 1 ? 'question' : 'questions'} answered, {s.log.length - answered} skipped.</p>}
               </div>
             ) : <p className="help">Answer the first question to start your grid.</p>}
-            {asking && wide && <div className="shelf-q">{ask}</div>}
-            {asking && !wide && <button className="primary" onClick={() => { setOpen(true); setMenu(false); }}>{conflict ? 'Settle one month' : `Continue · ${view!.stage}`}</button>}
+            {asking && <div className="shelf-q">{ask}</div>}
+            {asking && !wide && last && ( // on a phone the shelf covers the grid, so say what the last answer filled in
+              <p className="landed" key={last + s.log.length}><b>{fmt(last)}</b> {s.cells[last]?.t}{s.changed.length > 1 && <em> +{s.changed.length - 1} more</em>} <button className="link" onClick={() => setMenu(false)}>See the grid</button></p>)}
             {s.birth && (
               <div className="field"><label>{todo.length ? 'Questions — pick up any topic' : 'Questions — go back to any topic'}</label>
                 <div className="topics">
                   {TOPICS.map((n) => <button key={n} className={`chip${view?.stage === n ? ' cur' : todo.includes(n) ? ' todo' : ''}`}
-                    onClick={() => { commit((d) => goTopic(d, n)); setOpen(true); if (!wide) setMenu(false); }}>{n}</button>)}
+                    onClick={() => { commit((d) => goTopic(d, n)); }}>{n}</button>)}
                 </div>
                 <p className="dim small"><i className="dot" /> still has questions waiting</p>
               </div>)}
@@ -209,7 +194,7 @@ export default function App() {
             {s.birth && (
               <details className="more"><summary>Name and birth date</summary>
             <div className="field"><label>First name</label>
-              <input type="text" autoCapitalize="words" maxLength={30} defaultValue={s.name || ''} key={s.id}
+              <input {...NOFILL} type="text" autoCapitalize="words" maxLength={30} defaultValue={s.name || ''} key={s.id}
                 onBlur={(e) => { const n = e.target.value.trim(); if (n !== (s.name || '')) setS({ ...s, name: n || undefined, changed: [] }); }}
                 onKeyDown={(e) => { if (e.key === 'Enter') (e.target as HTMLElement).blur(); }} /></div>
             <BirthFix s={s} onSave={(y, m) => { commit((d) => setBirth(d, y, m)); if (!wide) setMenu(false); }} />
@@ -217,13 +202,13 @@ export default function App() {
               </details>)}
             {s.birth && <div className="field"><label>Share link — read-only, shows everything in the grid</label>
               <div className="ymf two">
-                <input readOnly value={link} onFocus={(e) => e.target.select()} />
+                <input {...NOFILL} readOnly value={link} onFocus={(e) => e.target.select()} />
                 <button className="ghost" onClick={() => { copyText(link).then((ok) => { if (!ok) return; setCopied(true); setTimeout(() => setCopied(false), 1500); }); }}>{copied ? 'Copied' : 'Copy'}</button>
               </div></div>}
             <span className="grow" />
             {s.birth && <button className="link" onClick={download}>Download CSV</button>}
-            {hist.current.length > 0 && !(asking && wide) && <button className="link" onClick={back}>Undo last change</button>}
-            {s.birth && <button className="ghost danger" onClick={() => { if (confirm('Erase this grid and start over?')) { localStorage.removeItem(KEY); localStorage.removeItem(HKEY); history.replaceState(null, '', location.pathname); hist.current = []; const n = fresh(START); normalize(n); setS(n); setOpen(true); setMenu(wide); } }}>Start over</button>}
+            {hist.current.length > 0 && !asking && <button className="link" onClick={back}>Undo last change</button>}
+            {s.birth && <button className="ghost danger" onClick={() => { if (confirm('Erase this grid and start over?')) { localStorage.removeItem(KEY); localStorage.removeItem(HKEY); history.replaceState(null, '', location.pathname); hist.current = []; const n = fresh(START); normalize(n); setS(n); setMenu(true); } }}>Start over</button>}
           </nav>
         </div>)}
     </div>
@@ -242,9 +227,21 @@ function CellEditor({ s, at, onClose, onSave }: { s: State; at: YM; onClose: () 
             <path fill="#ea4335" d="M12 2a5 5 0 0 1 5 5v5h-5z" /><path fill="#4285f4" d="M22 12a5 5 0 0 1-5 5h-5v-5z" />
             <path fill="#34a853" d="M12 22a5 5 0 0 1-5-5v-5h5z" /><path fill="#fbbc04" d="M2 12a5 5 0 0 1 5-5h5v5z" />
           </svg>
-        </a></h3>
+        </a>
+          {/* Experiment: calendar links for the month. Both addresses are undocumented. */}
+          <a className="photos" href={googleCalLink(at)} target="_blank" rel="noopener noreferrer" title={`Google Calendar, ${fmt(at)}`} aria-label={`Google Calendar, ${fmt(at)}`}>
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="#fff" stroke="#4285f4" strokeWidth="2.4" /><text x="12" y="16.2" textAnchor="middle" fontSize="9.5" fontWeight="700" fontFamily="system-ui, sans-serif" fill="#4285f4">31</text></svg>
+          </a>
+          {at >= GMAIL_START && (
+            <a className="photos" href={gmailLink(at)} target="_blank" rel="noopener noreferrer" title={`Gmail, ${fmt(at)}`} aria-label={`Gmail, ${fmt(at)}`}>
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5" fill="#fff" stroke="#c9c9ce" strokeWidth="1" /><path d="M4.5 7.5 12 13l7.5-5.5V17M4.5 17V7.5" fill="none" stroke="#ea4335" strokeWidth="2.2" strokeLinejoin="round" strokeLinecap="round" /></svg>
+            </a>)}
+          {IS_IOS && (
+            <a className="photos" href={appleCalLink(at)} title={`Apple Calendar, ${fmt(at)}`} aria-label={`Apple Calendar, ${fmt(at)}`}>
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="#fff" stroke="#c9c9ce" strokeWidth="1" /><path d="M3 9V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2z" fill="#ff3b30" /><text x="12" y="18.2" textAnchor="middle" fontSize="8.5" fontWeight="600" fontFamily="system-ui, sans-serif" fill="#1c1c1e">1</text></svg>
+            </a>)}</h3>
         {cur?.p && <p className="help">Filled in automatically. Save to confirm it, or change it.</p>}
-        <input autoFocus type="text" autoCapitalize="words" maxLength={40} placeholder="Biggest event this month?" value={t} onChange={(e) => setT(e.target.value)} />
+        <input {...NOFILL} autoFocus type="text" autoCapitalize="words" maxLength={40} placeholder="Biggest event this month?" value={t} onChange={(e) => setT(e.target.value)} />
         <div className="actions wrap">
           {cur && <button type="button" className="ghost danger" onClick={() => onSave('')}>Clear</button>}
           <button type="button" className="ghost" onClick={onClose}>Cancel</button>
@@ -263,8 +260,8 @@ function BirthFix({ s, onSave }: { s: State; onSave: (y: number, m: number) => v
     <div className="field fix">
       <label>Born — change if it’s wrong</label>
       <div className="ymf">
-        <select value={m} onChange={(e) => setM(e.target.value)} aria-label="Birth month">{MON.map((n, i) => <option key={n} value={i + 1}>{n}</option>)}</select>
-        <input inputMode="numeric" pattern="[0-9]*" maxLength={4} value={y} onChange={(e) => setY(e.target.value.replace(/\D/g, ''))} aria-label="Birth year" />
+        <select {...NOFILL} value={m} onChange={(e) => setM(e.target.value)} aria-label="Birth month">{MON.map((n, i) => <option key={n} value={i + 1}>{n}</option>)}</select>
+        <input {...NOFILL} inputMode="numeric" pattern="[0-9]*" maxLength={4} value={y} onChange={(e) => setY(e.target.value.replace(/\D/g, ''))} aria-label="Birth year" />
         <button type="button" className="ghost" disabled={!ok} onClick={() => onSave(+y, +m)}>Update</button>
       </div>
     </div>

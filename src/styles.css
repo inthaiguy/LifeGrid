@@ -236,3 +236,11 @@ main:has(.tl.h) { min-width: 0; }
 .tl.h .ev.w { --c: var(--dim); color: var(--dim); background: var(--bg); cursor: default; }
 .tl.h .ev.w::after { top: auto; bottom: 100%; background: color-mix(in srgb, var(--dim) 35%, transparent); }
 .tl.h .tick { background: var(--bg); z-index: 1; }
+
+/* Phone: the shelf carries the questions, so give it most of the screen; a dot on the menu button says questions are waiting. */
+@media (max-width: 759px) { .shelf { width: min(420px, 92vw); } }
+button.icon.todo { position: relative; }
+button.icon.todo::after { content: ''; position: absolute; top: 7px; right: 5px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--bg); }
+.landed { margin: -2px 2px 4px; font-size: 13px; color: var(--dim); }
+.landed b { color: var(--ink); } .landed em { font-style: normal; }
+.landed button.link { display: inline; padding: 0; margin-left: 4px; color: var(--accent); }

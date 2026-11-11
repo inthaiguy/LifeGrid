@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { type State, MON, ym, homeAt, short } from './model';
+import { NOFILL } from './nofill';
 import { type View, type Field, STAGES } from './script';
 
 const SEASON: Record<string, number> = { sp: 4, su: 7, fa: 10, wi: 1, '': 6 };
@@ -15,12 +16,12 @@ function YMField({ f, s, value, onChange }: { f: Field; s: State; value: string;
   const age = s.birth && +y > 1900 ? +y - s.birth.y : null;
   return (
     <div className="ymf">
-      <select value={m} onChange={(e) => { setM(e.target.value); emit(e.target.value, y); }} aria-label={`${f.label} month`}>
+      <select {...NOFILL} value={m} onChange={(e) => { setM(e.target.value); emit(e.target.value, y); }} aria-label={`${f.label} month`}>
         <option value="">{f.exact ? 'Month' : 'Month?'}</option>
         {MON.map((n, i) => <option key={n} value={i + 1}>{n}</option>)}
         {!f.exact && <><option value="sp">Spring</option><option value="su">Summer</option><option value="fa">Fall</option><option value="wi">Winter</option></>}
       </select>
-      <input inputMode="numeric" pattern="[0-9]*" maxLength={4} placeholder="Year" value={y} aria-label={`${f.label} year`}
+      <input {...NOFILL} inputMode="numeric" pattern="[0-9]*" maxLength={4} placeholder="Year" value={y} aria-label={`${f.label} year`}
         onChange={(e) => { const v = e.target.value.replace(/\D/g, ''); setY(v); emit(m, v); }} />
       {age !== null && age >= 0 && s.birth && <span className="hint">age {age}</span>}
     </div>
@@ -31,14 +32,14 @@ function FieldInput({ f, s, value, onChange }: { f: Field; s: State; value: any;
   switch (f.type) {
     case 'ym': return <YMField f={f} s={s} value={value || ''} onChange={onChange} />;
     case 'month': return (
-      <select value={value || ''} onChange={(e) => onChange(e.target.value)}>
+      <select {...NOFILL} value={value || ''} onChange={(e) => onChange(e.target.value)}>
         <option value="">Month</option>{MON.map((n, i) => <option key={n} value={i + 1}>{n}</option>)}
       </select>);
     case 'year': {
       const age = s.birth && +value > 1900 ? +value - s.birth.y : null;
       return (
         <div className="ymf">
-          <input inputMode="numeric" pattern="[0-9]*" maxLength={4} placeholder={f.placeholder || 'Year'} value={value || ''} onChange={(e) => onChange(e.target.value.replace(/\D/g, ''))} />
+          <input {...NOFILL} inputMode="numeric" pattern="[0-9]*" maxLength={4} placeholder={f.placeholder || 'Year'} value={value || ''} onChange={(e) => onChange(e.target.value.replace(/\D/g, ''))} />
           {age !== null && age >= 0 && <span className="hint">age {age}</span>}
         </div>);
     }
@@ -50,13 +51,13 @@ function FieldInput({ f, s, value, onChange }: { f: Field; s: State; value: any;
           return (
             <label key={y} className="yrow">
               <span className="yl"><b>{y}</b><i>age {y - s.birth!.y}</i></span>
-              <input type="text" enterKeyHint="next" autoCapitalize="words" maxLength={40}
+              <input {...NOFILL} type="text" enterKeyHint="next" autoCapitalize="words" maxLength={40}
                 placeholder={cur?.p ? cur.t : home ? `living in ${short(home)}` : ''}
                 value={value?.[y] || ''} onChange={(e) => onChange({ ...(value || {}), [y]: e.target.value })} />
             </label>);
         })}
       </div>);
-    default: return <input type="text" autoCapitalize="words" autoComplete="off" maxLength={60} placeholder={f.placeholder} value={value || ''} onChange={(e) => onChange(e.target.value)} />;
+    default: return <input {...NOFILL} type="text" autoCapitalize="words" maxLength={60} placeholder={f.placeholder} value={value || ''} onChange={(e) => onChange(e.target.value)} />;
   }
 }
 
