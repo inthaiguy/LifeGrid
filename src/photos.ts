@@ -31,19 +31,24 @@ export function appleCalLink(at: YM): string {
 export const IS_IOS = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 const IS_PHONE = IS_IOS || /Android/.test(navigator.userAgent);
 
-// Narrows the month to mail likely to mark an event: starred or important, Gmail's own purchase and
-// reservation categories, and the usual words on receipts and travel bookings. Braces mean "any of".
-const GMAIL_FILTER = '{is:starred is:important category:purchases category:reservations receipt order booking reservation itinerary flight hotel ticket}';
 
 /** Gmail opened on 1 April 2004, so earlier months have no mail to show. */
 export const GMAIL_START: YM = '2004-04';
 
+/** Gmail began marking mail as important with Priority Inbox, launched 30 August 2010; September is the first full month. */
+const GMAIL_IMPORTANT_START: YM = '2010-09';
+
 /**
- * Gmail on the web, searched for the month's notable mail. A phone browser gets Gmail's
+ * Gmail on the web, searched for everything dated within the month. Tried narrowing it (starred,
+ * important, receipts, trips): the filter is accepted, but many months then come back empty, and a
+ * link cannot fall back to a wider search, so the whole month is the dependable choice. A phone browser gets Gmail's
  * separate mobile site, which ignores the desktop #search/ route and has its own (#tl/search/, undocumented).
  */
 export function gmailLink(at: YM): string {
   const day = (x: YM) => `${yOf(x)}/${String(mOf(x)).padStart(2, '0')}/01`;
-  const q = encodeURIComponent(`after:${day(at)} before:${day(addM(at, 1))} ${GMAIL_FILTER}`);
-  return IS_PHONE ? `https://mail.google.com/mail/mu/mp/#tl/search/${q}` : `https://mail.google.com/mail/u/0/#search/${q.replace(/%20/g, '+')}`;
+  const q = encodeURIComponent(`after:${day(at)} before:${day(addM(at, 1))}`);
+  if (IS_PHONE) return `https://mail.google.com/mail/mu/mp/#tl/search/${q}`;
+  // On a computer, narrow to mail Gmail marked important, for months since it began doing so.
+  const imp = at >= GMAIL_IMPORTANT_START ? '+is%3Aimportant' : '';
+  return `https://mail.google.com/mail/u/0/#search/${q.replace(/%20/g, '+')}${imp}`;
 }

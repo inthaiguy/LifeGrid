@@ -22,7 +22,7 @@ function pack(p: Shared): string {
     if (n >= 0) lines[n] = c.p ? '?' + clean(c.t) : clean(c.t).replace(/^[?\\]/, '\\$&');
   }
   return [
-    '2', clean(p.name || ''), [b.y, b.m, clean(b.place)].join('\t'), (p.t || []).join(','),
+    '2', clean(p.name || ''), [b.y, b.m, clean(b.place), b.d || ''].join('\t'), (p.t || []).join(','),
     ...p.homes.map((h) => off(base, h.from) + '\t' + clean(h.place)), '',
     ...p.stays.map((s) => [off(base, s.from), off(base, s.to), clean(s.place)].join('\t')), '',
     ...Array.from(lines, (l) => l || ''),
@@ -32,9 +32,10 @@ function pack(p: Shared): string {
 function unpack(text: string): Shared | null {
   const L = text.split('\n');
   if (L[0] !== '2') return null;
-  const [y, m, place] = L[2].split('\t');
-  const birth = { y: +y, m: +m, place: place || '' }, base = birth.y * 12 + birth.m - 1;
+  const [y, m, place, d] = L[2].split('\t');
+  const birth: NonNullable<Shared['birth']> = { y: +y, m: +m, place: place || '' }, base = birth.y * 12 + birth.m - 1;
   if (!birth.y || !(birth.m >= 1 && birth.m <= 12)) return null;
+  if (+d >= 1 && +d <= 31) birth.d = +d;
   let i = 4;
   const homes: Shared['homes'] = [], stays: Shared['stays'] = [], cells: Shared['cells'] = {};
   for (; i < L.length && L[i]; i++) { const [f, pl] = L[i].split('\t'); homes.push({ from: at(base, +f), place: pl || '' }); }

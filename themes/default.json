@@ -1,0 +1,6 @@
+{
+  "schema": "life-grid-theme/1",
+  "id": "default",
+  "name": "Classic",
+  "description": "The built-in look. Follows the device's light or dark setting."
+}

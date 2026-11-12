@@ -1,12 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
-import { type State, type YM, fresh, stats, toCSV, fmt, addM, homeAt, setBirth, MON, colorOf, places, short, inLife, yOf } from './model';
-import { START, TOPICS, normalize, current, answer, skip, pending, goTopic, resume } from './script';
+import { type State, type YM, fresh, stats, toCSV, toJSON, fmt, addM, homeAt, setBirth, MON, colorOf, places, short, inLife, yOf, ym } from './model';
+import { START, TOPICS, normalize, current, answer, skip, begin, pending, goTopic, resume } from './script';
 import { encode, decode } from './share';
 import Grid from './Grid';
 import Timeline from './Timeline';
+import Tree from './Tree';
+import { parseSheet, type Parsed } from './import';
 import { photosLink, googleCalLink, appleCalLink, gmailLink, GMAIL_START, IS_IOS } from './photos';
 import { NOFILL } from './nofill';
 import Question from './Question';
+import Welcome from './Welcome';
+import Coach from './Coach';
+import { VIEWS, type ViewId, unlockedViews, nextView, FIRST_UNLOCK } from './views';
+import { sparkle, soundOn, setSound } from './sound';
+import { THEMES, applyTheme, savedTheme } from './theme';
 
 const KEY = 'life-grid';
 const HKEY = 'life-grid-hist';
@@ -17,8 +24,6 @@ const load = (): State => {
   const s = fresh(START); normalize(s); return s;
 };
 
-const NEXT = { grid: 'h', h: 'hw', hw: 'v', v: 'grid' } as const;
-const VIEW_NAME = { grid: 'the grid', h: 'horizontal timeline', hw: 'timeline with world events', v: 'vertical timeline' } as const;
 const WIDE = '(min-width: 760px)';
 const VIEWING = location.hash.startsWith('#s.'); // a shared link: read-only, nothing stored on this device
 
@@ -38,8 +43,9 @@ async function copyText(text: string): Promise<boolean> {
 export default function App() {
   const [s, setS] = useState<State>(() => (VIEWING ? fresh([]) : load()));
   const [read, setRead] = useState(false);
-  const [mode, setMode] = useState<'grid' | 'h' | 'hw' | 'v'>('grid'); // the sheet, or the same events as a timeline
+  const [mode, setMode] = useState<ViewId>('grid'); // the sheet, or the same events as a timeline
   const [editing, setEditing] = useState<YM | null>(null);
+  const [importing, setImporting] = useState(false);
   const [link, setLink] = useState('');
   const [copied, setCopied] = useState(false);
   const [bad, setBad] = useState(false);
@@ -47,7 +53,13 @@ export default function App() {
   // Questions live in the left shelf at every size. On a wide screen it docks beside the grid; on a phone it slides over it.
   const [wide, setWide] = useState(() => matchMedia(WIDE).matches);
   useEffect(() => { const m = matchMedia(WIDE), f = () => setWide(m.matches); m.addEventListener('change', f); return () => m.removeEventListener('change', f); }, []);
-  const [menu, setMenu] = useState(() => !VIEWING && !s.done);
+  const [theme, setTheme] = useState(savedTheme);
+  const [coach, setCoach] = useState(false); // the closing note after the first cell lands
+  const [toast, setToast] = useState('');
+  const [sound, setSoundState] = useState(soundOn);
+  const [menu, setMenu] = useState(false); // always closed on load; a badge on the menu button shows when questions are waiting
+  // A brand-new sheet opens with the welcome flow instead of the question shelf.
+  const [intro, setIntro] = useState(() => !VIEWING && !s.birth && s.log.length === 0 && !location.hash);
   const t0 = useRef<[number, number]>([0, 0]);
   const [fs, setFs] = useState(false);
   useEffect(() => { const f = () => setFs(!!document.fullscreenElement); document.addEventListener('fullscreenchange', f); return () => document.removeEventListener('fullscreenchange', f); }, []);
@@ -82,11 +94,23 @@ export default function App() {
     if (hist.current.length > 300) hist.current.shift();
     saveHist(hist.current);
     history.pushState(null, '', location.href); // so the browser's back swipe steps back one answer
-    const d = structuredClone(s); d.changed = []; fn(d); setS(d);
+    const d = structuredClone(s); d.changed = []; fn(d);
+    const was = unlockedViews(stats(s).pct), now = unlockedViews(stats(d).pct);
+    if (now.length > was.length) { // something new to try
+      const fresh = now.slice(was.length);
+      sparkle(); setToast(fresh.length === 1 ? `New view unlocked: ${fresh[0].name}` : `${fresh.length} new views unlocked`);
+      setTimeout(() => setToast(''), 4500);
+    }
+    setS(d);
   };
   const back = () => { const prev = hist.current.pop(); saveHist(hist.current); if (prev) setS({ ...JSON.parse(prev), changed: [] }); };
 
   const st = stats(s);
+  const open = VIEWING ? VIEWS : unlockedViews(st.pct); // a shared link shows every view
+  const ids = open.map((v) => v.id);
+  const nextMode: ViewId = ids[(ids.indexOf(mode) + 1) % ids.length] ?? 'grid';
+  const upcoming = VIEWING ? undefined : nextView(st.pct);
+  useEffect(() => { if (!ids.includes(mode)) setMode('grid'); }, [st.pct]); // a view that is no longer unlocked falls back to the grid
   const view = !s.done && !s.conflicts.length ? current(s) : null;
   const conflict = s.conflicts[0];
   const last = s.changed[0];
@@ -94,18 +118,20 @@ export default function App() {
   const docked = wide && menu;
 
   // With the questions put away, the back swipe (from the left edge) brings them back instead of undoing.
-  const onPop = useRef(() => {}); onPop.current = () => { if (asking && !menu) { history.pushState(null, '', location.href); setMenu(true); } else back(); };
+  const onPop = useRef(() => {}); onPop.current = () => { if (intro) { history.pushState(null, '', location.href); return; } if (asking && !menu) { history.pushState(null, '', location.href); setMenu(true); } else back(); };
   useEffect(() => {
     if (VIEWING) return;
     const f = () => onPop.current();
     history.pushState(null, '', location.href); addEventListener('popstate', f); return () => removeEventListener('popstate', f);
   }, []);
 
-  const download = () => {
+  const save = (body: string, type: string, name: string) => {
     const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([toCSV(s)], { type: 'text/csv' }));
-    a.download = 'life-grid.csv'; a.click();
+    a.href = URL.createObjectURL(new Blob([body], { type }));
+    a.download = name; a.click();
   };
+  const download = () => save(toCSV(s), 'text/csv', 'life-grid.csv');
+  const downloadJSON = () => save(toJSON(s), 'application/json', 'life-grid.json');
   const title = s.name ? `${s.name}’s Life` : 'Life Grid';
   const todo = pending(s);
   const answered = s.log.filter((l) => l.a).length;
@@ -130,14 +156,17 @@ export default function App() {
   return (
     <div className={`app${VIEWING ? ' viewing' : ''}${docked ? ' docked' : ''}${fs ? ' fs' : ''}`}>
       <header>
-        {!VIEWING && <button className={`icon${asking && !menu ? ' todo' : ''}`} onClick={() => setMenu(!menu)} aria-label={asking && !menu ? 'Menu — questions waiting' : 'Menu'}><svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>}
+        {!VIEWING && <button className={`icon${asking && !menu ? ' todo' : ''}`} onClick={() => { if (intro) setIntro(false); setCoach(false); setMenu(!menu); }} aria-label={asking && !menu ? 'Menu — questions waiting' : 'Menu'}><svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>}
         <h1>{title}</h1>
-        <button className="icon" onClick={() => setMode(NEXT[mode])} disabled={!s.birth} aria-label={`Switch to ${VIEW_NAME[NEXT[mode]]}`} title={`Switch to ${VIEW_NAME[NEXT[mode]]}`}>
-          <svg viewBox="0 0 24 24" width="24" height="24">{NEXT[mode] === 'h'
+        {!intro && <>
+        <button className="icon" onClick={() => setMode(nextMode)} disabled={!s.birth || ids.length < 2} aria-label={ids.length < 2 ? `Other views unlock at ${FIRST_UNLOCK}%` : `Switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`} title={ids.length < 2 ? `Other views unlock at ${FIRST_UNLOCK}% filled in` : `Switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`}>
+          <svg viewBox="0 0 24 24" width="24" height="24">{nextMode === 'h'
             ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M7 12a.6.6 0 1 0 .01 0M12 12a.6.6 0 1 0 .01 0M17 12a.6.6 0 1 0 .01 0" />
-            : NEXT[mode] === 'hw'
+            : nextMode === 'hw'
               ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M9.5 12v5M14.5 12v6" />
-            : NEXT[mode] === 'v'
+            : nextMode === 'tree'
+              ? <path d="M12 21v-8M12 13c-5 0-7.5-2.4-7.5-5.4C4.500 4.800 6.800 3 9.300 3.600 10 2.600 11 2.200 12 2.200s2 .4 2.700 1.400c2.500-.6 4.800 1.200 4.800 4 0 3-2.500 5.400-7.500 5.400zM12 17l3-2.500M8.500 21h7" />
+            : nextMode === 'v'
               ? <path d="M7 3v18M7 7h5M7 12h9M7 17h6" />
               : <path d="M4 4h16v16H4zM4 9.3h16M4 14.7h16M9.3 4v16M14.7 4v16" />}</svg>
         </button>
@@ -152,18 +181,52 @@ export default function App() {
               ? <path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5" />
               : <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />}</svg>
           </button>)}
+        </>}
       </header>
 
-      <div className="body">
+      <div className={`body${intro ? ' intro' : ''}`}>
+        {intro && <Welcome
+          onCommit={(v) => commit((d) => begin(d, v))}
+          onFinish={() => { setIntro(false); setCoach(true); }}
+          onImport={() => { setIntro(false); setImporting(true); }}
+          onSkip={() => { setIntro(false); setMenu(true); }} />}
         <main>{mode === 'grid'
           ? <Grid s={s} read={read} full onCell={VIEWING ? undefined : setEditing} />
-          : <Timeline s={s} dir={mode === 'v' ? 'v' : 'h'} world={mode === 'hw'} onCell={VIEWING ? undefined : setEditing} />}</main>
+          : mode === 'tree'
+            ? <Tree s={s} onCell={VIEWING ? undefined : setEditing} />
+            : <Timeline s={s} dir={mode === 'v' ? 'v' : 'h'} world={mode === 'hw'} onCell={VIEWING ? undefined : setEditing} />}</main>
         {s.birth && mode !== 'h' && mode !== 'hw' && ( // the horizontal timeline names each home on its own band
           <aside className="legend">
             {places(s).map((p) => <span key={p}><i style={{ background: colorOf(s, p) }} />{short(p)}</span>)}
             {!VIEWING && menu && st.placeholders > 0 && <span className="key"><i className="k-ph" />to confirm</span>}
           </aside>)}
       </div>
+
+      {coach && !intro && <Coach onClose={() => { setCoach(false); setMenu(true); }}
+        lines={['This is your life grid.', 'You can manually fill in the cells, or answer our questions.', `Once you fill in over ${FIRST_UNLOCK}% you’ll unlock other views.`]} />}
+      {toast && <div className="toast" role="status">{toast}</div>}
+
+      {importing && <Importer s={s} onClose={() => setImporting(false)} onImport={(p, birth) => {
+        commit((d) => {
+          // A new grid: answer the birth question first, so the script carries on from there.
+          if (!d.birth && birth) { normalize(d); answer(d, { name: '', when: birth.when, place: birth.place }); }
+          if (!d.birth) return;
+          const from = ym(d.birth.y, d.birth.m);
+          for (const [at, c] of Object.entries(p.cells)) {
+            const cur = d.cells[at];
+            if (at < from || (cur && !cur.p)) continue; // outside the life, or already confirmed here: keep what the user wrote
+            if (cur && c.p) continue;                    // a placeholder never replaces a placeholder
+            d.cells[at] = c; d.changed.push(at);
+          }
+          // From a JSON export: add homes and stays that aren't here yet.
+          if (!d.name && p.name) d.name = p.name;
+          if (!d.birth.d && p.birthDay && ym(d.birth.y, d.birth.m) === p.first) d.birth.d = p.birthDay;
+          for (const h of p.homes || []) if (h.from >= from && !d.homes.some((x) => x.from === h.from)) d.homes.push(h);
+          d.homes.sort((a, b) => a.from.localeCompare(b.from));
+          for (const x of p.stays || []) if (x.from >= from && !d.stays.some((y) => y.from === x.from && y.to === x.to)) d.stays.push(x);
+        });
+        setImporting(false); setMenu(false);
+      }} />}
 
       {editing && <CellEditor s={s} at={editing} onClose={() => setEditing(null)}
         onSave={(t) => { commit((d) => { if (t.trim()) d.cells[editing] = { t: t.trim() }; else delete d.cells[editing]; d.changed.push(editing); }); setEditing(null); }} />}
@@ -179,6 +242,19 @@ export default function App() {
                 {s.log.length > 0 && <p className="dim">{s.done ? 'Setup complete. ' : ''}{answered} {answered === 1 ? 'question' : 'questions'} answered, {s.log.length - answered} skipped.</p>}
               </div>
             ) : <p className="help">Answer the first question to start your grid.</p>}
+            {s.birth && (
+              <div className="field"><label>Views — unlocked as your grid fills in</label>
+                <div className="views">
+                  {VIEWS.map((v) => { const ok = st.pct >= v.at; return (
+                    <button key={v.id} disabled={!ok} className={`chip${ok ? '' : ' locked'}${ok && v.id === mode ? ' here' : ''}`}
+                      title={ok ? `Show the ${v.name.toLowerCase()}` : `Unlocks at ${v.at}% filled in`}
+                      onClick={() => { setMode(v.id); if (!wide) setMenu(false); }}>{v.name}{!ok && <em className="dim"> {v.at}%</em>}</button>); })}
+                </div>
+                {upcoming ? (<>
+                  <div className="unlock-meter" aria-hidden="true"><i style={{ width: `${Math.max(0, Math.min(100, ((st.pct - open[open.length - 1].at) / (upcoming.at - open[open.length - 1].at)) * 100))}%` }} /></div>
+                  <p className="dim small">Next: {upcoming.name} unlocks at {upcoming.at}%. You’re at {st.pct}%.</p>
+                </>) : <p className="dim small">Every view is unlocked.</p>}
+              </div>)}
             {asking && <div className="shelf-q">{ask}</div>}
             {asking && !wide && last && ( // on a phone the shelf covers the grid, so say what the last answer filled in
               <p className="landed" key={last + s.log.length}><b>{fmt(last)}</b> {s.cells[last]?.t}{s.changed.length > 1 && <em> +{s.changed.length - 1} more</em>} <button className="link" onClick={() => setMenu(false)}>See the grid</button></p>)}
@@ -200,17 +276,74 @@ export default function App() {
             <BirthFix s={s} onSave={(y, m) => { commit((d) => setBirth(d, y, m)); if (!wide) setMenu(false); }} />
 
               </details>)}
+            <details className="more"><summary>Appearance</summary>
+              <div className="field"><label>Theme</label>
+                <div className="themes">
+                  {THEMES.map((th) => (
+                    <button key={th.id} className={`theme${th.id === theme ? ' cur' : ''}`} aria-pressed={th.id === theme} title={th.description}
+                      onClick={() => setTheme(applyTheme(th.id))}>
+                      {th.name}
+                      {th.ramp && <span className="swatch" aria-hidden="true">{th.ramp.map((c) => <i key={c} style={{ background: c }} />)}</span>}
+                    </button>))}
+                </div>
+                <label className="chk"><input type="checkbox" checked={sound} onChange={(e) => { setSound(e.target.checked); setSoundState(e.target.checked); }} /> Sounds</label>
+                <p className="dim small">Saved on this device only. Shared links carry your data, not your theme. Some themes load fonts from Google Fonts.</p>
+              </div>
+            </details>
             {s.birth && <div className="field"><label>Share link — read-only, shows everything in the grid</label>
               <div className="ymf two">
                 <input {...NOFILL} readOnly value={link} onFocus={(e) => e.target.select()} />
                 <button className="ghost" onClick={() => { copyText(link).then((ok) => { if (!ok) return; setCopied(true); setTimeout(() => setCopied(false), 1500); }); }}>{copied ? 'Copied' : 'Copy'}</button>
               </div></div>}
             <span className="grow" />
+            <button className="link" onClick={() => setImporting(true)}>{s.birth ? 'Import a sheet' : 'Already have a life sheet? Import it'}</button>
             {s.birth && <button className="link" onClick={download}>Download CSV</button>}
+            {s.birth && <button className="link" onClick={downloadJSON}>Download JSON</button>}
             {hist.current.length > 0 && !asking && <button className="link" onClick={back}>Undo last change</button>}
             {s.birth && <button className="ghost danger" onClick={() => { if (confirm('Erase this grid and start over?')) { localStorage.removeItem(KEY); localStorage.removeItem(HKEY); history.replaceState(null, '', location.pathname); hist.current = []; const n = fresh(START); normalize(n); setS(n); setMenu(true); } }}>Start over</button>}
           </nav>
         </div>)}
+    </div>
+  );
+}
+
+/** Bring in a life sheet kept elsewhere: pasted cells from Google Sheets or Excel, or a CSV file. */
+function Importer({ s, onClose, onImport }: { s: State; onClose: () => void; onImport: (p: Parsed, birth?: { when: YM; place: string }) => void }) {
+  const [text, setText] = useState('');
+  const p = text.trim() ? parseSheet(text) : null;
+  const [bm, setBm] = useState(''), [by, setBy] = useState(''), [place, setPlace] = useState('');
+  // Prefill the birth fields from the sheet the first time it parses.
+  const seen = useRef('');
+  useEffect(() => {
+    if (!p || s.birth || seen.current === p.first) return;
+    seen.current = p.first; setBy(p.first.slice(0, 4)); setBm(String(+p.first.slice(5, 7))); if (p.bornPlace) setPlace(p.bornPlace);
+  }, [p, s.birth]);
+  const kept = p && s.birth ? Object.keys(p.cells).filter((at) => s.cells[at] && !s.cells[at].p).length : 0;
+  const birthOk = !!s.birth || (/^(18|19|20)\d\d$/.test(by) && !!bm && !!place.trim());
+  const file = (f?: File) => { if (f) f.text().then(setText); };
+  return (
+    <div className="scrim" onClick={onClose}>
+      <form className="sheet importer" onClick={(e) => e.stopPropagation()} onSubmit={(e) => { e.preventDefault(); if (p && birthOk) onImport(p, s.birth ? undefined : { when: ym(+by, +bm), place: place.trim() }); }}>
+        <h3>Import a life sheet</h3>
+        <p className="help">One row per year, one column per month. Copy the cells from Google Sheets or Excel and paste them here, or choose a CSV file or a Life Grid JSON export. Nothing leaves this device.</p>
+        <textarea {...NOFILL} rows={5} placeholder="Paste your sheet here" value={text} onChange={(e) => setText(e.target.value)} />
+        <input type="file" accept=".csv,.tsv,.txt,.json,text/csv,text/plain,application/json" onChange={(e) => file(e.target.files?.[0])} />
+        {text.trim() && !p && <p className="warn">Couldn’t read that. For a sheet, include the year column and, if you have one, the row of month names. For JSON, use a file downloaded from Life Grid.</p>}
+        {p && <p className="found"><b>{p.count} {p.count === 1 ? 'entry' : 'entries'}</b> found, {p.firstYear}–{p.lastYear}.{kept > 0 && ` ${kept} already filled here will be kept as they are.`}</p>}
+        {p && !s.birth && (
+          <div className="field"><label>Born</label>
+            <div className="ymf">
+              <select {...NOFILL} value={bm} onChange={(e) => setBm(e.target.value)} aria-label="Birth month"><option value="">Month</option>{MON.map((n, i) => <option key={n} value={i + 1}>{n}</option>)}</select>
+              <input {...NOFILL} inputMode="numeric" pattern="[0-9]*" maxLength={4} placeholder="Year" value={by} onChange={(e) => setBy(e.target.value.replace(/\D/g, ''))} aria-label="Birth year" />
+            </div>
+            <input {...NOFILL} type="text" autoCapitalize="words" maxLength={60} placeholder="Birthplace: City, State or Country" value={place} onChange={(e) => setPlace(e.target.value)} />
+            <p className="dim small">Homes aren’t read from the sheet (colours don’t survive copying). The Homes questions follow the import.</p>
+          </div>)}
+        <div className="actions">
+          <button type="button" className="ghost" onClick={onClose}>Cancel</button>
+          <button className="primary" disabled={!p || !birthOk}>Import{p ? ` ${p.count}` : ''}</button>
+        </div>
+      </form>
     </div>
   );
 }

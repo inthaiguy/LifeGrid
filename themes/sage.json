@@ -1,0 +1,17 @@
+{
+  "schema": "life-grid-theme/1",
+  "id": "sage",
+  "name": "Sage",
+  "description": "Quiet and natural. Fraunces headings, soft greens on warm paper.",
+  "fonts": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap",
+  "light": {
+    "--bg": "#f6f0e6", "--surface": "#fbf7f0", "--ink": "#2c2f29", "--dim": "#777a6e", "--line": "#e2dccd",
+    "--accent": "#5f7a64", "--accent-ink": "#ffffff", "--head": "#efe8da",
+    "--font-body": "'Inter', system-ui, sans-serif",
+    "--font-display": "'Fraunces', Georgia, serif",
+    "--display-weight": "500",
+    "--display-scale": "1.15",
+    "--r-cell": "4px", "--r-ctl": "10px", "--r-card": "14px"
+  },
+  "ramp": ["#b9c6ae", "#8ea48a", "#5f7a64", "#ecd3a6", "#cbb79a"]
+}

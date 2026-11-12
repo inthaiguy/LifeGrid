@@ -1,0 +1,17 @@
+{
+  "schema": "life-grid-theme/1",
+  "id": "terracotta",
+  "name": "Terracotta",
+  "description": "Warm and earthy. DM Serif Display headings, clay oranges to deep brown.",
+  "fonts": "https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap",
+  "light": {
+    "--bg": "#fbf5ec", "--surface": "#fffaf3", "--ink": "#3b2a21", "--dim": "#8a7566", "--line": "#ecdfcd",
+    "--accent": "#c2622f", "--accent-ink": "#ffffff", "--head": "#f4ebdc",
+    "--font-body": "'DM Sans', system-ui, sans-serif",
+    "--font-display": "'DM Serif Display', Georgia, serif",
+    "--display-weight": "400",
+    "--display-scale": "1.15",
+    "--r-cell": "3px", "--r-ctl": "8px", "--r-card": "12px"
+  },
+  "ramp": ["#edd0a2", "#dfa765", "#c66a36", "#8f4a2a", "#5a3a2c"]
+}

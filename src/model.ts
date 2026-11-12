@@ -17,7 +17,7 @@ export interface State {
   v: 1;
   id: string;
   name?: string;
-  birth?: { y: number; m: number; place: string };
+  birth?: { y: number; m: number; place: string; d?: number }; // d = day of the month, when known
   homes: { from: YM; place: string }[];
   stays: { from: YM; to: YM; place: string }[];
   cells: Record<YM, Cell>;
@@ -61,12 +61,15 @@ const SEASONS: [number, string][] = [
   [0, '#e58fb1'], [0.12, '#8bc34a'], [0.3, '#2fa36b'], [0.42, '#f2b705'], [0.55, '#e8792b'],
   [0.68, '#b5432e'], [0.8, '#7a5c8e'], [0.9, '#4a7fb5'], [1, '#9fb8cc'],
 ];
+let ramp = SEASONS;
+/** Swap the colour ramp (a theme's list of hex colours, spread evenly); null restores the built-in one. */
+export const setRamp = (colors: string[] | null) => { ramp = colors ? colors.map((c, i) => [i / (colors.length - 1), c] as [number, string]) : SEASONS; };
 const rgb = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
 /** Colour at t in 0..1 along spring → summer → fall → winter. */
 export function season(t: number): string {
   t = Math.min(1, Math.max(0, t));
-  let i = 1; while (i < SEASONS.length - 1 && SEASONS[i][0] < t) i++;
-  const [t0, c0] = SEASONS[i - 1], [t1, c1] = SEASONS[i];
+  let i = 1; while (i < ramp.length - 1 && ramp[i][0] < t) i++;
+  const [t0, c0] = ramp[i - 1], [t1, c1] = ramp[i];
   const k = (t - t0) / (t1 - t0), a = rgb(c0), b = rgb(c1);
   return '#' + a.map((v, j) => Math.round(v + (b[j] - v) * k).toString(16).padStart(2, '0')).join('');
 }
@@ -81,7 +84,7 @@ export function places(s: State): string[] {
 }
 export const colorOf = (s: State, place?: string) => {
   const i = place ? places(s).indexOf(place) : -1;
-  if (i < 0) return '#7d8590';
+  if (i < 0) return place || places(s).length ? '#7d8590' : season(0.12); // no homes yet: the colour the first one will get
   // Places run along the ramp in the order they were lived in, ending at the season the person is in now.
   const n = places(s).length, end = Math.min(1, Math.max(0.5, (yOf(nowYM()) - s.birth!.y) / LIFE));
   return season(n > 1 ? 0.03 + (end - 0.03) * (i / (n - 1)) : 0.12);
@@ -137,4 +140,22 @@ export function toCSV(s: State): string {
     rows.push([y, y - s.birth.y, ...cells, q(homes.join(' / '))].join(','));
   }
   return rows.join('\n');
+}
+
+/** Portable JSON export (schema "life-grid/1"; see docs/data-format.md). Interview state is left out. */
+export function toJSON(s: State): string {
+  if (!s.birth) return '';
+  const cells = Object.keys(s.cells).sort().map((k) => {
+    const c = s.cells[k];
+    return c.p ? { month: k, text: c.t, confirmed: false } : { month: k, text: c.t };
+  });
+  return JSON.stringify({
+    schema: 'life-grid/1',
+    exportedAt: new Date().toISOString(),
+    name: s.name || undefined,
+    birth: { month: ym(s.birth.y, s.birth.m), ...(s.birth.d ? { date: `${ym(s.birth.y, s.birth.m)}-${String(s.birth.d).padStart(2, '0')}` } : {}), place: s.birth.place },
+    homes: s.homes.map((h) => ({ from: h.from, place: h.place })),
+    stays: s.stays.map((t) => ({ from: t.from, to: t.to, place: t.place })),
+    cells,
+  }, null, 2);
 }

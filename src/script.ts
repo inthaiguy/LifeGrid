@@ -58,6 +58,20 @@ const DEFS: Record<string, Def> = {
     },
   },
 
+  // Asked after the welcome flow, which collects the birth month but not the place.
+  birthplace: {
+    view: (s) => (s.birth && !s.birth.place ? {
+      stage: 'Frame', prompt: `Where were you born${s.name ? `, ${s.name}` : ''}?`, submit: 'Next',
+      fields: [{ key: 'place', type: 'text', label: 'Birthplace', placeholder: 'City, State or Country' }],
+    } : null),
+    apply: (s, _p, v) => {
+      const place = String(v.place).trim(), b = birthYM(s);
+      s.birth = { ...s.birth!, place };
+      s.homes = [{ from: b, place }];
+      if (!s.cells[b]) setCell(s, b, `Born ${short(place)}`);
+    },
+  },
+
   move: {
     view: (s, p) => {
       const last = s.homes[s.homes.length - 1].place;
@@ -373,6 +387,21 @@ export function answer(s: State, v: any) {
   const next = d.apply?.(s, it.p, v) || [];
   s.log.push({ k: it.k, q, a: v, n: new Set(s.changed).size }); // n = cells this answer filled
   s.queue.unshift(...next);
+  normalize(s);
+}
+
+/**
+ * The welcome flow's result: a first cell and a birth month. The usual birth question is replaced by a
+ * shorter one that only asks for the place, so the script carries on from there.
+ */
+export function begin(s: State, v: { name: string; born: YM; day: number; text: string; when: YM }) {
+  if (s.queue[0]?.k === 'birth') s.queue.shift();
+  if (v.name.trim()) s.name = v.name.trim();
+  s.birth = { y: yOf(v.born), m: mOf(v.born), d: v.day, place: '' };
+  setCell(s, v.when, v.text);
+  s.log.push({ k: 'welcome', q: 'First event', a: v, n: 1 });
+  s.queue.unshift({ k: 'birthplace' });
+  s.changed = []; // the card has already shown where this cell lands
   normalize(s);
 }
 

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life Grid — brand directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Jost:wght@400;500;600&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 28px 20px 60px; background: #ecebe8; color: #25241f; font: 15px/1.45 Inter, system-ui, sans-serif; }
+  .intro { max-width: 1180px; margin: 0 auto 22px; }
+  .intro h1 { font-size: 22px; margin: 0 0 4px; }
+  .intro p { margin: 0; color: #66645c; max-width: 70ch; }
+  .wrap { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; }
+
+  /* One direction = one card, themed entirely by variables */
+  .dir { background: var(--paper); color: var(--ink); border-radius: 18px; overflow: hidden; font-family: var(--body); display: flex; flex-direction: column; box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06); }
+  .tag { font: 600 11px/1 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; padding: 12px 16px 0; color: var(--soft); }
+  .hero { position: relative; padding: 14px 16px 18px; min-height: 132px; }
+  .hero .blob { position: absolute; }
+  .hero .b1 { width: 120px; height: 104px; right: 26px; top: 6px; background: var(--c2); border-radius: 58% 42% 55% 45% / 52% 60% 40% 48%; opacity: .75; }
+  .hero .b2 { width: 74px; height: 80px; right: 8px; top: 52px; background: var(--c4); border-radius: 50% 50% 46% 54% / 58% 44% 56% 42%; opacity: .8; }
+  .hero svg.art { position: absolute; right: 22px; top: 4px; width: 104px; height: 128px; fill: none; stroke: var(--ink); stroke-width: 1.15; stroke-linecap: round; stroke-linejoin: round; }
+  .hero h2 { position: relative; margin: 26px 0 2px; font-family: var(--display); font-weight: var(--dw, 500); font-size: var(--ds, 34px); line-height: 1.02; letter-spacing: var(--dt, -.01em); max-width: 62%; }
+  .hero p { position: relative; margin: 0; font-size: 13px; color: var(--soft); max-width: 58%; }
+
+  .bar { display: flex; align-items: center; gap: 10px; padding: 0 16px 8px; }
+  .bar b { font-family: var(--display); font-weight: var(--dw, 500); font-size: 19px; flex: 1; letter-spacing: var(--dt, -.01em); }
+  .bar svg { width: 20px; height: 20px; fill: none; stroke: var(--ink); stroke-width: 1.7; stroke-linecap: round; }
+
+  .grid { padding: 0 16px 14px; display: grid; gap: 2px; }
+  .row { display: grid; grid-template-columns: 30px 22px repeat(12, 1fr); gap: 2px; align-items: center; }
+  .row span { font-size: 9.5px; color: var(--soft); font-variant-numeric: tabular-nums; }
+  .row .age { text-align: center; color: var(--ink); border-radius: var(--r); height: 15px; line-height: 15px; }
+  .row i { height: 15px; border-radius: var(--r); display: block; }
+  .row.head span { text-transform: uppercase; letter-spacing: .05em; text-align: center; font-size: 8.5px; }
+
+  .q { margin: 0 16px 14px; padding: 14px; border-radius: 14px; background: var(--card); border: 1px solid var(--line); }
+  .q small { font: 600 10.5px/1 var(--body); letter-spacing: .09em; text-transform: uppercase; color: var(--accent); }
+  .q h3 { margin: 6px 0 10px; font-family: var(--display); font-weight: var(--dw, 500); font-size: 19px; line-height: 1.2; letter-spacing: var(--dt, -.01em); }
+  .q .in { height: 38px; border-radius: var(--rb); border: 1px solid var(--line); background: var(--paper); padding: 0 12px; display: flex; align-items: center; font-size: 14px; color: var(--soft); margin-bottom: 10px; }
+  .q .btns { display: flex; gap: 8px; }
+  .q .btn { height: 38px; padding: 0 16px; border-radius: var(--rb); display: flex; align-items: center; font-weight: 600; font-size: 14px; border: 1px solid var(--line); }
+  .q .btn.go { background: var(--accent); color: var(--on); border-color: var(--accent); flex: 1; justify-content: center; }
+
+  .spec { margin-top: auto; padding: 12px 16px 16px; border-top: 1px solid var(--line); font: 12px/1.5 Inter, sans-serif; color: var(--soft); }
+  .sw { display: flex; gap: 5px; margin-bottom: 8px; }
+  .sw i { flex: 1; height: 22px; border-radius: 6px; }
+  .spec b { color: var(--ink); font-weight: 600; }
+
+  /* A — Sage */
+  .a { --paper: #f6f0e6; --card: #fbf7f0; --ink: #2c2f29; --soft: #777a6e; --line: #e2dccd; --accent: #5f7a64; --on: #fff;
+       --c1: #dfe5d6; --c2: #b9c6ae; --c3: #8ea48a; --c4: #5f7a64; --c5: #ecd3a6; --c6: #cbb79a;
+       --display: 'Fraunces', serif; --body: 'Inter', sans-serif; --r: 4px; --rb: 10px; }
+  /* B — Blush */
+  .b { --paper: #fdfaf6; --card: #fff; --ink: #3a3331; --soft: #8c807b; --line: #eee5dd; --accent: #c48a7c; --on: #fff;
+       --c1: #f6e2d9; --c2: #f0cfc4; --c3: #e3b3a6; --c4: #e9dfb6; --c5: #d8cf9c; --c6: #c9a79b;
+       --display: 'Cormorant Garamond', serif; --dw: 600; --ds: 40px; --dt: 0; --body: 'Nunito Sans', sans-serif; --r: 8px; --rb: 20px; }
+  .b .q h3, .b .bar b { font-size: 22px; }
+  /* C — Terracotta */
+  .c { --paper: #fbf5ec; --card: #fffaf3; --ink: #3b2a21; --soft: #8a7566; --line: #ecdfcd; --accent: #c2622f; --on: #fff;
+       --c1: #f5e6cc; --c2: #edd0a2; --c3: #dfa765; --c4: #c66a36; --c5: #8f4a2a; --c6: #5a3a2c;
+       --display: 'DM Serif Display', serif; --dw: 400; --ds: 34px; --dt: 0; --body: 'DM Sans', sans-serif; --r: 3px; --rb: 8px; }
+  /* D — Meadow (geometric) */
+  .d { --paper: #faf6f0; --card: #f3ece3; --ink: #1f1b18; --soft: #7d7167; --line: #e3d9cc; --accent: #1f1b18; --on: #faf6f0;
+       --c1: #e6ddd2; --c2: #c9b9a8; --c3: #a48f7c; --c4: #b5601f; --c5: #7a5a44; --c6: #2a2420;
+       --display: 'Jost', sans-serif; --dw: 500; --ds: 32px; --dt: .01em; --body: 'Jost', sans-serif; --r: 50px; --rb: 50px; }
+  .d .hero .b1 { border-radius: 50%; width: 96px; height: 96px; top: 12px; right: 40px; }
+  .d .hero .b2 { border-radius: 50%; width: 56px; height: 56px; background: var(--c4); top: 70px; right: 16px; }
+  .d .hero svg.art { stroke-width: 1.3; }
+  .d .q small { color: var(--c4); }
+  .d .row .age { border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="intro">
+  <h1>Life Grid — four brand directions</h1>
+  <p>Each card shows the same pieces: a title treatment with one hand-drawn line motif over soft shapes, the grid with its spring-to-winter colours rebuilt from that palette, a question card, and the palette and fonts underneath. Mock-ups only; nothing here is wired into the app.</p>
+</div>
+
+<div class="wrap" id="wrap"></div>
+
+<script>
+// One line-art motif per direction, drawn for this page.
+const ART = {
+  a: '<path d="M52 124C50 96 54 66 60 30"/><path d="M58 44c-10-6-16-16-14-28 10 4 16 14 14 28zM56 62c12-4 22-14 24-28-12 2-22 12-24 28zM54 82c-12-4-22-14-24-26 12 0 22 10 24 26zM53 98c12-2 24-10 28-22-12 0-24 8-28 22zM52 112c-10-2-18-8-22-18 10-2 20 6 22 18z"/>',
+  b: '<path d="M54 124C52 100 56 76 58 56"/><path d="M58 56c-14 2-24-6-24-18 0-10 10-16 20-10M58 56c12 4 26-2 28-14 2-10-8-18-18-14M54 28c-2-10 6-18 16-16 8 2 10 12 4 20M58 56c-4-8-4-18 0-26"/><path d="M55 90c-10-2-18-10-20-20 10 0 18 8 20 20zM55 104c10-4 18-12 18-22-10 2-18 10-18 22z"/>',
+  c: '<path d="M56 124C52 100 54 80 60 62"/><path d="M60 62C44 60 34 46 38 30c14 2 24 16 22 32zM60 62c2-18 16-30 32-28-2 16-16 28-32 28zM60 62c-6-14 0-32 14-40 6 14 0 32-14 40z"/><path d="M60 62l-6-12M60 62l2-14M60 62l8-12M60 62l-12-4"/><path d="M55 96c-12 0-22-8-26-20 12 0 22 8 26 20z"/>',
+  d: '<path d="M52 124V58"/><circle cx="52" cy="40" r="3.2"/><path d="M52 40V18M52 40l16-15M52 40l22 0M52 40l16 15M52 40V62M52 40L36 55M52 40H30M52 40L36 25"/><circle cx="52" cy="16" r="2"/><circle cx="69.500" cy="23.500" r="2"/><circle cx="76" cy="40" r="2"/><circle cx="69.500" cy="56.500" r="2"/><circle cx="34.500" cy="56.500" r="2"/><circle cx="28" cy="40" r="2"/><circle cx="34.500" cy="23.500" r="2"/><path d="M52 104c8-4 14-10 16-18M52 112c-8-4-12-10-14-16"/>',
+};
+const DIRS = [
+  { k: 'a', name: 'A · Sage', line: 'Calm and botanical. Soft serif with a little character, greens carrying most of the life, sand for the later years.', fonts: '<b>Fraunces</b> headings · <b>Inter</b> text' },
+  { k: 'b', name: 'B · Blush', line: 'The lightest and most delicate. Tall elegant serif, rounded shapes, pinks and butter on near-white.', fonts: '<b>Cormorant Garamond</b> headings · <b>Nunito Sans</b> text' },
+  { k: 'c', name: 'C · Terracotta', line: 'Warm and confident. High-contrast serif, cream to caramel to deep brown; the strongest season ramp.', fonts: '<b>DM Serif Display</b> headings · <b>DM Sans</b> text' },
+  { k: 'd', name: 'D · Meadow', line: 'Modern and geometric. One clean sans throughout, pill-shaped cells, taupe and black with a single rust accent.', fonts: '<b>Jost</b> headings and text' },
+];
+const MON = 'JFMAMJJASOND';
+// A small fictional life: which palette step each run of months uses, and which months are filled.
+const HOMES = [[0, 1], [30, 2], [58, 3], [84, 4], [104, 5]];
+const filled = (n) => [2, 11, 14, 23, 30, 35, 41, 47, 52, 58, 59, 66, 71, 77, 83, 84, 90, 95, 101, 104, 107, 112].includes(n);
+
+document.getElementById('wrap').innerHTML = DIRS.map((d) => {
+  let rows = '<div class="row head"><span></span><span></span>' + [...MON].map((m) => `<span>${m}</span>`).join('') + '</div>';
+  for (let y = 0; y < 10; y++) {
+    let cells = '';
+    for (let m = 0; m < 12; m++) {
+      const n = y * 12 + m, step = [...HOMES].reverse().find(([from]) => n >= from)[1];
+      if (n < 2 || n > 113) { cells += '<i></i>'; continue; }
+      cells += `<i style="background:var(--c${step});opacity:${filled(n) ? 1 : .38}"></i>`;
+    }
+    const ageStep = Math.min(6, 1 + Math.floor(y / 1.8));
+    rows += `<div class="row"><span>${2016 + y}</span><span class="age" style="background:color-mix(in srgb, var(--c${ageStep}) 55%, var(--paper))">${y}</span>${cells}</div>`;
+  }
+  return `<section class="dir ${d.k}">
+    <div class="tag">${d.name}</div>
+    <div class="hero">
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <svg class="art" viewBox="0 0 104 128">${ART[d.k]}</svg>
+      <h2>Sam’s Life</h2><p>Every month, one line.</p>
+    </div>
+    <div class="bar"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><b>Sam’s Life</b><svg viewBox="0 0 24 24"><path d="M3 12h18M7 12V7M12 12V5M17 12V8"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></div>
+    <div class="grid">${rows}</div>
+    <div class="q"><small>Traditions</small><h3>What did summers usually involve?</h3><div class="in">Lake cabin</div><div class="btns"><div class="btn">Skip</div><div class="btn go">Next</div></div></div>
+    <div class="spec"><div class="sw">${[1, 2, 3, 4, 5, 6].map((i) => `<i style="background:var(--c${i})"></i>`).join('')}</div>${d.fonts}<br>${d.line}</div>
+  </section>`;
+}).join('');
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "schema": "life-grid-theme/1",
+  "id": "meadow",
+  "name": "Meadow",
+  "description": "Geometric and calm. Jost throughout, pill-shaped controls, near-black accent.",
+  "fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap",
+  "light": {
+    "--bg": "#faf6f0", "--surface": "#f3ece3", "--ink": "#1f1b18", "--dim": "#7d7167", "--line": "#e3d9cc",
+    "--accent": "#1f1b18", "--accent-ink": "#faf6f0", "--head": "#efe7dc",
+    "--font-body": "'Jost', system-ui, sans-serif",
+    "--font-display": "'Jost', system-ui, sans-serif",
+    "--display-weight": "500",
+    "--display-scale": "1.1",
+    "--r-cell": "9px", "--r-ctl": "50px", "--r-card": "14px"
+  },
+  "ramp": ["#c9b9a8", "#a48f7c", "#b5601f", "#7a5a44", "#2a2420"]
+}
