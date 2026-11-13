@@ -158,3 +158,22 @@ Run the script by hand against a sheet that was built over years, and score each
 - **Missed** — nothing in the flow leads there.
 
 The missed list is the input for the next revision of this script.
+
+## Age limits
+
+Questions that don't make sense for a young person are left out, using their age today in whole years
+(`src/script.ts`, `KIND_AGE` and each item's `age`):
+
+| Question | Asked from age |
+|---|---|
+| First paid job | 14 |
+| Other courses or qualifications | 15 |
+| Driver's license | 15 |
+| First car | 16 |
+| Children, partners, finishing secondary school | 16 |
+| College, university | 17 |
+| Work gaps, homes bought | 18 |
+| People close to you who died | 10 |
+
+A topic the person picks from the menu ignores these limits, so a twelve-year-old with a paper round
+can still add it. Everything else is asked at any age.

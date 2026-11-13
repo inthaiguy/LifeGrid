@@ -23,3 +23,11 @@
 ## Display
 - Which alternate view matters most after the grid: timeline, or parallel timeline?
 - Parallel with what first: world events, or another person's grid?
+- Comparing two lives (friend, spouse): what does the view show? Candidates: side-by-side grids,
+  one grid with a second colour where the two people were in the same place, and a timeline of
+  shared months.
+- How does the second grid get in without a server: paste a share link, or open two links in one
+  page? Only the read-only share link should ever be used for this.
+- Privacy: the other person's link shows their whole life. Does comparing need a redacted view,
+  or a way to share only chosen years?
+- What happens to "the month we met"? A shared-since marker that appears in both grids could be a good anchor.

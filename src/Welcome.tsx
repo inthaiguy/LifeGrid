@@ -64,10 +64,15 @@ export default function Welcome({ onCommit, onFinish, onImport, onSkip }: {
       if ((e.target as HTMLElement | null)?.closest?.('.wlinks')) return;
       unlock(); startJingle(); setStep('intro');
     };
-    addEventListener('pointerdown', go); addEventListener('keydown', go);
-    return () => { removeEventListener('pointerdown', go); removeEventListener('keydown', go); };
+    // 'click', not 'pointerdown': on a phone the tap's click arrives after the step changes, and would count as a tap to skip the intro typing.
+    addEventListener('click', go); addEventListener('keydown', go);
+    return () => { removeEventListener('click', go); removeEventListener('keydown', go); };
   }, [step]);
   useEffect(() => { if (step === 'card') pop(); }, [step]);
+  // Never leave the event form hidden: show it after a few seconds even if the prompt's typing stalls (slow or throttled phones).
+  useEffect(() => { if (step !== 'event') return; const t = setTimeout(() => setReady(true), 3500); return () => clearTimeout(t); }, [step]);
+  // When the form appears, make sure it is on screen (a phone keyboard can cover it).
+  useEffect(() => { if (ready) setTimeout(() => end.current?.scrollIntoView({ behavior: 'auto', block: 'end' }), 50); }, [ready]);
 
   // The last beat: hand the cell to the grid, then carry the card from where it sits to its square.
   useLayoutEffect(() => {

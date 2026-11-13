@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { type State, type YM, ym, yOf, mOf, nowYM, homeAt, colorOf, fmt } from './model';
+import { type State, type YM, ym, yOf, mOf, nowYM, lastYM, homeAt, colorOf, fmt } from './model';
 
 // Tree view: a sketched bare tree as old as the person, beside a cross-section with one ring per year.
 // Everything is drawn by code from the age and a seed taken from the person, so the same life
@@ -118,10 +118,10 @@ function growTree(age: number, seed: string) {
 
 /* ---------- the cross-section ---------- */
 
-interface Pick { at: YM; k: number; text: string }
+export interface Pick { at: YM; k: number; text: string }
 
 /** At most one event per year, spread evenly across the life, one-off and confirmed events first. */
-function pickEvents(s: State, age: number, slots: number): Pick[] {
+export function pickEvents(s: State, age: number, slots: number): Pick[] {
   const by = s.birth!.y, norm = (t: string) => t.toLowerCase().replace(/\d+(st|nd|rd|th)?/g, '#').trim();
   const freq: Record<string, number> = {};
   for (const c of Object.values(s.cells)) freq[norm(c.t)] = (freq[norm(c.t)] || 0) + 1;
@@ -169,7 +169,7 @@ function Rings({ s, age, wide, seed, onCell }: { s: State; age: number; wide: bo
   };
   const by = s.birth!.y;
   const bands = w.map((_, k) => {
-    const y = Math.min(by + k, yOf(nowYM())), home = homeAt(s, ym(y, k === age ? mOf(nowYM()) : 7));
+    const y = Math.min(by + k, yOf(lastYM(s))), home = homeAt(s, ym(y, k === age ? mOf(lastYM(s)) : 7));
     return { d: ring(edge[k + 1], 0.5, r() * 6.28), fill: `color-mix(in srgb, ${colorOf(s, home)} 34%, ${k % 2 ? '#e9d6b6' : '#dfc9a4'})`, decade: k > 0 && k % 10 === 0 };
   }).reverse();                                               // widest first, so each sits on the one outside it
   const cracks = Array.from({ length: age > 6 ? 3 : age > 2 ? 1 : 0 }, () => {
@@ -231,7 +231,7 @@ export default function Tree({ s, onCell }: { s: State; onCell?: (at: YM) => voi
   }, [!!s.birth]);
   const row = cw >= 640, two = cw >= 1130;
   if (!s.birth) return <div className="grid-empty"><p>Your life, as a tree.</p><p className="dim">Answer the first question and it starts to grow.</p></div>;
-  const now = nowYM(), age = Math.max(0, yOf(now) - s.birth.y - (mOf(now) < s.birth.m ? 1 : 0));
+  const now = lastYM(s), age = Math.max(0, yOf(now) - s.birth.y - (mOf(now) < s.birth.m ? 1 : 0));
   const seed = `${s.name || ''}|${s.birth.y}-${s.birth.m}|${s.birth.place}`;
   const t = useMemo(() => growTree(age, seed), [age, seed]); // thousands of twigs: draw once per life, not per render
   return (

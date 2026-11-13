@@ -300,6 +300,15 @@ const DEFS: Record<string, Def> = {
 };
 
 const R = { repeat: true };
+
+/**
+ * Questions that make no sense for a young person are dropped by age (in whole years, today).
+ * An item carries its own `age` in its params; these are the kinds that have their own definitions.
+ * A topic the user picks from the menu ignores the limits (`nogate`), in case a twelve-year-old does have a paper round.
+ */
+const KIND_AGE: Record<string, number> = { college: 17, partner: 16, hsgrad: 16 };
+const ageYears = (s: State): number => { const n = nowYM(), b = birthYM(s); return Math.floor(((yOf(n) - yOf(b)) * 12 + mOf(n) - mOf(b)) / 12); };
+const tooYoung = (s: State, it: Item): boolean => !!s.birth && !it.p?.nogate && ageYears(s) < (it.p?.age ?? KIND_AGE[it.k] ?? 0);
 export const START: Item[] = [
   { k: 'birth' },
   { k: 'move', p: { n: 0 } },
@@ -307,22 +316,22 @@ export const START: Item[] = [
   { k: 'schoolmonth' },
   ev('School', 'Did you change schools, skip or repeat a year? When?', { what: 'What happened', def: 'New school', ...R }),
   { k: 'college', p: { n: 0 } },
-  ev('School', 'Any other course or qualification that took a month or more?', { what: 'Course', tpl: 'Start {}', ...R }),
+  ev('School', 'Any other course or qualification that took a month or more?', { what: 'Course', tpl: 'Start {}', age: 15, ...R }),
   { k: 'tradition', p: { n: 0 } },
   { k: 'tradition', p: { n: 0, holiday: true } },
-  ev('Work', 'What was your first paid job, and when did you start?', { what: 'Job or employer', tpl: 'Start {}', q2: 'Next job, and when did you start?', cue: 'jobs', skip: 'No more jobs', ...R }),
-  ev('Work', 'Any gaps — laid off, sabbatical, parental leave, between things?', { what: 'What', ...R }),
+  ev('Work', 'What was your first paid job, and when did you start?', { what: 'Job or employer', tpl: 'Start {}', q2: 'Next job, and when did you start?', cue: 'jobs', skip: 'No more jobs', age: 14, ...R }),
+  ev('Work', 'Any gaps — laid off, sabbatical, parental leave, between things?', { what: 'What', age: 18, ...R }),
   ev('People', 'Younger siblings: name and when they were born.', { what: 'Name', tpl: '{} born', cue: 'siblings', ...R }),
-  ev('People', 'Children: name and when they were born.', { what: 'Name', tpl: '{} born', cue: 'children', anchor: '{}’s birthday', ...R }),
+  ev('People', 'Children: name and when they were born.', { what: 'Name', tpl: '{} born', cue: 'children', anchor: '{}’s birthday', age: 16, ...R }),
   { k: 'partner', p: { n: 0 } },
   ev('People', 'Weddings you were in or travelled for — whose, and roughly when?', { what: 'Whose', tpl: '{}’s wedding', ...R }),
-  ev('People', 'People close to you who died — who, and when? (Entirely optional.)', { what: 'Who', tpl: '{} died', ...R }),
+  ev('People', 'People close to you who died — who, and when? (Entirely optional.)', { what: 'Who', tpl: '{} died', age: 10, ...R }),
   ev('People', 'Pets: name, and when they arrived.', { what: 'Pet’s name', tpl: 'Got {}', cue: 'pets', ...R }),
   { k: 'bdays' },
   { k: 'anchors' },
-  ev('Firsts', 'When did you get your driver’s license?', { text: 'Driver’s license' }),
-  ev('Firsts', 'When did you get your first car?', { text: 'First car' }),
-  ev('Firsts', 'Homes you bought or built — which, and when?', { what: 'Which', tpl: 'Bought {}', ...R }),
+  ev('Firsts', 'When did you get your driver’s license?', { text: 'Driver’s license', age: 15 }),
+  ev('Firsts', 'When did you get your first car?', { text: 'First car', age: 16 }),
+  ev('Firsts', 'Homes you bought or built — which, and when?', { what: 'Which', tpl: 'Bought {}', age: 18, ...R }),
   ev('Firsts', 'Purchases you still remember making — a bike, instrument, computer, boat?', { what: 'What', tpl: 'Bought {}', ...R }),
   ev('Firsts', 'When was your first flight?', { text: 'First flight' }),
   ev('Firsts', 'Where and when was your first time abroad?', { what: 'Where', tpl: '{} trip' }),
@@ -345,13 +354,14 @@ export const TOPICS = STAGES.slice(1);
 export const pending = (s: State): string[] => TOPICS.filter((t) => s.queue.some((it) => stageOf(s, it) === t));
 
 /** A topic's questions from the top, phrased for someone whose grid already has homes in it. */
-const topicItems = (s: State, stage: string): Item[] => structuredClone(START.filter((it) => stageOf(s, it) === stage))
-  .map((it) => (it.k === 'move' && s.homes.length > 1 ? { k: 'move', p: { n: 1 } } : it));
+const topicItems = (s: State, stage: string, nogate = false): Item[] => structuredClone(START.filter((it) => stageOf(s, it) === stage))
+  .map((it) => (it.k === 'move' && s.homes.length > 1 ? { k: 'move', p: { n: 1 } } : it))
+  .map((it) => (nogate ? { ...it, p: { ...it.p, nogate: true } } : it));
 
 /** Jump to a topic: its waiting questions move to the front; a finished topic starts again from its first question. */
 export function goTopic(s: State, stage: string) {
   const mine = s.queue.filter((it) => stageOf(s, it) === stage);
-  s.queue = [...(mine.length ? mine : topicItems(s, stage)), ...s.queue.filter((it) => stageOf(s, it) !== stage)];
+  s.queue = [...(mine.length ? mine : topicItems(s, stage, true)), ...s.queue.filter((it) => stageOf(s, it) !== stage)];
   s.done = false;
   normalize(s);
 }
@@ -369,6 +379,7 @@ export function normalize(s: State) {
     const it = s.queue[0];
     if (!it) { s.done = true; return; }
     const d = DEFS[it.k];
+    if (tooYoung(s, it)) { s.queue.shift(); continue; }
     if (d?.expand) { s.queue.splice(0, 1, ...d.expand(s, it.p)); continue; }
     if (!d?.view || !d.view(s, it.p)) { s.queue.shift(); continue; }
     return;

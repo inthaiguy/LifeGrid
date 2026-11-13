@@ -133,7 +133,7 @@ button.danger { color: #d64545; }
 .shelf button { flex: none; } .shelf .grow { flex: 1; }
 .stats b { font-size: 34px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
 .stats p { margin: 4px 0 0; font-size: 13px; }
-.ymf.two { grid-template-columns: 1fr auto; }
+.ymf.two { grid-template-columns: 1fr auto; } .ymf.two:has(.icon) { grid-template-columns: 1fr auto auto; }
 .ymf.three { grid-template-columns: 1.3fr .7fr 1fr; }
 @media (prefers-reduced-motion: reduce) { .shelf, .scrim.side { transition: none; } }
 
@@ -348,3 +348,39 @@ button.chip.here { border-color: var(--accent); color: var(--ink); }
 .unlock-meter { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; margin: 8px 0 4px; }
 .unlock-meter i { display: block; height: 100%; background: var(--accent); border-radius: 3px; transition: width .5s; }
 @media (prefers-reduced-motion: reduce) { .gate, .cell.lock { animation: none; } }
+
+.acts { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; } .acts .link { font-size: 13px; color: var(--dim); text-decoration: underline; padding: 4px 0; background: none; border: 0; cursor: pointer; }
+
+.cell { position: relative; }
+
+
+
+/* Event marks are an imprint: the cell's own colour, nudged a little darker (filled cells) or toward the ink (empty ones). */
+.cell { --b: var(--c); } .cell.empty { --b: color-mix(in srgb, var(--c) 30%, var(--bg)); } .cell.ph { --b: color-mix(in srgb, var(--c) 50%, var(--bg)); }
+.cell .towers { --m: color-mix(in srgb, var(--ink) 20%, var(--b)); position: absolute; right: 3px; bottom: 0; height: 100%; width: auto; max-width: 75%; pointer-events: none; }
+.cell.on .towers { --m: color-mix(in srgb, #000 26%, var(--b)); }
+.cell .towers .sil { fill: var(--m); } .cell .towers .ln { fill: none; stroke: var(--m); stroke-width: 1.8; stroke-linecap: round; }
+.cell .towers .gap { fill: none; stroke: var(--b); stroke-width: .8; } .cell .towers .hole { fill: var(--b); }
+
+/* Voyager view: the same pencil tones as the tree, on a page-sized drawing. */
+main:has(.voyager) { min-width: 0; }
+.voyager { position: relative; height: calc(100dvh - var(--tl-top, 58px)); min-height: 440px; overflow: hidden;
+  --t-fine: #7f848b; --t-mid: #55514d; --t-dark: #3a3633; --t-deep: #262321; --t-light: #b9b7ab; }
+@media (prefers-color-scheme: dark) { .voyager { --t-fine: #7d8289; --t-mid: #aeaba3; --t-dark: #c9c6bd; --t-deep: #8a867e; --t-light: #f3f1e9; } }
+.voyager svg { display: block; }
+.voyager .s-fine { stroke: var(--t-fine); } .voyager .s-mid { stroke: var(--t-mid); } .voyager .s-dark { stroke: var(--t-dark); } .voyager .s-light { stroke: var(--t-light); }
+.voyager .f-fine { fill: var(--t-fine); }
+.voyager stop.t-light { stop-color: var(--t-light); } .voyager stop.t-mid { stop-color: var(--t-mid); } .voyager stop.t-deep { stop-color: var(--t-deep); } .voyager stop.t-fine { stop-color: var(--t-fine); }
+.voyager text { font-size: var(--fs, 12px); }
+.voyager .tick { font-size: 9.5px; fill: var(--dim); font-variant-numeric: tabular-nums; }
+.vl path { stroke: var(--t-mid); stroke-width: .7; stroke-opacity: .6; fill: none; }
+.vl circle { fill: var(--t-dark); }
+.vl .lead { font-weight: 600; fill: var(--ink); } .vl .rest { fill: var(--dim); }
+.vl.life .lead { font-variant-numeric: tabular-nums; fill: var(--dim); } .vl.life .rest { fill: var(--ink); }
+.vl.you circle { fill: var(--accent); } .vl.you .lead { fill: var(--accent); }
+.vl.faint .lead, .vl.faint .rest { fill: var(--dim); font-style: italic; font-weight: 400; } .vl.faint circle { fill: var(--t-fine); }
+.vl.can { cursor: pointer; } .vl.can:hover text { text-decoration: underline; }
+.voyager .sum { position: absolute; left: 16px; top: 8px; margin: 0; max-width: min(46ch, calc(100% - 32px)); font-size: 14px; line-height: 1.35; color: var(--ink); }
+.voyager .note { position: absolute; left: 16px; right: 16px; bottom: 6px; margin: 0; font-size: 11px; font-style: italic; color: var(--dim); }
+
+.row:not(.head) .age.gone { background: var(--bg); color: var(--dim); opacity: .55; font-weight: 400; }

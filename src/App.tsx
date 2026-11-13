@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import { type State, type YM, fresh, stats, toCSV, toJSON, fmt, addM, homeAt, setBirth, MON, colorOf, places, short, inLife, yOf, ym } from './model';
+import { type State, type YM, fresh, stats, toCSV, toJSON, fmt, addM, homeAt, setBirth, MON, colorOf, places, short, inLife, yOf, ym , nowYM } from './model';
 import { START, TOPICS, normalize, current, answer, skip, begin, pending, goTopic, resume } from './script';
 import { encode, decode } from './share';
 import Grid from './Grid';
 import Timeline from './Timeline';
 import Tree from './Tree';
+import Voyager from './Voyager';
 import { parseSheet, type Parsed } from './import';
 import { photosLink, googleCalLink, appleCalLink, gmailLink, GMAIL_START, IS_IOS } from './photos';
 import { NOFILL } from './nofill';
@@ -47,7 +48,11 @@ export default function App() {
   const [editing, setEditing] = useState<YM | null>(null);
   const [importing, setImporting] = useState(false);
   const [link, setLink] = useState('');
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState('');
+  const own = link.replace('#s.', '#'); // the owner link: opens the grid for editing
+  const mail = (subject: string, body: string) => `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const sendLink = (t: string) => { if (typeof navigator.share === 'function') navigator.share({ title: 'My Life Grid', url: t }).catch(() => {}); else doCopy(t === own ? 'own' : 'share', t); }; // the phone's share sheet, or copy where there is none
+  const doCopy = (k: string, t: string) => { copyText(t).then((ok) => { if (!ok) return; setCopied(k); setTimeout(() => setCopied(''), 1500); }); };
   const [bad, setBad] = useState(false);
   const hist = useRef<string[]>(VIEWING ? [] : loadHist());
   // Questions live in the left shelf at every size. On a wide screen it docks beside the grid; on a phone it slides over it.
@@ -164,6 +169,8 @@ export default function App() {
             ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M7 12a.6.6 0 1 0 .01 0M12 12a.6.6 0 1 0 .01 0M17 12a.6.6 0 1 0 .01 0" />
             : nextMode === 'hw'
               ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M9.5 12v5M14.5 12v6" />
+            : nextMode === 'voyager'
+              ? <path d="M12 12m-3.2 0a3.2 3.2 0 1 0 6.4 0a3.2 3.2 0 1 0-6.4 0M3 15.500c3 2.500 15 -2.500 18 -7M4 4.500l.01 0M19 18.500l.01 0M17.500 4l.01 0" />
             : nextMode === 'tree'
               ? <path d="M12 21v-8M12 13c-5 0-7.5-2.4-7.5-5.4C4.500 4.800 6.800 3 9.300 3.600 10 2.600 11 2.200 12 2.200s2 .4 2.700 1.400c2.500-.6 4.800 1.200 4.800 4 0 3-2.500 5.400-7.500 5.400zM12 17l3-2.500M8.500 21h7" />
             : nextMode === 'v'
@@ -192,10 +199,12 @@ export default function App() {
           onSkip={() => { setIntro(false); setMenu(true); }} />}
         <main>{mode === 'grid'
           ? <Grid s={s} read={read} full onCell={VIEWING ? undefined : setEditing} />
+          : mode === 'voyager'
+            ? <Voyager s={s} onCell={VIEWING ? undefined : setEditing} />
           : mode === 'tree'
             ? <Tree s={s} onCell={VIEWING ? undefined : setEditing} />
             : <Timeline s={s} dir={mode === 'v' ? 'v' : 'h'} world={mode === 'hw'} onCell={VIEWING ? undefined : setEditing} />}</main>
-        {s.birth && mode !== 'h' && mode !== 'hw' && ( // the horizontal timeline names each home on its own band
+        {s.birth && mode !== 'h' && mode !== 'hw' && mode !== 'voyager' && ( // the horizontal timeline names each home on its own band
           <aside className="legend">
             {places(s).map((p) => <span key={p}><i style={{ background: colorOf(s, p) }} />{short(p)}</span>)}
             {!VIEWING && menu && st.placeholders > 0 && <span className="key"><i className="k-ph" />to confirm</span>}
@@ -221,6 +230,7 @@ export default function App() {
           // From a JSON export: add homes and stays that aren't here yet.
           if (!d.name && p.name) d.name = p.name;
           if (!d.birth.d && p.birthDay && ym(d.birth.y, d.birth.m) === p.first) d.birth.d = p.birthDay;
+          if (!d.death && p.death) d.death = p.death;
           for (const h of p.homes || []) if (h.from >= from && !d.homes.some((x) => x.from === h.from)) d.homes.push(h);
           d.homes.sort((a, b) => a.from.localeCompare(b.from));
           for (const x of p.stays || []) if (x.from >= from && !d.stays.some((y) => y.from === x.from && y.to === x.to)) d.stays.push(x);
@@ -274,6 +284,7 @@ export default function App() {
                 onBlur={(e) => { const n = e.target.value.trim(); if (n !== (s.name || '')) setS({ ...s, name: n || undefined, changed: [] }); }}
                 onKeyDown={(e) => { if (e.key === 'Enter') (e.target as HTMLElement).blur(); }} /></div>
             <BirthFix s={s} onSave={(y, m) => { commit((d) => setBirth(d, y, m)); if (!wide) setMenu(false); }} />
+            <DeathFix s={s} onSave={(death) => { commit((d) => { d.death = death; }); if (!wide) setMenu(false); }} />
 
               </details>)}
             <details className="more"><summary>Appearance</summary>
@@ -290,15 +301,38 @@ export default function App() {
                 <p className="dim small">Saved on this device only. Shared links carry your data, not your theme. Some themes load fonts from Google Fonts.</p>
               </div>
             </details>
-            {s.birth && <div className="field"><label>Share link — read-only, shows everything in the grid</label>
-              <div className="ymf two">
-                <input {...NOFILL} readOnly value={link} onFocus={(e) => e.target.select()} />
-                <button className="ghost" onClick={() => { copyText(link).then((ok) => { if (!ok) return; setCopied(true); setTimeout(() => setCopied(false), 1500); }); }}>{copied ? 'Copied' : 'Copy'}</button>
-              </div></div>}
+            {s.birth && (
+              <details className="more"><summary>Save your progress</summary>
+                <div className="field"><label>Your link — it holds your whole grid, and it’s yours to edit</label>
+                  <div className="ymf two">
+                    <input {...NOFILL} readOnly value={own} onFocus={(e) => e.target.select()} />
+                    <button className="ghost" onClick={() => doCopy('own', own)}>{copied === 'own' ? 'Copied' : 'Copy'}</button>
+                    <button className="icon" aria-label="Share" title="Share" onClick={() => sendLink(own)}><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1" /></svg></button>
+                  </div>
+                  <div className="acts">
+                    <a className="link" href={mail('My Life Grid', `Keep this link to come back to my life grid:\n\n${own}`)}>Email it to myself</a>
+                    <button className="link" onClick={downloadJSON}>Download JSON</button>
+                    <button className="link" onClick={download}>Download CSV</button>
+                  </div>
+                  <p className="dim small">Nothing is stored on our servers. Bookmark this page or add it to your home screen, and save the link again after a big session — it changes as you add cells. Keep it private: anyone with it can edit.</p>
+                </div>
+              </details>)}
+            {s.birth && (
+              <details className="more"><summary>Share your grid</summary>
+                <div className="field"><label>Share link — read-only, shows everything in the grid</label>
+                  <div className="ymf two">
+                    <input {...NOFILL} readOnly value={link} onFocus={(e) => e.target.select()} />
+                    <button className="ghost" onClick={() => doCopy('share', link)}>{copied === 'share' ? 'Copied' : 'Copy'}</button>
+                    <button className="icon" aria-label="Share" title="Share" onClick={() => sendLink(link)}><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1" /></svg></button>
+                  </div>
+                  <div className="acts">
+                    <a className="link" href={mail('My Life Grid', `Here’s my life grid:\n\n${link}`)}>Send by email</a>
+                  </div>
+                  <p className="dim small">Anyone with this link can look, but not change anything.</p>
+                </div>
+              </details>)}
             <span className="grow" />
             <button className="link" onClick={() => setImporting(true)}>{s.birth ? 'Import a sheet' : 'Already have a life sheet? Import it'}</button>
-            {s.birth && <button className="link" onClick={download}>Download CSV</button>}
-            {s.birth && <button className="link" onClick={downloadJSON}>Download JSON</button>}
             {hist.current.length > 0 && !asking && <button className="link" onClick={back}>Undo last change</button>}
             {s.birth && <button className="ghost danger" onClick={() => { if (confirm('Erase this grid and start over?')) { localStorage.removeItem(KEY); localStorage.removeItem(HKEY); history.replaceState(null, '', location.pathname); hist.current = []; const n = fresh(START); normalize(n); setS(n); setMenu(true); } }}>Start over</button>}
           </nav>
@@ -397,6 +431,28 @@ function BirthFix({ s, onSave }: { s: State; onSave: (y: number, m: number) => v
         <input {...NOFILL} inputMode="numeric" pattern="[0-9]*" maxLength={4} value={y} onChange={(e) => setY(e.target.value.replace(/\D/g, ''))} aria-label="Birth year" />
         <button type="button" className="ghost" disabled={!ok} onClick={() => onSave(+y, +m)}>Update</button>
       </div>
+    </div>
+  );
+}
+
+/** For someone who has died: the grid and the count stop at their death month; the year rows carry on to today. */
+function DeathFix({ s, onSave }: { s: State; onSave: (d?: State['death']) => void }) {
+  const [open, setOpen] = useState(!!s.death);
+  const [m, setM] = useState(String(s.death?.m || ''));
+  const [y, setY] = useState(String(s.death?.y || ''));
+  const at = +y >= 1900 && m ? ym(+y, +m) : '';
+  const ok = !!at && at >= ym(s.birth!.y, s.birth!.m) && at <= nowYM();
+  if (!open) return <button type="button" className="link" onClick={() => setOpen(true)}>This person has passed away</button>;
+  return (
+    <div className="field fix">
+      <label>Passed away</label>
+      <div className="ymf">
+        <select {...NOFILL} value={m} onChange={(e) => setM(e.target.value)} aria-label="Month of death"><option value="">Month</option>{MON.map((n, i) => <option key={n} value={i + 1}>{n}</option>)}</select>
+        <input {...NOFILL} inputMode="numeric" pattern="[0-9]*" maxLength={4} placeholder="Year" value={y} onChange={(e) => setY(e.target.value.replace(/\D/g, ''))} aria-label="Year of death" />
+        <button type="button" className="ghost" disabled={!ok || (s.death?.y === +y && s.death?.m === +m)} onClick={() => onSave({ y: +y, m: +m, d: s.death?.y === +y && s.death?.m === +m ? s.death.d : undefined })}>{s.death ? 'Update' : 'Set'}</button>
+      </div>
+      <p className="dim small">The grid and the count stop at this month. The years after it stay, so you can see how long ago it was.</p>
+      {s.death ? <button type="button" className="link" onClick={() => { onSave(undefined); setOpen(false); setM(''); setY(''); }}>Not passed away after all</button> : <button type="button" className="link" onClick={() => setOpen(false)}>Cancel</button>}
     </div>
   );
 }

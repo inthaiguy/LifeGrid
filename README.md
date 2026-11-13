@@ -93,6 +93,10 @@ Then open http://localhost:5173. `npm run build` type-checks and builds to `dist
   ("Where were you for your birthday in 2019?", "You'd just moved to Chiang Mai — what was the first trip you took?").
 - World-events layer for context and for the parallel timeline.
 - Photo metadata: read dates and GPS from a local photo export in the browser; nothing uploaded.
+- **Compare lives (to do).** Let someone lay their grid next to a friend's or spouse's: open a
+  second share link beside their own and see where the two lives overlap (same place, same
+  months), where they diverged, and when they met. Both grids stay in their own links, so
+  nothing is stored; the comparison is computed in the browser. See `docs/open-questions.md`.
 
 ### Phase 3 — Connected sources
 - Check-in history (Foursquare/Swarm), calendar, social-network exports.

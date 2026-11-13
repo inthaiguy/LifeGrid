@@ -18,6 +18,7 @@ export interface State {
   id: string;
   name?: string;
   birth?: { y: number; m: number; place: string; d?: number }; // d = day of the month, when known
+  death?: { y: number; m: number; d?: number }; // set for someone who has died: the grid and the count end here
   homes: { from: YM; place: string }[];
   stays: { from: YM; to: YM; place: string }[];
   cells: Record<YM, Cell>;
@@ -39,7 +40,9 @@ export const fresh = (queue: Item[]): State => ({
 });
 
 export const birthYM = (s: State): YM => ym(s.birth!.y, s.birth!.m);
-export const inLife = (s: State, at: YM) => !!s.birth && at >= birthYM(s) && at <= nowYM();
+/** The last month of the life: the death month, or this month for someone living. */
+export const lastYM = (s: State): YM => (s.death && ym(s.death.y, s.death.m) < nowYM() ? ym(s.death.y, s.death.m) : nowYM());
+export const inLife = (s: State, at: YM) => !!s.birth && at >= birthYM(s) && at <= lastYM(s);
 
 export function homeAt(s: State, at: YM): string | undefined {
   for (const st of s.stays) if (at >= st.from && at <= st.to) return st.place;
@@ -52,7 +55,7 @@ export function homeAt(s: State, at: YM): string | undefined {
 export function spans(s: State) {
   return s.homes.map((h, i) => ({
     place: h.place, from: h.from,
-    to: i + 1 < s.homes.length ? addM(s.homes[i + 1].from, -1) : nowYM(),
+    to: i + 1 < s.homes.length ? addM(s.homes[i + 1].from, -1) : lastYM(s),
   }));
 }
 
@@ -86,7 +89,7 @@ export const colorOf = (s: State, place?: string) => {
   const i = place ? places(s).indexOf(place) : -1;
   if (i < 0) return place || places(s).length ? '#7d8590' : season(0.12); // no homes yet: the colour the first one will get
   // Places run along the ramp in the order they were lived in, ending at the season the person is in now.
-  const n = places(s).length, end = Math.min(1, Math.max(0.5, (yOf(nowYM()) - s.birth!.y) / LIFE));
+  const n = places(s).length, end = Math.min(1, Math.max(0.5, (yOf(lastYM(s)) - s.birth!.y) / LIFE));
   return season(n > 1 ? 0.03 + (end - 0.03) * (i / (n - 1)) : 0.12);
 };
 
@@ -123,10 +126,10 @@ export function setBirth(s: State, y: number, m: number) {
 
 export function stats(s: State) {
   if (!s.birth) return { total: 0, filled: 0, placeholders: 0, pct: 0 };
-  const b = birthYM(s), n = nowYM();
+  const b = birthYM(s), n = lastYM(s);
   const total = (yOf(n) - yOf(b)) * 12 + mOf(n) - mOf(b) + 1;
   let filled = 0, placeholders = 0;
-  for (const c of Object.values(s.cells)) c.p ? placeholders++ : filled++;
+  for (const [k, c] of Object.entries(s.cells)) if (k >= b && k <= n) c.p ? placeholders++ : filled++; // months after a death don't count
   return { total, filled, placeholders, pct: total ? Math.round((filled / total) * 100) : 0 };
 }
 
@@ -137,7 +140,7 @@ export function toCSV(s: State): string {
   for (let y = s.birth.y; y <= yOf(nowYM()); y++) {
     const cells = MON.map((_, i) => { const c = s.cells[ym(y, i + 1)]; return c ? q(c.p ? `(${c.t})` : c.t) : ''; });
     const homes = [...new Set(MON.map((_, i) => inLife(s, ym(y, i + 1)) ? homeAt(s, ym(y, i + 1)) : undefined).filter(Boolean))];
-    rows.push([y, y - s.birth.y, ...cells, q(homes.join(' / '))].join(','));
+    rows.push([y, s.death && y > s.death.y ? '' : y - s.birth.y, ...cells, q(homes.join(' / '))].join(','));
   }
   return rows.join('\n');
 }
@@ -154,6 +157,7 @@ export function toJSON(s: State): string {
     exportedAt: new Date().toISOString(),
     name: s.name || undefined,
     birth: { month: ym(s.birth.y, s.birth.m), ...(s.birth.d ? { date: `${ym(s.birth.y, s.birth.m)}-${String(s.birth.d).padStart(2, '0')}` } : {}), place: s.birth.place },
+    death: s.death ? { month: ym(s.death.y, s.death.m), ...(s.death.d ? { date: `${ym(s.death.y, s.death.m)}-${String(s.death.d).padStart(2, '0')}` } : {}) } : undefined,
     homes: s.homes.map((h) => ({ from: h.from, place: h.place })),
     stays: s.stays.map((t) => ({ from: t.from, to: t.to, place: t.place })),
     cells,

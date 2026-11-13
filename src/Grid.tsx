@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { EVENTS, EventMark } from './events';
 import { type State, type YM, MON, ym, yOf, addM, nowYM, inLife, homeAt, colorOf, inkOn, ageColor, fmt, short } from './model';
 
 /** How far through the current month we are, and what is left of it in a few characters. */
@@ -13,6 +14,7 @@ function timerLink(at: YM): string {
   const label = encodeURIComponent(`Update your Life Grid for ${fmt(at)}`).replace(/%20/g, '+');
   return `https://eggtimer.app/${label}/at/${addM(at, 1)}-01`;
 }
+
 
 export default function Grid({ s, read, full, onCell }: { s: State; read: boolean; full?: boolean; onCell?: (at: YM) => void }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -33,7 +35,7 @@ export default function Grid({ s, read, full, onCell }: { s: State; read: boolea
     return <div className="grid-empty"><p>Your life, one month per square.</p><p className="dim">Answer the first question and the grid appears here.</p></div>;
   }
 
-  const now = nowYM(), left = monthLeft();
+  const now = s.death ? '' : nowYM(), left = monthLeft(); // someone who has died has no month in progress
   const years: number[] = [];
   for (let y = s.birth.y; y <= yOf(nowYM()); y++) years.push(y);
 
@@ -52,15 +54,18 @@ export default function Grid({ s, read, full, onCell }: { s: State; read: boolea
       </div>
       {years.map((y) => (
         <div className="row" key={y}>
-          <div className="yr">{y}</div><div className="age" style={{ ['--a' as any]: ageColor(y - s.birth!.y) }}>{y - s.birth!.y}</div>
+          <div className="yr">{y}</div>{s.death && y > s.death.y
+            ? <div className="age gone" title={`${y - s.death.y} year${y - s.death.y === 1 ? '' : 's'} since ${s.name || 'they'} died`}>+{y - s.death.y}</div>
+            : <div className="age" style={{ ['--a' as any]: ageColor(y - s.birth!.y) }}>{y - s.birth!.y}</div>}
           {MON.map((_, i) => {
             const at = ym(y, i + 1);
             if (!inLife(s, at)) return <div key={at} className="cell off" />;
             const c = s.cells[at], col = colorOf(s, homeAt(s, at));
             const cls = `cell ${c ? (c.p ? 'ph' : 'on') : 'empty'}${s.changed.includes(at) ? ' flash' : ''}`;
             const cell = (
-              <button key={at} data-ym={at} className={cls + (at === now ? ' now' : '')} style={{ ['--c' as any]: col, ['--t' as any]: inkOn(col), ['--p' as any]: at === now ? `${Math.round(left.done * 100)}%` : undefined }} onClick={onCell && (() => onCell(at))} aria-label={`${fmt(at)}${c ? `: ${c.t}` : ''}`}>
+              <button key={at} data-ym={at} className={cls + (at === now ? ' now' : '')} style={{ ['--c' as any]: col, ['--t' as any]: inkOn(col), ['--p' as any]: at === now ? `${Math.round(left.done * 100)}%` : undefined }} onClick={onCell && (() => onCell(at))} aria-label={`${fmt(at)}${EVENTS[at] ? ` (${EVENTS[at].label})` : ''}${c ? `: ${c.t}` : ''}`} title={EVENTS[at] ? `${EVENTS[at].title}: ${EVENTS[at].label}` : undefined}>
                 {read && c ? <span>{c.t}</span> : null}
+                <EventMark at={at} />
               </button>
             );
             if (at !== now) return cell;

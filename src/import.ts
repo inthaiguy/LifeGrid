@@ -12,6 +12,7 @@ export interface Parsed {
   /** Only from a life-grid JSON export (docs/data-format.md). */
   name?: string;
   birthDay?: number;
+  death?: { y: number; m: number; d?: number };
   homes?: { from: YM; place: string }[];
   stays?: { from: YM; to: YM; place: string }[];
 }
@@ -25,9 +26,11 @@ export function parseJSON(text: string): Parsed | null {
   try { j = JSON.parse(text); } catch { return null; }
   if (!j || typeof j.schema !== 'string' || !/^life-grid\/1(\.|$)/.test(j.schema) || !isYM(j.birth?.month) || !Array.isArray(j.cells)) return null;
   const now = nowYM(), cells: Parsed['cells'] = {};
+  const dm = isYM(j.death?.month) && j.death.month >= j.birth.month ? j.death.month : undefined; // a death month ends the life: later cells are dropped
+  const end = dm && dm < now ? dm : now;
   for (const c of j.cells) {
     const t = str(c?.text);
-    if (isYM(c?.month) && c.month >= j.birth.month && c.month <= now && t) cells[c.month] = c.confirmed === false ? { t, p: true } : { t };
+    if (isYM(c?.month) && c.month >= j.birth.month && c.month <= end && t) cells[c.month] = c.confirmed === false ? { t, p: true } : { t };
   }
   const homes = (Array.isArray(j.homes) ? j.homes : []).filter((h: any) => isYM(h?.from) && str(h.place)).map((h: any) => ({ from: h.from, place: str(h.place) }));
   const stays = (Array.isArray(j.stays) ? j.stays : []).filter((h: any) => isYM(h?.from) && isYM(h?.to) && str(h.place)).map((h: any) => ({ from: h.from, to: h.to, place: str(h.place) }));
@@ -36,6 +39,7 @@ export function parseJSON(text: string): Parsed | null {
     cells, count: keys.length, first: j.birth.month, firstYear: +j.birth.month.slice(0, 4),
     lastYear: +(keys[keys.length - 1] || j.birth.month).slice(0, 4),
     bornPlace: str(j.birth.place) || undefined, birthDay: /^\d{4}-\d\d-(0[1-9]|[12]\d|3[01])$/.test(j.birth.date || '') && j.birth.date.startsWith(j.birth.month) ? +j.birth.date.slice(8) : undefined, name: str(j.name) || undefined, homes, stays,
+    death: dm ? { y: +dm.slice(0, 4), m: +dm.slice(5), ...(/^\d{4}-\d\d-(0[1-9]|[12]\d|3[01])$/.test(j.death.date || '') && j.death.date.startsWith(dm) ? { d: +j.death.date.slice(8) } : {}) } : undefined,
   };
 }
 

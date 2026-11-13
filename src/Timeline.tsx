@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { WORLD } from './world';
-import { type State, type YM, MON, yOf, mOf, nowYM, addM, birthYM, homeAt, colorOf, inkOn, fmt, short } from './model';
+import { type State, type YM, MON, yOf, mOf, nowYM, lastYM, addM, birthYM, homeAt, colorOf, inkOn, fmt, short } from './model';
 
 interface Ev { at: YM; n: number; t: string; p?: boolean; place?: string; col: string }
 
@@ -21,7 +21,7 @@ function events(s: State): Ev[] {
 function spans(s: State): { from: number; len: number; place?: string }[] {
   const out: { from: number; len: number; place?: string }[] = [];
   let n = 0;
-  for (let at = birthYM(s); at <= nowYM(); at = addM(at, 1), n++) {
+  for (let at = birthYM(s); at <= lastYM(s); at = addM(at, 1), n++) {
     const place = homeAt(s, at), last = out[out.length - 1];
     if (last && last.place === place) last.len++; else out.push({ from: n, len: 1, place });
   }

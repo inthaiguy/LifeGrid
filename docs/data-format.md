@@ -43,7 +43,7 @@ user text are replaced with a single space before writing.
 ```
 2                                  line 0: format version
 <name>                             line 1: may be empty
-<birthYear>\t<birthMonth>\t<place>\t<birthDay>   line 2: birthDay is 1–31 or empty; older links omit it
+<birthYear>\t<birthMonth>\t<place>\t<birthDay>\t<deathOffset>\t<deathDay>   line 2: birthDay is 1–31 or empty; deathOffset is the death month as months after the birth month (empty = living) and deathDay is 1–31 or empty; older links omit the last three
 <t>                                line 3: comma-separated stage indexes, may be empty
 <fromOffset>\t<place>              homes, one per line, in order
 (blank line)                       ends homes
@@ -78,6 +78,7 @@ For people and other tools. Lossless for everything in section 1 except `t`, and
   "exportedAt": "2026-11-12T09:30:00.000Z",
   "name": "Sam",
   "birth": { "month": "1984-03", "date": "1984-03-14", "place": "Leeds, England" },
+  "death": { "month": "2051-06", "date": "2051-06-02" },
   "homes": [{ "from": "1984-03", "place": "Leeds, England" }],
   "stays": [{ "from": "1999-07", "to": "1999-08", "place": "Lyon, France" }],
   "cells": [
@@ -90,6 +91,7 @@ For people and other tools. Lossless for everything in section 1 except `t`, and
 - `schema` names the format and its major version; readers should refuse an unknown major version.
 - Dates are ISO 8601: `YYYY-MM` for months, a full UTC timestamp for `exportedAt`.
 - `birth.date` (full ISO 8601 date) is present only when the day is known; it must fall in `birth.month`.
+- `death` is optional and present only for someone who has died. `death.month` ends the life: the grid, the age column and the completeness count stop there, and cells after it are ignored. `death.date` works like `birth.date`. A sheet with no `death` is a living person and runs to the current month.
 - `homes` and `stays` are ordered by `from`; `cells` are ordered by `month`. `name` is omitted when empty.
 - A cell is confirmed unless `"confirmed": false`, which marks a placeholder suggested by the script
   (the CSV export shows these in parentheses).
