@@ -1,0 +1,101 @@
+{
+ "schema": "life-grid/1",
+ "name": "Mira",
+ "birth": {
+  "month": "2017-05",
+  "place": "Leeds, England"
+ },
+ "homes": [
+  {
+   "from": "2017-05",
+   "place": "Leeds, England"
+  },
+  {
+   "from": "2022-08",
+   "place": "Bristol, England"
+  }
+ ],
+ "stays": [],
+ "cells": [
+  {
+   "month": "2017-05",
+   "text": "Born Leeds"
+  },
+  {
+   "month": "2017-12",
+   "text": "First Christmas"
+  },
+  {
+   "month": "2018-05",
+   "text": "1st birthday",
+   "confirmed": false
+  },
+  {
+   "month": "2018-07",
+   "text": "First steps"
+  },
+  {
+   "month": "2019-05",
+   "text": "2nd birthday",
+   "confirmed": false
+  },
+  {
+   "month": "2019-08",
+   "text": "Seaside trip"
+  },
+  {
+   "month": "2020-03",
+   "text": "Lockdown at home"
+  },
+  {
+   "month": "2020-09",
+   "text": "Started nursery"
+  },
+  {
+   "month": "2021-05",
+   "text": "4th birthday",
+   "confirmed": false
+  },
+  {
+   "month": "2021-09",
+   "text": "Started school"
+  },
+  {
+   "month": "2022-08",
+   "text": "Moved to Bristol"
+  },
+  {
+   "month": "2022-12",
+   "text": "First snowman"
+  },
+  {
+   "month": "2023-04",
+   "text": "Lost first tooth"
+  },
+  {
+   "month": "2023-07",
+   "text": "Learned to swim"
+  },
+  {
+   "month": "2024-06",
+   "text": "Baby brother Theo"
+  },
+  {
+   "month": "2024-08",
+   "text": "Camping in Wales"
+  },
+  {
+   "month": "2025-05",
+   "text": "8th birthday",
+   "confirmed": false
+  },
+  {
+   "month": "2025-10",
+   "text": "School play"
+  },
+  {
+   "month": "2026-07",
+   "text": "First flight, Spain"
+  }
+ ]
+}

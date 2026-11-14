@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { type State, type YM, ym, yOf, mOf, nowYM, lastYM, homeAt, colorOf, fmt } from './model';
+import { type State, type YM, ym, yOf, mOf, nowYM, lastYM, repeatsEarlier, homeAt, colorOf, fmt } from './model';
 
 // Tree view: a sketched bare tree as old as the person, beside a cross-section with one ring per year.
 // Everything is drawn by code from the age and a seed taken from the person, so the same life
@@ -128,7 +128,7 @@ export function pickEvents(s: State, age: number, slots: number): Pick[] {
   const best: Record<number, Pick & { score: number }> = {};
   for (const [at, c] of Object.entries(s.cells)) {
     const k = yOf(at) - by;
-    if (k < 0 || k > age) continue;
+    if (k < 0 || k > age || repeatsEarlier(s, at)) continue; // a repeat of the month before adds nothing
     let score = c.p ? 0 : 3;
     if (/^(born|moved?|married|wedding|engaged|graduat|first|started|new job|retired|bought)/i.test(c.t)) score += 2;
     if (freq[norm(c.t)] > 2) score -= 2;                    // yearly things: birthdays, holidays

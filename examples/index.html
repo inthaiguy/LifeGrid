@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life Grid — examples for view makers</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f4f2ee; --ink: #1c1d21; --dim: #6b6f78; --line: #dcd8d0; --accent: #c2410c; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14161a; --ink: #eceae6; --dim: #9a9ea8; --line: #2e323a; --accent: #f08a4b; } }
+  body { margin: 0; padding: 24px 16px 60px; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; } h2 { font-size: 17px; margin: 32px 0 6px; }
+  p { margin: 6px 0; color: var(--dim); } a { color: var(--accent); }
+  ul { padding-left: 18px; } li { margin: 4px 0; }
+  textarea { width: 100%; box-sizing: border-box; height: 74px; border: 1px solid var(--line); border-radius: 8px; background: transparent; color: inherit; font: 12px ui-monospace, monospace; padding: 8px; }
+  #out { margin-top: 12px; } #out b { color: var(--ink); }
+  .bars { display: flex; align-items: flex-end; gap: 6px; height: 120px; margin: 14px 0 4px; border-bottom: 1px solid var(--line); }
+  .bars div { flex: 1; border-radius: 4px 4px 0 0; min-height: 2px; position: relative; }
+  .bars span { position: absolute; bottom: -20px; left: 0; right: 0; text-align: center; font-size: 11px; color: var(--dim); }
+  .bars i { position: absolute; top: -17px; left: 0; right: 0; text-align: center; font-size: 11px; font-style: normal; color: var(--dim); }
+  ol.ev { margin-top: 30px; padding-left: 18px; } ol.ev li { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Examples for view makers</h1>
+  <p>This page is for people building Life Grid views. It runs only on the development server (<code>npm run dev</code>). The guide is <code>docs/making-a-view.md</code>.</p>
+
+  <h2>1. Sample lives</h2>
+  <p>Fictional lives to test a view against. Each link opens the app on that life as a read-only shared link, where every view is unlocked.</p>
+  <ul id="samples"><li>Loading…</li></ul>
+
+  <h2>2. A view outside the app</h2>
+  <p>Everything below is done with the standalone reader, <code>src/lifegrid.ts</code>, and about thirty lines of script: paste any Life Grid link or JSON export and it draws events per decade, coloured by the season of life, and lists the events worth showing. View this page's source to see how.</p>
+  <textarea id="in" placeholder="Paste a Life Grid link or JSON export here" spellcheck="false"></textarea>
+  <div id="out"></div>
+</main>
+
+<script type="module">
+  // On another site this import would be the built reader: import { … } from './lifegrid.js'
+  import { read, events, pickEvents, age, ageColor, fmt, short, homeAt } from '/src/lifegrid.ts';
+  import { encode } from '/src/share.ts'; // only to make the sample links; a view never needs this
+
+  // 1. Sample lives → shared links
+  const SAMPLES = ['child', 'adult', 'elder-sparse', 'nearly-empty'];
+  const items = await Promise.all(SAMPLES.map(async (name) => {
+    const life = await read(await (await fetch(`/data/samples/${name}.json`)).text());
+    if (!life) return `<li>${name}: could not be read</li>`;
+    const link = `${location.origin}/#s.${await encode({ ...life, queue: [] })}`;
+    return `<li><a href="${link}" target="_blank" rel="noopener"><b>${name}</b></a> — ${life.name}, age ${age(life)}, ${events(life).length} entries. <a href="#" data-link="${link}">Use below</a></li>`;
+  }));
+  document.getElementById('samples').innerHTML = items.join('');
+  document.getElementById('samples').addEventListener('click', (e) => {
+    const l = e.target.dataset?.link;
+    if (l) { e.preventDefault(); input.value = l; draw(); }
+  });
+
+  // 2. A complete outside view
+  const input = document.getElementById('in'), out = document.getElementById('out');
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  async function draw() {
+    if (!input.value.trim()) { out.innerHTML = ''; return; }
+    const life = await read(input.value);
+    if (!life) { out.innerHTML = '<p>That is not a Life Grid link or export.</p>'; return; }
+    const all = events(life), decades = Math.floor(age(life) / 10) + 1;
+    const counts = Array.from({ length: decades }, (_, d) => all.filter((e) => Math.floor(e.age / 10) === d).length);
+    const max = Math.max(1, ...counts);
+    out.innerHTML = `<p><b>${esc(life.name || 'This life')}</b>: ${age(life)} years, ${all.length} months filled in.</p>
+      <div class="bars">${counts.map((n, d) => `<div style="height:${(n / max) * 100}%;background:${ageColor(d * 10 + 5)}"><i>${n}</i><span>${d * 10}s</span></div>`).join('')}</div>
+      <ol class="ev">${pickEvents(life, 8).map((e) => `<li>${fmt(e.month)}, age ${e.age}${homeAt(life, e.month) ? `, ${esc(short(homeAt(life, e.month)))}` : ''}: <b>${esc(e.text)}</b></li>`).join('')}</ol>`;
+  }
+  input.addEventListener('input', draw);
+</script>
+</body>
+</html>

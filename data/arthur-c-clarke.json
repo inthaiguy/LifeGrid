@@ -1,3023 +1,681 @@
 {
- "schema": "life-grid/1",
- "exportedAt": "2026-11-12T00:00:00.000Z",
- "name": "Arthur",
- "birth": {
-  "month": "1917-12",
-  "date": "1917-12-16",
-  "place": "Minehead, England"
- },
- "death": {
-  "month": "2008-03",
-  "date": "2008-03-19"
- },
- "homes": [
-  {
-   "from": "1917-12",
-   "place": "Minehead, England"
-  },
-  {
-   "from": "1936-06",
-   "place": "London, England"
-  },
-  {
-   "from": "1956-01",
-   "place": "Colombo, Sri Lanka"
-  }
- ],
- "stays": [],
- "cells": [
-  {
-   "month": "1917-12",
-   "text": "Born in Minehead"
-  },
-  {
-   "month": "1918-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1918-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1919-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1920-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1921-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1922-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1923-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1924-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1925-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1926-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-01",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-02",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-03",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-04",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-05",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-06",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-07",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-08",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-09",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-10",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-11",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1927-12",
-   "text": "Childhood in Minehead"
-  },
-  {
-   "month": "1928-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-06",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-07",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-08",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-09",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-10",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-11",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1928-12",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-06",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-07",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-08",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-09",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-10",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-11",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1929-12",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-06",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-07",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-08",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-09",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-10",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-11",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1930-12",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-06",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-07",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-08",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-09",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-10",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-11",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1931-12",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-06",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-07",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-08",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-09",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-10",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-11",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1932-12",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-06",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-07",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-08",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-09",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-10",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-11",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1933-12",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-06",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-07",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-08",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-09",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-10",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-11",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1934-12",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-06",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-07",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-08",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-09",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-10",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-11",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1935-12",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1936-01",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1936-02",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1936-03",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1936-04",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1936-05",
-   "text": "Schoolboy: Huish’s Grammar, Taunton"
-  },
-  {
-   "month": "1936-06",
-   "text": "Moves to London"
-  },
-  {
-   "month": "1936-07",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1936-08",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1936-09",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1936-10",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1936-11",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1936-12",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-01",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-02",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-03",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-04",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-05",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-06",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-07",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-08",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-09",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-10",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-11",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1937-12",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-01",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-02",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-03",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-04",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-05",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-06",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-07",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-08",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-09",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-10",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-11",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1938-12",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-01",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-02",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-03",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-04",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-05",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-06",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-07",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-08",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-09",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-10",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-11",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1939-12",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-01",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-02",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-03",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-04",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-05",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-06",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-07",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-08",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-09",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-10",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-11",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1940-12",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1941-01",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1941-02",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1941-03",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1941-04",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1941-05",
-   "text": "London: pensions auditor"
-  },
-  {
-   "month": "1941-06",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1941-07",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1941-08",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1941-09",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1941-10",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1941-11",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1941-12",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-01",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-02",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-03",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-04",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-05",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-06",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-07",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-08",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-09",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-10",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-11",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1942-12",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-01",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-02",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-03",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-04",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-05",
-   "text": "Commissioned pilot officer"
-  },
-  {
-   "month": "1943-06",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-07",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-08",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-09",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-10",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1943-11",
-   "text": "Promoted flying officer"
-  },
-  {
-   "month": "1943-12",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-01",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-02",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-03",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-04",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-05",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-06",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-07",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-08",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-09",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-10",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-11",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1944-12",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-01",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-02",
-   "text": "Letter on relay satellites"
-  },
-  {
-   "month": "1945-03",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-04",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-05",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-06",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-07",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-08",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-09",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-10",
-   "text": "“Extra-Terrestrial Relays” published"
-  },
-  {
-   "month": "1945-11",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1945-12",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1946-01",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1946-02",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1946-03",
-   "text": "RAF radar specialist"
-  },
-  {
-   "month": "1946-04",
-   "text": "“Loophole” published"
-  },
-  {
-   "month": "1946-05",
-   "text": "“Rescue Party”, first sale"
-  },
-  {
-   "month": "1946-06",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1946-07",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1946-08",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1946-09",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1946-10",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1946-11",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1946-12",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-01",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-02",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-03",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-04",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-05",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-06",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-07",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-08",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-09",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-10",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-11",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1947-12",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-01",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-02",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-03",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-04",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-05",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-06",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-07",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-08",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-09",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-10",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-11",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1948-12",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-01",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-02",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-03",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-04",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-05",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-06",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-07",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-08",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-09",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-10",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-11",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1949-12",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-01",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-02",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-03",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-04",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-05",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-06",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-07",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-08",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-09",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-10",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-11",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1950-12",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-01",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-02",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-03",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-04",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-05",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-06",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-07",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-08",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-09",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-10",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-11",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1951-12",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-01",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-02",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-03",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-04",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-05",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-06",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-07",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-08",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-09",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-10",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-11",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1952-12",
-   "text": "London: writing, BIS"
-  },
-  {
-   "month": "1953-01",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-02",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-03",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-04",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-05",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-06",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-07",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-08",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-09",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-10",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-11",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1953-12",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-01",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-02",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-03",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-04",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-05",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-06",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-07",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-08",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-09",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-10",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-11",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1954-12",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-01",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-02",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-03",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-04",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-05",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-06",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-07",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-08",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-09",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-10",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-11",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1955-12",
-   "text": "London: full-time writer"
-  },
-  {
-   "month": "1956-01",
-   "text": "Moves to Ceylon"
-  },
-  {
-   "month": "1956-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-09",
-   "text": "Hugo for “The Star”"
-  },
-  {
-   "month": "1956-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1956-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-01",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-09",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1957-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-01",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-09",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1958-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-01",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-09",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1959-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-01",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-09",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1960-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-01",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-09",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1961-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-01",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-09",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1962-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-01",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-09",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1963-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-01",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-02",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-03",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-04",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-05",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-06",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-07",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-08",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-09",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-10",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-11",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1964-12",
-   "text": "Ceylon: diving and writing"
-  },
-  {
-   "month": "1965-01",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-02",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-03",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-04",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-05",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-06",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-07",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-08",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-09",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-10",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-11",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1965-12",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-01",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-02",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-03",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-04",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-05",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-06",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-07",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-08",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-09",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-10",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-11",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1966-12",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-01",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-02",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-03",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-04",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-05",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-06",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-07",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-08",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-09",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-10",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-11",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1967-12",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1968-01",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1968-02",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1968-03",
-   "text": "Writing 2001 with Kubrick"
-  },
-  {
-   "month": "1968-04",
-   "text": "2001 film released"
-  },
-  {
-   "month": "1968-05",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1968-06",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1968-07",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1968-08",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1968-09",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1968-10",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1968-11",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1968-12",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-01",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-02",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-03",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-04",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-05",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-06",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-07",
-   "text": "Narrates Apollo 11 for CBS"
-  },
-  {
-   "month": "1969-08",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-09",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-10",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-11",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1969-12",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-01",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-02",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-03",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-04",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-05",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-06",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-07",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-08",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-09",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-10",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-11",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1970-12",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-01",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-02",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-03",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-04",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-05",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-06",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-07",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-08",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-09",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-10",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-11",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1971-12",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-01",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-02",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-03",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-04",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-05",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-06",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-07",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-08",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-09",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-10",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-11",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1972-12",
-   "text": "Ceylon after 2001"
-  },
-  {
-   "month": "1973-01",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-02",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-03",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-04",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-05",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-06",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-07",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-08",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-09",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-10",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-11",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1973-12",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-01",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-02",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-03",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-04",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-05",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-06",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-07",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-08",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-09",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-10",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-11",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1974-12",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-01",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-02",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-03",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-04",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-05",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-06",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-07",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-08",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-09",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-10",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-11",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1975-12",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-01",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-02",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-03",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-04",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-05",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-06",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-07",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-08",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-09",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-10",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-11",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1976-12",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-01",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-02",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-03",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-04",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-05",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-06",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-07",
-   "text": "Leslie Ekanayake dies"
-  },
-  {
-   "month": "1977-08",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-09",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-10",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-11",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1977-12",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-01",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-02",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-03",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-04",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-05",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-06",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-07",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-08",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-09",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-10",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-11",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1978-12",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-01",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-02",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-03",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-04",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-05",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-06",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-07",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-08",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-09",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-10",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-11",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "1979-12",
-   "text": "Ceylon: Rama, Fountains"
-  },
-  {
-   "month": "2000-05",
-   "text": "Knighted in Colombo"
-  },
-  {
-   "month": "2004-12",
-   "text": "Tsunami destroys his diving school"
-  },
-  {
-   "month": "2008-03",
-   "text": "Dies in Colombo"
-  }
- ]
+  "schema": "life-grid/1",
+  "exportedAt": "2026-11-12T00:00:00.000Z",
+  "name": "Arthur",
+  "birth": {
+    "month": "1917-12",
+    "date": "1917-12-16",
+    "place": "Minehead, England"
+  },
+  "death": {
+    "month": "2008-03",
+    "date": "2008-03-19"
+  },
+  "homes": [
+    {
+      "from": "1917-12",
+      "place": "Minehead, England"
+    },
+    {
+      "from": "1936-06",
+      "place": "London, England"
+    },
+    {
+      "from": "1956-01",
+      "place": "Colombo, Sri Lanka"
+    }
+  ],
+  "stays": [],
+  "cells": [
+    {
+      "month": "1917-12",
+      "text": "Born in Minehead"
+    },
+    {
+      "month": "1934-01",
+      "text": "Joins the British Interplanetary Society",
+      "confirmed": false
+    },
+    {
+      "month": "1936-06",
+      "text": "Moves to London"
+    },
+    {
+      "month": "1941-01",
+      "text": "Joins the Royal Air Force",
+      "confirmed": false
+    },
+    {
+      "month": "1943-05",
+      "text": "Commissioned pilot officer"
+    },
+    {
+      "month": "1943-11",
+      "text": "Promoted flying officer"
+    },
+    {
+      "month": "1945-02",
+      "text": "Letter on relay satellites"
+    },
+    {
+      "month": "1945-10",
+      "text": "“Extra-Terrestrial Relays” published"
+    },
+    {
+      "month": "1946-04",
+      "text": "“Loophole” published"
+    },
+    {
+      "month": "1946-05",
+      "text": "“Rescue Party”, first sale"
+    },
+    {
+      "month": "1948-01",
+      "text": "Writes “The Sentinel” for a BBC contest",
+      "confirmed": false
+    },
+    {
+      "month": "1949-01",
+      "text": "Assistant editor, Science Abstracts",
+      "confirmed": false
+    },
+    {
+      "month": "1950-01",
+      "text": "Interplanetary Flight published",
+      "confirmed": false
+    },
+    {
+      "month": "1951-02",
+      "text": "Becomes a full-time writer",
+      "confirmed": false
+    },
+    {
+      "month": "1951-03",
+      "text": "The Exploration of Space published",
+      "confirmed": false
+    },
+    {
+      "month": "1951-05",
+      "text": "Prelude to Space published",
+      "confirmed": false
+    },
+    {
+      "month": "1951-08",
+      "text": "The Sands of Mars published",
+      "confirmed": false
+    },
+    {
+      "month": "1952-04",
+      "text": "International Fantasy Award for The Exploration of Space",
+      "confirmed": false
+    },
+    {
+      "month": "1952-07",
+      "text": "Islands in the Sky published",
+      "confirmed": false
+    },
+    {
+      "month": "1953-02",
+      "text": "Childhood’s End published",
+      "confirmed": false
+    },
+    {
+      "month": "1953-03",
+      "text": "Marries Marilyn Mayfield",
+      "confirmed": false
+    },
+    {
+      "month": "1953-05",
+      "text": "“Jupiter Five” on the cover of If"
+    },
+    {
+      "month": "1953-06",
+      "text": "Against the Fall of Night (novel) published",
+      "confirmed": false
+    },
+    {
+      "month": "1953-09",
+      "text": "Expedition to Earth published",
+      "confirmed": false
+    },
+    {
+      "month": "1954-04",
+      "text": "The Exploration of the Moon published",
+      "confirmed": false
+    },
+    {
+      "month": "1954-07",
+      "text": "The Young Traveller in Space published",
+      "confirmed": false
+    },
+    {
+      "month": "1955-01",
+      "text": "Earthlight published",
+      "confirmed": false
+    },
+    {
+      "month": "1956-01",
+      "text": "Moves to Ceylon"
+    },
+    {
+      "month": "1956-03",
+      "text": "The Coast of Coral published",
+      "confirmed": false
+    },
+    {
+      "month": "1956-04",
+      "text": "The City and the Stars published",
+      "confirmed": false
+    },
+    {
+      "month": "1956-06",
+      "text": "Reach for Tomorrow published",
+      "confirmed": false
+    },
+    {
+      "month": "1956-08",
+      "text": "Venture to the Moon published",
+      "confirmed": false
+    },
+    {
+      "month": "1956-09",
+      "text": "Hugo for “The Star”"
+    },
+    {
+      "month": "1957-02",
+      "text": "The Deep Range published",
+      "confirmed": false
+    },
+    {
+      "month": "1957-03",
+      "text": "Tales from the White Hart published",
+      "confirmed": false
+    },
+    {
+      "month": "1957-04",
+      "text": "The Reefs of Taprobane published",
+      "confirmed": false
+    },
+    {
+      "month": "1957-06",
+      "text": "The Making of a Moon published",
+      "confirmed": false
+    },
+    {
+      "month": "1957-09",
+      "text": "The Other Side of the Sky published",
+      "confirmed": false
+    },
+    {
+      "month": "1958-03",
+      "text": "Boy Beneath the Sea published",
+      "confirmed": false
+    },
+    {
+      "month": "1958-06",
+      "text": "“The Songs of Distant Earth” on the cover of If"
+    },
+    {
+      "month": "1958-08",
+      "text": "Voice Across the Sea published",
+      "confirmed": false
+    },
+    {
+      "month": "1959-01",
+      "text": "The Challenge of the Spaceship published",
+      "confirmed": false
+    },
+    {
+      "month": "1960-04",
+      "text": "The Challenge of the Sea published",
+      "confirmed": false
+    },
+    {
+      "month": "1960-07",
+      "text": "The First Five Fathoms published",
+      "confirmed": false
+    },
+    {
+      "month": "1961-03",
+      "text": "A Fall of Moondust published",
+      "confirmed": false
+    },
+    {
+      "month": "1961-04",
+      "text": "Indian Ocean Adventure published",
+      "confirmed": false
+    },
+    {
+      "month": "1961-08",
+      "text": "UNESCO–Kalinga Prize",
+      "confirmed": false
+    },
+    {
+      "month": "1962-03",
+      "text": "Profiles of the Future published",
+      "confirmed": false
+    },
+    {
+      "month": "1962-04",
+      "text": "Tales of Ten Worlds published",
+      "confirmed": false
+    },
+    {
+      "month": "1962-08",
+      "text": "Paralysed; later diagnosed as polio",
+      "confirmed": false
+    },
+    {
+      "month": "1963-03",
+      "text": "Dolphin Island published",
+      "confirmed": false
+    },
+    {
+      "month": "1963-04",
+      "text": "Glide Path published",
+      "confirmed": false
+    },
+    {
+      "month": "1963-08",
+      "text": "Stuart Ballantine Medal",
+      "confirmed": false
+    },
+    {
+      "month": "1964-02",
+      "text": "Meets Stanley Kubrick in New York",
+      "confirmed": false
+    },
+    {
+      "month": "1964-03",
+      "text": "Divorce from Marilyn finalised",
+      "confirmed": false
+    },
+    {
+      "month": "1964-04",
+      "text": "Man and Space published",
+      "confirmed": false
+    },
+    {
+      "month": "1964-06",
+      "text": "Indian Ocean Treasure published",
+      "confirmed": false
+    },
+    {
+      "month": "1964-09",
+      "text": "The Treasure of the Great Reef published",
+      "confirmed": false
+    },
+    {
+      "month": "1965-01",
+      "text": "Voices from the Sky published",
+      "confirmed": false
+    },
+    {
+      "month": "1967-01",
+      "text": "The Nine Billion Names of God published",
+      "confirmed": false
+    },
+    {
+      "month": "1968-03",
+      "text": "2001: A Space Odyssey (novel) published",
+      "confirmed": false
+    },
+    {
+      "month": "1968-04",
+      "text": "2001 film released"
+    },
+    {
+      "month": "1968-08",
+      "text": "The Promise of Space published",
+      "confirmed": false
+    },
+    {
+      "month": "1969-01",
+      "text": "Oscar nomination with Kubrick for 2001",
+      "confirmed": false
+    },
+    {
+      "month": "1969-07",
+      "text": "Narrates Apollo 11 for CBS"
+    },
+    {
+      "month": "1971-01",
+      "text": "Into Space published",
+      "confirmed": false
+    },
+    {
+      "month": "1972-02",
+      "text": "Of Time and Stars published",
+      "confirmed": false
+    },
+    {
+      "month": "1972-03",
+      "text": "The Wind from the Sun published",
+      "confirmed": false
+    },
+    {
+      "month": "1972-04",
+      "text": "Beyond Jupiter published",
+      "confirmed": false
+    },
+    {
+      "month": "1972-06",
+      "text": "Report on Planet Three published",
+      "confirmed": false
+    },
+    {
+      "month": "1972-09",
+      "text": "The Lost Worlds of 2001 published",
+      "confirmed": false
+    },
+    {
+      "month": "1973-03",
+      "text": "Rendezvous with Rama published",
+      "confirmed": false
+    },
+    {
+      "month": "1973-04",
+      "text": "Nebulas for Rama and “A Meeting with Medusa”",
+      "confirmed": false
+    },
+    {
+      "month": "1973-08",
+      "text": "The Best of Arthur C. Clarke 1937–1971 published",
+      "confirmed": false
+    },
+    {
+      "month": "1974-01",
+      "text": "Hugo for Rendezvous with Rama",
+      "confirmed": false
+    },
+    {
+      "month": "1975-04",
+      "text": "Imperial Earth published",
+      "confirmed": false
+    },
+    {
+      "month": "1975-07",
+      "text": "Sri Lanka grants resident guest status",
+      "confirmed": false
+    },
+    {
+      "month": "1976-01",
+      "text": "The Best of Arthur C. Clarke 1937–1955 published",
+      "confirmed": false
+    },
+    {
+      "month": "1977-03",
+      "text": "The View from Serendip published",
+      "confirmed": false
+    },
+    {
+      "month": "1977-07",
+      "text": "Leslie Ekanayake dies"
+    },
+    {
+      "month": "1977-08",
+      "text": "The Best of Arthur C. Clarke 1956–1972 published",
+      "confirmed": false
+    },
+    {
+      "month": "1979-04",
+      "text": "The Fountains of Paradise published",
+      "confirmed": false
+    },
+    {
+      "month": "1979-07",
+      "text": "Nebula for The Fountains of Paradise",
+      "confirmed": false
+    },
+    {
+      "month": "1980-04",
+      "text": "Hugo for The Fountains of Paradise",
+      "confirmed": false
+    },
+    {
+      "month": "1980-07",
+      "text": "Mysterious World broadcast",
+      "confirmed": false
+    },
+    {
+      "month": "1982-04",
+      "text": "2010: Odyssey Two published",
+      "confirmed": false
+    },
+    {
+      "month": "1982-07",
+      "text": "Marconi Prize",
+      "confirmed": false
+    },
+    {
+      "month": "1983-01",
+      "text": "The Sentinel published",
+      "confirmed": false
+    },
+    {
+      "month": "1984-02",
+      "text": "2010 film released",
+      "confirmed": false
+    },
+    {
+      "month": "1984-03",
+      "text": "The Odyssey File published",
+      "confirmed": false
+    },
+    {
+      "month": "1984-04",
+      "text": "Ascent to Orbit published",
+      "confirmed": false
+    },
+    {
+      "month": "1984-06",
+      "text": "Testifies to Congress against SDI",
+      "confirmed": false
+    },
+    {
+      "month": "1984-09",
+      "text": "1984, Spring published",
+      "confirmed": false
+    },
+    {
+      "month": "1985-04",
+      "text": "Named an SFWA Grand Master",
+      "confirmed": false
+    },
+    {
+      "month": "1985-07",
+      "text": "World of Strange Powers broadcast",
+      "confirmed": false
+    },
+    {
+      "month": "1986-02",
+      "text": "The Songs of Distant Earth published",
+      "confirmed": false
+    },
+    {
+      "month": "1986-04",
+      "text": "20 July 2019 published",
+      "confirmed": false
+    },
+    {
+      "month": "1986-07",
+      "text": "Playboy interview"
+    },
+    {
+      "month": "1986-08",
+      "text": "Damon Knight Memorial Grand Master Award",
+      "confirmed": false
+    },
+    {
+      "month": "1987-01",
+      "text": "2061: Odyssey Three published",
+      "confirmed": false
+    },
+    {
+      "month": "1988-04",
+      "text": "Cradle published",
+      "confirmed": false
+    },
+    {
+      "month": "1988-07",
+      "text": "Post-polio syndrome diagnosed",
+      "confirmed": false
+    },
+    {
+      "month": "1989-02",
+      "text": "Rama II published",
+      "confirmed": false
+    },
+    {
+      "month": "1989-03",
+      "text": "Astounding Days published",
+      "confirmed": false
+    },
+    {
+      "month": "1989-05",
+      "text": "Made a CBE",
+      "confirmed": false
+    },
+    {
+      "month": "1989-08",
+      "text": "Chancellor of the International Space University",
+      "confirmed": false
+    },
+    {
+      "month": "1990-03",
+      "text": "Beyond the Fall of Night published",
+      "confirmed": false
+    },
+    {
+      "month": "1990-04",
+      "text": "The Ghost from the Grand Banks published",
+      "confirmed": false
+    },
+    {
+      "month": "1990-08",
+      "text": "Tales from Planet Earth published",
+      "confirmed": false
+    },
+    {
+      "month": "1991-03",
+      "text": "The Garden of Rama published",
+      "confirmed": false
+    },
+    {
+      "month": "1991-04",
+      "text": "More Than One Universe published",
+      "confirmed": false
+    },
+    {
+      "month": "1991-08",
+      "text": "Marilyn Mayfield dies",
+      "confirmed": false
+    },
+    {
+      "month": "1992-04",
+      "text": "How the World Was One published",
+      "confirmed": false
+    },
+    {
+      "month": "1992-07",
+      "text": "Authorised biography by Neil McAleer",
+      "confirmed": false
+    },
+    {
+      "month": "1993-03",
+      "text": "The Hammer of God published",
+      "confirmed": false
+    },
+    {
+      "month": "1993-04",
+      "text": "Rama Revealed published",
+      "confirmed": false
+    },
+    {
+      "month": "1993-08",
+      "text": "By Space Possessed published",
+      "confirmed": false
+    },
+    {
+      "month": "1994-01",
+      "text": "The Snows of Olympus published",
+      "confirmed": false
+    },
+    {
+      "month": "1996-04",
+      "text": "Richter 10 published",
+      "confirmed": false
+    },
+    {
+      "month": "1996-07",
+      "text": "Childhood Ends published",
+      "confirmed": false
+    },
+    {
+      "month": "1997-01",
+      "text": "3001: The Final Odyssey published",
+      "confirmed": false
+    },
+    {
+      "month": "1998-01",
+      "text": "Knighthood announced",
+      "confirmed": false
+    },
+    {
+      "month": "1999-04",
+      "text": "The Trigger published",
+      "confirmed": false
+    },
+    {
+      "month": "1999-07",
+      "text": "Greetings, Carbon-Based Bipeds! published",
+      "confirmed": false
+    },
+    {
+      "month": "2000-01",
+      "text": "The Light of Other Days published",
+      "confirmed": false
+    },
+    {
+      "month": "2000-05",
+      "text": "Knighted in Colombo"
+    },
+    {
+      "month": "2001-01",
+      "text": "The Collected Stories published",
+      "confirmed": false
+    },
+    {
+      "month": "2003-01",
+      "text": "Time’s Eye published",
+      "confirmed": false
+    },
+    {
+      "month": "2004-12",
+      "text": "Tsunami destroys his diving school"
+    },
+    {
+      "month": "2005-04",
+      "text": "Sunstorm published",
+      "confirmed": false
+    },
+    {
+      "month": "2005-07",
+      "text": "Awarded Sri Lankabhimanya",
+      "confirmed": false
+    },
+    {
+      "month": "2007-01",
+      "text": "Firstborn published",
+      "confirmed": false
+    },
+    {
+      "month": "2007-12",
+      "text": "90th birthday audio message"
+    },
+    {
+      "month": "2008-03",
+      "text": "Dies in Colombo"
+    }
+  ]
 }

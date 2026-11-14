@@ -1,0 +1,21 @@
+{
+ "schema": "life-grid/1",
+ "name": "Noor",
+ "birth": {
+  "month": "1999-11",
+  "place": "Lahore, Pakistan"
+ },
+ "homes": [
+  {
+   "from": "1999-11",
+   "place": "Lahore, Pakistan"
+  }
+ ],
+ "stays": [],
+ "cells": [
+  {
+   "month": "1999-11",
+   "text": "Born Lahore"
+  }
+ ]
+}

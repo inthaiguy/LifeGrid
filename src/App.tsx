@@ -2,16 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 import { type State, type YM, fresh, stats, toCSV, toJSON, fmt, addM, homeAt, setBirth, MON, colorOf, places, short, inLife, yOf, ym , nowYM } from './model';
 import { START, TOPICS, normalize, current, answer, skip, begin, pending, goTopic, resume } from './script';
 import { encode, decode } from './share';
-import Grid from './Grid';
-import Timeline from './Timeline';
-import Tree from './Tree';
-import Voyager from './Voyager';
 import { parseSheet, type Parsed } from './import';
 import { photosLink, googleCalLink, appleCalLink, gmailLink, GMAIL_START, IS_IOS } from './photos';
 import { NOFILL } from './nofill';
 import Question from './Question';
 import Welcome from './Welcome';
 import Coach from './Coach';
+import type { Life } from './lifegrid';
 import { VIEWS, type ViewId, unlockedViews, nextView, FIRST_UNLOCK } from './views';
 import { sparkle, soundOn, setSound } from './sound';
 import { THEMES, applyTheme, savedTheme } from './theme';
@@ -115,6 +112,7 @@ export default function App() {
   const ids = open.map((v) => v.id);
   const nextMode: ViewId = ids[(ids.indexOf(mode) + 1) % ids.length] ?? 'grid';
   const upcoming = VIEWING ? undefined : nextView(st.pct);
+  const shown = VIEWS.find((v) => v.id === mode) ?? VIEWS[0], Shown = shown.Component; // the view on screen
   useEffect(() => { if (!ids.includes(mode)) setMode('grid'); }, [st.pct]); // a view that is no longer unlocked falls back to the grid
   const view = !s.done && !s.conflicts.length ? current(s) : null;
   const conflict = s.conflicts[0];
@@ -165,19 +163,9 @@ export default function App() {
         <h1>{title}</h1>
         {!intro && <>
         <button className="icon" onClick={() => setMode(nextMode)} disabled={!s.birth || ids.length < 2} aria-label={ids.length < 2 ? `Other views unlock at ${FIRST_UNLOCK}%` : `Switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`} title={ids.length < 2 ? `Other views unlock at ${FIRST_UNLOCK}% filled in` : `Switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`}>
-          <svg viewBox="0 0 24 24" width="24" height="24">{nextMode === 'h'
-            ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M7 12a.6.6 0 1 0 .01 0M12 12a.6.6 0 1 0 .01 0M17 12a.6.6 0 1 0 .01 0" />
-            : nextMode === 'hw'
-              ? <path d="M3 12h18M7 12v-5M12 12v-7M17 12v-4M9.5 12v5M14.5 12v6" />
-            : nextMode === 'voyager'
-              ? <path d="M12 12m-3.2 0a3.2 3.2 0 1 0 6.4 0a3.2 3.2 0 1 0-6.4 0M3 15.500c3 2.500 15 -2.500 18 -7M4 4.500l.01 0M19 18.500l.01 0M17.500 4l.01 0" />
-            : nextMode === 'tree'
-              ? <path d="M12 21v-8M12 13c-5 0-7.5-2.4-7.5-5.4C4.500 4.800 6.800 3 9.300 3.600 10 2.600 11 2.200 12 2.200s2 .4 2.700 1.400c2.500-.6 4.800 1.200 4.800 4 0 3-2.500 5.400-7.500 5.400zM12 17l3-2.500M8.500 21h7" />
-            : nextMode === 'v'
-              ? <path d="M7 3v18M7 7h5M7 12h9M7 17h6" />
-              : <path d="M4 4h16v16H4zM4 9.3h16M4 14.7h16M9.3 4v16M14.7 4v16" />}</svg>
+          <svg viewBox="0 0 24 24" width="24" height="24"><path d={VIEWS.find((v) => v.id === nextMode)?.icon} /></svg>
         </button>
-        {mode === 'grid' && <button className="icon" onClick={() => setRead(!read)} disabled={!s.birth} aria-label={read ? 'Overview' : 'Read the words'} title={read ? 'Overview' : 'Read the words'}>
+        {shown.readable && <button className="icon" onClick={() => setRead(!read)} disabled={!s.birth} aria-label={read ? 'Overview' : 'Read the words'} title={read ? 'Overview' : 'Read the words'}>
           <svg viewBox="0 0 24 24" width="24" height="24">{read
             ? <path d="M4 5h4v4H4zM10 5h4v4h-4zM16 5h4v4h-4zM4 10h4v4H4zM10 10h4v4h-4zM16 10h4v4h-4zM4 15h4v4H4zM10 15h4v4h-4zM16 15h4v4h-4z" />
             : <path d="M4 6h16M4 10h11M4 14h16M4 18h9" />}</svg>
@@ -197,14 +185,8 @@ export default function App() {
           onFinish={() => { setIntro(false); setCoach(true); }}
           onImport={() => { setIntro(false); setImporting(true); }}
           onSkip={() => { setIntro(false); setMenu(true); }} />}
-        <main>{mode === 'grid'
-          ? <Grid s={s} read={read} full onCell={VIEWING ? undefined : setEditing} />
-          : mode === 'voyager'
-            ? <Voyager s={s} onCell={VIEWING ? undefined : setEditing} />
-          : mode === 'tree'
-            ? <Tree s={s} onCell={VIEWING ? undefined : setEditing} />
-            : <Timeline s={s} dir={mode === 'v' ? 'v' : 'h'} world={mode === 'hw'} onCell={VIEWING ? undefined : setEditing} />}</main>
-        {s.birth && mode !== 'h' && mode !== 'hw' && mode !== 'voyager' && ( // the horizontal timeline names each home on its own band
+        <main><Shown life={s as Life} s={s} read={read} onCell={VIEWING ? undefined : setEditing} /></main>
+        {s.birth && shown.legend !== false && ( // the horizontal timeline names each home on its own band
           <aside className="legend">
             {places(s).map((p) => <span key={p}><i style={{ background: colorOf(s, p) }} />{short(p)}</span>)}
             {!VIEWING && menu && st.placeholders > 0 && <span className="key"><i className="k-ph" />to confirm</span>}

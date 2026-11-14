@@ -40,6 +40,17 @@ export const fresh = (queue: Item[]): State => ({
 });
 
 export const birthYM = (s: State): YM => ym(s.birth!.y, s.birth!.m);
+/**
+ * A cell that only says again what the month just before (or one of the last few) already said: a long stretch
+ * with the same words, perhaps broken by a single event. Views show such a stretch once, not in every month.
+ */
+export const repeatsEarlier = (s: State, at: YM, within = 3): boolean => {
+  const t = s.cells[at]?.t;
+  if (!t) return false;
+  for (let i = 1; i <= within; i++) if (s.cells[addM(at, -i)]?.t === t) return true;
+  return false;
+};
+
 /** The last month of the life: the death month, or this month for someone living. */
 export const lastYM = (s: State): YM => (s.death && ym(s.death.y, s.death.m) < nowYM() ? ym(s.death.y, s.death.m) : nowYM());
 export const inLife = (s: State, at: YM) => !!s.birth && at >= birthYM(s) && at <= lastYM(s);

@@ -1,4 +1,5 @@
 import { setRamp } from './model';
+import { setRamp as setReaderRamp } from './lifegrid';
 
 /**
  * Look and feel lives in /themes/*.json, not in code. Each file is picked up automatically,
@@ -57,7 +58,8 @@ export function applyTheme(id: string) {
     if (link.href !== t.fonts) link.href = t.fonts;
   } else link?.remove();
 
-  setRamp(t.ramp && t.ramp.length >= 2 && t.ramp.every((c) => HEX.test(c)) ? t.ramp : null);
+  const ramp = t.ramp && t.ramp.length >= 2 && t.ramp.every((c) => HEX.test(c)) ? t.ramp : null;
+  setRamp(ramp); setReaderRamp(ramp); // the reader's colours follow the theme too, for views built on it
   try { localStorage.setItem(KEY, t.id); } catch { /* private mode */ }
   return t.id;
 }

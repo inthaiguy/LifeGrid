@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { WORLD } from './world';
-import { type State, type YM, MON, yOf, mOf, nowYM, lastYM, addM, birthYM, homeAt, colorOf, inkOn, fmt, short } from './model';
+import { type State, type YM, MON, yOf, mOf, nowYM, lastYM, repeatsEarlier, addM, birthYM, homeAt, colorOf, inkOn, fmt, short } from './model';
 
 interface Ev { at: YM; n: number; t: string; p?: boolean; place?: string; col: string }
 
@@ -8,11 +8,12 @@ const PPM = 9;      // horizontal: pixels per month
 const LANE = 24;    // horizontal: height of one row of labels
 const labelW = (t: string) => Math.min(200, Math.round(t.length * 7) + 20);
 
-/** Every filled cell as a dated event, oldest first. */
+/** Every filled cell as a dated event, oldest first. A month that only repeats the one before it adds nothing, so it is left out. */
 function events(s: State): Ev[] {
   const base = yOf(birthYM(s)) * 12 + mOf(birthYM(s)) - 1;
   return Object.entries(s.cells)
-    .filter(([at]) => at >= birthYM(s))
+    .filter(([at]) => at >= birthYM(s) && at <= lastYM(s)) // nothing after a death
+    .filter(([at]) => !repeatsEarlier(s, at))
     .sort(([a], [b]) => (a < b ? -1 : 1))
     .map(([at, c]) => { const place = homeAt(s, at); return { at, n: yOf(at) * 12 + mOf(at) - 1 - base, t: c.t, p: c.p, place, col: colorOf(s, place) }; });
 }

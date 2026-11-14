@@ -1,0 +1,231 @@
+{
+  "schema": "life-grid/1",
+  "exportedAt": "2026-11-13T00:00:00.000Z",
+  "name": "Neil",
+  "birth": {
+    "month": "1930-08",
+    "date": "1930-08-05",
+    "place": "Washington Township, Ohio"
+  },
+  "death": {
+    "month": "2012-08",
+    "date": "2012-08-25"
+  },
+  "homes": [
+    {
+      "from": "1930-08",
+      "place": "Washington Township, Ohio"
+    },
+    {
+      "from": "1944-01",
+      "place": "Wapakoneta, Ohio"
+    },
+    {
+      "from": "1947-09",
+      "place": "West Lafayette, Indiana"
+    },
+    {
+      "from": "1949-01",
+      "place": "Pensacola, Florida"
+    },
+    {
+      "from": "1950-11",
+      "place": "San Diego, California"
+    },
+    {
+      "from": "1955-07",
+      "place": "Edwards, California"
+    },
+    {
+      "from": "1962-09",
+      "place": "Houston, Texas"
+    },
+    {
+      "from": "1971-08",
+      "place": "Cincinnati, Ohio"
+    }
+  ],
+  "stays": [],
+  "cells": [
+    {
+      "month": "1930-08",
+      "text": "Born in Washington Township"
+    },
+    {
+      "month": "1944-01",
+      "text": "Family settles in Wapakoneta",
+      "confirmed": false
+    },
+    {
+      "month": "1946-08",
+      "text": "Student pilot certificate and first solo"
+    },
+    {
+      "month": "1947-01",
+      "text": "Starts aeronautical engineering at Purdue",
+      "confirmed": false
+    },
+    {
+      "month": "1949-01",
+      "text": "Navy call-up to Pensacola"
+    },
+    {
+      "month": "1949-09",
+      "text": "First solo in a Navy trainer"
+    },
+    {
+      "month": "1950-03",
+      "text": "First carrier landing, USS Cabot"
+    },
+    {
+      "month": "1950-08",
+      "text": "Qualified naval aviator"
+    },
+    {
+      "month": "1950-11",
+      "text": "Assigned to VF-51"
+    },
+    {
+      "month": "1951-01",
+      "text": "First jet flight"
+    },
+    {
+      "month": "1951-06",
+      "text": "Promoted to ensign"
+    },
+    {
+      "month": "1951-08",
+      "text": "First combat in Korea"
+    },
+    {
+      "month": "1951-09",
+      "text": "Ejects after his wing hits a cable"
+    },
+    {
+      "month": "1952-08",
+      "text": "Released from active duty"
+    },
+    {
+      "month": "1953-05",
+      "text": "Promoted to lieutenant (jg)"
+    },
+    {
+      "month": "1955-01",
+      "text": "Graduates from Purdue"
+    },
+    {
+      "month": "1955-03",
+      "text": "First NACA test flight"
+    },
+    {
+      "month": "1955-07",
+      "text": "Reports to Edwards"
+    },
+    {
+      "month": "1956-01",
+      "text": "Marries Janet Shearon"
+    },
+    {
+      "month": "1957-08",
+      "text": "First rocket-powered flight, X-1B"
+    },
+    {
+      "month": "1958-10",
+      "text": "NASA is founded; he joins"
+    },
+    {
+      "month": "1960-10",
+      "text": "Resigns Navy Reserve commission"
+    },
+    {
+      "month": "1960-11",
+      "text": "First X-15 flight"
+    },
+    {
+      "month": "1961-06",
+      "text": "Daughter Karen diagnosed with a tumor"
+    },
+    {
+      "month": "1962-01",
+      "text": "Karen dies, aged two"
+    },
+    {
+      "month": "1962-03",
+      "text": "Chosen for the X-20 Dyna-Soar"
+    },
+    {
+      "month": "1962-04",
+      "text": "Sixth X-15 flight, over 207,000 ft"
+    },
+    {
+      "month": "1962-09",
+      "text": "Selected as an astronaut"
+    },
+    {
+      "month": "1965-02",
+      "text": "Backup commander, Gemini 5"
+    },
+    {
+      "month": "1966-03",
+      "text": "Gemini 8: first docking in space"
+    },
+    {
+      "month": "1967-01",
+      "text": "In Washington on the day of the Apollo 1 fire"
+    },
+    {
+      "month": "1968-05",
+      "text": "Ejects from the lunar landing trainer"
+    },
+    {
+      "month": "1968-12",
+      "text": "Offered command of Apollo 11"
+    },
+    {
+      "month": "1969-01",
+      "text": "Apollo 11 crew named"
+    },
+    {
+      "month": "1969-07",
+      "text": "Walks on the Moon"
+    },
+    {
+      "month": "1970-01",
+      "text": "Master’s degree at USC",
+      "confirmed": false
+    },
+    {
+      "month": "1970-04",
+      "text": "Helps investigate the Apollo 13 accident",
+      "confirmed": false
+    },
+    {
+      "month": "1971-08",
+      "text": "Leaves NASA, teaches at Cincinnati"
+    },
+    {
+      "month": "1978-01",
+      "text": "Congressional Space Medal of Honor",
+      "confirmed": false
+    },
+    {
+      "month": "1979-01",
+      "text": "National Aviation Hall of Fame",
+      "confirmed": false
+    },
+    {
+      "month": "1986-01",
+      "text": "Serves on the Challenger commission",
+      "confirmed": false
+    },
+    {
+      "month": "1994-01",
+      "text": "Divorces Janet; marries Carol Knight",
+      "confirmed": false
+    },
+    {
+      "month": "2012-08",
+      "text": "Dies in Fairfield, Ohio"
+    }
+  ]
+}

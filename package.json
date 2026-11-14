@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "build": "npm run build:reader && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "build:reader": "esbuild src/lifegrid.ts --format=esm --target=es2020 --outfile=public/lifegrid.js"
   },
   "dependencies": {
     "react": "^18.3.1",

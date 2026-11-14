@@ -1,0 +1,79 @@
+{
+ "schema": "life-grid/1",
+ "name": "Walter",
+ "birth": {
+  "month": "1941-02",
+  "place": "Duluth, Minnesota"
+ },
+ "homes": [
+  {
+   "from": "1941-02",
+   "place": "Duluth, Minnesota"
+  },
+  {
+   "from": "1963-06",
+   "place": "Chicago, Illinois"
+  },
+  {
+   "from": "2004-05",
+   "place": "Tucson, Arizona"
+  }
+ ],
+ "stays": [
+  {
+   "from": "1959-09",
+   "to": "1961-08",
+   "place": "Fort Ord, California"
+  }
+ ],
+ "cells": [
+  {
+   "month": "1941-02",
+   "text": "Born Duluth"
+  },
+  {
+   "month": "1959-06",
+   "text": "Graduated high school"
+  },
+  {
+   "month": "1959-09",
+   "text": "Joined the Army"
+  },
+  {
+   "month": "1963-06",
+   "text": "Moved to Chicago"
+  },
+  {
+   "month": "1966-10",
+   "text": "Married Ruth"
+  },
+  {
+   "month": "1969-07",
+   "text": "Watched Moon landing"
+  },
+  {
+   "month": "1971-03",
+   "text": "Daughter Anne born"
+  },
+  {
+   "month": "1988-11",
+   "text": "Promoted to foreman"
+  },
+  {
+   "month": "2003-12",
+   "text": "Retired"
+  },
+  {
+   "month": "2004-05",
+   "text": "Moved to Tucson"
+  },
+  {
+   "month": "2016-10",
+   "text": "50th anniversary"
+  },
+  {
+   "month": "2023-02",
+   "text": "Great-grandchild born"
+  }
+ ]
+}

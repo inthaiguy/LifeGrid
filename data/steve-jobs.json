@@ -1,0 +1,192 @@
+{
+  "schema": "life-grid/1",
+  "exportedAt": "2026-11-13T00:00:00.000Z",
+  "name": "Steve",
+  "birth": {
+    "month": "1955-02",
+    "date": "1955-02-24",
+    "place": "San Francisco, California"
+  },
+  "death": {
+    "month": "2011-10",
+    "date": "2011-10-05"
+  },
+  "homes": [
+    {
+      "from": "1955-02",
+      "place": "San Francisco, California"
+    },
+    {
+      "from": "1959-01",
+      "place": "Mountain View, California"
+    },
+    {
+      "from": "1967-01",
+      "place": "Los Altos, California"
+    },
+    {
+      "from": "1972-09",
+      "place": "Portland, Oregon"
+    },
+    {
+      "from": "1974-02",
+      "place": "Los Altos, California"
+    },
+    {
+      "from": "1977-01",
+      "place": "Cupertino, California"
+    },
+    {
+      "from": "1984-01",
+      "place": "Woodside, California"
+    },
+    {
+      "from": "1994-01",
+      "place": "Palo Alto, California"
+    }
+  ],
+  "stays": [],
+  "cells": [
+    {
+      "month": "1955-02",
+      "text": "Born in San Francisco"
+    },
+    {
+      "month": "1967-01",
+      "text": "Family buys the Los Altos house",
+      "confirmed": false
+    },
+    {
+      "month": "1968-01",
+      "text": "Summer job with Bill Hewlett",
+      "confirmed": false
+    },
+    {
+      "month": "1972-09",
+      "text": "Starts at Reed College"
+    },
+    {
+      "month": "1974-01",
+      "text": "Joins Atari",
+      "confirmed": false
+    },
+    {
+      "month": "1974-02",
+      "text": "Back in his parents’ house"
+    },
+    {
+      "month": "1974-06",
+      "text": "Trip to India",
+      "confirmed": false
+    },
+    {
+      "month": "1976-04",
+      "text": "Apple is founded"
+    },
+    {
+      "month": "1977-04",
+      "text": "Apple II shown"
+    },
+    {
+      "month": "1978-05",
+      "text": "Daughter Lisa is born"
+    },
+    {
+      "month": "1980-12",
+      "text": "Apple goes public",
+      "confirmed": false
+    },
+    {
+      "month": "1982-01",
+      "text": "Buys the San Remo apartment",
+      "confirmed": false
+    },
+    {
+      "month": "1984-01",
+      "text": "Introduces the Macintosh"
+    },
+    {
+      "month": "1985-01",
+      "text": "Founds NeXT",
+      "confirmed": false
+    },
+    {
+      "month": "1985-09",
+      "text": "Resigns from Apple"
+    },
+    {
+      "month": "1986-01",
+      "text": "Buys Pixar",
+      "confirmed": false
+    },
+    {
+      "month": "1988-10",
+      "text": "NeXT computer launch"
+    },
+    {
+      "month": "1991-01",
+      "text": "Marries Laurene Powell",
+      "confirmed": false
+    },
+    {
+      "month": "1995-11",
+      "text": "Toy Story released",
+      "confirmed": false
+    },
+    {
+      "month": "1997-02",
+      "text": "Apple acquires NeXT"
+    },
+    {
+      "month": "1997-09",
+      "text": "Interim CEO of Apple"
+    },
+    {
+      "month": "1998-08",
+      "text": "iMac released",
+      "confirmed": false
+    },
+    {
+      "month": "2000-01",
+      "text": "Becomes permanent CEO",
+      "confirmed": false
+    },
+    {
+      "month": "2001-10",
+      "text": "iPod released",
+      "confirmed": false
+    },
+    {
+      "month": "2003-01",
+      "text": "Cancer diagnosed",
+      "confirmed": false
+    },
+    {
+      "month": "2006-01",
+      "text": "Disney buys Pixar"
+    },
+    {
+      "month": "2007-06",
+      "text": "iPhone launch"
+    },
+    {
+      "month": "2009-04",
+      "text": "Liver transplant",
+      "confirmed": false
+    },
+    {
+      "month": "2010-01",
+      "text": "iPad announced",
+      "confirmed": false
+    },
+    {
+      "month": "2011-08",
+      "text": "Steps down as CEO",
+      "confirmed": false
+    },
+    {
+      "month": "2011-10",
+      "text": "Dies in Palo Alto"
+    }
+  ]
+}

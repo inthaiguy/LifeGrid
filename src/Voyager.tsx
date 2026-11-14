@@ -104,6 +104,9 @@ export default function Voyager({ s, onCell }: { s: State; onCell?: (at: YM) => 
   const scene = useMemo(() => {
     if (!s.birth || w < 200 || h < 200) return null;
     const now = today(), born = s.birth.y + (s.birth.m - 0.5) / 12, launch = V2.way[0].t;
+    // The craft keep flying after someone has died; the life stops at the death month.
+    const died = s.death ? s.death.y + (s.death.m - 0.5) / 12 : 0, end = s.death ? Math.min(now, died) : now;
+    const who = s.death ? s.name || 'This person' : 'You', was = who === 'You' ? 'were' : 'was';
     const tall = h > w * 1.15, phone = w < 560;
     const rot = tall ? 20 : 290; // turn the system so Voyager 2 leaves down the long side of the screen
     // Model space: the ecliptic is the X–Y plane, seen from above and tilted away; +Z is north.
@@ -188,21 +191,23 @@ export default function Voyager({ s, onCell }: { s: State; onCell?: (at: YM) => 
       return false;
     };
     const normalAt = (path: Craft, t: number): P => { const a = pos(path, t - 0.2), b = pos(path, t + 0.2), dx = b[0] - a[0], dy = b[1] - a[1], l = Math.hypot(dx, dy) || 1; return [-dy / l, dx / l]; };
-    const ageAt = (t: number) => (t >= born ? `age ${Math.floor(t - born)}` : `${Math.ceil(born - t)} yr before you`);
+    const ageAt = (t: number) => (s.death && t > died ? `${Math.max(1, Math.floor(t - died))} yr after death` : t >= born ? `age ${Math.floor(t - born)}` : `${Math.ceil(born - t)} yr before ${s.death ? 'birth' : 'you'}`);
     const au = (t: number) => Math.round(at(V2, t).d);
 
-    place('now', pos(V2, now), normalAt(V2, now), 'Voyager 2 today', phone ? `${au(now)} AU out · you are ${Math.floor(now - born)}` : `about ${au(now)} AU out · you are ${Math.floor(now - born)}`);
-    if (born > launch) place('born', pos(V2, born), normalAt(V2, born), 'You were born', `${MON[s.birth.m - 1]} ${s.birth.y} · ${au(born)} AU out`, { cls: 'you' });
+    const youNow = s.death ? '' : ` · you are ${Math.floor(now - born)}`;
+    place('now', pos(V2, now), normalAt(V2, now), 'Voyager 2 today', phone ? `${au(now)} AU out${youNow}` : `about ${au(now)} AU out${youNow}`);
+    if (born > launch) place('born', pos(V2, born), normalAt(V2, born), s.death ? 'Born' : 'You were born', `${MON[s.birth.m - 1]} ${s.birth.y} · ${au(born)} AU out`, { cls: 'you' });
+    if (s.death && died > launch) place('died', pos(V2, end), normalAt(V2, end), 'Died', `${MON[s.death.m - 1]} ${s.death.y} · age ${Math.floor(died - born)} · ${au(end)} AU out`, { cls: 'you' });
     for (const m of MILESTONES) place(m.iso, pos(V2, when(m.iso)), normalAt(V2, when(m.iso)), m.name, `${monthYear(m.iso)} · ${ageAt(when(m.iso))}`);
     place('v1', pos(V1, now), normalAt(V1, now), 'Voyager 1 today', `about ${Math.round(at(V1, now).d)} AU out`, { cls: 'faint' });
     if (!phone) place('hp', hp2.end, [0, 1], '', 'the heliopause, edge of the Sun’s bubble', { cls: 'faint' });
 
     // Life events, the weightier ones first, as many as find room.
-    const age = Math.max(0, Math.floor(now - born)), birthAt = `${s.birth.y}-${String(s.birth.m).padStart(2, '0')}`;
+    const age = Math.max(0, Math.floor(end - born)), birthAt = `${s.birth.y}-${String(s.birth.m).padStart(2, '0')}`;
     const big = (t: string) => /^(born|moved?|married|wedding|engaged|graduat|first|started|new job|retired|bought)/i.test(t);
     const picks = pickEvents(s, age, 60)
       .map((p) => ({ ...p, t: yOf(p.at) + (mOf(p.at) - 0.5) / 12 }))
-      .filter((p) => p.t > launch && p.t <= now && p.at !== birthAt)
+      .filter((p) => p.t > launch && p.t <= end && p.at !== birthAt)
       .sort((a, b) => Number(big(b.text)) - Number(big(a.text)));
     let room = phone ? 8 : Math.min(22, Math.floor(w / 90));
     const max = phone ? 20 : 30;
@@ -218,14 +223,14 @@ export default function Voyager({ s, onCell }: { s: State; onCell?: (at: YM) => 
     const stars = Array.from({ length: Math.round((w * h) / 11000) }, () => ({ x: rnd() * w, y: rnd() * h, r: 0.4 + rnd() * 0.8, o: 0.2 + rnd() * 0.45 }));
 
     let line1: string;
-    if (born <= launch) { const a0 = Math.floor(launch - born); line1 = a0 < 1 ? 'Voyager 2 launched in August 1977, in your first year.' : `When Voyager 2 launched in August 1977, you were ${a0}.`; }
+    if (born <= launch) { const a0 = Math.floor(launch - born); line1 = a0 < 1 ? `Voyager 2 launched in August 1977, in ${s.death ? 'their' : 'your'} first year.` : `When Voyager 2 launched in August 1977, ${who.toLowerCase() === 'you' ? 'you' : who} ${was} ${a0}.`; }
     else {
       const d = at(V2, born).d, yrs = Math.floor(born - launch);
       const leg = d < 5.3 ? 'on its way to Jupiter' : d < 9.6 ? 'between Jupiter and Saturn' : d < 19.1 ? 'between Saturn and Uranus' : d < 30.2 ? 'between Uranus and Neptune' : d < 119 ? 'past Neptune, bound for interstellar space' : 'in interstellar space';
-      line1 = `You were born ${yrs < 1 ? 'in the first year of' : `${yrs} ${yrs === 1 ? 'year' : 'years'} into`} Voyager 2’s journey, when it was ${Math.round(d)} AU from the Sun, ${leg}.`;
+      line1 = `${who} ${was} born ${yrs < 1 ? 'in the first year of' : `${yrs} ${yrs === 1 ? 'year' : 'years'} into`} Voyager 2’s journey, when it was ${Math.round(d)} AU from the Sun, ${leg}.`;
     }
     return { fs, orbits, disc, sun, sunR, planets, path2, path1, shadow2, shadow1, plumbs, hp2, hp1, c2: craft(V2), c1: craft(V1), labels, stars, line1, phone };
-  }, [s.birth?.y, s.birth?.m, cells, s.cells, w, h]);
+  }, [s.birth?.y, s.birth?.m, s.death?.y, s.death?.m, s.name, cells, s.cells, w, h]);
 
   if (!s.birth) return <div className="grid-empty"><p>Your life, along Voyager 2’s journey.</p><p className="dim">Answer the first question and it appears here.</p></div>;
   const v = scene;

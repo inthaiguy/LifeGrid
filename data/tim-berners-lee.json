@@ -1,0 +1,200 @@
+{
+  "schema": "life-grid/1",
+  "exportedAt": "2026-11-13T00:00:00.000Z",
+  "name": "Tim",
+  "birth": {
+    "month": "1955-06",
+    "date": "1955-06-08",
+    "place": "London, England"
+  },
+  "homes": [
+    {
+      "from": "1955-06",
+      "place": "London, England"
+    },
+    {
+      "from": "1976-09",
+      "place": "Poole, England"
+    },
+    {
+      "from": "1978-01",
+      "place": "Ferndown, England"
+    },
+    {
+      "from": "1980-06",
+      "place": "Geneva, Switzerland"
+    },
+    {
+      "from": "1980-12",
+      "place": "Bournemouth, England"
+    },
+    {
+      "from": "1984-01",
+      "place": "Geneva, Switzerland"
+    },
+    {
+      "from": "1994-01",
+      "place": "Boston, Massachusetts"
+    }
+  ],
+  "stays": [],
+  "cells": [
+    {
+      "month": "1955-06",
+      "text": "Born in London"
+    },
+    {
+      "month": "1969-01",
+      "text": "Starts at Emanuel School",
+      "confirmed": false
+    },
+    {
+      "month": "1976-03",
+      "text": "First in physics at Oxford",
+      "confirmed": false
+    },
+    {
+      "month": "1976-04",
+      "text": "Marries Jane Northcote",
+      "confirmed": false
+    },
+    {
+      "month": "1976-08",
+      "text": "Moves to Poole to work at Plessey",
+      "confirmed": false
+    },
+    {
+      "month": "1978-01",
+      "text": "Joins D. G. Nash",
+      "confirmed": false
+    },
+    {
+      "month": "1980-06",
+      "text": "Contractor at CERN"
+    },
+    {
+      "month": "1980-12",
+      "text": "Joins Image Computer Systems",
+      "confirmed": false
+    },
+    {
+      "month": "1984-01",
+      "text": "Returns to CERN as a fellow",
+      "confirmed": false
+    },
+    {
+      "month": "1989-03",
+      "text": "Proposes the World Wide Web"
+    },
+    {
+      "month": "1989-11",
+      "text": "First web client and server talk"
+    },
+    {
+      "month": "1990-03",
+      "text": "Proposal accepted at CERN",
+      "confirmed": false
+    },
+    {
+      "month": "1990-07",
+      "text": "Marries Nancy Carlson",
+      "confirmed": false
+    },
+    {
+      "month": "1990-12",
+      "text": "Publishes the first website"
+    },
+    {
+      "month": "1991-08",
+      "text": "Invites the world to use the Web"
+    },
+    {
+      "month": "1994-01",
+      "text": "Founds the W3C at MIT",
+      "confirmed": false
+    },
+    {
+      "month": "2001-01",
+      "text": "Fellow of the Royal Society",
+      "confirmed": false
+    },
+    {
+      "month": "2004-01",
+      "text": "Takes a chair at Southampton",
+      "confirmed": false
+    },
+    {
+      "month": "2004-07",
+      "text": "Knighted"
+    },
+    {
+      "month": "2007-06",
+      "text": "Order of Merit"
+    },
+    {
+      "month": "2009-01",
+      "text": "National Academy of Sciences associate",
+      "confirmed": false
+    },
+    {
+      "month": "2009-11",
+      "text": "Launches the Web Foundation"
+    },
+    {
+      "month": "2010-01",
+      "text": "Helps create data.gov.uk",
+      "confirmed": false
+    },
+    {
+      "month": "2011-01",
+      "text": "Divorces Nancy Carlson",
+      "confirmed": false
+    },
+    {
+      "month": "2012-01",
+      "text": "Co-founds the Open Data Institute",
+      "confirmed": false
+    },
+    {
+      "month": "2012-07",
+      "text": "Olympics opening ceremony in London"
+    },
+    {
+      "month": "2013-01",
+      "text": "Queen Elizabeth Prize for Engineering",
+      "confirmed": false
+    },
+    {
+      "month": "2014-06",
+      "text": "Marries Rosemary Leith"
+    },
+    {
+      "month": "2016-10",
+      "text": "Joins Oxford and Christ Church"
+    },
+    {
+      "month": "2017-04",
+      "text": "Receives the Turing Award"
+    },
+    {
+      "month": "2018-09",
+      "text": "Announces Inrupt and Solid"
+    },
+    {
+      "month": "2019-11",
+      "text": "Launches the Contract for the Web"
+    },
+    {
+      "month": "2021-06",
+      "text": "Sells the Web’s source code as an NFT"
+    },
+    {
+      "month": "2025-09",
+      "text": "Memoir \"This Is for Everyone\" published"
+    },
+    {
+      "month": "2025-11",
+      "text": "On Desert Island Discs"
+    }
+  ]
+}

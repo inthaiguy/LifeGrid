@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { EVENTS, EventMark } from './events';
-import { type State, type YM, MON, ym, yOf, addM, nowYM, inLife, homeAt, colorOf, inkOn, ageColor, fmt, short } from './model';
+import { type State, type YM, MON, ym, yOf, addM, nowYM, repeatsEarlier, inLife, homeAt, colorOf, inkOn, ageColor, fmt, short } from './model';
 
 /** How far through the current month we are, and what is left of it in a few characters. */
 function monthLeft(d = new Date()): { done: number; text: string } {
@@ -64,7 +64,7 @@ export default function Grid({ s, read, full, onCell }: { s: State; read: boolea
             const cls = `cell ${c ? (c.p ? 'ph' : 'on') : 'empty'}${s.changed.includes(at) ? ' flash' : ''}`;
             const cell = (
               <button key={at} data-ym={at} className={cls + (at === now ? ' now' : '')} style={{ ['--c' as any]: col, ['--t' as any]: inkOn(col), ['--p' as any]: at === now ? `${Math.round(left.done * 100)}%` : undefined }} onClick={onCell && (() => onCell(at))} aria-label={`${fmt(at)}${EVENTS[at] ? ` (${EVENTS[at].label})` : ''}${c ? `: ${c.t}` : ''}`} title={EVENTS[at] ? `${EVENTS[at].title}: ${EVENTS[at].label}` : undefined}>
-                {read && c ? <span>{c.t}</span> : null}
+                {read && c && !repeatsEarlier(s, at) ? <span>{c.t}</span> : null}
                 <EventMark at={at} />
               </button>
             );

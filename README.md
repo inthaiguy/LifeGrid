@@ -124,6 +124,17 @@ Then open http://localhost:5173. `npm run build` type-checks and builds to `dist
 
 See `docs/open-questions.md`. Settled choices are in `docs/decisions.md`.
 
+## Making views
+
+Views are drop-in. Each one is a single file in `src/views/`, and the app picks up any file added there.
+`docs/making-a-view.md` is a guide written so that a person, or an AI assistant given the file, can build
+a new view from it alone, either inside this app or on another site that accepts a pasted Life Grid link.
+
+- `src/lifegrid.ts` — the standalone reader: one file, no dependencies. It turns a link or JSON export
+  into plain data and has the helpers views need. `npm run build:reader` writes it as `public/lifegrid.js`.
+- `data/samples/` — fictional lives to test a view against.
+- `examples/` — sample links and a working outside view, at `/examples/` on the dev server.
+
 ## Layout
 
 ```

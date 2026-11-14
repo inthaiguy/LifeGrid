@@ -1,0 +1,158 @@
+{
+  "schema": "life-grid/1",
+  "exportedAt": "2026-11-13T00:00:00.000Z",
+  "name": "David",
+  "birth": {
+    "month": "1926-05",
+    "date": "1926-05-08",
+    "place": "Isleworth, England"
+  },
+  "homes": [
+    {
+      "from": "1926-05",
+      "place": "Isleworth, England"
+    },
+    {
+      "from": "1932-01",
+      "place": "Leicester, England"
+    },
+    {
+      "from": "1945-10",
+      "place": "Cambridge, England"
+    },
+    {
+      "from": "1952-01",
+      "place": "London, England"
+    }
+  ],
+  "stays": [],
+  "cells": [
+    {
+      "month": "1926-05",
+      "text": "Born in Isleworth"
+    },
+    {
+      "month": "1944-01",
+      "text": "Geology course at Nottingham",
+      "confirmed": false
+    },
+    {
+      "month": "1945-01",
+      "text": "Scholarship to Clare College, Cambridge",
+      "confirmed": false
+    },
+    {
+      "month": "1947-01",
+      "text": "Called up for National Service",
+      "confirmed": false
+    },
+    {
+      "month": "1950-04",
+      "text": "Marries Jane Oriel",
+      "confirmed": false
+    },
+    {
+      "month": "1950-07",
+      "text": "BBC turns him down as a radio producer",
+      "confirmed": false
+    },
+    {
+      "month": "1952-01",
+      "text": "Joins the BBC full-time",
+      "confirmed": false
+    },
+    {
+      "month": "1954-01",
+      "text": "Zoo Quest is first broadcast",
+      "confirmed": false
+    },
+    {
+      "month": "1957-01",
+      "text": "BBC Natural History Unit founded in Bristol",
+      "confirmed": false
+    },
+    {
+      "month": "1965-03",
+      "text": "Controller of BBC Two"
+    },
+    {
+      "month": "1969-01",
+      "text": "Director of programmes, BBC",
+      "confirmed": false
+    },
+    {
+      "month": "1972-01",
+      "text": "Cherry Kearton Medal",
+      "confirmed": false
+    },
+    {
+      "month": "1973-01",
+      "text": "Leaves BBC management to make programs",
+      "confirmed": false
+    },
+    {
+      "month": "1979-01",
+      "text": "Life on Earth begins",
+      "confirmed": false
+    },
+    {
+      "month": "1981-01",
+      "text": "Kalinga Prize",
+      "confirmed": false
+    },
+    {
+      "month": "1985-01",
+      "text": "Knighted",
+      "confirmed": false
+    },
+    {
+      "month": "1996-01",
+      "text": "Kew International Medal",
+      "confirmed": false
+    },
+    {
+      "month": "1997-01",
+      "text": "His wife Jane dies",
+      "confirmed": false
+    },
+    {
+      "month": "2000-01",
+      "text": "International Cosmos Prize",
+      "confirmed": false
+    },
+    {
+      "month": "2001-09",
+      "text": "The Blue Planet",
+      "confirmed": false
+    },
+    {
+      "month": "2003-01",
+      "text": "Michael Faraday Prize",
+      "confirmed": false
+    },
+    {
+      "month": "2004-01",
+      "text": "Descartes Prize",
+      "confirmed": false
+    },
+    {
+      "month": "2006-03",
+      "text": "Planet Earth",
+      "confirmed": false
+    },
+    {
+      "month": "2009-01",
+      "text": "Prince of Asturias Award",
+      "confirmed": false
+    },
+    {
+      "month": "2024-01",
+      "text": "Stephen Hawking Medal",
+      "confirmed": false
+    },
+    {
+      "month": "2026-05",
+      "text": "Turns 100"
+    }
+  ]
+}

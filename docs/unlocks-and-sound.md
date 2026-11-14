@@ -3,8 +3,9 @@
 ## Views unlock as the grid fills in
 
 The grid is always available. The other views unlock at a percentage of months filled in (confirmed entries
-only, the same percentage shown at the top of the menu). The list lives in `src/views.ts`; change the names,
-order or `at` thresholds there.
+only, the same percentage shown at the top of the menu). Each view is a file in `src/views/`, and its
+name and `at` threshold are in that file's `view` description; views are listed in order of `at`. Adding a view
+is adding a file (see `docs/making-a-view.md`).
 
 | View | Unlocks at |
 |---|---|
@@ -13,6 +14,7 @@ order or `at` thresholds there.
 | Timeline with significant events | 10% |
 | Vertical timeline | 20% |
 | Tree view | 35% |
+| Voyager view | 50% |
 
 - The view button in the header cycles through unlocked views only, and is disabled until the first unlock.
 - **Menu → Views** lists every view (locked ones show their percentage), lets you jump to an unlocked one, and
