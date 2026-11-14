@@ -1,3 +1,6 @@
+// The app's data model and the pure functions on it: months ("YYYY-MM"), State, homes and stays,
+// the season colour ramp, completeness stats and the CSV / JSON exports. No React, no I/O.
+// src/lifegrid.ts is the read-only, dependency-free twin of this for outside views.
 export type YM = string; // "YYYY-MM"
 
 export const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

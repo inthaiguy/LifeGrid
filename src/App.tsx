@@ -1,3 +1,6 @@
+// The app shell: layout, the menu shelf, the cell editor, sharing, undo and local persistence.
+// Owns the single State object (src/model.ts). Every edit goes through commit(), which records undo history,
+// saves to localStorage and rewrites the URL. A link starting "#s." is a read-only view and stores nothing.
 import { useEffect, useRef, useState } from 'react';
 import { type State, type YM, fresh, stats, toCSV, toJSON, fmt, addM, homeAt, setBirth, MON, colorOf, places, short, inLife, yOf, ym , nowYM } from './model';
 import { START, TOPICS, PLACE_TOPICS, normalize, current, answer, skip, begin, pending, goTopic, resume } from './script';

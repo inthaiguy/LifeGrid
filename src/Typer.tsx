@@ -1,3 +1,4 @@
+// Typewriter text for the welcome flow. Respects prefers-reduced-motion.
 import { useEffect, useRef, useState } from 'react';
 import { blip } from './sound';
 

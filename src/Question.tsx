@@ -1,3 +1,5 @@
+// Renders one onboarding question (src/script.ts) as a small form: text, month-and-year, choice and
+// repeating fields. It only collects input; script.ts decides what the answer fills in.
 import { useState } from 'react';
 import { type State, MON, ym, homeAt, short } from './model';
 import { NOFILL } from './nofill';

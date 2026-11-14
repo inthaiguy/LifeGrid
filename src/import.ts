@@ -1,3 +1,5 @@
+// Reads a person's existing data into cells: a "life-grid/1" JSON export (docs/data-format.md) or a
+// pasted spreadsheet in the original layout. Returns null for anything it does not recognise.
 import { type YM, ym, nowYM } from './model';
 
 export interface Parsed {

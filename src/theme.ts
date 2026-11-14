@@ -1,3 +1,5 @@
+// Themes: each file in themes/*.json is picked up automatically, validated, and applied as CSS variables.
+// See docs/themes.md for the file format.
 import { setRamp } from './model';
 import { setRamp as setReaderRamp } from './lifegrid';
 

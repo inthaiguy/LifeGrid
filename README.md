@@ -1,146 +1,92 @@
-# Life Grid (working name)
+# Life Grid
 
-Your whole life on one page: months across, years down, one headline event per cell.
+**Your whole life on one page: one cell per month, one headline per cell.**
 
-Each row is a year (labelled with your age), each column a month. A cell holds the
-single most memorable thing from that month — a trip, a life event, a weekend away —
-in one to three words. Cells are tinted by where you were living at the time. The goal
-is a fully filled grid, and the product's job is to help you get there.
+**[Open Life Grid →](https://lifegrid-zeta.vercel.app/)** · runs in your browser, no account, no server
 
-Origin: a personal spreadsheet kept in this format for years. The empty cells are the
-problem this project exists to solve, so the measure of the product is how many cells it
-fills for how few questions asked.
+Each row is a year (labelled with your age) and each column a month. A cell holds the single most
+memorable thing from that month in a few words. Cells are tinted by where you lived, and the colours
+follow the seasons of a life: spring at birth, through summer and autumn, to winter.
 
-## Status
+## See it with real lives
 
-A working web app (Phase 1). It runs entirely in the browser with no backend.
+Read-only grids built from public sources. Each one is just a link:
 
-- **Onboarding questions** fill the grid from a short script, by topic: Homes, School,
-  Traditions, Work, People, Anchor dates, Firsts, Trips, Eras, Shared events. One answer
-  often fills many cells (a yearly tradition fills that month in every year).
-- **The life sheet**: rows are years with an age column, columns are months, cells are
-  tinted by home. Two modes, Read (headlines visible) and Overview (whole life on one
-  screen), plus full screen and a hover tooltip on every cell.
-- **Season colours**: homes and the age column run along a spring → summer → fall →
-  winter ramp, to match the season of a person's life.
-- **Shelf menu** (slides in from the left) holds all the work: questions, completion
-  stats, jump to a topic, sharing, undo, CSV download, start over. Closed, only the
-  sheet shows. On a phone the questions sit in a bottom panel that swipes away and back.
-- **Cell editor**: click a cell to set its headline. A Google Photos icon opens your own
-  photos for that month and year.
-- **Sharing**: the whole grid lives in the URL. Your own link reopens the grid for
-  editing on another device, with unanswered topics carried along. The share link is
-  read-only, with no menu, and stores nothing on the viewer's device.
+- [Arthur C. Clarke][clarke] · [Neil Armstrong][armstrong] · [Steve Jobs][jobs]
+- [Tim Berners-Lee][timbl] · [David Attenborough][attenborough]
 
-## Run it
+Months that a source only gives as a year are marked "to confirm". The source files are in [`data/`](data/).
+
+## Why
+
+- **Short questions fill a long life.** One answer fills many cells; a yearly tradition fills that month in every year.
+- **Eight views of the same data:** grid, three timelines (one with world events), tree, voyager, spiral, and a tech timeline that sets your life beside a century of inventions.
+- **Private by design.** No backend. Your grid lives in your browser and in the link, and goes nowhere else.
+- **Shareable.** The whole grid is in the URL. Share a read-only link, or open your own on another device.
+- **Yours to keep.** Export JSON or CSV, import a sheet, undo any change.
+- **Works on a phone** as well as a large screen.
+
+## Use a Life Grid link in your own project
+
+A link carries the whole life, so any page can read one. The reader is a single file with no
+dependencies, served with open CORS, so you can import it directly:
+
+```html
+<textarea id="link" placeholder="Paste a Life Grid link"></textarea>
+<ol id="out"></ol>
+<script type="module">
+  import { read, pickEvents, fmt } from 'https://lifegrid-zeta.vercel.app/lifegrid.js';
+
+  document.getElementById('link').addEventListener('input', async (e) => {
+    const life = await read(e.target.value);       // null if it is not a Life Grid
+    const out = document.getElementById('out');
+    out.textContent = '';
+    for (const ev of life ? pickEvents(life, 10) : []) {
+      const li = document.createElement('li');
+      li.textContent = `${fmt(ev.month)}, age ${ev.age}: ${ev.text}`;
+      out.append(li);
+    }
+  });
+</script>
+```
+
+`read` accepts a link, the part after the `#`, or a JSON export. It returns plain data (`name`, `birth`,
+`homes`, `cells`, …) plus helpers such as `events`, `homeAt` and `ageColor`. Show people's words with
+`textContent`, never `innerHTML`. To bundle the reader instead, copy [`src/lifegrid.ts`](src/lifegrid.ts).
+
+| Link form | Meaning |
+|---|---|
+| `…/#s.<data>` | Read-only share link |
+| `…/#<data>` | The owner's link; opens for editing |
+
+Full API and rules: [docs/making-a-view.md](docs/making-a-view.md). Link and JSON formats: [docs/data-format.md](docs/data-format.md).
+
+## Run it locally
 
 ```bash
 npm install
+npm run dev      # http://localhost:5173
+npm run build    # type-checks, then builds to dist/
 ```
 
-```bash
-npm run dev
-```
+A static single-page app (React, TypeScript, Vite). It deploys to any static host.
 
-Then open http://localhost:5173. `npm run build` type-checks and builds to `dist/`.
+## Contributing
+
+A new view is one file dropped into `src/views/`; a new theme is one JSON file in `themes/`.
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/architecture.md](docs/architecture.md). Plans and
+open questions are in [docs/roadmap.md](docs/roadmap.md).
 
 ## Privacy
 
-- The app has no server and sends your grid nowhere. It is kept in your browser's
-  local storage and in the URL.
-- Anyone with a link can read the whole grid it carries.
-- In development only, each run is also written to `data/private/` on your own machine
-  for review. That folder is ignored by git. `data/sample-life*.csv` is fictional.
+The app sends your grid nowhere. Anyone with a link can read everything in it, so share links with care.
 
-## Goals
+[clarke]: https://lifegrid-zeta.vercel.app/#s.1VjNciI5Ej6bp8i97Ua4N4x7uns8e6gA_DPuNjYBTDvmmJQSSmGVkpBU0DUn3mFOG9H9cjzJRqoAUwV4NmJPyxGlUp_y58tPddnquJAVrtW-an86a1-e9bWljFCdw42dGbTqrP3xrH3x8_uz9lWrdXG43rq8vDx7YKvYvv7304dPZz02nE_4HEZOwwPaF2y1Wl12FrSFrZvW__sv-czaeggZQdfpoH0G9zaQmxu0FNCVMOJUUyjf9NLnBXkIDFUg_3csQy7RQEc7uGWX0lu7epzn2nvNlhTMteEAPJ3qlFy1PnCccyAFU1NqO6sv7n4PFAI5YAuODJbgMZAxOpDfWqxX32--BYfvxuQc-eA0GhiKsV-vfsC8mBjtM1I76wfmecaG6qvr1fch-bQgGKAL5Xr14xym2vkAHs3RiybPTnDAevV9nBGMyAZtyYjbKTtA6HZ7kLIN5ENtX8d77QPaAKR0YHcOo1STTQk6Ex8cpsHX7BuJvzV6loXmxbbGXUo5Jw8I08KYd0HnBEsB6lqJwLz5NjfsMGi2wFMYzTGlfV_JwJEpFEnVHCxWLkZolZfNfXT-EEeF18Yj0MAt2oC-hM4SnYqROQUj7vUmetc21tvopTw4IOll2qiMWa1X__ZwY9WeSdJH5zR5waZNaaGP5VSTUTH1n4u5RAJu9SKmn6tTUl5IjU3hftpKOjPU1oe4cIvGyP-PMeJ_t7wg8496QG6-zSWLco_AcIMuZIeIj9xY3PeZ7WF4f-fCzmDscEHGkJNQHCYiHi2HvVEMu-7vUWmk-6P7HqOXVoQeOzT7oYurOpSAVlXRD40EJ0PCNKuSyDk7x8va8leyoXCxdo7c79dixnHvtmMCuvXqx2uIronmMEQ7oxosNORh6jiPTp8zHQh-RRea2IdE01iXY5w7nqCtF7aY9PGl4hrAE9F_Chk5GGlF2ywdqcGkyyV0yRKGrLIhrNlsb8h2FhFdbxo-puxE5bWSr6yFBFLH3h91u01hhsaQhGkLUerDZ3p-ghVO7mv4j1a3kfWkReAWQ8b5sR7v7HpDwqgKX8vGvVUaLTylhBY6arEpi5qb5LfHm1Hvab368wsabWcIA6f_2DJtMnA81ZL4DdTbouFiUxeSbrLwzM6oBtBkgA5N6Un9CwxK3yuNM8ueFKCHORvN2-Ou2cwzbaHin_1j7ozUwgCbfZ2MQiFF2EVjMFI_9Emh2TjsEwUvJW4NlfClmDidvkgvP9ISfmf30kqu9UKGaFXaW76aaotG-4rKbGzFQ46uxXfsCH0zvDGTu5VNDO8cYYht0rhKLLy9HjtGu4fzT454lHt3tTFCa4-YVxm5Y3Vqf3J5cdH-BTqbWz2p0nsqj3Cr2MFUm1wmP6HfQJVDRTpoT0fnl9g8-RQdWM51NYVgqUO2y4EwkDiv8DyicyhjvDNnYxja7WjQ646O3PjeHp2KexZPUxjLyI15a9BnxP6srdoLdLFPQUmXSrYKtmOqzrxzdkF4YxCVAIwzR0dy_sA-bLuBp_GiB-w1JKvojwUXvorMEPN9HkgeaVIY9DEQcU1us15974BUtRBo3NYnVXjcMHg8vEvVaKnEP_T-CT2D7oWgffX-03r1Z_vqUxNNspsKx1AdJCCfUxR4h4M22b0HYObQBg-OvFZkA8wKweUDhsLv1e5fo_3w4WQZi4OvmpZVLkfkyKom_z6QN5rg5gUtlvhCoDT5vzz7w8cqUpdvt2DF1VzYIHpFfAndKemLWliqZO6E19Edr0532XjLNumXPpDTkqpYajBxjCrFutDd7_n2xS-7Xh8vuQ6xjy5lq_cHQLIvqU81m7htUEQ1wzcH3WpTmxgdn0o5BIYnN9E11ZSMyQc91RvBxHbmyHvAjRgcXd_Lge2rn386h9HcSQ8cqDyhPwVoYXT73IE7J13TR4lUfC3EQAllBRclzoCX5PxB6JLTwqEG-PICPhemhMuL9lUNy8BgOeEStMjwhaZlK7nGnC18sVEr9inn2EP7CCt5vg3rx_Zetg54ppaDnkNlGiU3YB_exfEKvrTKcU6vo3e7MRLL_X09P4ELqyS411jWlWcfFQFCr3tTPQHQpmQMu-1sqz86Ko7-zeoFOa93r-QtwR5q-wZL32VCozuariLVRfvSlBh74nTDy288Ae7QKYrqv8m4fXYE40xmut3hbgqm5pOmopNd5_Ky0sexzp7RR1e1vHSKkLETcQETzTOH86yESQmPpA30046h1_d3BPwr5nmlT-sTvUrekBaEhhqjPumWm_AP2HvyvmmwqXDLy1jhT6bM58URjXmMSIY6zaRa2xf1m-2ehPIcPPCVvI-aoxK3Uh7b2j56ZlL1SfSG1nJh0-Nyeuz0bFYf063kzlUj0p9DD92E7buuEBN09ZyU_9sBtDizYwlKLOLjo1n7rVaFiJTox833rxqSHhtDqRiMAsfn73-h3nRO1QO6PN3e29_YFxZzDUo-sHDpIdMelF5Iq_o0Y46yNxkV1gd2eaPshFoE23ZATzKdoy2b011s4-NjIl_zjkG6uggZTLQLmcISsFCaISfvcSZj41ou_hqh_wA
+[armstrong]: https://lifegrid-zeta.vercel.app/#s.3VbBbuNGDD1LX8FjC8iA7cRt0j0EjrPebHeTTaPdJldGoiQmY9KYoezNrb_R3-uXFCPZXmebtCiKAkV5EkacR_LxkdI4vSR26ej4YJgcJTcYGpbaVOCjriU0vMzgQ8OaTJLjo8NkPEnT4cte6ei7UXKDS3xQIcPN4Xg4SW4oGLzHCh_JjDJ4KyWjYDoej5IrkoCFOsxg7tRzien48CDJUeCMqdYMZui4Ui-M6fj4OHldrtGX4cn5wdEkOdc2mEoGH-kzhvTweJzMWAoWQeNNMml6ql6ABZ6pIv2v28kcF-weIZCZo9CXsaX7L-7m1pYkBkt2alCQN664QCNAKaFiHwyCOu0D5YbeAiB5FWyNC3RAUrMQeZYa0OCq9WVLL4W7xNUjFOjcoF2CKey6vHWY7yLGMhC6C-aRhfy-R4HeM3lwKCVLncGnPIcZ3ql1Tj-1UQRMJQiu0AGuGE0jwjQEroXKGP3n-WAy2iLek0HluG56hCuvC7XejyTe2YXWxR1aTO-desL09T0VkZTKyEPDAdaRiobjGRR45_bZuCZHGKiEyusCsDBeEZStPe489gM7ptZIUAy-ua-_fY7RNx7LFo1Cj7ilv0_1cjqbgsUp-1LZNS01NtEUNiPTA110jAb4EYUM8obQqzwTsEf2WjyQDZa6Jh-r6eAzuB2MTr_q-DSfAgeotJWSylfQENwrS3hJItcUyQ59568pkF9R5HzBIbDKJv7tYDTZb1eanmFbN7EF79CTQMlYi0am12wNIFi70I2E0q0LhQywjlyvNU1njQYSqNSDNQS3g_EQzh4FB7miT3P-bM1-3Ax0RR7Gw--z4XAIVZ9ITo6K2D4MgAIYrJ-Vl8rt7BSLh3bZVYlSks_gDS1YGCZPe90fHv2wGcxSi4eoNRYISyz2dPb2ySZT6Qoq8RG06h6nS3VOYRSB_jCsG0F3eorOrhXcTdrTYUw_VFUngE3qEX-LPUp3T1B4WoPggsr-2g26h7DN60K3Qju5wGDkf_vl1wAl1Z4orpRP-Sy-Oye3jMttRcG4jitqv5IDwKLguMu-Luc94YoCRCFmYIRFQyHCfvkK_Glv_q6dzFRqT51Y0UEeGwMXVKKL5Jyr7FTYu1-i9Z7TuKNYBc7Rdb5zXLy4SP9RhnmcqR39swadI6nJ74_Zv2wnZ7xSX2z3zStYbNbPDL06eCd7k_1_tTPuP9ZzZF8xubL_G_kd
+[jobs]: https://lifegrid-zeta.vercel.app/#s.zVTNctNADD7bT6EH6KFJ0x9OnialQ5gEPE0HuCprJRasJaPdbciN1-D1eBLGLW1xSdoZTui4kr79ftYe5otIN5QPXh0fZ8NsgQKXhuI4OD2ACXpeqQljNhxlJ2eH2XGeH-6fyken2VyTRGSBD0ybXnMwOspmGuDcRw29znAwyEq16FGqA3hvtFbJh8OzfeMnR9kktWSRpX__0eg0-6haBa6oT-zkNCvR6y1ar5PnYzUBFujJyv-vKi6xYb-FZdoGiDXBgzNQawrUm12kpiGDz7qEDccaxuw9vKGNpxj_lcAiosUAGOGKqIKJek9rejpVvFWWAOcRjfMxui-drzUHaNFIYvj5_ccj3-LauIWoMJXqNogddd62noADrDRJRdXfvekUQq0b6a1dYFrXkQxmHLBbX6rJU-yn3O_w1koB2rT07Prt8b313Tu5okYBW7TYkOw1dSrRtEqO7hbn6FiihrqHe9kpC_COPl3fn11R4LUEWJk2cEvrkUHJ39BekJLnHRo4bdrUueAxiaufGS_maMYUYIbJSAhK3ZD3L16zH_Bat7CIalsw8oShH91Deui-JjbqyZ9KJOMGJq_fg64e9d9D8xzdPtTOJXLadBmSNSgksQPaTZJLrfYhFRMURwYV41p010076oKD0O-vdHdQXNYq9GwixYxvyCAaSmg9_vG8Ci6xAhTRJG4no2IRqQ1Q6UYAw53yiy5YFnj4__0C
+[timbl]: https://lifegrid-zeta.vercel.app/#s.zVXbbttIDH2WvoLoczdImya7fQoSO-m6G19qGcgzPaKtQUakQI7sVZ76G_t7-yULSXaublF0scDOkzAgec6cQ1Lv04Uv03cfT0-Ts-RGOBd-C1e8Dsh58luSpOnxy-v0_elpMhMJ9OTq13fJNSnnsn0SeHJ8nHwipg2-hWzr4z3p7v4suZRamUqpY_Ek4cPJwYQPZyfJpVhsWYzRDF1RG8VoaZpeijJ4hp5l-v8_51lEjQYY4apErilA5gqR8B_BXXu12CpUFY151wFP_1yJ5un5GFU9GXxGJpiIxsJJpC5tLBsyiAKd1e3HVvSuTZ4FMqPmNdJn8WwwPIJPRzBBK77LayAcFV0UbWsOruaTZ1VGJa4JBlJWdSSFrLFIpf3Yi-cUa-WOfFsX0ABhRSHI9qckfDgzlUqslaUguBUNOdz6nOCWlvuQXu0tLcEFTxwBOQcj3ZBCxHDXEezrYAB0jqpI-VMJHkyZILsGBqjBdo09q5fBW7EjsNpDme89a8-INz7uArYdwyhQG_WUH3keVu5aas53zzsZtKzGo8W_0-xbSJ0dIKsObC4NBsjEeYqvG-tQ_gLvqLXVFei7DsraVYJlFfdL4A_26yJS_gPVppqTtlzGpD4egptg9MIY4MJhTmXTBmfOE7uWhZk4j48mpOkN1uz2Rt3SEjpluyJpev47hcrAKWEkyDHi0Vo2R_XdM8ih34i6g32wDxnIL6tHx6YVMQwxIozYoo_1ntA0NGXVTr5UxJ7X4EipFG5e7s3zLzURw1Xw97ikWMBM_T3BSrRd0Z6J1PP6lTr7hp2LUYnawA35-N3p72e830LdhAwK9RZhUNTqdplzcuQ3OwkXdYsMF1vU14ZeMEvdOTFirat-5jIJ_kXoM1P2-6d73beHI6MQHlz8--tfBia1OgInOXWbhWFy_TMzMqZSvMKbReENRtarvCFthOkNVLtRz9N0yjAkI40wsvZ3CENvzv4B
+[attenborough]: https://lifegrid-zeta.vercel.app/#s.3VRNT9xADD0nv8I_gEoLqIieIjbQ8rFQKuilN5PxJhYTe-VxiLa_vspS2MKyaBE9VPXRYz8_P9uzkx_iHYd8-9POXvYxO0mRejVvtuBI6ogSsv0sy_PRCy_53n42Ia4oOdnSu7O7m5XY3hiHmpbu3dF-NlEJKktfno_VBFjgET3_D634Qhq1nkOlnSUCdLhQd5a6wfZJ4FXVaERLDc_AFcqIRlBqjDRI-ajq2kIlxkgBuhlM1eACnVUwwhXZHVdr056jnKMZU4JTFIKvxhQH73hcgncmCRpuIWgvgAkQDAMrzExDV5G9AHeqLAm8IRggpl2MH5zb9U38UIVvHSUHTjBlSw43phgqTL4R_6HMBXpnGOGYk6vN4buww1Q7CRSGhRvb8BA3lOQdVqq4DRM00OlCgete3wZRHLJR5bpAmJnWhm1LaWtA2yi_bMhsDmeE5ipwTgGfdF5MCO8oLdi1KFhTS-LDBrZ4Sw8l09tYv8JnwlMCFThC8wZuqGZZC16cYWSpES6Nf266wn9kC9eNU3g36b9gxRn1cCJOJg-XuTqKY07QD_osri8wbSR78RS21NRqWi9ZcT1cY-wILiMKrZxVcc5VgxThMxoGnK8iFYeUKjSnV6r8jrwvcT_sDTq5NJaKhlU_SN4ZY4KDHu2fmOBbrbhymjUkcIz9LUu9Ou_ndr34YbdHo18
 
-1. **A display worth looking at.** The grid first, then alternates built on the same data:
-   a linear timeline, and a parallel timeline that sets your events beside world events
-   or another person's grid.
-2. **Connected data sources** that suggest what you were doing in a given month.
-3. **Intelligent onboarding and gap-filling questions** that use what is already known
-   (home location, age, neighbouring cells, anchor dates) to jog memory for empty cells.
+## License
 
-## Core concepts
-
-| Concept | Notes |
-|---|---|
-| Cell | One month of one year. Holds a short headline (1–3 words). Low stakes; always editable. |
-| Row | A year, labelled with age that year. Starts at birth year. |
-| Home location | A span of months with a place and a colour. Tints every cell in the span. |
-| Anchor date | A date that recurs each year (birthday, anniversary, a holiday). Each one yields a question per year. |
-| Suggestion | A candidate headline for a cell from a data source or interview answer, with its source. The user accepts, edits or dismisses it. |
-| Completeness | Filled cells ÷ months lived. The number the product tries to raise. |
-
-## Phases
-
-### Phase 0 — Mockups (skipped in favour of the working app)
-- Static mockup of the grid view (desktop and phone widths), location colouring, legend, age column.
-- Mockup of the cell editor and of a suggestion being accepted.
-- Mockup of the onboarding flow, with the question script written out.
-- Sketches of the timeline and parallel-timeline views.
-
-### Phase 1 — Web app, data in the URL (built, except CSV import)
-- Static single-page app, no backend. The whole grid is compressed into the URL fragment
-  and unpacked on load; every edit rewrites the URL. Sharing the URL shares the grid.
-- Grid view with editing, home-location spans, completeness counter.
-- Scripted onboarding: birth date and place → homes over time → school/work spans →
-  anchor dates → first pass of gap questions.
-- Import from CSV/pasted spreadsheet in the existing layout.
-
-### Phase 2 — Gap filling
-- Gap-question engine: picks the next empty cell and the best prompt for it
-  ("Where were you for your birthday in 2019?", "You'd just moved to Chiang Mai — what was the first trip you took?").
-- World-events layer for context and for the parallel timeline.
-- Photo metadata: read dates and GPS from a local photo export in the browser; nothing uploaded.
-- **Compare lives (to do).** Let someone lay their grid next to a friend's or spouse's: open a
-  second share link beside their own and see where the two lives overlap (same place, same
-  months), where they diverged, and when they met. Both grids stay in their own links, so
-  nothing is stored; the comparison is computed in the browser. See `docs/open-questions.md`.
-
-### Phase 3 — Connected sources
-- Check-in history (Foursquare/Swarm), calendar, social-network exports.
-- Likely requires a backend for OAuth and for anything too large for a URL.
-
-### Later — Mobile app
-- Viewer and onboarding on mobile, only after the web app has proven the model.
-
-## Known constraints to design around
-
-- **URL size.** A 50-year grid is ~600 cells. At 1–3 words each this compresses to a few
-  kilobytes — fine for browsers, but some chat apps and link shorteners truncate long
-  links. Needs a compact encoding and a measured budget.
-- **A shared URL shares everything.** Anyone with the link sees the whole life. A
-  redacted/share view is probably needed before sharing is promoted.
-- **Social data access is limited.** Facebook no longer exposes personal timeline history
-  through an API, and Google Photos library access is now restricted to a picker. For
-  both, importing the user's own data export (parsed locally) is the realistic route.
-  Foursquare/Swarm still offers a check-in history API.
-- **AI interviewing needs a server.** A model-driven interviewer can't run from a static
-  page without exposing an API key, so it conflicts with "no backend" unless it is an
-  optional add-on.
-
-## Open questions
-
-See `docs/open-questions.md`. Settled choices are in `docs/decisions.md`.
-
-## Making views
-
-Views are drop-in. Each one is a single file in `src/views/`, and the app picks up any file added there.
-`docs/making-a-view.md` is a guide written so that a person, or an AI assistant given the file, can build
-a new view from it alone, either inside this app or on another site that accepts a pasted Life Grid link.
-
-- `src/lifegrid.ts` — the standalone reader: one file, no dependencies. It turns a link or JSON export
-  into plain data and has the helpers views need. `npm run build:reader` writes it as `public/lifegrid.js`.
-- `data/samples/` — fictional lives to test a view against.
-- `examples/` — sample links and a working outside view, at `/examples/` on the dev server.
-
-## Layout
-
-```
-src/        the app: App.tsx (layout, shelf, cell editor), Grid.tsx (the sheet),
-            script.ts (question script), model.ts (state, colours),
-            share.ts (URL encoding), photos.ts (Google Photos links)
-data/       fictional sample data; private/ is local only and ignored by git
-docs/       scope notes, question script, decisions
-```
+[MIT](LICENSE)

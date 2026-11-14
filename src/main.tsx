@@ -1,3 +1,4 @@
+// Entry point: applies the saved theme, then mounts <App />.
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import './styles.css';

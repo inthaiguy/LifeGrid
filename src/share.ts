@@ -1,3 +1,5 @@
+// Writes a grid into a link. The link body is plain text, deflated and base64url-encoded (format 2,
+// specified in docs/data-format.md). Reading is done by src/lifegrid.ts so the app and outside views agree.
 import { type State, type YM, ym, yOf, mOf } from './model';
 import { STAGES, pending } from './script';
 import { readLink } from './lifegrid';

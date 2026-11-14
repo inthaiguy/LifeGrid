@@ -1,3 +1,5 @@
+// The sheet view: one row per year with an age column, one cell per month, tinted by home.
+// Read mode shows headlines; Overview fits a whole life on one screen. Hover shows the full place name.
 import { useEffect, useRef, useState } from 'react';
 import { EVENTS, EventMark } from './events';
 import { type State, type YM, MON, ym, yOf, addM, nowYM, repeatsEarlier, inLife, homeAt, colorOf, inkOn, ageColor, fmt, short } from './model';

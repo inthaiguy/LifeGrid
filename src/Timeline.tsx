@@ -1,3 +1,5 @@
+// Timeline views, horizontal and vertical, with an optional layer of world events (src/world.ts).
+// Events are placed on an axis and stacked greedily so labels never overlap.
 import { useEffect, useRef } from 'react';
 import { WORLD } from './world';
 import { type State, type YM, MON, yOf, mOf, nowYM, lastYM, repeatsEarlier, addM, birthYM, homeAt, colorOf, inkOn, fmt, short } from './model';

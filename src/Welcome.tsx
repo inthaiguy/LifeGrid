@@ -1,3 +1,5 @@
+// The opening flow: name, birth month and day, and a first memory, with typed text and sound.
+// Produces a `Begun` object that script.ts turns into the first cells.
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { MON, type YM, ym, nowYM, yOf, fmt, season, inkOn } from './model';
 import { NOFILL } from './nofill';
