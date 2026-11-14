@@ -7,6 +7,7 @@ export const mOf = (s: YM) => +s.slice(5, 7);
 export const nowYM = (): YM => { const d = new Date(); return ym(d.getFullYear(), d.getMonth() + 1); };
 export const addM = (s: YM, n: number): YM => { const t = yOf(s) * 12 + mOf(s) - 1 + n; return ym(Math.floor(t / 12), (t % 12) + 1); };
 export const fmt = (s: YM) => `${MON[mOf(s) - 1]} ${yOf(s)}`;
+/** A place name without its region: "Madison, WI" → "Madison". Views show this and keep the full name for tooltips. */
 export const short = (p: string) => p.split(',')[0].trim();
 
 export interface Cell { t: string; p?: boolean } // p = placeholder written by the script

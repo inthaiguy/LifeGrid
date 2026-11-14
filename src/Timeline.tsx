@@ -55,7 +55,7 @@ export default function Timeline({ s, dir, world, onCell }: { s: State; dir: 'h'
   if (!s.birth) return <div className="grid-empty"><p>Your life, as a timeline.</p><p className="dim">Answer the first question and it appears here.</p></div>;
   const evs = events(s);
   if (!evs.length) return <div className="grid-empty"><p>Nothing on the timeline yet.</p></div>;
-  const tip = (e: Ev) => `${fmt(e.at)} · age ${yOf(e.at) - s.birth!.y}${e.place ? ` · ${short(e.place)}` : ''}${e.p ? ' · to confirm' : ''}`;
+  const tip = (e: Ev) => `${fmt(e.at)} · age ${yOf(e.at) - s.birth!.y}${e.place ? ` · ${e.place}` : ''}${e.p ? ' · to confirm' : ''}`;
   const pick = (e: Ev) => onCell && (() => onCell(e.at));
 
   if (dir === 'v') {
@@ -73,7 +73,7 @@ export default function Timeline({ s, dir, world, onCell }: { s: State; dir: 'h'
                   <li key={e.at} className={e.p ? 'ph' : ''} style={{ ['--c' as any]: e.col }}>
                     <time>{MON[mOf(e.at) - 1]}</time>
                     <button onClick={pick(e)} title={tip(e)}>{e.t}</button>
-                    {moved && <em style={{ background: e.col, color: inkOn(e.col) }}>{short(e.place!)}</em>}
+                    {moved && <em style={{ background: e.col, color: inkOn(e.col) }} title={e.place}>{short(e.place!)}</em>}
                   </li>
                 );
               })}
@@ -118,7 +118,7 @@ export default function Timeline({ s, dir, world, onCell }: { s: State; dir: 'h'
             style={{ left: x, top: top - (lane + 1) * LANE, width: w, ['--c' as any]: e.col, ['--stem' as any]: `${lane * LANE + 4}px` }}><span>{e.t}</span></button>
         ))}
         <div className="band" style={{ top }}>
-          {sp.map((h) => { const col = colorOf(s, h.place); return <div key={h.from} style={{ left: h.from * PPM, width: h.len * PPM, background: col, color: inkOn(col) }}>{h.place && h.len * PPM > 60 ? short(h.place) : ''}</div>; })}
+          {sp.map((h) => { const col = colorOf(s, h.place); return <div key={h.from} style={{ left: h.from * PPM, width: h.len * PPM, background: col, color: inkOn(col) }} title={h.place}>{h.place && h.len * PPM > 60 ? short(h.place) : ''}</div>; })}
         </div>
         {wplaced.map((w) => (
           <div key={w.at} className="ev w" title={`${w.name} — ${fmt(w.at)} · age ${yOf(w.at) - s.birth!.y}`}

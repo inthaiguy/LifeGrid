@@ -47,7 +47,7 @@ export const monthsBetween = (a: Month, b: Month) => (yOf(b) - yOf(a)) * 12 + mO
 /** "Jul 1986" */
 export const fmt = (s: Month) => `${MON[mOf(s) - 1]} ${yOf(s)}`;
 export const thisMonth = (): Month => { const d = new Date(); return ym(d.getFullYear(), d.getMonth() + 1); };
-/** A place name without its region: "Madison, WI" → "Madison". */
+/** A place name without its region: "Madison, WI" → "Madison". Show the full name in a tooltip. */
 export const short = (place: string) => place.split(',')[0].trim();
 
 /* ---------- reading ---------- */

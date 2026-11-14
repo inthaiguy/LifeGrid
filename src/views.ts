@@ -44,6 +44,8 @@ export const VIEWS: View[] = Object.keys(files).sort()
   .map(({ mod }) => ({ ...mod.view!, Component: mod.default! }))
   .sort((a, b) => a.at - b.at);
 
-export const unlockedViews = (pct: number) => VIEWS.filter((v) => pct >= v.at);
-export const nextView = (pct: number) => VIEWS.find((v) => pct < v.at);
+/** Testing switch: true opens every view regardless of how full the grid is. Set to false to bring the unlock thresholds back. */
+export const UNLOCK_ALL = true;
+export const unlockedViews = (pct: number) => VIEWS.filter((v) => UNLOCK_ALL || pct >= v.at);
+export const nextView = (pct: number) => (UNLOCK_ALL ? undefined : VIEWS.find((v) => pct < v.at));
 export const FIRST_UNLOCK = VIEWS.find((v) => v.at > 0)?.at ?? 0;

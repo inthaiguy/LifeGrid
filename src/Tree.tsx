@@ -39,20 +39,43 @@ const bucketed = () => [0.34, 0.5, 0.75, 1.1, 1.6, 2.6, 4.5, 8].map((w) => ({ w,
 const into = (b: Strokes[], w: number, d: string) => { (b.find((k) => w <= k.w) || b[b.length - 1]).d += d; };
 const line = (pts: P[]) => 'M' + pts.map((q) => `${f(q[0])} ${f(q[1])}`).join('L');
 
+// How big a tree is at an age, for a red maple grown in the open. Arborists estimate age as trunk
+// diameter in inches (at chest height) times a species growth factor; for red maple that is 4.5
+// (Purdue Landscape Report, "How Old Is My Tree?"). Run backwards, it gives the diameter for an age.
+// Height rises fast in youth and levels off near 21 m; the crown starts narrow and broadens.
+const GROWTH_FACTOR = 4.5;
+export function maple(age: number) {
+  return {
+    dbh: (age / GROWTH_FACTOR) * 2.54,                       // trunk diameter, cm
+    height: 0.3 + 21 * (1 - Math.exp(-age / 26)),            // metres
+    spread: 0.28 + 0.58 * (1 - Math.exp(-age / 34)),         // crown width as a share of the height
+  };
+}
+const feet = (m: number) => Math.round(m * 3.281);
+const inches = (cm: number) => Math.max(1, Math.round(cm / 2.54));
+
 function growTree(age: number, seed: string) {
   const r = rng(seed + '|tree');
-  const g = Math.sqrt(Math.min(age, 95) / 95);              // 0 at birth, 1 for a very old tree
-  const H = 18 + 350 * g, W = 1.3 + 25 * g;
-  const maxDepth = Math.min(5, 2 + Math.floor(g * 3.1));
+  const m = maple(age);
+  // Every tree is drawn about the same height on the page, so what changes with age is its build:
+  // a young tree is a slender pole with a narrow crown, an old one a heavy trunk under a broad one.
+  // U is drawing units per metre. A figure 1.7 m tall stands beside it to show the true size.
+  const U = 300 / Math.max(m.height, 3), H = m.height * U;
+  const W = Math.max(1.1, (m.dbh / 100) * 2 * U);            // the trunk is drawn twice its true width so it reads at this size
+  const reach = (m.spread * H) / 2;                          // how far the crown extends each side
+  const grown = Math.min(1, age / 60);                       // 0 a sapling, 1 full-grown
+  const maxDepth = age < 2 ? 1 : age < 8 ? 2 : age < 25 ? 3 : age < 60 ? 4 : 5;
+  const lead = Math.max(0.5, Math.min(1, 1.15 - age / 90));  // how far up the single trunk runs before it divides
   const twigs = bucketed(), lights = bucketed();
   let limbs = '', x0 = 0, x1 = 0, y1 = -H;
-  const UP = -Math.PI / 2, shoots = [0, 5, 4, 3, 2, 2];
+  const UP = -Math.PI / 2, shoots = [0, 4 + Math.round(grown * 2), 3 + Math.round(grown), 3, 2, 2];
+  const curl = 0.15 - 0.08 * grown;                          // young limbs sweep upwards; old ones hold their spread
 
   const grow = (x: number, y: number, ang: number, len: number, w: number, depth: number, side: number) => {
     const steps = 6, pts: P[] = [[x, y]], angs = [ang], ws = [w];
     let a = ang;
     for (let i = 1; i <= steps; i++) {
-      a += (UP - a) * (depth === 1 ? 0.12 : 0.08) + (r() - 0.5) * 0.24;   // reach for the light, with a tremor
+      a += (UP - a) * (depth === 1 ? curl : 0.08) + (r() - 0.5) * 0.24;   // reach for the light, with a tremor
       x += Math.cos(a) * len / steps; y += Math.sin(a) * len / steps;
       pts.push([x, y]); angs.push(a); ws.push(Math.max(0.26, w * (1 - 0.6 * i / steps)));
     }
@@ -77,43 +100,68 @@ function growTree(age: number, seed: string) {
     for (const s2 of [-1, 1]) grow(x, y, a + s2 * (0.25 + r() * 0.3), len * (0.22 + r() * 0.1), Math.max(0.26, ws[steps] * 0.8), depth + 1, s2); // the tip forks
   };
 
-  // The trunk: nearly even up to the fork, then narrowing quickly into the leader.
-  const tb = 0.25 + g * 0.13 + r() * 0.04;
-  const axis = (t: number) => Math.sin(t * 4.4 + 1) * H * 0.007 + Math.sin(t * 10) * H * 0.003;
-  const half = (t: number) => (W / 2) * (t < tb ? 1 - 0.2 * (t / tb) : 0.8 * (0.06 + 0.94 * Math.pow(1 - (t - tb) / (1 - tb), 1.25))) + (t < 0.05 ? (0.05 - t) * W * 3.4 : 0);
+  // The trunk. A sapling's runs to the very top as a leader; a grown tree's stays stout to where it divides.
+  const tb = 0.19 + 0.05 * grown + r() * 0.03;               // height of the lowest limb, as a share of the tree
+  const topK = lead < 1 ? 0.5 : 0.07;
+  const axis = (t: number) => Math.sin(t * 4.4 + 1) * H * 0.006 + Math.sin(t * 10) * H * 0.003 * (0.4 + grown);
+  const half = (t: number) => (W / 2) * (1 - (1 - topK) * Math.pow(Math.min(1, t / lead), 0.9)) + (t < 0.06 ? (0.06 - t) * W * (2 + age / 22) : 0); // old trees flare at the root
   const L: P[] = [], R: P[] = [];
   for (let i = 0; i <= 30; i++) {
-    const tt = i / 30, c = axis(tt), hw = half(tt), n = () => (r() - 0.5) * Math.min(1.2, hw * 0.22);
+    const tt = (i / 30) * lead, c = axis(tt), hw = half(tt), n = () => (r() - 0.5) * Math.min(1.2, hw * 0.22);
     L.push([c - hw + n(), -tt * H]); R.push([c + hw + n(), -tt * H]);
   }
   const trunk = line([...L, ...R.reverse()]) + 'Z';
+  // Bark: smooth and pale on a young maple, dark and deeply furrowed on an old one.
   const bark: { d: string; light: boolean }[] = [];
-  for (let i = 0; i < Math.round(W * H / 26); i++) {
-    const tt = Math.pow(r(), 1.2) * Math.min(0.9, tb + 0.35), hw = half(tt), u = r(), len = 3 + r() * 10;
-    bark.push({ d: `M${f(axis(tt) + (u - 0.5) * hw * 1.8)} ${f(-tt * H)}l${f((r() - 0.5) * 1.4)} ${f(-len)}`, light: u < 0.4 });
+  for (let i = 0; i < Math.round((W * H * lead) / (55 - 40 * grown)); i++) {
+    const tt = Math.pow(r(), 1.2) * lead * 0.95, hw = half(tt), u = r(), len = (3 + r() * 9) * (0.5 + grown);
+    bark.push({ d: `M${f(axis(tt) + (u - 0.5) * hw * 1.8)} ${f(-tt * H)}l${f((r() - 0.5) * 1.4)} ${f(-len)}`, light: u < 0.55 - 0.2 * grown });
   }
 
   if (age >= 1) {
-    // Main limbs leave the trunk around the fork and climb; the lowest lean out the furthest.
-    const n = Math.round(3 + g * 6);
+    // Main limbs: few, thin and steep on a young tree; more, heavier and reaching outwards on an old one.
+    const n = Math.round(4 + 5 * grown), topAt = Math.min(0.78, lead * 0.92), lean = 0.5 + 0.55 * grown;
     for (let i = 0; i < n; i++) {
-      const tt = tb + Math.pow((i + r() * 0.5) / n, 1.25) * (0.74 - tb), u = (tt - tb) / (1 - tb), side = i % 2 ? 1 : -1;
-      grow(axis(tt) + side * half(tt) * 0.4, -tt * H, UP + side * (0.62 - u * 0.36 + (r() - 0.5) * 0.16), H * (1 - tt) * (0.78 + r() * 0.16) + H * 0.05, Math.max(0.5, half(tt) * 1.15), 1, side);
+      const tt = tb + Math.pow((i + r() * 0.5) / n, 1.2) * (topAt - tb), u = (tt - tb) / (topAt - tb), side = i % 2 ? 1 : -1;
+      const out = lean * (1 - 0.5 * u) + (r() - 0.5) * 0.16;                // angle away from straight up
+      const len = Math.min(H * (1 - tt) * 1.05, (reach * (1 - 0.3 * u)) / Math.max(0.35, Math.sin(out)) * 0.92);
+      grow(axis(tt) + side * half(tt) * 0.4, -tt * H, UP + side * out, len, Math.max(0.5, half(tt) * (0.9 + 0.35 * grown)), 1, side);
     }
-    // Lesser shoots up the leader, so the crown closes at the top.
-    const m = Math.round(4 + g * 12);
-    for (let i = 0; i < m; i++) {
-      const tt = tb + 0.1 + (i / m) * (0.88 - tb), side = i % 2 ? -1 : 1;
-      grow(axis(tt) + side * half(tt) * 0.5, -tt * H, UP + side * (0.45 + r() * 0.4), H * (1 - tt) * 0.5 + H * 0.05, Math.max(0.4, half(tt) * 0.8), Math.min(maxDepth, 2), side);
+    if (lead < 1) {
+      // Where the trunk ends it divides into a few rising stems that carry the top of the crown.
+      const k = 2 + (age > 45 ? 1 : 0);
+      for (let i = 0; i < k; i++) {
+        const side = i % 2 ? 1 : -1, out = k === 3 && i === 2 ? (r() - 0.5) * 0.12 : side * (0.2 + r() * 0.2);
+        grow(axis(lead) + out * half(lead), -lead * H, UP + out, H * (1 - lead) * (0.98 + r() * 0.1), half(lead) * 1.5, 1, side);
+      }
+    } else {
+      // Lesser shoots up the leader, so a young crown comes to a point.
+      const s = Math.round(5 + 9 * grown);
+      for (let i = 0; i < s; i++) {
+        const tt = tb + 0.1 + (i / s) * (0.9 - tb), side = i % 2 ? -1 : 1;
+        grow(axis(tt) + side * half(tt) * 0.5, -tt * H, UP + side * (0.4 + r() * 0.35), Math.min(reach * 0.9, H * (1 - tt) * 0.5 + H * 0.04), Math.max(0.4, half(tt) * 0.8), Math.min(maxDepth, 2), side);
+      }
+      grow(axis(1), -H, UP, H * 0.07 + 3, Math.max(0.4, half(1) * 1.6), Math.max(1, maxDepth - 1), 1);
     }
-  }
-  grow(axis(1), -H, UP, H * 0.08 + 3, Math.max(0.4, half(1) * 1.6), Math.max(1, maxDepth - 1), 1);
+    if (age > 70) { // an old tree has lost a limb or two: a short stub with nothing on it
+      const tt = tb + 0.04, side = r() < 0.5 ? -1 : 1, ang = UP + side * 1.15, len = H * 0.05, w = half(tt) * 0.8;
+      const ex = axis(tt) + side * half(tt) * 0.5 + Math.cos(ang) * len, ey = -tt * H + Math.sin(ang) * len, nx = -Math.sin(ang) * w / 2, ny = Math.cos(ang) * w / 2, sx = axis(tt) + side * half(tt) * 0.5, sy = -tt * H;
+      limbs += line([[sx + nx, sy + ny], [ex + nx * 0.8, ey + ny * 0.8], [ex - nx * 0.8, ey - ny * 0.8], [sx - nx, sy - ny]]) + 'Z';
+    }
+  } else grow(axis(1), -H, UP, 4, 0.7, 0, 1); // a seedling: a stem and a pair of shoots
 
-  const gw = Math.max(40, W * 2.6);
+  // A person, 1.7 m, standing clear of the trunk.
+  const ph = 1.7 * U, px = Math.max(W * 1.2 + ph * 0.3, reach * 0.5);
+  const k = (dx: number, dy: number) => `${f(px + dx * ph)} ${f(dy * ph)}`;
+  const person = `M${k(-0.1, -0.84)}Q${k(0, -0.88)} ${k(0.1, -0.84)}L${k(0.13, -0.5)}L${k(0.09, -0.49)}L${k(0.075, 0)}L${k(0.02, 0)}L${k(0, -0.43)}L${k(-0.02, 0)}L${k(-0.075, 0)}L${k(-0.09, -0.49)}L${k(-0.13, -0.5)}Z`;
+  const head = { cx: px, cy: -0.93 * ph, r: 0.062 * ph };
+  x1 = Math.max(x1, px + ph * 0.16); y1 = Math.min(y1, -ph);
+
+  const gw = Math.max(40, W * 2.6, px + ph * 0.3);
   let ground = `M${f(-gw)} 1`;
   for (let i = 1; i <= 8; i++) ground += `L${f(-gw + (i / 8) * gw * 2)} ${f((r() - 0.5) * 2.2)}`;
-  const pad = 14, hx = Math.max(96, -x0 + pad, x1 + pad), top = Math.min(-190, y1 - pad);
-  return { trunk, bark, limbs, W, twigs: twigs.filter((k) => k.d), lights: lights.filter((k) => k.d), ground, box: `${f(-hx)} ${f(top)} ${f(hx * 2)} ${f(-top + 18)}` };
+  const pad = 14, hx = Math.max(-x0 + pad, x1 + pad, gw + 4), top = y1 - pad;
+  return { trunk, bark, limbs, W, person, head, twigs: twigs.filter((k) => k.d), lights: lights.filter((k) => k.d), ground, box: `${f(-hx)} ${f(top)} ${f(hx * 2)} ${f(-top + 18)}` };
 }
 
 /* ---------- the cross-section ---------- */
@@ -147,14 +195,18 @@ export function pickEvents(s: State, age: number, slots: number): Pick[] {
 
 function Rings({ s, age, wide, seed, onCell }: { s: State; age: number; wide: boolean; seed: string; onCell?: (at: YM) => void }) {
   const r = rng(seed + '|rings');
-  const RM = wide ? 150 : 100, R = Math.min(RM, RM * 0.42 + age * 2.2);
+  // A CD (12 cm) lies behind every slice, drawn to the same scale, so the slice's real size can be judged.
+  // A trunk narrower than the CD is drawn at its true size on top of it; a wider one fills the space and the CD shrinks.
+  const RM = wide ? 150 : 100, dbh = Math.max(0.3, maple(age).dbh), CD = 12;
+  const R = dbh < CD ? Math.max(2.5, RM * 0.9 * (dbh / CD)) : Math.min(RM, RM * 0.42 + age * 2.2);
   const VW = wide ? 760 : 380, VH = RM * 2 + 60, cx = wide ? VW / 2 : RM + 18, cy = VH / 2;
 
   // One band per year of life; the widths vary like good and lean growing years.
   const w = Array.from({ length: age + 1 }, () => 0.7 + r() * 0.6), sum = w.reduce((a, b) => a + b, 0);
   const edge: number[] = [0];
-  for (const x of w) edge.push(edge[edge.length - 1] + (x / sum) * (R - 3));
-  for (let i = 0; i < edge.length; i++) edge[i] += 3;        // room for the pith
+  const pith = Math.min(3, R * 0.3);
+  for (const x of w) edge.push(edge[edge.length - 1] + (x / sum) * (R - pith));
+  for (let i = 0; i < edge.length; i++) edge[i] += pith;     // room for the pith
 
   // All rings share one slow distortion, so they nest; each adds a little of its own.
   const wob = [2, 3, 4, 5].map((k) => ({ k, a: (0.05 / k) * (0.5 + r()), p: r() * 6.28 }));
@@ -179,6 +231,11 @@ function Rings({ s, age, wide, seed, onCell }: { s: State; age: number; wide: bo
     return d;
   });
 
+  const rr = (CD / 2) * ((2 * R) / dbh), under = rr > R;                  // the CD's radius at the slice's scale
+  const ra = wide ? 2.1 : 2.45;                                            // below-left of the slice (radians, clockwise from east)
+  const rx = under ? cx : Math.max(rr + 3, cx + Math.cos(ra) * (R + rr * 0.5)), ry = under ? cy : cy + Math.sin(ra) * (R + rr * 0.5);
+  const VH2 = Math.max(VH, ry + rr + 22);                                  // room below for the CD and its name
+
   // Labels: listed down each side in order of time; each line leaves its ring along a spoke, so none cross.
   const sides = wide ? 2 : 1, per = Math.floor((VH - 34) / 19);
   const picks = pickEvents(s, age, sides * per);
@@ -197,13 +254,17 @@ function Rings({ s, age, wide, seed, onCell }: { s: State; age: number; wide: bo
   });
 
   return (
-    <svg className="rings" viewBox={`0 0 ${VW} ${VH}`} role="img" aria-label={`Cross-section of the tree with ${age} growth ${age === 1 ? 'ring' : 'rings'}, one for each year`}>
+    <svg className="rings" viewBox={`0 0 ${VW} ${VH2}`} role="img" aria-label={`Cross-section of the tree with ${age} growth ${age === 1 ? 'ring' : 'rings'}, one for each year`}>
+      <g filter="url(#lg-rough)" transform={`translate(${f(rx)} ${f(ry)})`} className="ref" fill="none">
+        <circle r={rr} className="f-ref s-mid" strokeWidth="1" /><circle r={rr * 0.3} className="s-fine" strokeWidth=".8" /><circle r={rr * 0.125} className="f-hole s-mid" strokeWidth=".8" />
+      </g>
+      <text x={rx} y={ry + rr + 14} textAnchor="middle" className="ref-name">a CD, for scale</text>
       <g filter="url(#lg-rough)">
-        <path d={ring(R + 7, 1.6, 1)} fill="#6a4a36" />
-        <path d={ring(R + 2.6, 0.8, 2)} fill="#8d6a4c" />
+        <path d={ring(R + Math.min(7, 1.5 + R * 0.1), Math.min(1.6, R * 0.05), 1)} fill="#6a4a36" />
+        <path d={ring(R + Math.min(2.6, 0.6 + R * 0.04), Math.min(0.8, R * 0.03), 2)} fill="#8d6a4c" />
         {bands.map((b, i) => <path key={i} d={b.d} fill={b.fill} stroke="#7a5536" strokeWidth={b.decade ? 1.5 : 0.8} strokeOpacity={b.decade ? 0.85 : 0.5} />)}
         {cracks.map((d, i) => <path key={i} d={d} fill="none" stroke="#5a3d2b" strokeWidth="1" strokeOpacity=".5" strokeLinecap="round" />)}
-        <circle cx={cx} cy={cy} r="2.2" fill="#5a3d2b" />
+        <circle cx={cx} cy={cy} r={Math.min(2.2, R * 0.2)} fill="#5a3d2b" />
       </g>
       {labels.map((l) => (
         <g key={l.p.at} className={`ring-label${onCell ? ' can' : ''}`} onClick={onCell && (() => onCell(l.p.at))}>
@@ -233,6 +294,7 @@ export default function Tree({ s, onCell }: { s: State; onCell?: (at: YM) => voi
   if (!s.birth) return <div className="grid-empty"><p>Your life, as a tree.</p><p className="dim">Answer the first question and it starts to grow.</p></div>;
   const now = lastYM(s), age = Math.max(0, yOf(now) - s.birth.y - (mOf(now) < s.birth.m ? 1 : 0));
   const seed = `${s.name || ''}|${s.birth.y}-${s.birth.m}|${s.birth.place}`;
+  const size = maple(age);
   const t = useMemo(() => growTree(age, seed), [age, seed]); // thousands of twigs: draw once per life, not per render
   return (
     <div className={`treeview${row ? ' wide' : ''}${two ? ' two' : ''}`} ref={box}>
@@ -256,6 +318,8 @@ export default function Tree({ s, onCell }: { s: State; onCell?: (at: YM) => voi
           </defs>
           <g filter="url(#lg-fine)" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path d={t.ground} className="s-mid" strokeWidth=".9" strokeOpacity=".6" />
+            <path d={t.person} className="f-fine" fillOpacity=".45" />
+            <circle cx={t.head.cx} cy={t.head.cy} r={t.head.r} className="f-fine" fillOpacity=".45" />
             {t.twigs.map((k) => <path key={k.w} d={k.d} className={k.w <= 0.5 ? 's-fine' : k.w <= 1.1 ? 's-mid' : 's-dark'} strokeWidth={k.w} />)}
             <path d={t.limbs} className="f-dark" />
             {t.lights.map((k) => <path key={k.w} d={k.d} className="s-light" strokeWidth={k.w} strokeOpacity=".5" />)}
@@ -263,11 +327,11 @@ export default function Tree({ s, onCell }: { s: State; onCell?: (at: YM) => voi
             {t.bark.map((b, i) => <path key={i} d={b.d} className={b.light ? 's-light' : 's-deep'} strokeWidth=".7" strokeOpacity={b.light ? 0.5 : 0.75} />)}
           </g>
         </svg>
-        <figcaption>{age === 0 ? 'A tree in its first year' : `A tree, ${age} ${age === 1 ? 'year' : 'years'} old`}</figcaption>
+        <figcaption>{age === 0 ? 'A red maple in its first year, beside a person for scale.' : `A red maple at ${age}: about ${size.height < 10 ? size.height.toFixed(1) : Math.round(size.height)} m (${feet(size.height)} ft) tall, beside a person for scale.`}</figcaption>
       </figure>
       <figure className="section">
         <Rings s={s} age={age} wide={two} seed={seed} onCell={onCell} />
-        <figcaption>{age === 0 ? 'The first ring is still growing.' : `${age} ${age === 1 ? 'ring' : 'rings'}, one for each year, tinted by where you lived.`}</figcaption>
+        <figcaption>{age === 0 ? 'The first ring is still growing.' : `${age} ${age === 1 ? 'ring' : 'rings'}, one for each year, tinted by where you lived. A trunk this age is about ${size.dbh < 10 ? size.dbh.toFixed(1) : Math.round(size.dbh)} cm (${inches(size.dbh)} in) across.`}</figcaption>
       </figure>
     </div>
   );

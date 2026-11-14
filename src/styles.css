@@ -384,3 +384,10 @@ main:has(.voyager) { min-width: 0; }
 .voyager .note { position: absolute; left: 16px; right: 16px; bottom: 6px; margin: 0; font-size: 11px; font-style: italic; color: var(--dim); }
 
 .row:not(.head) .age.gone { background: var(--bg); color: var(--dim); opacity: .55; font-weight: 400; }
+
+/* Tree view: the object drawn behind the ring slice for scale. */
+.treeview .f-fine { fill: var(--t-fine); }
+.treeview .ref .f-ref { fill: color-mix(in srgb, var(--t-light) 55%, var(--bg)); }
+.treeview .ref .f-hole { fill: var(--bg); }
+.treeview .ref .f-disc { fill: color-mix(in srgb, var(--t-dark) 80%, var(--bg)); }
+.treeview .ref-name { font-size: 10.5px; font-style: italic; fill: var(--dim); }

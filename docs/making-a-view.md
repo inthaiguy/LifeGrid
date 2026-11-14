@@ -87,7 +87,7 @@ interface LifeEvent { month: Month; text: string; confirmed: boolean; age: numbe
 | `places(life)`, `homeSpans(life)` | `string[]` of places in the order lived in; homes as `{ place, from, to }[]`, `to` inclusive. |
 | `colorOf(life, place)` | A hex colour string: the colour Life Grid gives a place. Pass `undefined` (a month with no known home) and it returns a neutral grey. |
 | `ageColor(years)`, `season(t)`, `inkOn(hex)` | Hex colour strings. The season-of-life colour for an age; the ramp itself (t from 0 to 1); black or white text for a background. |
-| `ym(y, m)`, `yOf`, `mOf`, `addM(month, n)`, `monthsBetween(a, b)`, `fmt(month)`, `short(place)`, `MON` | Month arithmetic and formatting. `yOf` and `mOf` return numbers; `monthsBetween("2000-01", "2000-03")` is 2. `fmt("1986-07")` is `"Jul 1986"`; `short("Madison, WI")` is `"Madison"`. |
+| `ym(y, m)`, `yOf`, `mOf`, `addM(month, n)`, `monthsBetween(a, b)`, `fmt(month)`, `short(place)`, `MON` | Month arithmetic and formatting. `yOf` and `mOf` return numbers; `monthsBetween("2000-01", "2000-03")` is 2. `fmt("1986-07")` is `"Jul 1986"`; `short("Madison, WI")` is `"Madison"`; put the full name in a tooltip. |
 
 **The colour idea.** Life Grid colours a life as a year: spring at birth, through summer and autumn to
 winter around 88. `ageColor(age)` gives that colour, and places are coloured along the same ramp in the
@@ -144,6 +144,7 @@ The views that exist today, so you can pick an unused `id`, prefix and a sensibl
 | `50-tree.tsx` | `tree` | 35 |
 | `60-voyager.tsx` | `voyager` | 50 |
 | `60-spiral.tsx` | `spiral` | 20 |
+| `70-tech.tsx` | `tech` | 20 |
 
 Choosing `at`: a view that still looks good with little data can unlock early (5–20); one that needs a
 fuller life to be worth seeing should unlock later (30–60). List the folder to see any views added since.

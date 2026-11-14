@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import { type State, type YM, fresh, stats, toCSV, toJSON, fmt, addM, homeAt, setBirth, MON, colorOf, places, short, inLife, yOf, ym , nowYM } from './model';
-import { START, TOPICS, normalize, current, answer, skip, begin, pending, goTopic, resume } from './script';
+import { START, TOPICS, PLACE_TOPICS, normalize, current, answer, skip, begin, pending, goTopic, resume } from './script';
 import { encode, decode } from './share';
 import { parseSheet, type Parsed } from './import';
 import { photosLink, googleCalLink, appleCalLink, gmailLink, GMAIL_START, IS_IOS } from './photos';
 import { NOFILL } from './nofill';
+import { renamePlace, moveHome, removeHome, editStay, removeStay } from './places';
 import Question from './Question';
 import Welcome from './Welcome';
 import Coach from './Coach';
 import type { Life } from './lifegrid';
-import { VIEWS, type ViewId, unlockedViews, nextView, FIRST_UNLOCK } from './views';
+import { VIEWS, type ViewId, unlockedViews, nextView, FIRST_UNLOCK, UNLOCK_ALL } from './views';
 import { sparkle, soundOn, setSound } from './sound';
 import { THEMES, applyTheme, savedTheme } from './theme';
 
@@ -137,6 +138,9 @@ export default function App() {
   const downloadJSON = () => save(toJSON(s), 'application/json', 'life-grid.json');
   const title = s.name ? `${s.name}’s Life` : 'Life Grid';
   const todo = pending(s);
+  const placeTodo = todo.filter((t) => PLACE_TOPICS.includes(t)), otherTodo = todo.filter((t) => !PLACE_TOPICS.includes(t));
+  const placeAsking = asking && !conflict && !!view && PLACE_TOPICS.includes(view.stage); // which section holds the question on show
+  const otherAsking = asking && !placeAsking;
   const answered = s.log.filter((l) => l.a).length;
 
   const ask = conflict ? (
@@ -188,7 +192,7 @@ export default function App() {
         <main><Shown life={s as Life} s={s} read={read} onCell={VIEWING ? undefined : setEditing} /></main>
         {s.birth && shown.legend !== false && ( // the horizontal timeline names each home on its own band
           <aside className="legend">
-            {places(s).map((p) => <span key={p}><i style={{ background: colorOf(s, p) }} />{short(p)}</span>)}
+            {places(s).map((p) => <span key={p} title={p}><i style={{ background: colorOf(s, p) }} />{short(p)}</span>)}
             {!VIEWING && menu && st.placeholders > 0 && <span className="key"><i className="k-ph" />to confirm</span>}
           </aside>)}
       </div>
@@ -235,30 +239,45 @@ export default function App() {
               </div>
             ) : <p className="help">Answer the first question to start your grid.</p>}
             {s.birth && (
-              <div className="field"><label>Views — unlocked as your grid fills in</label>
-                <div className="views">
-                  {VIEWS.map((v) => { const ok = st.pct >= v.at; return (
-                    <button key={v.id} disabled={!ok} className={`chip${ok ? '' : ' locked'}${ok && v.id === mode ? ' here' : ''}`}
-                      title={ok ? `Show the ${v.name.toLowerCase()}` : `Unlocks at ${v.at}% filled in`}
-                      onClick={() => { setMode(v.id); if (!wide) setMenu(false); }}>{v.name}{!ok && <em className="dim"> {v.at}%</em>}</button>); })}
+              <details className="more" open><summary>Views<em className="dim"> · {shown.name}</em></summary>
+                <div className="field"><label>{UNLOCK_ALL ? 'All views are open for testing' : 'Unlocked as your grid fills in'}</label>
+                  <div className="views">
+                    {VIEWS.map((v) => { const ok = UNLOCK_ALL || st.pct >= v.at; return (
+                      <button key={v.id} disabled={!ok} className={`chip${ok ? '' : ' locked'}${ok && v.id === mode ? ' here' : ''}`}
+                        title={ok ? `Show the ${v.name.toLowerCase()}` : `Unlocks at ${v.at}% filled in`}
+                        onClick={() => { setMode(v.id); if (!wide) setMenu(false); }}>{v.name}{!ok && <em className="dim"> {v.at}%</em>}</button>); })}
+                  </div>
+                  {upcoming ? (<>
+                    <div className="unlock-meter" aria-hidden="true"><i style={{ width: `${Math.max(0, Math.min(100, ((st.pct - open[open.length - 1].at) / (upcoming.at - open[open.length - 1].at)) * 100))}%` }} /></div>
+                    <p className="dim small">Next: {upcoming.name} unlocks at {upcoming.at}%. You’re at {st.pct}%.</p>
+                  </>) : <p className="dim small">Every view is unlocked.</p>}
                 </div>
-                {upcoming ? (<>
-                  <div className="unlock-meter" aria-hidden="true"><i style={{ width: `${Math.max(0, Math.min(100, ((st.pct - open[open.length - 1].at) / (upcoming.at - open[open.length - 1].at)) * 100))}%` }} /></div>
-                  <p className="dim small">Next: {upcoming.name} unlocks at {upcoming.at}%. You’re at {st.pct}%.</p>
-                </>) : <p className="dim small">Every view is unlocked.</p>}
-              </div>)}
-            {asking && <div className="shelf-q">{ask}</div>}
-            {asking && !wide && last && ( // on a phone the shelf covers the grid, so say what the last answer filled in
-              <p className="landed" key={last + s.log.length}><b>{fmt(last)}</b> {s.cells[last]?.t}{s.changed.length > 1 && <em> +{s.changed.length - 1} more</em>} <button className="link" onClick={() => setMenu(false)}>See the grid</button></p>)}
+              </details>)}
             {s.birth && (
-              <div className="field"><label>{todo.length ? 'Questions — pick up any topic' : 'Questions — go back to any topic'}</label>
-                <div className="topics">
-                  {TOPICS.map((n) => <button key={n} className={`chip${view?.stage === n ? ' cur' : todo.includes(n) ? ' todo' : ''}`}
-                    onClick={() => { commit((d) => goTopic(d, n)); }}>{n}</button>)}
+              <details className="more" open={placeAsking}><summary>Places{placeTodo.length > 0 && <em className="dim"> · {placeTodo.length} {placeTodo.length === 1 ? 'topic' : 'topics'} waiting</em>}</summary>
+                {placeAsking && <div className="shelf-q">{ask}</div>}
+                <div className="field"><label>{placeTodo.length ? 'Pick up a places topic' : 'Go back to a places topic'}</label>
+                  <div className="topics">
+                    {PLACE_TOPICS.map((n) => <button key={n} className={`chip${view?.stage === n ? ' cur' : todo.includes(n) ? ' todo' : ''}`}
+                      onClick={() => { commit((d) => goTopic(d, n)); }}>{n}</button>)}
+                  </div>
                 </div>
-                <p className="dim small"><i className="dot" /> still has questions waiting</p>
-              </div>)}
-
+                <PlacesEditor s={s} commit={commit} />
+              </details>)}
+            {(asking || s.birth) && (
+              <details className="more" open={otherAsking}><summary>Questions{otherTodo.length > 0 && <em className="dim"> · {otherTodo.length} {otherTodo.length === 1 ? 'topic' : 'topics'} waiting</em>}</summary>
+              {otherAsking && <div className="shelf-q">{ask}</div>}
+              {asking && !wide && last && ( // on a phone the shelf covers the grid, so say what the last answer filled in
+                <p className="landed" key={last + s.log.length}><b>{fmt(last)}</b> {s.cells[last]?.t}{s.changed.length > 1 && <em> +{s.changed.length - 1} more</em>} <button className="link" onClick={() => setMenu(false)}>See the grid</button></p>)}
+              {s.birth && (
+                <div className="field"><label>{otherTodo.length ? 'Pick up any topic' : 'Go back to any topic'}</label>
+                  <div className="topics">
+                    {TOPICS.filter((n) => !PLACE_TOPICS.includes(n)).map((n) => <button key={n} className={`chip${view?.stage === n ? ' cur' : todo.includes(n) ? ' todo' : ''}`}
+                      onClick={() => { commit((d) => goTopic(d, n)); }}>{n}</button>)}
+                  </div>
+                  <p className="dim small"><i className="dot" /> still has questions waiting</p>
+                </div>)}
+              </details>)}
             {s.birth && (
               <details className="more"><summary>Name and birth date</summary>
             <div className="field"><label>First name</label>
@@ -371,7 +390,7 @@ function CellEditor({ s, at, onClose, onSave }: { s: State; at: YM; onClose: () 
   return (
     <div className="scrim" onClick={onClose}>
       <form className="sheet" onClick={(e) => e.stopPropagation()} onSubmit={(e) => { e.preventDefault(); onSave(t); }}>
-        <h3>{fmt(at)} <span className="dim">· age {yOf(at) - s.birth!.y}{home ? ` · ${short(home)}` : ''}</span> <a className="photos" href={photosLink(at)} target="_blank" rel="noopener noreferrer" title={`Your Google Photos from ${fmt(at)}`} aria-label={`Your Google Photos from ${fmt(at)}`}>
+        <h3>{fmt(at)} <span className="dim">· age {yOf(at) - s.birth!.y}{home ? <span title={home}>{` · ${short(home)}`}</span> : ''}</span> <a className="photos" href={photosLink(at)} target="_blank" rel="noopener noreferrer" title={`Your Google Photos from ${fmt(at)}`} aria-label={`Your Google Photos from ${fmt(at)}`}>
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
             <path fill="#ea4335" d="M12 2a5 5 0 0 1 5 5v5h-5z" /><path fill="#4285f4" d="M22 12a5 5 0 0 1-5 5h-5v-5z" />
             <path fill="#34a853" d="M12 22a5 5 0 0 1-5-5v-5h5z" /><path fill="#fbbc04" d="M2 12a5 5 0 0 1 5-5h5v5z" />
@@ -397,6 +416,46 @@ function CellEditor({ s, at, onClose, onSave }: { s: State; at: YM; onClose: () 
           <button type="submit" className="primary">{cur?.p ? 'Confirm' : 'Save'}</button>
         </div>
       </form>
+    </div>
+  );
+}
+
+/** Where they lived and the long stays: change a place's name or a move's date, or take a move out. New ones come from the questions above. */
+function PlacesEditor({ s, commit }: { s: State; commit: (fn: (d: State) => void) => void }) {
+  const [, force] = useState(0);
+  const MonthYear = ({ at, label, onSave }: { at: string; label: string; onSave: (at: string) => void }) => {
+    const [m, setM] = useState(String(+at.slice(5))), [y, setY] = useState(at.slice(0, 4));
+    const neu = +y >= 1900 && +y <= new Date().getFullYear() + 1 ? ym(+y, +m) : '';
+    return (
+      <div className="ymf two">
+        <div className="ymf"><select {...NOFILL} value={m} onChange={(e) => setM(e.target.value)} aria-label={`${label} month`}>{MON.map((n, i) => <option key={n} value={i + 1}>{n}</option>)}</select>
+          <input {...NOFILL} inputMode="numeric" pattern="[0-9]*" maxLength={4} value={y} onChange={(e) => setY(e.target.value.replace(/\D/g, ''))} aria-label={`${label} year`} /></div>
+        <button type="button" className="ghost" disabled={!neu || neu === at} onClick={() => onSave(neu)}>Update</button>
+      </div>);
+  };
+  const name = (place: string, label: string) => (
+    <input {...NOFILL} type="text" defaultValue={place} key={place} aria-label={label}
+      onBlur={(e) => { const v = e.target.value.trim(); if (v && v !== place) commit((d) => renamePlace(d, place, v)); else e.target.value = place; force((n) => n + 1); }}
+      onKeyDown={(e) => { if (e.key === 'Enter') (e.target as HTMLElement).blur(); }} />);
+  if (!s.homes.length) return <p className="dim small">No places yet. Answer the Homes questions to add them.</p>;
+  return (
+    <div className="places">
+      <div className="field fix"><label>Born in</label>{name(s.homes[0].place, 'Birthplace')}</div>
+      {s.homes.slice(1).map((h, i) => (
+        <div className="field fix" key={h.from + h.place}>
+          <label>Moved to · {fmt(h.from)}</label>
+          {name(h.place, 'Place')}
+          <MonthYear at={h.from} label="Move" onSave={(at) => commit((d) => moveHome(d, i + 1, at))} />
+          <button type="button" className="link" onClick={() => { if (confirm(`Remove the move to ${short(h.place)}?`)) commit((d) => removeHome(d, i + 1)); }}>Remove this move</button>
+        </div>))}
+      {s.stays.map((t, i) => (
+        <div className="field fix" key={t.from + t.place}>
+          <label>Stay · {fmt(t.from)} – {fmt(t.to)}</label>
+          {name(t.place, 'Place')}
+          <MonthYear at={t.from} label="Stay from" onSave={(at) => commit((d) => editStay(d, i, at, t.to))} />
+          <MonthYear at={t.to} label="Stay until" onSave={(at) => commit((d) => editStay(d, i, t.from, at))} />
+          <button type="button" className="link" onClick={() => { if (confirm(`Remove the stay in ${short(t.place)}?`)) commit((d) => removeStay(d, i)); }}>Remove this stay</button>
+        </div>))}
     </div>
   );
 }

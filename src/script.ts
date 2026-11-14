@@ -349,6 +349,8 @@ const KIND_STAGE: Record<string, string> = {
 };
 const stageOf = (s: State, it: Item): string | undefined => it.p?.stage || KIND_STAGE[it.k] || DEFS[it.k]?.view?.(s, it.p)?.stage;
 export const TOPICS = STAGES.slice(1);
+/** The topics about where someone lived and went; the menu keeps them in their own Places section. */
+export const PLACE_TOPICS = ['Homes', 'Trips', 'Eras'];
 
 /** Topics that still have questions waiting, in script order. */
 export const pending = (s: State): string[] => TOPICS.filter((t) => s.queue.some((it) => stageOf(s, it) === t));
