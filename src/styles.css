@@ -398,3 +398,10 @@ button.sheet { display: flex; flex-direction: column; align-items: flex-start; g
 button.sheet.cur { border-color: var(--accent); }
 button.sheet span { font-size: 12px; }
 .sheets .link { align-self: flex-start; }
+
+.sheetrow { display: flex; gap: 6px; align-items: stretch; }
+.sheetrow .sheet { flex: 1; min-width: 0; }
+.sheetrow .x { flex: none; width: 36px; border: 1px solid var(--line, #ccc); background: none; border-radius: 8px; font-size: 18px; cursor: pointer; color: inherit; opacity: .6; }
+.sheetrow .x:hover { opacity: 1; }
+.sheets .row { display: flex; gap: 6px; }
+.sheets .row input { flex: 1; min-width: 0; }

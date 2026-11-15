@@ -86,18 +86,7 @@ export default function App() {
     if (VIEWING) { decode(h.slice(2)).then((p) => { if (!p) return setBad(true); const { t, ...g } = p; setS((cur) => ({ ...cur, ...g, done: true })); }); return; }
     // An owner's address opens its grid. It never replaces a sheet: if a sheet here already holds exactly
     // this content it is opened, otherwise the link is added as a new sheet.
-    if (!h) return;
-    decode(h).then(async (p) => {
-      if (!p) return;
-      const { t, ...g } = p, key = JSON.stringify(g);
-      for (const info of listSheets(s)) {
-        const ex = info.id === s.id ? s : loadSheet(info.id);
-        if (ex && (await sameKey(ex)) === key) { if (ex.id !== s.id) switchTo(ex.id); return; }
-      }
-      const d: State = { ...blank(), ...g, queue: [], done: true };
-      if (t?.length) resume(d, t);
-      hist.current = []; setS(d);
-    });
+    if (h) openLink(h);
   }, []);
 
   useEffect(() => {
@@ -121,6 +110,30 @@ export default function App() {
       setTimeout(() => setToast(''), 4500);
     }
     setS(d);
+  };
+  // Open a link's grid as a sheet: the existing sheet with identical content, else a new one. Returns false if unreadable.
+  const openLink = async (h: string): Promise<boolean> => {
+    const p = await decode(h); if (!p) return false;
+    const { t, ...g } = p, key = JSON.stringify(g);
+    for (const info of listSheets(sRef.current)) {
+      const ex = info.id === sRef.current.id ? sRef.current : loadSheet(info.id);
+      if (ex && (await sameKey(ex)) === key) { if (ex.id !== sRef.current.id) switchTo(ex.id); return true; }
+    }
+    const d: State = { ...blank(), ...g, queue: [], done: true };
+    if (t?.length) resume(d, t);
+    hist.current = []; setS(d); setEditing(null); setIntro(false); setCoach(false);
+    return true;
+  };
+  const [paste, setPaste] = useState(''), [pasteBad, setPasteBad] = useState(false);
+  const loadPasted = async () => {
+    const m = paste.trim().match(/#(?!s\.)(.+)$/); // only an owner link can be edited; a share link (#s.) is read-only
+    const ok = m ? await openLink(m[1]) : false;
+    setPasteBad(!ok); if (ok) { setPaste(''); if (!wide) setMenu(false); }
+  };
+  const removeSheet = (id: string, name?: string) => {
+    if (!confirm(`Remove ${name ? `“${name}”` : 'this sheet'} from this device? Copy its link first if you want to keep it.`)) return;
+    if (id === s.id) { deleteCurrent(); return; }
+    deleteSheet(id); setTick((n) => n + 1);
   };
   const back = () => { const prev = hist.current.pop(); saveHist(s.id, hist.current); if (prev) setS({ ...JSON.parse(prev), changed: [] }); };
 
@@ -288,14 +301,23 @@ export default function App() {
               <details className="more"><summary>My sheets<em className="dim"> · {sheets.length}</em></summary>
                 <div className="sheets">
                   {sheets.map((x) => (
-                    <button key={x.id} className={`sheet${x.id === s.id ? ' cur' : ''}`} aria-current={x.id === s.id} disabled={x.id === s.id}
-                      onClick={() => switchTo(x.id)}>
-                      <b>{x.name || 'Untitled'}</b>
-                      <span className="dim">born {x.born} · {x.cells} {x.cells === 1 ? 'month' : 'months'}{x.id === s.id ? ' · open' : ''}</span>
-                    </button>))}
+                    <div key={x.id} className="sheetrow">
+                      <button className={`sheet${x.id === s.id ? ' cur' : ''}`} aria-current={x.id === s.id} disabled={x.id === s.id}
+                        onClick={() => switchTo(x.id)}>
+                        <b>{x.name || 'Untitled'}</b>
+                        <span className="dim">born {x.born} · {x.cells} {x.cells === 1 ? 'month' : 'months'}{x.id === s.id ? ' · open' : ''}</span>
+                      </button>
+                      <button className="x" aria-label={`Remove ${x.name || 'this sheet'}`} title="Remove from this device" onClick={() => removeSheet(x.id, x.name)}>×</button>
+                    </div>))}
                   {s.birth && <button className="link" onClick={newSheet}>Start a new sheet</button>}
+                  <div className="field"><label>Load a sheet from a link</label>
+                    <div className="row"><input value={paste} placeholder="Paste an owner link" aria-invalid={pasteBad}
+                      onChange={(e) => { setPaste(e.target.value); setPasteBad(false); }} onKeyDown={(e) => { if (e.key === 'Enter') loadPasted(); }} />
+                      <button className="ghost" disabled={!paste.trim()} onClick={loadPasted}>Load</button></div>
+                    {pasteBad && <p className="help">That isn’t an owner link. Share links (with “#s.”) are read-only and can’t be loaded here.</p>}
+                  </div>
                 </div>
-                <p className="dim small">Each sheet is kept on this device, separately. Opening a link adds its sheet here; it never replaces one.</p>
+                <p className="dim small">Each sheet is kept on this device, separately. Switch between them here, remove the ones you are done with, or load another from a link. Nothing is ever replaced.</p>
               </details>)}
             {s.birth && (
               <details className="more" open><summary>Views<em className="dim"> · {shown.name}</em></summary>
