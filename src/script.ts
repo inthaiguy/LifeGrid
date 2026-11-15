@@ -61,7 +61,7 @@ const DEFS: Record<string, Def> = {
   // Asked after the welcome flow, which collects the birth month but not the place.
   birthplace: {
     view: (s) => (s.birth && !s.birth.place ? {
-      stage: 'Frame', prompt: `Where were you born${s.name ? `, ${s.name}` : ''}?`, submit: 'Next',
+      stage: 'Homes', prompt: `Where were you born${s.name ? `, ${s.name}` : ''}?`, submit: 'Next',
       fields: [{ key: 'place', type: 'text', label: 'Birthplace', placeholder: 'City, State or Country' }],
     } : null),
     apply: (s, _p, v) => {
@@ -349,8 +349,8 @@ const KIND_STAGE: Record<string, string> = {
 };
 const stageOf = (s: State, it: Item): string | undefined => it.p?.stage || KIND_STAGE[it.k] || DEFS[it.k]?.view?.(s, it.p)?.stage;
 export const TOPICS = STAGES.slice(1);
-/** The topics about where someone lived and went; the menu keeps them in their own Places section. */
-export const PLACE_TOPICS = ['Homes', 'Trips', 'Eras'];
+/** The topics the menu keeps in its Places section: where someone has lived (trips and eras are ordinary questions). */
+export const PLACE_TOPICS = ['Homes'];
 
 /** Topics that still have questions waiting, in script order. */
 export const pending = (s: State): string[] => TOPICS.filter((t) => s.queue.some((it) => stageOf(s, it) === t));
