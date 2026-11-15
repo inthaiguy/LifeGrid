@@ -26,6 +26,11 @@ user edits / answers ───────────────────�
 
 - **Links**: `share.ts` writes format 2 (see [data-format.md](data-format.md)); `lifegrid.ts` reads it.
 - **Read-only links** (`#s.…`) never write to localStorage.
+- **Sheets**: several grids can live on one device. `sheets.ts` keeps each under its own key
+  (`life-grid:s:<id>`) with an index, so one can never overwrite another. A tab remembers its open
+  sheet in `sessionStorage`; a new tab opens the last one used, and tabs follow each other's saves via
+  the `storage` event. Opening an owner link opens the sheet that already holds exactly that content,
+  or adds the link as a new sheet. It never replaces one. An older single-grid save is migrated on load.
 - **Import**: `import.ts` turns a JSON export or pasted sheet into cells and homes.
 
 ## Where things live
@@ -35,6 +40,7 @@ user edits / answers ───────────────────�
 | `src/App.tsx` | Layout, menu shelf, cell editor, sharing, undo, persistence |
 | `src/script.ts`, `Question.tsx` | The onboarding script as data, its engine, and the form that renders one question |
 | `src/Welcome.tsx`, `Coach.tsx`, `Typer.tsx` | The opening flow |
+| `src/sheets.ts` | Per-sheet storage on the device: save, load, list, delete, migrate |
 | `src/places.ts` | Editing where someone lived (moves, stays, renames) |
 | `src/Grid.tsx`, `Timeline.tsx`, `Tree.tsx`, `Voyager.tsx` | Drawing code for the built-in views |
 | `src/views/*.tsx` | One file per view, auto-discovered by `src/views.ts` |

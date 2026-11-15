@@ -1,6 +1,7 @@
 // The app shell: layout, the menu shelf, the cell editor, sharing, undo and local persistence.
-// Owns the single State object (src/model.ts). Every edit goes through commit(), which records undo history,
-// saves to localStorage and rewrites the URL. A link starting "#s." is a read-only view and stores nothing.
+// Owns the State of the open sheet (src/model.ts). Every edit goes through commit(), which records undo history,
+// saves that sheet to localStorage (src/sheets.ts, one key per sheet) and rewrites the URL.
+// A link starting "#s." is a read-only view and stores nothing.
 import { useEffect, useRef, useState } from 'react';
 import { type State, type YM, fresh, stats, toCSV, toJSON, fmt, addM, homeAt, setBirth, MON, colorOf, places, short, inLife, yOf, ym , nowYM } from './model';
 import { START, TOPICS, PLACE_TOPICS, normalize, current, answer, skip, begin, pending, goTopic, resume } from './script';
@@ -16,15 +17,14 @@ import type { Life } from './lifegrid';
 import { VIEWS, type ViewId, unlockedViews, nextView, FIRST_UNLOCK, UNLOCK_ALL } from './views';
 import { sparkle, soundOn, setSound } from './sound';
 import { THEMES, applyTheme, savedTheme } from './theme';
+import { migrate, loadSheet, saveSheet, deleteSheet, openId, markOpen, loadHist, saveHist, listSheets, storageKey, INDEX_KEY } from './sheets';
 
-const KEY = 'life-grid';
-const HKEY = 'life-grid-hist';
-const loadHist = (): string[] => { try { return JSON.parse(localStorage.getItem(HKEY) || '[]'); } catch { return []; } };
-const saveHist = (h: string[]) => { try { localStorage.setItem(HKEY, JSON.stringify(h.slice(-80))); } catch { /* full or private */ } };
-const load = (): State => {
-  try { const raw = localStorage.getItem(KEY); if (raw) { const s = JSON.parse(raw); if (s.v === 1) return { ...s, changed: [] }; } } catch { /* start over */ }
-  const s = fresh(START); normalize(s); return s;
-};
+const blank = (): State => { const s = fresh(START); normalize(s); return s; };
+/** The sheet this tab opens with: its own, else the last used on this device, else a blank one. */
+const boot = (): State => { migrate(); const id = openId(), s = id ? loadSheet(id) : null; return s ?? blank(); };
+
+/** A sheet's content as the link format sees it, so two sheets can be compared without false differences. */
+const sameKey = async (s: State) => { const { t, ...p } = (await decode(await encode(s))) ?? {}; return JSON.stringify(p); };
 
 const WIDE = '(min-width: 760px)';
 const VIEWING = location.hash.startsWith('#s.'); // a shared link: read-only, nothing stored on this device
@@ -43,7 +43,7 @@ async function copyText(text: string): Promise<boolean> {
 }
 
 export default function App() {
-  const [s, setS] = useState<State>(() => (VIEWING ? fresh([]) : load()));
+  const [s, setS] = useState<State>(() => (VIEWING ? fresh([]) : boot()));
   const [read, setRead] = useState(false);
   const [mode, setMode] = useState<ViewId>('grid'); // the sheet, or the same events as a timeline
   const [editing, setEditing] = useState<YM | null>(null);
@@ -55,7 +55,9 @@ export default function App() {
   const sendLink = (t: string) => { if (typeof navigator.share === 'function') navigator.share({ title: 'My Life Grid', url: t }).catch(() => {}); else doCopy(t === own ? 'own' : 'share', t); }; // the phone's share sheet, or copy where there is none
   const doCopy = (k: string, t: string) => { copyText(t).then((ok) => { if (!ok) return; setCopied(k); setTimeout(() => setCopied(''), 1500); }); };
   const [bad, setBad] = useState(false);
-  const hist = useRef<string[]>(VIEWING ? [] : loadHist());
+  const hist = useRef<string[]>(VIEWING ? [] : loadHist(s.id));
+  const [tick, setTick] = useState(0); // bumped when another tab changes the list of sheets
+  const sRef = useRef(s); sRef.current = s;
   // Questions live in the left shelf at every size. On a wide screen it docks beside the grid; on a phone it slides over it.
   const [wide, setWide] = useState(() => matchMedia(WIDE).matches);
   useEffect(() => { const m = matchMedia(WIDE), f = () => setWide(m.matches); m.addEventListener('change', f); return () => m.removeEventListener('change', f); }, []);
@@ -82,15 +84,26 @@ export default function App() {
   useEffect(() => {
     const h = location.hash.slice(1);
     if (VIEWING) { decode(h.slice(2)).then((p) => { if (!p) return setBad(true); const { t, ...g } = p; setS((cur) => ({ ...cur, ...g, done: true })); }); return; }
-    // An owner's own address also opens as a finished grid, but never over a grid already on this device.
-    if (!h || localStorage.getItem(KEY)) return;
-    decode(h).then((p) => { if (!p) return; const { t, ...g } = p; const d: State = { ...structuredClone(s), ...g, queue: [], done: true }; if (t?.length) resume(d, t); setS(d); if (!d.done) { setMenu(true); } });
+    // An owner's address opens its grid. It never replaces a sheet: if a sheet here already holds exactly
+    // this content it is opened, otherwise the link is added as a new sheet.
+    if (!h) return;
+    decode(h).then(async (p) => {
+      if (!p) return;
+      const { t, ...g } = p, key = JSON.stringify(g);
+      for (const info of listSheets(s)) {
+        const ex = info.id === s.id ? s : loadSheet(info.id);
+        if (ex && (await sameKey(ex)) === key) { if (ex.id !== s.id) switchTo(ex.id); return; }
+      }
+      const d: State = { ...blank(), ...g, queue: [], done: true };
+      if (t?.length) resume(d, t);
+      hist.current = []; setS(d);
+    });
   }, []);
 
   useEffect(() => {
     document.title = s.name ? `${s.name}’s Life` : 'Life Grid';
     if (VIEWING) return;
-    try { localStorage.setItem(KEY, JSON.stringify(s)); } catch { /* private mode */ }
+    if (saveSheet(s)) setTick((n) => n + 1); // a sheet new to this device: refresh the list
     if (s.birth) encode(s).then((h) => { history.replaceState(null, '', '#' + h); setLink(location.origin + location.pathname + '#s.' + h); }).catch(() => {});
     if (import.meta.env.DEV && s.birth) fetch('/__save', { method: 'POST', body: JSON.stringify(s) }).catch(() => {});
   }, [s]);
@@ -98,7 +111,7 @@ export default function App() {
   const commit = (fn: (d: State) => void) => {
     hist.current.push(JSON.stringify(s));
     if (hist.current.length > 300) hist.current.shift();
-    saveHist(hist.current);
+    saveHist(s.id, hist.current);
     history.pushState(null, '', location.href); // so the browser's back swipe steps back one answer
     const d = structuredClone(s); d.changed = []; fn(d);
     const was = unlockedViews(stats(s).pct), now = unlockedViews(stats(d).pct);
@@ -109,7 +122,37 @@ export default function App() {
     }
     setS(d);
   };
-  const back = () => { const prev = hist.current.pop(); saveHist(hist.current); if (prev) setS({ ...JSON.parse(prev), changed: [] }); };
+  const back = () => { const prev = hist.current.pop(); saveHist(s.id, hist.current); if (prev) setS({ ...JSON.parse(prev), changed: [] }); };
+
+  // Sheets: several grids on this device, each stored under its own key (src/sheets.ts).
+  const switchTo = (id: string) => {
+    const n = loadSheet(id); if (!n) return;
+    hist.current = loadHist(id); markOpen(id);
+    setS(n); setEditing(null); setIntro(false); setCoach(false); if (!wide) setMenu(false);
+  };
+  const newSheet = () => {
+    hist.current = []; history.replaceState(null, '', location.pathname);
+    setS(blank()); setEditing(null); setCoach(false); setIntro(true); setMenu(false);
+  };
+  const deleteCurrent = () => {
+    const id = s.id; deleteSheet(id); history.replaceState(null, '', location.pathname);
+    const next = listSheets()[0];
+    if (next) switchTo(next.id); else { hist.current = []; setS(blank()); setMenu(true); }
+    setTick((n) => n + 1);
+  };
+  // Another tab saved a sheet: follow it if it is the one open here, and refresh the list either way.
+  useEffect(() => {
+    if (VIEWING) return;
+    const on = (e: StorageEvent) => {
+      if (e.key === INDEX_KEY) setTick((n) => n + 1);
+      if (e.key === storageKey(sRef.current.id) && e.newValue && e.newValue !== JSON.stringify(sRef.current)) {
+        try { const n = JSON.parse(e.newValue); if (n.v === 1) setS({ ...n, changed: [] }); } catch { /* ignore */ }
+      }
+    };
+    window.addEventListener('storage', on);
+    return () => window.removeEventListener('storage', on);
+  }, []);
+  const sheets = VIEWING ? [] : listSheets(s);
 
   const st = stats(s);
   const open = VIEWING ? VIEWS : unlockedViews(st.pct); // a shared link shows every view
@@ -241,6 +284,19 @@ export default function App() {
                 {s.log.length > 0 && <p className="dim">{s.done ? 'Setup complete. ' : ''}{answered} {answered === 1 ? 'question' : 'questions'} answered, {s.log.length - answered} skipped.</p>}
               </div>
             ) : <p className="help">Answer the first question to start your grid.</p>}
+            {sheets.length > 0 && (
+              <details className="more"><summary>My sheets<em className="dim"> · {sheets.length}</em></summary>
+                <div className="sheets">
+                  {sheets.map((x) => (
+                    <button key={x.id} className={`sheet${x.id === s.id ? ' cur' : ''}`} aria-current={x.id === s.id} disabled={x.id === s.id}
+                      onClick={() => switchTo(x.id)}>
+                      <b>{x.name || 'Untitled'}</b>
+                      <span className="dim">born {x.born} · {x.cells} {x.cells === 1 ? 'month' : 'months'}{x.id === s.id ? ' · open' : ''}</span>
+                    </button>))}
+                  {s.birth && <button className="link" onClick={newSheet}>Start a new sheet</button>}
+                </div>
+                <p className="dim small">Each sheet is kept on this device, separately. Opening a link adds its sheet here; it never replaces one.</p>
+              </details>)}
             {s.birth && (
               <details className="more" open><summary>Views<em className="dim"> · {shown.name}</em></summary>
                 <div className="field"><label>{UNLOCK_ALL ? 'All views are open for testing' : 'Unlocked as your grid fills in'}</label>
@@ -338,7 +394,7 @@ export default function App() {
             <span className="grow" />
             <button className="link" onClick={() => setImporting(true)}>{s.birth ? 'Import a sheet' : 'Already have a life sheet? Import it'}</button>
             {hist.current.length > 0 && !asking && <button className="link" onClick={back}>Undo last change</button>}
-            {s.birth && <button className="ghost danger" onClick={() => { if (confirm('Erase this grid and start over?')) { localStorage.removeItem(KEY); localStorage.removeItem(HKEY); history.replaceState(null, '', location.pathname); hist.current = []; const n = fresh(START); normalize(n); setS(n); setMenu(true); } }}>Start over</button>}
+            {s.birth && <button className="ghost danger" onClick={() => { if (confirm(sheets.length > 1 ? 'Delete this sheet from this device? Other sheets are kept.' : 'Erase this grid and start over?')) deleteCurrent(); }}>{sheets.length > 1 ? 'Delete this sheet' : 'Start over'}</button>}
           </nav>
         </div>)}
     </div>
