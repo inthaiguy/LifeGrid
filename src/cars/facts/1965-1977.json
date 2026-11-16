@@ -1,0 +1,327 @@
+[
+  {
+    "year": 1965,
+    "run": "1964–present",
+    "built": "over one million (1964–2020s)",
+    "price": "about $6,500 (1965, US)",
+    "value": "about $90,000–$185,000 for a good early car (2020s)",
+    "facts": [
+      { "y": 1963, "t": "Shown at Frankfurt as the 901" },
+      { "y": 1964, "t": "Renamed 911 after Peugeot objects to the 901 name; production begins" },
+      { "y": 1967, "t": "Targa open-top version and the more powerful 911 S added" },
+      { "y": 1968, "t": "Vic Elford wins the Monte Carlo Rally in a 911 T" },
+      { "y": 1973, "t": "Carrera RS 2.7 homologation special" },
+      { "y": 1974, "t": "Impact bumpers arrive on the G-series cars" },
+      { "y": 1975, "t": "First 911 Turbo reaches customers" },
+      { "y": 1984, "t": "A 911 4x4 prototype wins the Paris–Dakar Rally" },
+      { "y": 1989, "t": "964 generation brings four-wheel drive and a modern chassis" },
+      { "y": 1998, "t": "First water-cooled 911 (996)" },
+      { "y": 2017, "t": "One millionth 911 built" },
+      { "y": 2019, "t": "Eighth generation (992) launched" }
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://www.hagerty.com/apps/valuationtools/1965-porsche-911",
+      "https://hagerty.com/apps/valuationtools/1965-porsche-911",
+      "https://en.wikipedia.org/wiki/Porsche_911"
+    ]
+  },
+  {
+    "year": 1966,
+    "run": "1966–present",
+    "built": "over 50 million (1966–2021)",
+    "price": "¥432,000 (1966, Tokyo, standard model), roughly $1,200 then",
+    "facts": [
+      { "y": 1966, "t": "Launched in Japan in the autumn, first shown at the Tokyo Motor Show" },
+      { "y": 1968, "t": "Goes on sale in the United States" },
+      { "y": 1969, "t": "Becomes Japan’s best-selling car" },
+      { "y": 1974, "t": "Third generation launched and sold in larger numbers worldwide" },
+      { "y": 1983, "t": "Front-wheel-drive Corolla arrives" },
+      { "y": 1997, "t": "Passes the Volkswagen Beetle as the best-selling nameplate in history" },
+      { "y": 2006, "t": "Tenth generation widens the range into a mainstream world car" },
+      { "y": 2013, "t": "Passes 40 million sold" },
+      { "y": 2019, "t": "Corolla hybrid and hatchback return to the US" },
+      { "y": 2021, "t": "Passes 50 million sold" }
+    ],
+    "confirm": ["value"],
+    "sources": [
+      "https://www.nippon.com/en/articles/-/14425",
+      "https://pressroom.toyota.com/toyota-marks-50-millionth-corolla-sold/",
+      "https://www.toyota.com.au/news/toyota-corolla-sales-top-50-million-across-the-globe"
+    ]
+  },
+  {
+    "year": 1967,
+    "run": "1967–2002, 2009–2024",
+    "built": "about 5.5 million (1967–2024)",
+    "price": "$2,466 base (1967)",
+    "facts": [
+      { "y": 1967, "t": "Launched as Chevrolet’s answer to the Mustang" },
+      { "y": 1967, "t": "Camaro RS/SS convertible paces the Indianapolis 500" },
+      { "y": 1967, "t": "Z/28 created to race in the Trans-Am series" },
+      { "y": 1968, "t": "Mark Donohue’s Penske Camaro wins the Trans-Am title in 1968 and 1969" },
+      { "y": 1969, "t": "COPO 427 special-order cars built for drag racing" },
+      { "y": 1970, "t": "Second generation introduced" },
+      { "y": 1982, "t": "Third generation introduced, with the later IROC-Z (1985)" },
+      { "y": 1993, "t": "Fourth generation introduced" },
+      { "y": 2002, "t": "First production run ends" },
+      { "y": 2007, "t": "Bumblebee in “Transformers” revives interest in the nameplate" },
+      { "y": 2009, "t": "Fifth generation goes on sale with retro styling" },
+      { "y": 2016, "t": "Sixth generation introduced" },
+      { "y": 2024, "t": "Production of the sixth generation ends" }
+    ],
+    "confirm": ["built", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)",
+      "https://myautoworld.com/gm/history/camaro/camaro1/camaro1.html",
+      "https://www.hagerty.com/media/?p=47732"
+    ]
+  },
+  {
+    "year": 1968,
+    "run": "1966–1978, 1982–1987, 2006–2023",
+    "built": "about 96,000 in 1968 alone",
+    "price": "$3,014 base, R/T from $3,480 (1968)",
+    "value": "about $30,000 for a base car up to $80,000+ for an R/T (2020s)",
+    "facts": [
+      { "y": 1966, "t": "Original Charger debuts as a fastback coupe" },
+      { "y": 1968, "t": "Redesigned with “Coke bottle” styling" },
+      { "y": 1968, "t": "Dark Charger chases a Mustang in “Bullitt”" },
+      { "y": 1969, "t": "Charger Daytona with a nose cone and tall wing built for NASCAR" },
+      { "y": 1971, "t": "Third-generation “fuselage” body introduced" },
+      { "y": 1979, "t": "“The Dukes of Hazzard” makes the orange General Lee a TV star" },
+      { "y": 1982, "t": "Name returns on a small front-wheel-drive hatchback" },
+      { "y": 2001, "t": "“The Fast and the Furious” features a 1970 Charger" },
+      { "y": 2006, "t": "Revived as a four-door sedan" },
+      { "y": 2015, "t": "Charger SRT Hellcat arrives with 707 hp" },
+      { "y": 2024, "t": "Electric Charger Daytona introduced" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://www.hagerty.com/apps/valuationtools/1968-Dodge-Charger",
+      "https://www.conceptcarz.com/s1974/dodge-charger.aspx",
+      "https://silodrome.com/1968-dodge-charger-rt/"
+    ]
+  },
+  {
+    "year": 1969,
+    "run": "1969–1973 (240Z)",
+    "built": "about 156,000 (1969–1973)",
+    "price": "about $3,500 (1970, US)",
+    "value": "about $25,000–$70,000 for a good driver (2020s)",
+    "facts": [
+      { "y": 1969, "t": "Launched in Japan in October as the Fairlady Z" },
+      { "y": 1970, "t": "Goes on sale in the US as the 240Z" },
+      { "y": 1970, "t": "Peter Brock’s BRE team wins the SCCA C Production title with the Datsun" },
+      { "y": 1971, "t": "Wins the East African Safari Rally" },
+      { "y": 1973, "t": "Replaced by the 260Z" },
+      { "y": 1978, "t": "280Z brings fuel injection and a larger engine" },
+      { "y": 1984, "t": "300ZX introduced" },
+      { "y": 1989, "t": "Second-generation 300ZX launched with a twin-turbo option" },
+      { "y": 2002, "t": "350Z revives the Z after a gap in the US" },
+      { "y": 2009, "t": "The Z line continues with the 370Z" },
+      { "y": 2022, "t": "Nissan Z introduced" }
+    ],
+    "confirm": ["built", "price"],
+    "sources": [
+      "https://hagerty.ca/valuation-tools/datsun/240z/1970/1970-datsun-240z",
+      "https://hagerty.com/apps/valuationtools/1972-datsun-240z",
+      "https://en.wikipedia.org/wiki/Nissan_S30"
+    ]
+  },
+  {
+    "year": 1970,
+    "run": "1970–1974, 1978–1983, 2008–2023",
+    "built": "about 165,000–180,000 (1970–1974)",
+    "price": "$2,851 base, R/T from $3,226 (1970)",
+    "value": "about $50,000–$110,000 for a good R/T (2020s)",
+    "facts": [
+      { "y": 1970, "t": "Launched in the 1970 model year, with the 426 Hemi V8 offered" },
+      { "y": 1970, "t": "Challenger T/A, a Trans-Am homologation model, goes on sale" },
+      { "y": 1971, "t": "White Challenger R/T stars in “Vanishing Point”" },
+      { "y": 1971, "t": "Sales fall by more than half and the Hemi is dropped after the 1971 model year" },
+      { "y": 1974, "t": "First-generation production ends" },
+      { "y": 1978, "t": "Name returns on a Mitsubishi-built small coupe" },
+      { "y": 2008, "t": "Revived with retro styling" },
+      { "y": 2015, "t": "Challenger SRT Hellcat launched with 707 hp" },
+      { "y": 2018, "t": "Challenger SRT Demon built as a drag-racing special" },
+      { "y": 2023, "t": "Last Challengers built at the Brampton plant" }
+    ],
+    "confirm": ["built"],
+    "sources": [
+      "https://musclecarfacts.com/?p=240",
+      "https://www.conceptcarz.com/vehicle/z18438/dodge-challenger.aspx",
+      "https://www.classic.com/m/dodge/challenger/1st-gen/rt/"
+    ]
+  },
+  {
+    "year": 1971,
+    "run": "LP500 show car 1971; Countach 1974–1990",
+    "built": "one LP500; 1,983 Countachs (1974–1990)",
+    "price": "about $50,000–$70,000 for an early LP400 (1974)",
+    "value": "about $600,000–$1 million+ for an LP400 (2020s)",
+    "facts": [
+      { "y": 1971, "t": "LP500 prototype shown at the Geneva show" },
+      { "y": 1974, "t": "Production LP400 begins, with deliveries from April" },
+      { "y": 1978, "t": "LP400 S arrives with wider arches and a rear wing option" },
+      { "y": 1982, "t": "LP500 S brings a 4.8-litre engine" },
+      { "y": 1985, "t": "Countach 5000 Quattrovalvole" },
+      { "y": 1988, "t": "25th Anniversary edition" },
+      { "y": 1990, "t": "Production ends" },
+      { "y": 2014, "t": "A 1974 LP400 sells for about $1.9 million at Pebble Beach" },
+      { "y": 2021, "t": "Countach LPI 800-4 revival limited to 112 cars" }
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://www.conceptcarz.com/vehicle/z15953/news.aspx",
+      "https://supercars.net/blog/all-brands/lamborghini/lamborghini-countach-2/",
+      "https://hagerty.com/apps/valuationtools/1976-lamborghini-countach-lp400"
+    ]
+  },
+  {
+    "year": 1972,
+    "run": "1972–present",
+    "built": "over 27 million (1972–2020s)",
+    "price": "about $2,200 (1973, US)",
+    "facts": [
+      { "y": 1972, "t": "Launched in Japan in July and wins Japan Car of the Year" },
+      { "y": 1973, "t": "Goes on sale in the United States" },
+      { "y": 1974, "t": "CVCC engine meets US emissions rules without a catalytic converter" },
+      { "y": 1979, "t": "Second generation launched" },
+      { "y": 1984, "t": "CRX sports coupe joins the range" },
+      { "y": 1992, "t": "Fifth generation adds a more rounded body and VTEC engines" },
+      { "y": 2002, "t": "Civic Hybrid goes on sale in the US" },
+      { "y": 2017, "t": "Type R reaches the US market" },
+      { "y": 2021, "t": "Eleventh generation revealed" }
+    ],
+    "confirm": ["built", "price", "value"],
+    "sources": [
+      "https://www.honda.com.au/news/2019/50th-anniversary-original-civic",
+      "https://global.honda/en/about/history-digest/1970/",
+      "https://www.thedrive.com/new-cars/1974-honda-civic-cvcc-review-drive-history-price"
+    ]
+  },
+  {
+    "year": 1973,
+    "run": "1972–1973",
+    "built": "1,580",
+    "price": "about DM 34,000 (1973), roughly $12,500 then",
+    "value": "about $700,000–$1.5 million (2020s)",
+    "facts": [
+      { "y": 1972, "t": "Unveiled at the Paris show" },
+      { "y": 1972, "t": "The first 500 sold out before the show had ended" },
+      { "y": 1973, "t": "Total production of 1,580 cars, about 200 of them Lightweights" },
+      { "y": 1973, "t": "Ducktail rear spoiler is a first on a series 911" },
+      { "y": 1973, "t": "Carrera RSR wins the Targa Florio" },
+      { "y": 1991, "t": "Carrera RS (964) revives the RS name" },
+      { "y": 2003, "t": "996 GT3 RS carries the RS badge to a new generation" },
+      { "y": 2011, "t": "911 GT3 RS 4.0 closes the 997 line" },
+      { "y": 2023, "t": "992 GT3 RS continues the RS line" }
+    ],
+    "confirm": ["price", "value"],
+    "sources": [
+      "https://www.stuttcars.com/porsche-911-carrera-rs-2-7/",
+      "https://www.hagerty.com/apps/valuationtools/1973-porsche-911",
+      "https://rmsothebys.com/auctions/mo26/lots/r0060-1973-porsche-911-carrera-rs-27-touring"
+    ]
+  },
+  {
+    "year": 1974,
+    "run": "1974–present",
+    "built": "over 37 million (1974–2024)",
+    "price": "about DM 8,800 (1974), roughly $3,400 then",
+    "facts": [
+      { "y": 1974, "t": "Production starts in March, deliveries from August, styled by Giugiaro" },
+      { "y": 1975, "t": "GTI shown at the Frankfurt show" },
+      { "y": 1976, "t": "Diesel Golf arrives; GTI goes on sale" },
+      { "y": 1979, "t": "Golf Cabriolet goes on sale" },
+      { "y": 1983, "t": "Second generation (Mk2) launched" },
+      { "y": 1991, "t": "Third generation (Mk3) launched" },
+      { "y": 2002, "t": "Golf passes the Beetle’s total production" },
+      { "y": 2003, "t": "Fifth generation (Mk5) launched with the new GTI" },
+      { "y": 2012, "t": "Seventh generation (Mk7) launched" },
+      { "y": 2014, "t": "Electric e-Golf goes on sale" },
+      { "y": 2019, "t": "Eighth generation (Mk8) launched" }
+    ],
+    "confirm": ["price", "value"],
+    "sources": [
+      "https://www.volkswagen-newsroom.com/en/press-releases/a-world-bestseller-celebrates-its-50th-birthday-volkswagen-started-production-of-the-first-golf-on-29-march-1974-18313",
+      "https://fr.motor1.com/news/377548/retrospective-vw-golf-mk1/",
+      "https://www.volkswagen-newsroom.com/en/press-releases/golf-turns-45-on-29-march-1974-volkswagen-started-making-europes-most-successful-car-4788"
+    ]
+  },
+  {
+    "year": 1975,
+    "run": "1975–1989",
+    "built": "about 21,600 (1975–1989)",
+    "price": "about $25,000 (1976, US)",
+    "value": "about $90,000–$175,000 for a good car (2020s)",
+    "facts": [
+      { "y": 1974, "t": "Shown at the Paris show in October" },
+      { "y": 1975, "t": "First customer cars with 260 hp from a 3.0-litre turbo engine" },
+      { "y": 1975, "t": "Earns the nickname “Widowmaker” for its handling at the limit" },
+      { "y": 1976, "t": "Goes on sale in the US as the 930 Turbo Carrera" },
+      { "y": 1978, "t": "3.3-litre intercooled engine raises output to 300 hp" },
+      { "y": 1989, "t": "Production of the 930 generation ends" },
+      { "y": 1990, "t": "964 Turbo carries the line on" },
+      { "y": 1995, "t": "993 Turbo brings twin turbos and all-wheel drive" },
+      { "y": 2006, "t": "997 Turbo gets variable-geometry turbochargers" },
+      { "y": 2020, "t": "992 Turbo S launched with 640 hp" }
+    ],
+    "confirm": ["built", "price"],
+    "sources": [
+      "https://www.hagerty.com/valuation-tools/past-sales/1976-porsche-911/9306700570/a964e598-71d3-4aee-a11e-8b1fa7499cc1",
+      "https://www.classic.com/m/porsche/911/g-body/930/turbo-30?page=2",
+      "https://en.wikipedia.org/wiki/Porsche_930"
+    ]
+  },
+  {
+    "year": 1976,
+    "run": "1976–present",
+    "built": "over 20 million (1976–2020s)",
+    "price": "about $3,995 (1976, US)",
+    "value": "an early Accord about $5,000–$12,000 (2020s)",
+    "facts": [
+      { "y": 1976, "t": "Launched in May as a hatchback" },
+      { "y": 1979, "t": "Four-door sedan added" },
+      { "y": 1982, "t": "First Japanese car built in the US, at Marysville, Ohio" },
+      { "y": 1989, "t": "Becomes the best-selling car in America" },
+      { "y": 1998, "t": "Sixth generation grows and adds a V6 coupe and sedan range" },
+      { "y": 2003, "t": "Seventh generation launched, with a hybrid following" },
+      { "y": 2013, "t": "Ninth generation launched" },
+      { "y": 2018, "t": "Tenth generation launched" },
+      { "y": 2023, "t": "Eleventh generation launched" }
+    ],
+    "confirm": ["built", "price"],
+    "sources": [
+      "https://www.hagerty.co.uk/articles/honda-accord-at-50/",
+      "https://ca.movies.yahoo.com/bought-77-honda-accord-apparently-140000345.html",
+      "https://www.thedrive.com/new-cars/1977-honda-accord-review-price-specs-driving"
+    ]
+  },
+  {
+    "year": 1977,
+    "run": "1969–2002",
+    "built": "about 68,700 in 1977 alone",
+    "price": "about $5,000 (1977)",
+    "value": "about $20,000–$60,000, Special Edition higher (2020s)",
+    "facts": [
+      { "y": 1969, "t": "Trans Am introduced as a package on the Firebird" },
+      { "y": 1973, "t": "Super Duty 455 V8 offered" },
+      { "y": 1977, "t": "“Smokey and the Bandit” makes the black-and-gold Trans Am famous" },
+      { "y": 1977, "t": "A record year for Trans Am sales up to that point" },
+      { "y": 1979, "t": "10th Anniversary edition" },
+      { "y": 1982, "t": "Trans Am plays KITT in the TV series “Knight Rider”" },
+      { "y": 1993, "t": "Fourth-generation Firebird launched" },
+      { "y": 1998, "t": "Facelift brings the LS1 V8 with 305 hp" },
+      { "y": 2002, "t": "Firebird and Trans Am production ends" },
+      { "y": 2010, "t": "Pontiac brand discontinued by General Motors" }
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://www.musclecarfacts.com/pontiac-firebird/418-1977-firebird/",
+      "https://oldcarsweekly.com/features/car-of-the-week-1977-trans-am",
+      "https://silodrome.com/1977-pontiac-firebird-trans-am-car/"
+    ]
+  }
+]

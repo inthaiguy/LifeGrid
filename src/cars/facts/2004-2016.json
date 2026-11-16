@@ -1,0 +1,301 @@
+[
+  {
+    "year": 2004,
+    "run": "2004–2006",
+    "built": "4,038 (2004–2006)",
+    "price": "about $140,000 (2005, US)",
+    "value": "$350,000–$500,000 (2020s)",
+    "facts": [
+      {"y": 2002, "t": "A concept GT shown at the Detroit show echoes the Le Mans-winning GT40"},
+      {"y": 2003, "t": "The production car is shown at Ford’s 100th anniversary celebrations"},
+      {"y": 2004, "t": "Production begins in June with a supercharged 5.4-litre V8 of 550 hp"},
+      {"y": 2005, "t": "Customer deliveries begin at a list price of $139,995"},
+      {"y": 2006, "t": "A 346-car Heritage Edition wears Gulf Oil colours like the 1968–69 Le Mans GT40s"},
+      {"y": 2006, "t": "Production ends in September"},
+      {"y": 2015, "t": "An all-new Ford GT is revealed at the Detroit show"},
+      {"y": 2016, "t": "New GT wins its class at Le Mans, 50 years after the 1966 GT40 win"},
+      {"y": 2022, "t": "Production of the second-generation GT ends"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ford_GT",
+      "https://www.hagerty.com/valuation-tools/past-sales/2005-ford-gt/1FAFP90S25Y400006/96f77642-4a04-4b2e-a43b-07817f210fa7",
+      "https://www.classic.com/m/ford/gt/1st-gen/base-model/year-2005/?page=4"
+    ]
+  },
+  {
+    "year": 2005,
+    "run": "2005–2015",
+    "built": "450 (2005–2015)",
+    "price": "about €1 million before tax (2005), roughly $1.25 million then; later US cars about $1.7 million",
+    "value": "$1.6 million–$2.5 million (2020s)",
+    "facts": [
+      {"y": 2005, "t": "Production begins at Molsheim with 1,001 PS from a quad-turbo W16"},
+      {"y": 2005, "t": "Averages 253.8 mph in April, the fastest production car of its day"},
+      {"y": 2008, "t": "Grand Sport open-top version is shown"},
+      {"y": 2010, "t": "Super Sport sets a record of about 267.9 mph in July"},
+      {"y": 2010, "t": "Top Gear names it car of the decade"},
+      {"y": 2012, "t": "Grand Sport Vitesse roadster joins the range"},
+      {"y": 2013, "t": "A Grand Sport Vitesse averages about 254 mph, an open-top record"},
+      {"y": 2015, "t": "The 450th and last Veyron, La Finale, is shown at Geneva"},
+      {"y": 2016, "t": "Chiron takes over as Bugatti’s flagship"},
+      {"y": 2025, "t": "A standard Veyron sells for $2.2 million at Broad Arrow in Las Vegas, a record for the type"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+      "https://www.goodwood.com/grr/event-coverage/festival-of-speed/bugatti-veyron-sells-for-world-record-breaking-figure-at-festival-of-speed/",
+      "https://www.motorious.com/articles/news/record-setting-2-2m-bugatti-veyron-sets-the-pace-at-broad-arrows-inaugural-las-vegas-auction"
+    ]
+  },
+  {
+    "year": 2006,
+    "run": "2006–2017",
+    "price": "about $61,000 (2007, US)",
+    "facts": [
+      {"y": 2006, "t": "Debuts at the Detroit show in January as the first car with an eight-speed automatic"},
+      {"y": 2006, "t": "US sales begin in October; an automatic parallel-parking system is optional"},
+      {"y": 2007, "t": "Hybrid LS 600h L goes on sale, the first V8 full-hybrid"},
+      {"y": 2009, "t": "Light refresh for the 2010 model year with new front and rear styling"},
+      {"y": 2012, "t": "Mid-life facelift adds Lexus’s spindle grille"},
+      {"y": 2017, "t": "LS 500 is shown in January; LS 460 production ends in October"},
+      {"y": 2018, "t": "The LS 500 replaces it as Lexus’s flagship sedan"}
+    ],
+    "confirm": ["built", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lexus_LS",
+      "https://www.cars.com/articles/2007-lexus-ls-460-prices-announced-bigger-better-more-expensive-1420663330183",
+      "https://clublexus.com/articles/lexus-announces-pricing-on-2007-ls-460-and-ls-460-l-full-size-luxury-sedans"
+    ]
+  },
+  {
+    "year": 2007,
+    "run": "2007–2025 (2009–2024 in the US)",
+    "built": "about 48,000 (2007–2025)",
+    "price": "about $69,850 (2009, US)",
+    "value": "$50,000–$90,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2007, "t": "Shown at the Tokyo show in October; on sale in Japan from December"},
+      {"y": 2007, "t": "Nissan tests a Nürburgring lap of 7:38 in damp conditions"},
+      {"y": 2008, "t": "US deliveries begin in July with a twin-turbo V6 and all-wheel drive"},
+      {"y": 2008, "t": "Nissan reports a Nürburgring lap of about 7:29"},
+      {"y": 2010, "t": "First facelift for the 2011 model year brings more power"},
+      {"y": 2013, "t": "Nismo version debuts at the Tokyo show and later laps the Ring in 7:08.7"},
+      {"y": 2016, "t": "Largest update shown for 2017, with new bodywork and more power"},
+      {"y": 2024, "t": "Nissan announces the end of US sales in October"},
+      {"y": 2025, "t": "The last GT-R is built in Tochigi on 26 August"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nissan_GT-R",
+      "https://www.insidehook.com/autos/buying-guide-nissan-gtr-r35-sports-car/amp",
+      "https://www.classic.com/m/nissan/gt-r/?page=17"
+    ]
+  },
+  {
+    "year": 2008,
+    "run": "2008–2012",
+    "built": "about 2,450 (2008–2012)",
+    "price": "about $98,950 (2008)",
+    "value": "$45,000–$80,000 (used, 2020s; low-mileage early cars can fetch more)",
+    "facts": [
+      {"y": 2006, "t": "Prototype unveiled in July at an event in Santa Monica"},
+      {"y": 2008, "t": "First car delivered in February; series production begins in March"},
+      {"y": 2008, "t": "EPA-rated range of about 244 miles on a charge"},
+      {"y": 2009, "t": "A Roadster drives 311 miles on one charge in Australia, a distance record for a production electric car"},
+      {"y": 2010, "t": "Roadster 2.5 brings new seats, wheels and front end"},
+      {"y": 2012, "t": "Production ends in January after 15 Final Edition cars"},
+      {"y": 2015, "t": "A paid battery upgrade adds about 31% more capacity"},
+      {"y": 2017, "t": "Tesla shows a second-generation Roadster prototype"},
+      {"y": 2018, "t": "Elon Musk’s own Roadster is launched into space on a Falcon Heavy rocket"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+      "https://www.jalopnik.com/2299446/what-tesla-roadster-cost-2008-vs-today/",
+      "https://oldcarsdata.com/tesla/roadster"
+    ]
+  },
+  {
+    "year": 2009,
+    "run": "2009–2015",
+    "built": "about 600,000",
+    "price": "about $23,000 (2010 V6 LS, US, with destination)",
+    "value": "$15,000–$35,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2006, "t": "Camaro concept shown at the Detroit show"},
+      {"y": 2007, "t": "A Camaro concept plays Bumblebee in the film Transformers"},
+      {"y": 2009, "t": "Production begins in Oshawa, Ontario, in March after a long break in the nameplate"},
+      {"y": 2009, "t": "Transformers special-edition package announced for $995"},
+      {"y": 2010, "t": "Outsells the Ford Mustang for the year"},
+      {"y": 2011, "t": "ZL1 shown at the Chicago show; it goes on sale for 2012"},
+      {"y": 2013, "t": "Track-focused Z/28 with a 7.0-litre V8 shown at the New York show"},
+      {"y": 2014, "t": "Facelift brings new front and rear styling"},
+      {"y": 2016, "t": "Sixth generation introduced"},
+      {"y": 2024, "t": "Chevrolet ends Camaro production"}
+    ],
+    "confirm": ["built", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(fifth_generation)",
+      "https://thetruthaboutcars.com/2008/10/camaro-pricing-released/"
+    ]
+  },
+  {
+    "year": 2010,
+    "run": "2010–2025",
+    "built": "about 650,000–700,000",
+    "price": "$32,780 plus destination (2011 SV, US)",
+    "value": "$3,000–$12,000 (used, US, 2020s; early cars at the low end)",
+    "facts": [
+      {"y": 2009, "t": "Unveiled in August as a mass-market electric car"},
+      {"y": 2010, "t": "Production begins in October at Oppama; deliveries start in Japan and the US in December"},
+      {"y": 2011, "t": "Wins European Car of the Year and World Car of the Year"},
+      {"y": 2013, "t": "US production moves to Smyrna, Tennessee"},
+      {"y": 2015, "t": "A larger 30 kWh battery becomes available"},
+      {"y": 2017, "t": "Second generation arrives with more range"},
+      {"y": 2018, "t": "Best sales year, with about 87,000 sold worldwide"},
+      {"y": 2019, "t": "Leaf Plus adds a 62 kWh battery"},
+      {"y": 2020, "t": "The 500,000th Leaf is built in September"},
+      {"y": 2024, "t": "Sunderland, UK, stops building the Leaf in March"},
+      {"y": 2025, "t": "Second generation ends and a third-generation crossover Leaf begins production"}
+    ],
+    "confirm": ["built"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nissan_Leaf",
+      "https://www.iseecars.com/car/2011-nissan-leaf-price",
+      "https://www.kbb.com/nissan/leaf/2011"
+    ]
+  },
+  {
+    "year": 2011,
+    "run": "2010–2019",
+    "built": "about 177,000 sold by late 2018, including the Opel/Vauxhall Ampera",
+    "price": "about $41,000 (2011, US), before a $7,500 federal tax credit",
+    "value": "$5,000–$12,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2010, "t": "First retail deliveries in December; a plug-in hybrid with an electric range of about 35 miles"},
+      {"y": 2011, "t": "Wins Motor Trend Car of the Year and North American Car of the Year"},
+      {"y": 2011, "t": "A fire after a crash test leads to a federal investigation and a battery fix"},
+      {"y": 2012, "t": "Sister car Opel/Vauxhall Ampera shares European Car of the Year"},
+      {"y": 2016, "t": "Second generation arrives with a 53-mile electric range"},
+      {"y": 2018, "t": "GM announces the Volt will end as the Hamtramck plant closes"},
+      {"y": 2019, "t": "Production ends at the Detroit-Hamtramck plant"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chevrolet_Volt",
+      "https://recharged.com/articles/chevy-volt-prices-used-market-guide",
+      "https://www.kbb.com/chevrolet/volt/2011"
+    ]
+  },
+  {
+    "year": 2012,
+    "run": "2012–2026",
+    "built": "roughly 400,000 (2012–2026)",
+    "price": "about $57,400 (2012, 60 kWh)",
+    "value": "$10,000–$25,000 for early cars (used, US, 2020s)",
+    "facts": [
+      {"y": 2012, "t": "First deliveries in June from the Fremont, California factory"},
+      {"y": 2012, "t": "Tesla builds its 1,000th Model S in October"},
+      {"y": 2013, "t": "Wins Motor Trend Car of the Year; Consumer Reports gives it a score of 99"},
+      {"y": 2014, "t": "Dual-motor all-wheel drive arrives; deliveries begin in China"},
+      {"y": 2015, "t": "Autopilot driver-assist software released"},
+      {"y": 2015, "t": "“Ludicrous” mode makes it one of the quickest-accelerating sedans"},
+      {"y": 2016, "t": "Facelift in April; P100D follows with a claimed 315-mile range"},
+      {"y": 2021, "t": "Plaid version arrives with over 1,000 hp"},
+      {"y": 2025, "t": "Updated Model S debuts in June, with a Long Range car claiming 410 miles"},
+      {"y": 2026, "t": "The last Model S leaves the Fremont line in May"}
+    ],
+    "confirm": ["built", "price", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tesla_Model_S",
+      "https://electrive.com/2026/05/11/final-tesla-model-s-rolls-off-the-production-line"
+    ]
+  },
+  {
+    "year": 2013,
+    "run": "2013–2018 (coupe to 2016, Aperta to 2018)",
+    "built": "499 coupes plus one for charity (500 total), and 210 Aperta open-tops",
+    "price": "about $1.4 million (2013, US)",
+    "value": "$3.3 million–$5.5 million for coupes (2020s); Aperta about $6.7 million",
+    "facts": [
+      {"y": 2013, "t": "Unveiled at the Geneva show with a hybrid system and about 949 hp"},
+      {"y": 2014, "t": "Deliveries begin, with every car pre-sold"},
+      {"y": 2016, "t": "Aperta open-top version revealed; 210 are planned"},
+      {"y": 2016, "t": "Coupe production ends"},
+      {"y": 2024, "t": "Ferrari reveals the F80 as LaFerrari’s successor"},
+      {"y": 2025, "t": "A 2014 coupe sells for $5.2 million and a 2017 Aperta for $6.7 million at Monterey"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://www.sothebys.com/en/articles/the-seven-most-expensive-ferrari-laferraris",
+      "https://www.motorsportmagazine.com/articles/auctions/ferrari-daytona-sells-for-record-26m-the-10-most-expensive-lots-at-monterey-car-week-2025/"
+    ]
+  },
+  {
+    "year": 2014,
+    "run": "2014–2020",
+    "built": "about 20,500, of which 16,581 were coupes",
+    "price": "about $136,000 (2014, US)",
+    "value": "$45,000–$75,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2009, "t": "The Vision EfficientDynamics concept at Frankfurt previews the i8"},
+      {"y": 2011, "t": "A concept i8 appears in the film Mission: Impossible – Ghost Protocol"},
+      {"y": 2013, "t": "Production car shown at the Frankfurt show"},
+      {"y": 2014, "t": "Production begins at Leipzig; plug-in hybrid with a carbon-fibre passenger cell"},
+      {"y": 2018, "t": "Roadster version added"},
+      {"y": 2020, "t": "Production ends in June, after a coronavirus delay, with 18 one-off final cars"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://insideevs.com/news/428487/bmw-i8-production-ended/",
+      "https://www.bimmertoday.de/2020/06/29/bmw-i8-finale-stuckzahlen-von-hybrid-coupe-und-roadster",
+      "https://www.edmunds.com/bmw/i8/2020/appraisal-value"
+    ]
+  },
+  {
+    "year": 2015,
+    "run": "2014–2023",
+    "built": "about 1 million",
+    "price": "$23,600 plus destination (2015 V6 coupe, US)",
+    "value": "$18,000–$35,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2013, "t": "Revealed in December, a few months before the Mustang’s 50th anniversary"},
+      {"y": 2014, "t": "Production begins in July at Flat Rock, Michigan"},
+      {"y": 2015, "t": "First Mustang sold worldwide, with factory right-hand drive and independent rear suspension"},
+      {"y": 2015, "t": "Shelby GT350 arrives with a 5.2-litre flat-plane-crank V8"},
+      {"y": 2017, "t": "Mid-life refresh revealed with a 10-speed automatic option"},
+      {"y": 2018, "t": "The 10 millionth Mustang is built"},
+      {"y": 2020, "t": "Shelby GT500 returns with about 760 hp"},
+      {"y": 2023, "t": "Seventh generation (S650) shown in September; production of this one ends"},
+      {"y": 2024, "t": "Seventh-generation Mustang goes on sale"}
+    ],
+    "confirm": ["built", "value"],
+    "sources": [
+      "https://www.kbb.com/car-news/2015-ford-mustang-pricing-to-start-at-24425",
+      "https://wikiwand.com/en/Ford_Mustang_(sixth_generation)",
+      "https://www.cjponyparts.com/resources/mustang-sales-throughout-years"
+    ]
+  },
+  {
+    "year": 2016,
+    "run": "2016–2023",
+    "built": "roughly 200,000, counting the larger Bolt EUV",
+    "price": "about $37,500 (2017, US)",
+    "value": "$10,000–$18,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2015, "t": "A Bolt EV concept is shown at the Detroit show"},
+      {"y": 2016, "t": "Goes on sale in December with an EPA range of 238 miles"},
+      {"y": 2017, "t": "Wins Motor Trend Car of the Year and North American Car of the Year"},
+      {"y": 2019, "t": "2020 model year update lifts EPA range to 259 miles"},
+      {"y": 2021, "t": "A battery-fire recall covers every Bolt built; larger Bolt EUV introduced"},
+      {"y": 2023, "t": "Production of the first-generation Bolt ends in December"},
+      {"y": 2025, "t": "GM reveals a new second-generation Bolt"}
+    ],
+    "confirm": ["built", "price"],
+    "sources": [
+      "https://gmauthority.com/blog/2024/01/chevy-bolt-ev-and-bolt-euv-production-is-officially-over/",
+      "https://www.cargurus.com/Cars/price-trends/2017-Chevrolet-Bolt-EV-c25736"
+    ]
+  }
+]

@@ -1,0 +1,616 @@
+[
+ {
+  "year": 1926,
+  "run": "1908–1927",
+  "built": "about 15 million (1908–1927); the factory tally is 14.7 million",
+  "price": "$850 (1908); $260 for a runabout by 1925",
+  "value": "$10,000–$25,000 for a good driver (US, 2020s)",
+  "facts": [
+   {
+    "y": 1908,
+    "t": "Production begins in October at the Piquette Avenue plant in Detroit"
+   },
+   {
+    "y": 1913,
+    "t": "The moving assembly line starts in October and cuts build time sharply"
+   },
+   {
+    "y": 1914,
+    "t": "Ford pays workers $5 a day"
+   },
+   {
+    "y": 1921,
+    "t": "More than half the cars in the world are Model Ts"
+   },
+   {
+    "y": 1925,
+    "t": "The runabout falls to $260, its lowest price"
+   },
+   {
+    "y": 1927,
+    "t": "The 15 millionth car is built on May 26 and US production ends; Model A follows"
+   },
+   {
+    "y": 1972,
+    "t": "The VW Beetle passes the Model T’s production record"
+   },
+   {
+    "y": 1999,
+    "t": "Voted Car of the Century by an international jury of motoring writers"
+   },
+   {
+    "y": 2013,
+    "t": "Ford marks 100 years of the moving assembly line"
+   }
+  ],
+  "confirm": [
+   "value"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ford_Model_T"
+  ]
+ },
+ {
+  "year": 1927,
+  "built": "about 290,000 cars and vans in Britain (1922–1939), plus licensed copies",
+  "facts": [
+   {
+    "y": 1922,
+    "t": "Announced in July as a small car for ordinary families"
+   },
+   {
+    "y": 1923,
+    "t": "Racing success begins at Brooklands in the first year of sales"
+   },
+   {
+    "y": 1926,
+    "t": "A steel saloon arrives at £165"
+   },
+   {
+    "y": 1927,
+    "t": "BMW’s Dixi begins building the Austin 7 under licence in Germany"
+   },
+   {
+    "y": 1928,
+    "t": "Rosengart starts licensed production in France"
+   },
+   {
+    "y": 1930,
+    "t": "American Austin begins in the United States"
+   },
+   {
+    "y": 1939,
+    "t": "Production ends at the outbreak of war"
+   },
+   {
+    "y": 1948,
+    "t": "Colin Chapman builds the first Lotus on an Austin 7 chassis"
+   }
+  ],
+  "confirm": [
+   "price",
+   "value"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Austin_7"
+  ]
+ },
+ {
+  "year": 1928,
+  "run": "1927–1932",
+  "built": "about 4.86 million (1927–1932)",
+  "price": "$385 for the roadster, the cheapest model (1928)",
+  "value": "$12,000–$20,000 for a good driver (US, 2020s)",
+  "facts": [
+   {
+    "y": 1927,
+    "t": "Production starts in October; the car is shown to the public on December 2"
+   },
+   {
+    "y": 1928,
+    "t": "Goes on sale as a 1928 model with a safety-glass windshield"
+   },
+   {
+    "y": 1929,
+    "t": "One million sold by February and two million by July"
+   },
+   {
+    "y": 1930,
+    "t": "Three million sold by March, with nine body styles"
+   },
+   {
+    "y": 1932,
+    "t": "Production ends in March; the Model B and the V8 Model 18 follow"
+   }
+  ],
+  "confirm": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ford_Model_A_(1927%E2%80%931931)",
+   "https://www.hagerty.com/valuation-tools/past-sales/1928-ford-model_a/A774340/024dbb80-3c34-42fb-b170-89170f2fa80d",
+   "https://www.classic.com/m/ford/model-a/year-1928?page=2"
+  ]
+ },
+ {
+  "year": 1929,
+  "built": "about 4,400 (1929–1932)",
+  "price": "about $3,000 (1929)",
+  "value": "$100,000–$250,000 (US, 2020s); rare special coupes more",
+  "facts": [
+   {
+    "y": 1929,
+    "t": "Launched as the first front-wheel-drive American car sold to the public"
+   },
+   {
+    "y": 1929,
+    "t": "Built in Auburn, Indiana, with a 4.9-litre Lycoming straight-eight of about 125 hp"
+   },
+   {
+    "y": 1932,
+    "t": "Production ends, hurt by the Depression and modest power"
+   },
+   {
+    "y": 1936,
+    "t": "Front drive returns in the Cord 810"
+   },
+   {
+    "y": 1974,
+    "t": "The Auburn Cord Duesenberg Museum opens in the old Auburn factory offices"
+   },
+   {
+    "y": 2008,
+    "t": "A 1929 special coupe sells for $1.08 million at Pebble Beach"
+   },
+   {
+    "y": 2016,
+    "t": "A 1930 cabriolet sells for $137,500 at RM Sotheby’s in Phoenix"
+   }
+  ],
+  "confirm": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Cord_L-29",
+   "https://www.hagerty.com/valuation-tools/past-sales/1930-cord-l~29/2927601/f449823f-8dca-4378-9c39-6860c6453152",
+   "https://www.hagerty.com/valuation-tools/past-sales/1931-cord-l~29/2928916/a4efe380-85a1-4e25-aa3b-2017e6be5752"
+  ]
+ },
+ {
+  "year": 1930,
+  "built": "about 100 (1930–1932)",
+  "price": "£1,850 for the chassis (1930), roughly $9,000 then",
+  "value": "$700,000–$1.1 million (2020s)",
+  "facts": [
+   {
+    "y": 1930,
+    "t": "Announced in September and shown at Olympia in October with a 7.9-litre straight-six"
+   },
+   {
+    "y": 1930,
+    "t": "The last all-new Bentley before the company’s collapse"
+   },
+   {
+    "y": 1931,
+    "t": "Bentley Motors goes into receivership in July"
+   },
+   {
+    "y": 1931,
+    "t": "Rolls-Royce buys Bentley in November and ends 8 Litre production"
+   },
+   {
+    "y": 1931,
+    "t": "The smaller 4 Litre is announced in May, with only 50 built"
+   },
+   {
+    "y": 2011,
+    "t": "About 78 of the 100 cars are known to survive"
+   },
+   {
+    "y": 2017,
+    "t": "A Sedanca de Ville sells for about $1 million at Bonhams’ Goodwood sale"
+   },
+   {
+    "y": 2023,
+    "t": "A Le Mans-style tourer sells for £563,000 hammer price at Goodwood"
+   }
+  ],
+  "confirm": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bentley_8_Litre",
+   "https://www.goodwood.com/grr/event-coverage/members-meeting/bentley-8-litre-leads-bonhams-80th-members-meeting-sale/",
+   "https://www.sportscarmarket.com/?p=700131"
+  ]
+ },
+ {
+  "year": 1931,
+  "run": "1930–1940",
+  "built": "about 4,100 (1930–1940, both generations)",
+  "price": "$9,200 for a Town Brougham (1930)",
+  "value": "$120,000–$700,000, depending on body (US, 2020s)",
+  "facts": [
+   {
+    "y": 1930,
+    "t": "Unveiled in January at the New York show with a 7.4-litre V16 of about 165 hp"
+   },
+   {
+    "y": 1930,
+    "t": "Five cars tour European cities in June to show it off"
+   },
+   {
+    "y": 1931,
+    "t": "Sales fall sharply from the 1930 peak as the Depression bites"
+   },
+   {
+    "y": 1933,
+    "t": "The body is restyled as the 452C"
+   },
+   {
+    "y": 1934,
+    "t": "The Fisher Turret Top steel roof arrives"
+   },
+   {
+    "y": 1937,
+    "t": "The original V16 ends after fewer than 50 cars a year"
+   },
+   {
+    "y": 1938,
+    "t": "A new, lower and lighter flathead V16 replaces it"
+   },
+   {
+    "y": 1940,
+    "t": "V16 production ends; the 1940 models are done by December 1939"
+   },
+   {
+    "y": 2003,
+    "t": "Cadillac shows the Sixteen concept car"
+   },
+   {
+    "y": 2022,
+    "t": "A 1930 roadster sells for $1.66 million at Pebble Beach"
+   }
+  ],
+  "confirm": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Cadillac_V-16",
+   "https://www.sportscarmarket.com/?p=1646",
+   "https://www.classic.com/a/rm-sothebys-hershey-2021-k4Z5Eqp/lots/1931-cadillac-v-16-all-weather-phaeton-4o8ALGn/"
+  ]
+ },
+ {
+  "year": 1932,
+  "built": "about 298,600 V8 Model 18s (1932), plus about 133,500 four-cylinder cars",
+  "price": "$495 for the roadster, $490 for the coupe (1932)",
+  "facts": [
+   {
+    "y": 1932,
+    "t": "Brings a flathead V8 to a low-priced car in March"
+   },
+   {
+    "y": 1934,
+    "t": "Clyde Barrow writes to Ford praising the V8"
+   },
+   {
+    "y": 1934,
+    "t": "Bonnie and Clyde are killed in a Ford V8 in Louisiana in May"
+   },
+   {
+    "y": 1950,
+    "t": "By about now the 1932 Ford, the Deuce, is the hot-rodders standard"
+   },
+   {
+    "y": 1953,
+    "t": "Flathead V8 production ends"
+   },
+   {
+    "y": 1963,
+    "t": "The Beach Boys sing Little Deuce Coupe"
+   },
+   {
+    "y": 1973,
+    "t": "A yellow 1932 coupe stars in American Graffiti"
+   }
+  ],
+  "confirm": [
+   "value"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ford_Model_18",
+   "https://en.wikipedia.org/wiki/Ford_V8_engine"
+  ]
+ },
+ {
+  "year": 1933,
+  "built": "188 (24 in 1931, 68 in 1932, 89 in 1933, 7 in 1934)",
+  "price": "chassis from just over £1,000 (1931), roughly $4,000 then, plus coachwork",
+  "value": "$3 million–$10 million and up (2020s)",
+  "facts": [
+   {
+    "y": 1931,
+    "t": "Introduced at the Milan show with a 2.3-litre supercharged straight-eight"
+   },
+   {
+    "y": 1931,
+    "t": "Wins Le Mans, the first of four in a row"
+   },
+   {
+    "y": 1932,
+    "t": "Wins the Mille Miglia and Le Mans again"
+   },
+   {
+    "y": 1933,
+    "t": "Tazio Nuvolari wins the Mille Miglia and Le Mans in one"
+   },
+   {
+    "y": 1934,
+    "t": "Fourth straight Le Mans win; production ends"
+   },
+   {
+    "y": 2009,
+    "t": "A Castagna drophead coupe sells for $4.2 million at Pebble Beach"
+   },
+   {
+    "y": 2016,
+    "t": "A 1933 Monza sells for $11.99 million at Pebble Beach"
+   },
+   {
+    "y": 2024,
+    "t": "A 1934 Lungo Spider sells for $4.1 million at RM Sotheby’s in Monterey"
+   }
+  ],
+  "confirm": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Alfa_Romeo_8C",
+   "https://www.goodingco.com/lot/1933-alfa-romeo-8c-2300-cabriolet",
+   "https://backoffice.rmsothebys.com/auctions/mo24/lots/r0015-1934-alfa-romeo-8c-2300-lungo-spider-by-eagle-coach-works",
+   "https://www.sportscarmarket.com/?p=5245"
+  ]
+ },
+ {
+  "year": 1934,
+  "built": "about 759,000 (1934–1957)",
+  "value": "€10,000–€25,000 (Europe, 2020s), roughly $11,000–$27,000",
+  "facts": [
+   {
+    "y": 1934,
+    "t": "Presented in April as the first mass-produced front-drive car with a steel monocoque body"
+   },
+   {
+    "y": 1934,
+    "t": "Citroën goes bankrupt in late 1934; Michelin takes over"
+   },
+   {
+    "y": 1936,
+    "t": "Rack-and-pinion steering replaces the older steering box"
+   },
+   {
+    "y": 1938,
+    "t": "The six-cylinder 15/6 joins the range"
+   },
+   {
+    "y": 1940,
+    "t": "Becomes a famous getaway car for the French resistance and the Gestapo alike"
+   },
+   {
+    "y": 1952,
+    "t": "The boot is lengthened and its volume doubled"
+   },
+   {
+    "y": 1955,
+    "t": "The DS arrives to replace it at the top of the range"
+   },
+   {
+    "y": 1957,
+    "t": "Production ends in July after more than 23 years"
+   },
+   {
+    "y": 2016,
+    "t": "A 1949 11 Légère sells for $23,100 at RM Sotheby’s in Hershey"
+   }
+  ],
+  "confirm": [
+   "price"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Citro%C3%ABn_Traction_Avant",
+   "https://www.hagerty.com/valuation-tools/past-sales/1949-citroen-traction_avant/2491385/ffd9c9cd-8386-4c64-a0b2-f63c3b33eec3",
+   "https://www.handh.co.uk/auction/lot/40-1952-citron-11bl-traction-avant/?lot=59086"
+  ]
+ },
+ {
+  "year": 1935,
+  "built": "about 150–180 (1935–1936); Ab Jenkins’s claim of 500 is thought too high",
+  "value": "$500,000–$1 million (US, 2020s)",
+  "facts": [
+   {
+    "y": 1935,
+    "t": "Styled by Gordon Buehrig, with a supercharged Lycoming straight-eight of about 150 hp"
+   },
+   {
+    "y": 1935,
+    "t": "Each car carries a plaque promising 100 mph"
+   },
+   {
+    "y": 1935,
+    "t": "Ab Jenkins sets dozens of speed records at Bonneville in a stock Speedster"
+   },
+   {
+    "y": 1936,
+    "t": "Updated as the 852 for one last year"
+   },
+   {
+    "y": 1937,
+    "t": "Auburn production ends after a long decline"
+   },
+   {
+    "y": 1974,
+    "t": "The Auburn Cord Duesenberg Museum opens in Auburn, Indiana"
+   },
+   {
+    "y": 2018,
+    "t": "A supercharged Speedster sells for $1.01 million at Pebble Beach"
+   },
+   {
+    "y": 2026,
+    "t": "RM Sotheby’s offers what it calls the first 851 Speedster built, estimated at $850,000–$950,000"
+   }
+  ],
+  "confirm": [
+   "price"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Auburn_Automobile_Company",
+   "https://rmsothebys.com/auctions/mi26/lots/r0036-1935-auburn-851-supercharged-speedster",
+   "https://rmsothebys.com/auctions/hf21/lots/r0058-1935-auburn-851-supercharged-speedster"
+  ]
+ },
+ {
+  "year": 1936,
+  "built": "about 520,000 (1936–1955)",
+  "price": "about 9,750 lire at launch (1936), roughly $510 then",
+  "value": "€8,000–€20,000 (Europe, 2020s), roughly $9,000–$22,000",
+  "facts": [
+   {
+    "y": 1936,
+    "t": "Launched in June as a two-seater with a 569 cc engine"
+   },
+   {
+    "y": 1936,
+    "t": "Nicknamed Topolino, Italian for Mickey Mouse"
+   },
+   {
+    "y": 1948,
+    "t": "The 500 B arrives with the Giardiniera estate version"
+   },
+   {
+    "y": 1949,
+    "t": "The 500 C brings a restyled body"
+   },
+   {
+    "y": 1952,
+    "t": "The Giardiniera is renamed the Belvedere, with a metal body"
+   },
+   {
+    "y": 1955,
+    "t": "Production ends, replaced by the Fiat 600"
+   },
+   {
+    "y": 1957,
+    "t": "The Nuova 500 revives the name"
+   },
+   {
+    "y": 2007,
+    "t": "Fiat launches a new 500 inspired by the 1957 car"
+   },
+   {
+    "y": 2020,
+    "t": "The electric Fiat 500 goes on sale"
+   }
+  ],
+  "confirm": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fiat_500_%22Topolino%22",
+   "https://www.hagerty.com/valuation-tools/past-sales/1953-fiat-500_topolino/399184/4d0b1b70-2969-4b6b-8d1b-8263147a53b7",
+   "https://www.hagerty.com/valuation-tools/past-sales/1951-fiat-500_topolino/281200/93c95e1e-0344-4a21-be8c-b403df19685c"
+  ]
+ },
+ {
+  "year": 1937,
+  "built": "about 3,000 (810 and 812 together, 1936–1937)",
+  "price": "$1,995 for the 810 sedan (1936); $2,445 for the 812 (1937)",
+  "value": "$100,000–$260,000 (US, 2020s); supercharged convertibles at the top",
+  "facts": [
+   {
+    "y": 1935,
+    "t": "The 810 is shown in November at the New York show"
+   },
+   {
+    "y": 1936,
+    "t": "The first cars reach owners in February and April after delays"
+   },
+   {
+    "y": 1936,
+    "t": "Hidden headlights and a coffin-shaped nose set it apart"
+   },
+   {
+    "y": 1937,
+    "t": "The 812 adds a supercharger, about 170 hp"
+   },
+   {
+    "y": 1937,
+    "t": "Cord production ends; unsold 1936 cars are sold as 1937 models"
+   },
+   {
+    "y": 1951,
+    "t": "The Museum of Modern Art names the 810 one of eight great designs"
+   },
+   {
+    "y": 1966,
+    "t": "The Oldsmobile Toronado and Cadillac Eldorado revive hidden headlights"
+   },
+   {
+    "y": 1996,
+    "t": "American Heritage calls the 810 the most beautiful American car"
+   },
+   {
+    "y": 2019,
+    "t": "The Cord brand rights are auctioned after a planned revival is cancelled"
+   }
+  ],
+  "confirm": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Cord_810/812",
+   "https://en.wikipedia.org/wiki/Cord_L-29",
+   "https://www.hagerty.com/valuation-tools/past-sales/1937-cord-812/32226F/716d41d8-4687-44a8-9d4c-07a731940e20"
+  ]
+ },
+ {
+  "year": 1938,
+  "built": "about 21.5 million (1938–2003)",
+  "price": "990 Reichsmark under the KdF savings scheme, roughly $400 then",
+  "facts": [
+   {
+    "y": 1938,
+    "t": "Foundation stone of the Wolfsburg factory laid on May 26"
+   },
+   {
+    "y": 1938,
+    "t": "Ferdinand Porsche designs the KdF-Wagen as a people car"
+   },
+   {
+    "y": 1945,
+    "t": "Series production starts in December under British Army control"
+   },
+   {
+    "y": 1949,
+    "t": "An export model goes on sale in July"
+   },
+   {
+    "y": 1955,
+    "t": "The millionth Beetle is built on August 6"
+   },
+   {
+    "y": 1972,
+    "t": "Passes the Model T as the best-selling car, on February 17"
+   },
+   {
+    "y": 1978,
+    "t": "The last Beetle sedan built in Europe leaves Emden in January"
+   },
+   {
+    "y": 1980,
+    "t": "The last Karmann-built Beetle convertible is completed in January"
+   },
+   {
+    "y": 2003,
+    "t": "Last original Beetle built in Mexico on July 30"
+   },
+   {
+    "y": 2019,
+    "t": "The final Beetle of the third generation is built in Mexico in July"
+   }
+  ],
+  "confirm": [
+   "value"
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Volkswagen_Beetle"
+  ]
+ }
+]

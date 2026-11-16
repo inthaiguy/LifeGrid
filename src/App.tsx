@@ -44,7 +44,6 @@ async function copyText(text: string): Promise<boolean> {
 
 export default function App() {
   const [s, setS] = useState<State>(() => (VIEWING ? fresh([]) : boot()));
-  const [read, setRead] = useState(false);
   const [mode, setMode] = useState<ViewId>('grid'); // the sheet, or the same events as a timeline
   const [editing, setEditing] = useState<YM | null>(null);
   const [importing, setImporting] = useState(false);
@@ -71,6 +70,7 @@ export default function App() {
   const t0 = useRef<[number, number]>([0, 0]);
   const [fs, setFs] = useState(false);
   useEffect(() => { const f = () => setFs(!!document.fullscreenElement); document.addEventListener('fullscreenchange', f); return () => document.removeEventListener('fullscreenchange', f); }, []);
+  const read = fs; // full screen is the reading view: the cells widen to show their words
   const toggleFs = () => { if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen().then(() => setMenu(false)).catch(() => {}); };
   // A sideways swipe: to the left on the shelf puts it away.
   const swipe = (dir: 1 | -1, fn: () => void) => ({
@@ -220,19 +220,13 @@ export default function App() {
   if (bad) return <div className="app"><div className="grid-empty"><p>This link couldn’t be opened.</p><p className="dim">It may have been cut short when it was copied.</p></div></div>;
 
   return (
-    <div className={`app${VIEWING ? ' viewing' : ''}${docked ? ' docked' : ''}${fs ? ' fs' : ''}`}>
+    <div className={`app${VIEWING ? ' viewing' : ''}${docked ? ' docked' : ''}${fs ? ' fs' : ''}${mode === 'grid' && s.birth ? ' gridview' : ''}`}>
       <header>
-        {!VIEWING && <button className={`icon${asking && !menu ? ' todo' : ''}`} onClick={() => { if (intro) setIntro(false); setCoach(false); setMenu(!menu); }} aria-label={asking && !menu ? 'Menu — questions waiting' : 'Menu'}><svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>}
         <h1>{title}</h1>
         {!intro && <>
         <button className="icon" onClick={() => setMode(nextMode)} disabled={!s.birth || ids.length < 2} aria-label={ids.length < 2 ? `Other views unlock at ${FIRST_UNLOCK}%` : `Switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`} title={ids.length < 2 ? `Other views unlock at ${FIRST_UNLOCK}% filled in` : `Switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`}>
           <svg viewBox="0 0 24 24" width="24" height="24"><path d={VIEWS.find((v) => v.id === nextMode)?.icon} /></svg>
         </button>
-        {shown.readable && <button className="icon" onClick={() => setRead(!read)} disabled={!s.birth} aria-label={read ? 'Overview' : 'Read the words'} title={read ? 'Overview' : 'Read the words'}>
-          <svg viewBox="0 0 24 24" width="24" height="24">{read
-            ? <path d="M4 5h4v4H4zM10 5h4v4h-4zM16 5h4v4h-4zM4 10h4v4H4zM10 10h4v4h-4zM16 10h4v4h-4zM4 15h4v4H4zM10 15h4v4h-4zM16 15h4v4h-4z" />
-            : <path d="M4 6h16M4 10h11M4 14h16M4 18h9" />}</svg>
-        </button>}
         {document.fullscreenEnabled && (
           <button className="icon" onClick={toggleFs} aria-label={fs ? 'Exit full screen' : 'Full screen'} title={fs ? 'Exit full screen' : 'Full screen'}>
             <svg viewBox="0 0 24 24" width="22" height="22">{fs
@@ -240,6 +234,7 @@ export default function App() {
               : <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />}</svg>
           </button>)}
         </>}
+        {!VIEWING && <button className={`icon${asking && !menu ? ' todo' : ''}`} onClick={() => { if (intro) setIntro(false); setCoach(false); setMenu(!menu); }} aria-label={asking && !menu ? 'Menu — questions waiting' : 'Menu'}><svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>}
       </header>
 
       <div className={`body${intro ? ' intro' : ''}`}>
@@ -293,7 +288,7 @@ export default function App() {
             {s.birth ? (
               <div className="stats">
                 <b>{st.pct}%</b>
-                <p>{st.filled} {st.filled === 1 ? 'month' : 'months'} filled{st.placeholders ? `, ${st.placeholders} to confirm` : ''}, {st.total - st.filled - st.placeholders} empty.</p>
+                <p>{st.filled} {st.filled === 1 ? 'month' : 'months'} filled{st.placeholders ? `, ${st.placeholders} to confirm` : ''}, {st.total - st.filled - st.placeholders} empty, {st.total} months in all.</p>
                 {s.log.length > 0 && <p className="dim">{s.done ? 'Setup complete. ' : ''}{answered} {answered === 1 ? 'question' : 'questions'} answered, {s.log.length - answered} skipped.</p>}
               </div>
             ) : <p className="help">Answer the first question to start your grid.</p>}
@@ -337,12 +332,7 @@ export default function App() {
             {s.birth && (
               <details className="more" open={placeAsking}><summary>Places{placeTodo.length > 0 && <em className="dim"> · {placeTodo.length} {placeTodo.length === 1 ? 'topic' : 'topics'} waiting</em>}</summary>
                 {placeAsking && <div className="shelf-q">{ask}</div>}
-                <div className="field"><label>{placeTodo.length ? 'Pick up a places topic' : 'Go back to a places topic'}</label>
-                  <div className="topics">
-                    {PLACE_TOPICS.map((n) => <button key={n} className={`chip${view?.stage === n ? ' cur' : todo.includes(n) ? ' todo' : ''}`}
-                      onClick={() => { commit((d) => goTopic(d, n)); }}>{n}</button>)}
-                  </div>
-                </div>
+                {placeTodo.length > 0 && !placeAsking && <button className="link" onClick={() => commit((d) => goTopic(d, 'Homes'))}>Answer the Homes questions</button>}
                 <PlacesEditor s={s} commit={commit} />
               </details>)}
             {(asking || s.birth) && (

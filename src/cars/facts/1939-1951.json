@@ -1,0 +1,333 @@
+[
+  {
+    "year": 1939,
+    "run": "1939–1951",
+    "built": "about 82,000 in 1939",
+    "price": "about $946 for a two-door sedan (1939)",
+    "value": "$20,000–$40,000 (US, 2020s)",
+    "facts": [
+      {"y": 1938, "t": "Edsel Ford launches the Mercury brand in November"},
+      {"y": 1939, "t": "Fills the gap between Ford and Lincoln with a 239 cu in, 95 hp flathead V8"},
+      {"y": 1941, "t": "Redesigned for 1941; 90,556 are sold that year"},
+      {"y": 1942, "t": "Civilian production stops in February for the war after only 1,902 cars"},
+      {"y": 1949, "t": "The new postwar Mercury becomes the favourite of custom lead-sled builders"},
+      {"y": 1953, "t": "Sam and George Barris build the Hirohata Merc from a 1951 Mercury"},
+      {"y": 1955, "t": "James Dean drives a 1949 Mercury coupe in Rebel Without a Cause"},
+      {"y": 1967, "t": "The Mercury Cougar arrives as a more luxurious Mustang cousin"},
+      {"y": 1975, "t": "The Grand Marquis name begins its long run"},
+      {"y": 1986, "t": "The front-drive Mercury Sable arrives"},
+      {"y": 2006, "t": "Mercury offers its first hybrid, the Mariner Hybrid"},
+      {"y": 2010, "t": "Ford announces the end of the Mercury brand"},
+      {"y": 2011, "t": "Last Mercury built in January"}
+    ],
+    "confirm": ["built"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mercury_Eight",
+      "https://www.classic.com/m/mercury/eight/year-1939/",
+      "https://www.hagerty.com/marketplace/auction/1939-mercury-series-99a/vxWL2j5h5jbVqsRlX389j"
+    ]
+  },
+  {
+    "year": 1940,
+    "run": "1940–1945",
+    "built": "about 50,400 (1940–1945)",
+    "price": "military issue; no retail price",
+    "value": "$45,000–$90,000 for an original (2020s); replicas cost far less",
+    "facts": [
+      {"y": 1938, "t": "Type 62 prototypes tested"},
+      {"y": 1940, "t": "Type 82 production starts with an air-cooled flat-four"},
+      {"y": 1941, "t": "Serves with the German Army and the Afrika Korps"},
+      {"y": 1942, "t": "The amphibious Schwimmwagen enters production alongside"},
+      {"y": 1945, "t": "Production ends; its air-cooled layout lives on in the postwar Beetle"},
+      {"y": 1968, "t": "The Type 181 Kurierwagen revives the idea for the West German army"},
+      {"y": 1973, "t": "The Type 181 is sold in the US as the Thing"},
+      {"y": 2020, "t": "An original 1944 Kübelwagen sells for $58,240 at Bonhams Amelia Island"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Volkswagen_K%C3%BCbelwagen",
+      "https://www.classic.com/a/bonhams-amelia-island-2020-Xnlk64x/lots/1944-volkswagen-type-82-kubelwagen-pzNBV0p",
+      "https://www.hagerty.com/marketplace/auction/1943-Volkswagen-Kubelwagen-Type-82/TUkBbSV5jNoNtF0cyxTq4"
+    ]
+  },
+  {
+    "year": 1941,
+    "run": "1941–1945",
+    "built": "about 360,000 (1941–1945)",
+    "price": "about $740 to the US Army (1942)",
+    "value": "$25,000–$40,000 (US, 2020s)",
+    "facts": [
+      {"y": 1940, "t": "The US Army asks makers for a light reconnaissance car in July"},
+      {"y": 1941, "t": "Willys wins the main order after its Quad is refined into the MB"},
+      {"y": 1942, "t": "Ford builds it too under licence as the GPW"},
+      {"y": 1945, "t": "About 640,000 Willys and Ford Jeeps are built in the war"},
+      {"y": 1946, "t": "Civilian CJ-2A on sale"},
+      {"y": 1953, "t": "Kaiser Motors buys Willys-Overland"},
+      {"y": 1970, "t": "American Motors buys the Jeep business"},
+      {"y": 1976, "t": "The longer CJ-7 arrives"},
+      {"y": 1987, "t": "Chrysler buys American Motors and the Jeep brand"},
+      {"y": 1992, "t": "The Grand Cherokee launches at the Detroit show"},
+      {"y": 2007, "t": "The four-door Wrangler Unlimited goes on sale"},
+      {"y": 2018, "t": "The Wrangler JL continues the line"},
+      {"y": 2019, "t": "The Gladiator pickup returns the Jeep name to trucks"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Willys_MB",
+      "https://www.hagerty.com/apps/valuationtools/1942-Ford-GPW-1!4_Ton",
+      "https://fordauthority.com/2026/09/collectors-ambivalent-about-ford-gpw-and-its-willys-sibling/"
+    ]
+  },
+  {
+    "year": 1942,
+    "run": "1940–1948",
+    "built": "about 5,300 (1940–1948)",
+    "price": "about $2,840 for the Cabriolet (1940)",
+    "value": "$25,000–$70,000 (US, 2020s); cabriolets at the top",
+    "facts": [
+      {"y": 1939, "t": "Edsel Ford has Bob Gregorie design a one-off for his Florida holiday"},
+      {"y": 1940, "t": "Production begins with a V12; only 404 are built the first year"},
+      {"y": 1942, "t": "Civilian car production stops in February for the war"},
+      {"y": 1948, "t": "First-generation Continental ends"},
+      {"y": 1951, "t": "New York’s Museum of Modern Art shows a Continental as rolling sculpture"},
+      {"y": 1956, "t": "The Continental Mark II arrives as a very expensive coupe"},
+      {"y": 1961, "t": "The slab-sided, suicide-door Continental arrives"},
+      {"y": 1963, "t": "President Kennedy is shot in a 1961 Continental limousine"},
+      {"y": 1968, "t": "The Continental Mark III launches the personal luxury coupe line"},
+      {"y": 1988, "t": "The Continental turns front-wheel drive"},
+      {"y": 2002, "t": "Continental sedan production ends"},
+      {"y": 2016, "t": "The Continental name returns on a front-drive sedan"},
+      {"y": 2020, "t": "That Continental ends"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://www.conceptcarz.com/vehicle/valuation/9506/Lincoln-Continental.aspx",
+      "https://www.hagerty.com/valuation-tools/lincoln/continental",
+      "https://www.hagerty.com/apps/valuationtools/1947-Lincoln-Continental",
+      "https://classic.com/m/lincoln/continental/1st-gen"
+    ]
+  },
+  {
+    "year": 1943,
+    "run": "1942–1945",
+    "built": "about 277,900 (1942–1945)",
+    "price": "about $740 to the US Army",
+    "value": "$25,000–$40,000 (US, 2020s)",
+    "facts": [
+      {"y": 1941, "t": "Ford builds the Jeep under licence from Willys"},
+      {"y": 1942, "t": "GPW production begins"},
+      {"y": 1942, "t": "Ford also builds the amphibious GPA, the Seep"},
+      {"y": 1943, "t": "Parts are made interchangeable between Willys and Ford builds"},
+      {"y": 1945, "t": "Production ends with the war"},
+      {"y": 1950, "t": "Surplus Jeeps are sold to farmers and hobbyists across Europe and the US"},
+      {"y": 1970, "t": "The GPW becomes a favourite of military vehicle collectors"},
+      {"y": 2025, "t": "Hagerty prices a good 1942 GPW at about $28,400"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://www.hagerty.com/apps/valuationtools/1942-Ford-GPW-1!4_Ton",
+      "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/A/Ford_GPW",
+      "https://www.thehenryford.org/collections/explore/sets/detail/jeep"
+    ]
+  },
+  {
+    "year": 1944,
+    "run": "1940–1945",
+    "built": "about 380,000 across the WC range (1940–1945), 255,000 of them three-quarter-ton",
+    "price": "military issue; no retail price",
+    "value": "$20,000–$40,000 (US, 2020s)",
+    "facts": [
+      {"y": 1940, "t": "Half-ton 4x4 trucks enter US Army service"},
+      {"y": 1942, "t": "The three-quarter-ton WC series, including the WC-51, follows"},
+      {"y": 1944, "t": "Weapons carriers, ambulances and command cars serve on every front"},
+      {"y": 1945, "t": "Military production ends; the Power Wagon is announced for civilians"},
+      {"y": 1946, "t": "The civilian Power Wagon goes on sale, built on the same design"},
+      {"y": 1951, "t": "The M37 replaces it in the Army"},
+      {"y": 1968, "t": "The original-style Power Wagon ends in the US"},
+      {"y": 2005, "t": "Dodge revives the Power Wagon name on the Ram 2500"},
+      {"y": 2024, "t": "Restored WC models sell for about $15,000–$40,000"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dodge_WC_series",
+      "https://www.militarytrader.com/military-vehicles/buyers-guide-weapons-carrier",
+      "https://classic.com/m/dodge/wc-series"
+    ]
+  },
+  {
+    "year": 1945,
+    "run": "1945–2003",
+    "built": "about 21.5 million (to 2003)",
+    "price": "about DM 5,450 (1949 export model), roughly $1,300 then; $1,280 in the US",
+    "value": "$10,000–$25,000 for a good one (2020s)",
+    "facts": [
+      {"y": 1945, "t": "Major Ivan Hirst of the British Army gets the Wolfsburg works running again"},
+      {"y": 1946, "t": "Output reaches about 1,000 cars a month"},
+      {"y": 1949, "t": "The first Beetles arrive in the United States in January"},
+      {"y": 1955, "t": "Millionth Beetle built"},
+      {"y": 1968, "t": "Herbie the Love Bug film makes a Beetle a movie star"},
+      {"y": 1972, "t": "Passes the Ford Model T as the most-built car"},
+      {"y": 1978, "t": "German production ends at Emden; Mexico carries on"},
+      {"y": 1998, "t": "The front-engine New Beetle goes on sale"},
+      {"y": 2003, "t": "Final original Beetle leaves the Mexican factory"},
+      {"y": 2011, "t": "A third-generation Beetle launches"},
+      {"y": 2019, "t": "The last Beetle of any kind is built in Mexico in July"}
+    ],
+    "confirm": ["value"],
+    "sources": [
+      "https://www.thehenryford.org/collections-and-research/digital-collections/artifact/193921",
+      "https://www.zwischengas.com/en/blog/2013/11/12/Als-Autos-von-Jahr-zu-Jahr-billiger-wurden.html",
+      "https://www.volkswagen-group.com/en/group/history/chronicle/1950-1960.html"
+    ]
+  },
+  {
+    "year": 1946,
+    "run": "1947–1961",
+    "built": "about 1.1 million (1947–1961)",
+    "price": "price to confirm",
+    "value": "£6,000–£15,000 (UK, 2020s), roughly $8,000–$19,000",
+    "facts": [
+      {"y": 1946, "t": "Shown at the Paris Salon in October"},
+      {"y": 1947, "t": "Goes on sale with a rear-mounted 760 cc engine"},
+      {"y": 1947, "t": "Early cars in surplus desert-yellow paint earn the nickname lump of butter"},
+      {"y": 1956, "t": "The larger Dauphine arrives above it"},
+      {"y": 1961, "t": "Production ends after more than a million; the Renault 4 takes over"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Renault_4CV",
+      "https://theoriginals.renault.com/en/4cv",
+      "https://octane-magazine.com/articles/renault-4cv-buying-guide-history-and-review",
+      "https://www.carandclassic.com/buyer-guides/renault-4cv-models-and-specs"
+    ]
+  },
+  {
+    "year": 1947,
+    "run": "1947",
+    "built": "2",
+    "price": "built for racing; not sold",
+    "value": "not for sale; the first Ferraris are worth many millions",
+    "facts": [
+      {"y": 1947, "t": "First drive at Maranello on 12 March, the first car to carry the Ferrari name"},
+      {"y": 1947, "t": "Powered by a 1.5-litre Colombo V12"},
+      {"y": 1947, "t": "Raced for the first time at Piacenza on 11 May"},
+      {"y": 1947, "t": "Franco Cortese wins at Rome on 25 May, Ferrari’s first victory"},
+      {"y": 1948, "t": "A Ferrari 166 wins the Mille Miglia with Biondetti"},
+      {"y": 1951, "t": "Ferrari wins its first Formula One race, at Silverstone"},
+      {"y": 1962, "t": "The 250 GTO arrives, later among the most valuable cars ever"},
+      {"y": 1987, "t": "The F40 is the last Ferrari approved by Enzo Ferrari"},
+      {"y": 2002, "t": "The Enzo supercar launches"},
+      {"y": 2013, "t": "LaFerrari brings a hybrid system to the flagship"},
+      {"y": 2022, "t": "The Purosangue becomes Ferrari’s first four-door car"}
+    ],
+    "confirm": ["value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ferrari_125_S",
+      "https://supercarnostalgia.com/blog/ferrari-125-sport-1947-season-review",
+      "https://www.racingsportscars.com/chassis/results/01C%20%5b125S%5d.html"
+    ]
+  },
+  {
+    "year": 1948,
+    "run": "1948–1990",
+    "built": "about 3.9 million (1948–1990)",
+    "price": "about 185,000–228,000 francs (1949), roughly $550–$650 then",
+    "value": "£5,000–£8,000 for a good 2CV6 (UK, 2020s), roughly $6,500–$10,500; early cars £15,000 or more",
+    "facts": [
+      {"y": 1948, "t": "Unveiled at the Paris Salon on 7 October"},
+      {"y": 1949, "t": "First cars delivered; the brief was an umbrella on four wheels"},
+      {"y": 1951, "t": "The Fourgonnette van appears"},
+      {"y": 1960, "t": "The Sahara twin-engine 4x4 version appears"},
+      {"y": 1970, "t": "The 2CV 6 gets a 602 cc engine"},
+      {"y": 1980, "t": "The Charleston special edition debuts in October"},
+      {"y": 1981, "t": "A 2CV leads the chase in the James Bond film For Your Eyes Only"},
+      {"y": 1988, "t": "French production ends on 25 February"},
+      {"y": 1990, "t": "Last one built in Portugal on 27 July"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+      "https://www.lalibre.be/lifestyle/mode/2011/07/20/2-cv-la-voiture-que-les-francais-attendaient-2MYGCK22B5CCNAXKSIYOMUKASA/",
+      "https://www.hagerty.co.uk/articles/buying-guides/buying-guide-citroen-2cv/",
+      "https://www.octane-magazine.com/articles/buying-guides/citroen-2cv-buying-guide-history-and-model-review/"
+    ]
+  },
+  {
+    "year": 1949,
+    "run": "1949–1999",
+    "built": "about 99,000 in 1949",
+    "price": "about $2,000–$2,100 for a two-door (1949)",
+    "value": "$15,000–$35,000 (US, 2020s)",
+    "facts": [
+      {"y": 1949, "t": "The 303 cu in, 135 hp Rocket V8 puts a high-compression overhead-valve V8 in a lighter body"},
+      {"y": 1949, "t": "Red Byron wins the first NASCAR title in an Oldsmobile 88"},
+      {"y": 1950, "t": "Hershel McGriff wins the Carrera Panamericana in an 88"},
+      {"y": 1951, "t": "Jackie Brenston records Rocket 88, often called the first rock and roll record"},
+      {"y": 1954, "t": "A full restyle brings a 324 cu in V8"},
+      {"y": 1965, "t": "The Delta 88 becomes its own series"},
+      {"y": 1977, "t": "The Delta 88 is downsized to a shorter, lighter body"},
+      {"y": 1986, "t": "Switches to a transverse front-wheel-drive layout"},
+      {"y": 1992, "t": "The tenth and last generation arrives"},
+      {"y": 1999, "t": "The Eighty-Eight name ends after 50 years"},
+      {"y": 2004, "t": "Oldsmobile itself closes in April"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Oldsmobile_88",
+      "https://www.conceptcarz.com/s2096/Oldsmobile-Rocket-88.aspx",
+      "https://hagerty.com/apps/valuationtools/1950-Oldsmobile-88",
+      "https://hagerty.com/media/?p=5176"
+    ]
+  },
+  {
+    "year": 1950,
+    "run": "1950–1967",
+    "built": "about 1.8 million (1950–1967)",
+    "price": "DM 5,850 for the panel van (1950), roughly $1,400 then",
+    "value": "$30,000–$80,000; 23-window Samba $100,000–$250,000 (US, 2020s)",
+    "facts": [
+      {"y": 1947, "t": "Dutch importer Ben Pon sketches the idea on 23 April"},
+      {"y": 1950, "t": "Production starts at Wolfsburg in March"},
+      {"y": 1951, "t": "The 23-window Samba bus appears"},
+      {"y": 1956, "t": "Production moves to a new factory at Hanover"},
+      {"y": 1967, "t": "The first-generation Transporter ends in Germany; the second generation takes over"},
+      {"y": 1969, "t": "The microbus is a symbol of the counterculture"},
+      {"y": 1975, "t": "Brazil ends the first-generation design; a modified version runs to 1996"},
+      {"y": 2001, "t": "VW shows a retro Microbus concept at Detroit"},
+      {"y": 2013, "t": "The Brazilian Kombi ends on 31 December"},
+      {"y": 2017, "t": "A 1965 Samba sells for $302,500 at Barrett-Jackson"},
+      {"y": 2022, "t": "The electric ID. Buzz goes on sale in Europe"}
+    ],
+    "confirm": ["built"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Volkswagen_Type_2",
+      "https://www.hagerty.com/media/valuation/1950-67-volkswagen-bus-values-continue-to-impress/",
+      "https://www.barnebys.com/blog/the-vw-bulli-from-economic-miracle-to-globetrotter",
+      "https://www.hagerty.co.uk/articles/the-volkswagen-type-2-at-75/"
+    ]
+  },
+  {
+    "year": 1951,
+    "run": "1951–1957",
+    "built": "about 157,000 (1951–1957), 131,600 of them Hudson-built 1951–1954",
+    "price": "about $2,540–$3,100 (1951, by body style)",
+    "value": "$25,000–$65,000 (US, 2020s); Twin-H coupes and convertibles more",
+    "facts": [
+      {"y": 1951, "t": "Introduced with a low step-down body and a powerful six"},
+      {"y": 1951, "t": "Herb Thomas wins the NASCAR title in a Hornet"},
+      {"y": 1952, "t": "Hudsons win 27 of 34 NASCAR races; Marshall Teague takes 14 AAA wins"},
+      {"y": 1953, "t": "Herb Thomas wins a second NASCAR title in a Hornet"},
+      {"y": 1954, "t": "Hudson merges with Nash to form American Motors in May"},
+      {"y": 1957, "t": "The last Hornet is built on 25 June"},
+      {"y": 1970, "t": "American Motors reuses the Hornet name on a compact car"},
+      {"y": 2006, "t": "Doc Hudson in the film Cars is a Hornet"},
+      {"y": 2013, "t": "A restored 1953 Hornet convertible sells for $150,000"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hudson_Hornet",
+      "https://hagerty.ca/apps/valuationtools/1951-Hudson-Hornet",
+      "https://www.conceptcarz.com/valuation/9330/view/eras.aspx?eraID=3"
+    ]
+  }
+]

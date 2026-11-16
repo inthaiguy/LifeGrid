@@ -1,0 +1,306 @@
+[
+  {
+    "year": 1991,
+    "run": "1990–present",
+    "built": "over 8 million (1990–2020s)",
+    "price": "about $15,000–$22,000 depending on trim (1991)",
+    "value": "an early Explorer about $3,000–$8,000 (2020s)",
+    "facts": [
+      {"y": 1990, "t": "Launched in March as a 1991 model, replacing the three-door Bronco II"},
+      {"y": 1991, "t": "Four-door Explorer starts a run as America’s best-selling SUV"},
+      {"y": 1993, "t": "Modified Explorers carry the park tours in the film Jurassic Park"},
+      {"y": 1995, "t": "Second generation arrives with a redesigned body and cabin"},
+      {"y": 2000, "t": "Firestone tire recall tied to rollover crashes"},
+      {"y": 2002, "t": "Third generation adds independent rear suspension and a third row"},
+      {"y": 2006, "t": "Fourth generation arrives with a new frame and V8 option"},
+      {"y": 2011, "t": "Fifth generation switches to a car-based design"},
+      {"y": 2020, "t": "Sixth generation moves to a rear-drive-based platform; best-selling SUV in the US that year"}
+    ],
+    "confirm": ["built", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ford_Explorer",
+      "https://www.iseecars.com/car/1991-ford-explorer-price",
+      "https://autos.yahoo.com/junkyard-gem-1991-ford-explorer-120000941.html"
+    ]
+  },
+  {
+    "year": 1992,
+    "run": "1992–2017",
+    "built": "about 32,000 (1992–2017)",
+    "price": "about $50,000–$52,000 (1992)",
+    "value": "about $35,000–$60,000 for a first-generation RT/10 (2020s)",
+    "facts": [
+      {"y": 1989, "t": "Concept shown at the Detroit auto show"},
+      {"y": 1991, "t": "A pre-production Viper, driven by Carroll Shelby, paces the Indianapolis 500"},
+      {"y": 1992, "t": "Production RT/10 begins with an 8.0-litre V10"},
+      {"y": 1996, "t": "GTS coupe arrives and paces the Indianapolis 500 again"},
+      {"y": 1998, "t": "Viper GTS-R wins its class at Le Mans, and again in 1999 and 2000"},
+      {"y": 2003, "t": "Third generation SRT-10 arrives with an 8.3-litre V10"},
+      {"y": 2008, "t": "Fourth generation raises output to 600 hp from 8.4 litres"},
+      {"y": 2011, "t": "ACR version claims a production-car lap record at the Nürburgring"},
+      {"y": 2013, "t": "Fifth generation returns after a pause, now sold under the SRT badge"},
+      {"y": 2017, "t": "Production ends when the Conner Avenue plant closes in August"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dodge_Viper",
+      "https://www.hagerty.com/apps/valuationtools/1993-Dodge-Viper-RT!10",
+      "https://www.hotcars.com/1992-1995-dodge-viper-costs-facts-and-figures/",
+      "https://theviperstore.com/Information_Viper_Production_Stats.htm"
+    ]
+  },
+  {
+    "year": 1993,
+    "run": "1993–present",
+    "built": "over 7 million (1993–2020s)",
+    "price": "about $19,000 (1993)",
+    "value": "an early Grand Cherokee about $3,000–$8,000 (2020s)",
+    "facts": [
+      {"y": 1992, "t": "Debuts at the Detroit auto show, driven through a plate-glass window"},
+      {"y": 1993, "t": "Goes on sale as a 1993 model with a 4.0-litre six; a V8 follows as an option"},
+      {"y": 1999, "t": "Second generation (WJ) arrives, peaking at about 300,000 US sales that year"},
+      {"y": 2005, "t": "Third generation (WK) launched"},
+      {"y": 2006, "t": "SRT8 with a 6.1-litre Hemi V8 making 420 hp"},
+      {"y": 2011, "t": "Fourth generation (WK2) launched"},
+      {"y": 2018, "t": "Trackhawk with a supercharged 707 hp V8"},
+      {"y": 2021, "t": "Three-row Grand Cherokee L launched"},
+      {"y": 2022, "t": "Fifth generation (WL) two-row model arrives, with a 4xe plug-in hybrid"}
+    ],
+    "confirm": ["built", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jeep_Grand_Cherokee",
+      "https://www.iseecars.com/car/1993-jeep-grand_cherokee-price",
+      "https://theautopian.com/the-2024-jeep-grand-cherokee-is-over-9000-cheaper-than-a-1993-model-how-much-better-is-it"
+    ]
+  },
+  {
+    "year": 1994,
+    "run": "1992–1998",
+    "built": "106 in all versions (64 road cars)",
+    "price": "about £540,000 (1992), roughly $815,000",
+    "value": "about $15 million to $25 million at auction (2017–2025)",
+    "facts": [
+      {"y": 1992, "t": "Unveiled in Monaco; Gordon Murray’s design with a central driving seat"},
+      {"y": 1993, "t": "Production begins, powered by a BMW 6.1-litre V12 making about 618 hp"},
+      {"y": 1995, "t": "F1 GTR wins the 24 Hours of Le Mans on its first attempt"},
+      {"y": 1998, "t": "Reaches 240.1 mph, then a world record for production cars"},
+      {"y": 2005, "t": "Bugatti Veyron passes its speed record"},
+      {"y": 2011, "t": "Actor Rowan Atkinson crashes his F1 in a well-publicised insurance claim"},
+      {"y": 2015, "t": "Atkinson’s repaired car sells for about $12.2 million"},
+      {"y": 2021, "t": "A car sells for about $20.5 million at auction"},
+      {"y": 2025, "t": "Another sells for about $25.3 million at auction"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/McLaren_F1"
+    ]
+  },
+  {
+    "year": 1995,
+    "run": "1994–present",
+    "built": "over 15 million worldwide (1994–2025)",
+    "price": "about $16,000 (1996, US)",
+    "value": "$3,000–$8,000 for a first-generation car (used, US, 2020s)",
+    "facts": [
+      {"y": 1994, "t": "Launched in Japan; the name means Recreational Active Vehicle, 4-wheel drive"},
+      {"y": 1996, "t": "Goes on sale in the US as a small, car-based SUV"},
+      {"y": 1997, "t": "A battery-electric RAV4 EV is offered, first to fleets"},
+      {"y": 2000, "t": "Second generation arrives"},
+      {"y": 2005, "t": "Third generation grows larger, with an optional V6"},
+      {"y": 2012, "t": "A second RAV4 EV, with a Tesla-built powertrain, goes on sale in California"},
+      {"y": 2016, "t": "Becomes America’s best-selling SUV, ahead of the Honda CR-V"},
+      {"y": 2019, "t": "Fifth generation arrives with a hybrid in the line-up"},
+      {"y": 2020, "t": "RAV4 Prime plug-in hybrid goes on sale"},
+      {"y": 2025, "t": "Sixth generation launched; outsells the Ford F-150 in the US in February"}
+    ],
+    "confirm": ["price", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Toyota_RAV4"
+    ]
+  },
+  {
+    "year": 1996,
+    "run": "1996–2004 (986)",
+    "built": "about 164,000 first-generation cars",
+    "price": "about $40,000 (1997, US)",
+    "value": "$12,000–$20,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 1993, "t": "Concept car shown at the Detroit show"},
+      {"y": 1996, "t": "Production begins; mid-engine flat-six roadster, far cheaper than a 911"},
+      {"y": 1997, "t": "Goes on sale in the US; credited with helping rescue Porsche’s finances"},
+      {"y": 2000, "t": "Faster Boxster S with a 3.2-litre engine arrives"},
+      {"y": 2002, "t": "Minor facelift, with more power following in 2003"},
+      {"y": 2004, "t": "Second generation (987) launched; the final 986 is a 1,953-car S special edition"},
+      {"y": 2005, "t": "The Cayman coupe follows on the same platform"},
+      {"y": 2012, "t": "Third generation (981) launched"},
+      {"y": 2016, "t": "Renamed the 718 Boxster with a turbocharged four-cylinder engine"},
+      {"y": 2020, "t": "718 Spyder and GTS 4.0 bring back a flat-six"}
+    ],
+    "confirm": ["built", "price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Porsche_Boxster_(986)",
+      "https://classic.com/veh/1999-porsche-boxster-wp0ca2980xu624785-450eMep",
+      "https://hypercars.io/listing/1894904"
+    ]
+  },
+  {
+    "year": 1997,
+    "run": "1997–present",
+    "built": "about 123,000 first-generation cars; roughly 6 million Prius-family cars by 2017",
+    "price": "about ¥2.15 million (1997, Japan), roughly $17,000 then; $19,995 (2000, US)",
+    "value": "$3,000–$8,000 for a first-generation car (used, US, 2020s)",
+    "facts": [
+      {"y": 1997, "t": "Launched in Japan in December as the first mass-produced hybrid car"},
+      {"y": 2000, "t": "Sold outside Japan, reaching the US in July at $19,995"},
+      {"y": 2004, "t": "Second generation hatchback wins Motor Trend Car of the Year"},
+      {"y": 2008, "t": "Passes one million Prius sales worldwide in May"},
+      {"y": 2009, "t": "Third generation becomes a hit in Japan and the US"},
+      {"y": 2012, "t": "Plug-in Prius reaches buyers in Japan and the US"},
+      {"y": 2016, "t": "Fourth generation arrives on a new platform"},
+      {"y": 2023, "t": "Fifth generation launched, with a plug-in Prius Prime"}
+    ],
+    "confirm": ["price", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Toyota_Prius",
+      "https://oldcarsdata.com/toyota/prius"
+    ]
+  },
+  {
+    "year": 1998,
+    "run": "1997–2010",
+    "built": "about 1.2 million (1997–2010)",
+    "price": "about $15,200 (1998, US)",
+    "value": "$3,000–$8,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 1994, "t": "Concept One shown at the Detroit show to a warm reception"},
+      {"y": 1997, "t": "Production starts in the autumn on Golf underpinnings"},
+      {"y": 1998, "t": "Goes on sale in the US; Puebla, Mexico becomes its main plant"},
+      {"y": 2002, "t": "Turbo S arrives in the US with a 180 hp turbo engine"},
+      {"y": 2003, "t": "Convertible version launched"},
+      {"y": 2010, "t": "Final Edition marks the end of the first-generation car"},
+      {"y": 2011, "t": "Replaced by a new, lower and more masculine ‘Beetle’"},
+      {"y": 2019, "t": "The last Beetle leaves the Puebla plant on July 10, ending production"}
+    ],
+    "confirm": ["price", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Volkswagen_New_Beetle"
+    ]
+  },
+  {
+    "year": 1999,
+    "run": "1999–2006 (first generation)",
+    "built": "about 17,000 (1999–2006)",
+    "price": "about $18,900 (2000, US)",
+    "value": "$6,000–$12,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 1999, "t": "Goes on sale in Japan in November and in the US in December, the first hybrid sold there"},
+      {"y": 2000, "t": "Rated by the EPA at 61 mpg city and 70 mpg highway"},
+      {"y": 2006, "t": "First-generation production ends in the autumn"},
+      {"y": 2009, "t": "Returns as a five-door hybrid hatchback"},
+      {"y": 2014, "t": "Second-generation production ends"},
+      {"y": 2018, "t": "Third generation brings back the name as a hybrid sedan"},
+      {"y": 2022, "t": "Discontinued after the 2022 model year, replaced by the Civic Hybrid"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Honda_Insight",
+      "https://www.cargurus.com/research/2000-Honda-Insight-c2120",
+      "https://oldcarsdata.com/honda/insight/year/2000"
+    ]
+  },
+  {
+    "year": 2000,
+    "run": "1999–2009",
+    "built": "about 114,000 (1999–2009)",
+    "price": "about $32,000 (2000, US)",
+    "value": "$25,000–$40,000 for a good example (used, US, 2020s)",
+    "facts": [
+      {"y": 1995, "t": "SSM concept shown at the Tokyo Motor Show"},
+      {"y": 1999, "t": "Launched in Japan in April for Honda’s 50th anniversary"},
+      {"y": 2000, "t": "US sales begin; 2.0-litre engine revs to 9,000 rpm and makes about 240 hp"},
+      {"y": 2002, "t": "Wins a fifth straight International Engine of the Year award in its class"},
+      {"y": 2004, "t": "Engine enlarged to 2.2 litres with a lower rev limit"},
+      {"y": 2006, "t": "Stability control and new wheels added"},
+      {"y": 2008, "t": "Track-focused CR edition built in a run of 668"},
+      {"y": 2009, "t": "Production ends, with no direct successor"},
+      {"y": 2025, "t": "Hagerty prices a good 2000–2006 car at roughly $25,000–$32,000"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Honda_S2000",
+      "https://hagerty.com/apps/valuationtools/2000-honda-s2000",
+      "https://www.hagerty.com/apps/valuationtools/2005-Honda-S2000"
+    ]
+  },
+  {
+    "year": 2001,
+    "run": "2001–2006 (first generation)",
+    "built": "roughly 1 million (2001–2006)",
+    "price": "about $16,500 (2002, US)",
+    "value": "$4,000–$10,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2000, "t": "BMW sells Rover but keeps the Mini name, planning a new car"},
+      {"y": 2001, "t": "The new MINI launches in the UK in July, built at Oxford"},
+      {"y": 2002, "t": "Goes on sale in the US, with dealers opening in March"},
+      {"y": 2003, "t": "Minis star in the remake of the film The Italian Job"},
+      {"y": 2005, "t": "Convertible reaches showrooms"},
+      {"y": 2006, "t": "Limited Cooper S GP Kit marks the end of the first generation"},
+      {"y": 2007, "t": "BMW builds its one-millionth new-era MINI at Oxford"},
+      {"y": 2014, "t": "Third generation launched"},
+      {"y": 2023, "t": "Electric Cooper E and SE introduced as the fourth generation"}
+    ],
+    "confirm": ["built", "price", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mini_(BMW)",
+      "https://www.hagerty.co.uk/articles/20-facts-after-20-fun-filled-years-of-the-new-mini/",
+      "https://www.motoringfile.com/mini-r50/"
+    ]
+  },
+  {
+    "year": 2002,
+    "run": "2002–2009",
+    "built": "over 250,000 sold (2002–2008)",
+    "price": "about $26,000 (2003, US)",
+    "value": "$12,000–$20,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 1999, "t": "A Z concept shown at the Detroit show, inspired by the original 240Z"},
+      {"y": 2001, "t": "Production-style car shown at the Tokyo show, reviving the Z-car after a break"},
+      {"y": 2002, "t": "Launched in Japan in July and in the US that August"},
+      {"y": 2004, "t": "Roadster version arrives"},
+      {"y": 2006, "t": "Appears in The Fast and the Furious: Tokyo Drift"},
+      {"y": 2007, "t": "Revised engine now makes about 306 hp; Nismo version adds more"},
+      {"y": 2009, "t": "Replaced by the 370Z"},
+      {"y": 2022, "t": "The Z-car line continues with a new Nissan Z"}
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nissan_350Z",
+      "https://www.nissan-global.com/EN/HERITAGE/284_fairlady_z_version_st.html",
+      "https://www.hagerty.com/apps/valuationtools/2003-Nissan-350Z"
+    ]
+  },
+  {
+    "year": 2003,
+    "run": "2002–2004",
+    "built": "400",
+    "price": "about $643,000 (2003, US)",
+    "value": "about $4 million to $9 million (2020s)",
+    "facts": [
+      {"y": 2002, "t": "Unveiled at the Paris show, named for Enzo Ferrari; 6.0-litre V12 of about 651 hp"},
+      {"y": 2003, "t": "Deliveries begin to customers invited by Ferrari"},
+      {"y": 2004, "t": "The 400th and last Enzo is built, a gift for Pope John Paul II"},
+      {"y": 2013, "t": "Succeeded by the hybrid LaFerrari"},
+      {"y": 2015, "t": "The 400th car sells for about $6.05 million, with proceeds to charity"},
+      {"y": 2020, "t": "An Enzo sells for $2.64 million, a record for an online-only car auction"},
+      {"y": 2023, "t": "A 2003 car sells for about $4.7 million at RM Sotheby’s in January"},
+      {"y": 2026, "t": "Two Enzos sell for about $9.3 million each at RM Sotheby’s in January"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ferrari_Enzo",
+      "https://www.sothebys.com/en/articles/the-six-most-expensive-ferrari-enzos",
+      "https://gtspirit.com/2015/08/14/final-ferrari-enzo-sells-for-6-05-million/",
+      "https://www.sportscarmarket.com/?p=709130"
+    ]
+  }
+]

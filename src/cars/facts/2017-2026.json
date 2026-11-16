@@ -1,0 +1,220 @@
+[
+  {
+    "year": 2017,
+    "run": "2017–present",
+    "built": "roughly 3 million (2017–2025); Tesla does not publish a Model 3 only count",
+    "price": "$35,000 base promised; long-range car about $44,000 (2017)",
+    "value": "$20,000–$30,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2016, "t": "Unveiled in March; about 325,000 reservations taken in the first week"},
+      {"y": 2017, "t": "First 30 cars handed over in July"},
+      {"y": 2018, "t": "Production ramp is slowed by what Tesla calls “production hell”"},
+      {"y": 2019, "t": "Passes the Chevrolet Volt as the best-selling plug-in car in US history"},
+      {"y": 2019, "t": "A $35,000 Standard Range version is announced in February"},
+      {"y": 2020, "t": "Passes the Nissan Leaf as the best-selling plug-in car in the world"},
+      {"y": 2021, "t": "Becomes the first electric car to pass 1 million built, in June"},
+      {"y": 2023, "t": "Refreshed “Highland” version announced on September 1"}
+    ],
+    "confirm": ["built", "price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "https://www.iseecars.com/used-car-prices-study",
+      "https://www.carscoops.com/2025/03/used-ev-prices-have-plummeted-and-tesla-is-leading-the-way/"
+    ]
+  },
+  {
+    "year": 2018,
+    "run": "2018–2024",
+    "built": "about 70,000 (2018–2024); Jaguar has not published a final count",
+    "price": "about $69,500 (2019, US)",
+    "value": "$15,000–$25,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2017, "t": "Jaguar announces the single-make I-Pace eTrophy race series in September"},
+      {"y": 2018, "t": "Production car revealed in March; 90 kWh battery and about 394 hp"},
+      {"y": 2018, "t": "Waymo orders up to 20,000 for its self-driving taxi fleet"},
+      {"y": 2018, "t": "Sets an electric-car lap record at Laguna Seca in August"},
+      {"y": 2019, "t": "Wins World Car of the Year and European Car of the Year, a first for Jaguar"},
+      {"y": 2024, "t": "Production, in Graz, Austria, ends in December"},
+      {"y": 2025, "t": "Waymo reports about 1,500 I-Paces in service as robotaxis in four US cities"}
+    ],
+    "confirm": ["built", "price", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jaguar_I-Pace",
+      "https://insideevs.com/news/727096/jaguar-ipace-ev-production-end/",
+      "https://www.topgear.com/car-news/business/jaguar-has-stopped-building-xe-xf-and-f-type-i-pace-and-e-pace-stop-dec"
+    ]
+  },
+  {
+    "year": 2019,
+    "run": "2019–2026",
+    "built": "not firmly known; US sales alone about 28,800 (2019–2025)",
+    "price": "about $49,990 (2019 launch, US)",
+    "value": "$40,000–$52,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2018, "t": "A GR Supra Racing Concept shows at Geneva in March; a disguised car runs at Goodwood in July"},
+      {"y": 2019, "t": "Production car revealed in January at Detroit; shares its platform and 3.0-litre turbo six with the BMW Z4"},
+      {"y": 2019, "t": "Built under contract by Magna Steyr in Graz, Austria, from March"},
+      {"y": 2019, "t": "US sales begin in July at $49,990"},
+      {"y": 2021, "t": "Four-cylinder 2.0-litre version added in the US; the six rises to 382 hp"},
+      {"y": 2023, "t": "Six-speed manual gearbox offered for the first time in the US"},
+      {"y": 2024, "t": "A 300-car Final Edition, for Japan and Europe, is announced in November"},
+      {"y": 2026, "t": "Production ends in March with no direct successor planned"}
+    ],
+    "confirm": ["built"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+      "https://paultan.org/2024/11/28/toyota-gr-supra-production-to-end-in-2025-last-product-update-435-ps-a90-final-edition-released",
+      "https://www.carscoops.com/2025/10/toyota-confirms-when-the-gr-supra-will-leave-production-for-good/",
+      "https://www.kbb.com/toyota/gr-supra/2021/"
+    ]
+  },
+  {
+    "year": 2020,
+    "run": "2020–present",
+    "built": "about 195,000 (2020–2025 model years)",
+    "price": "about $59,995 (2020, US)",
+    "value": "$60,000–$85,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2019, "t": "Revealed in July as the first mid-engine production Corvette"},
+      {"y": 2020, "t": "Production begins in February, after a delay from the 2019 GM strike"},
+      {"y": 2020, "t": "Wins Motor Trend Car of the Year and North American Car of the Year"},
+      {"y": 2020, "t": "The C8.R racer makes its debut at the 24 Hours of Daytona"},
+      {"y": 2021, "t": "Z06 revealed in October; it goes on sale for the 2023 model year with a flat-plane-crank V8"},
+      {"y": 2022, "t": "First retail Z06 sells for $3.6 million at a Barrett-Jackson charity auction"},
+      {"y": 2023, "t": "Z06 wins Motor Trend Performance Vehicle of the Year"},
+      {"y": 2023, "t": "E-Ray hybrid with all-wheel drive revealed in January"}
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+      "https://www.corvetteblogger.com/2024/09/10/hagerty-c8-corvette-are-depreciating-faster-than-c7-corvettes/",
+      "https://www.motor1.com/news/745211/chevrolet-corvette-zr1-barrett-jackson/"
+    ]
+  },
+  {
+    "year": 2021,
+    "run": "2020–present",
+    "built": "roughly 280,000 sold worldwide (2020–2025); about 210,700 of them in the US",
+    "price": "about $43,000–$44,000 for the base car (2021, US)",
+    "value": "$20,000–$35,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2019, "t": "Revealed in November as Ford’s first mass-market electric vehicle"},
+      {"y": 2020, "t": "Goes on sale in December; the GT Performance Edition is shown the same month"},
+      {"y": 2021, "t": "Named North American SUV of the Year and Car and Driver’s first EV of the Year"},
+      {"y": 2022, "t": "A software fault prompts a recall of some 2021 AWD cars in May"},
+      {"y": 2024, "t": "Outsells the gasoline Mustang in the US, 51,745 to 44,003"},
+      {"y": 2025, "t": "A one-off Super Mustang Mach-E finishes second at Pikes Peak in June"},
+      {"y": 2025, "t": "Chinese production by Changan Ford ends"}
+    ],
+    "confirm": ["price", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ford_Mustang_Mach-E",
+      "https://insideevs.com/news/746229/mustang-mach-e-sales-2024/",
+      "https://www.thedrive.com/news/ford-sold-more-mustang-mach-es-than-real-mustangs-in-2024.md"
+    ]
+  },
+  {
+    "year": 2022,
+    "run": "2021–present",
+    "built": "not firmly known; US sales about 45,000 (2022–2024); Rivian does not split R1T from R1S",
+    "price": "about $67,500 at launch (2021, US)",
+    "value": "$45,000–$65,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2018, "t": "Named R1T and shown at the Los Angeles show in November, after a May preview as the A1T"},
+      {"y": 2021, "t": "First production truck built in September; customer deliveries begin in October"},
+      {"y": 2021, "t": "Rivian goes public on the stock market in November"},
+      {"y": 2022, "t": "Wins Motor Trend Truck of the Year"},
+      {"y": 2024, "t": "Second-generation R1T arrives with simpler wiring and more safety awards"},
+      {"y": 2025, "t": "Rivian builds about 42,000 vehicles in all in the year, R1T, R1S and vans combined"}
+    ],
+    "confirm": ["built", "price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rivian_R1T",
+      "https://driveteslacanada.ca/news/rivian-reports-15-drop-in-production-and-18-decline-in-deliveries-in-2025/",
+      "https://recharged.com/articles/rivian-r1t-fair-price-used-2025/"
+    ]
+  },
+  {
+    "year": 2023,
+    "run": "2023–present",
+    "built": "roughly 60,000 sold in the US (2023–2025, third-party estimates; Tesla does not report it)",
+    "price": "$79,990 two-motor and $99,990 Cyberbeast at launch (2023); $39,900 was promised in 2019",
+    "value": "$60,000–$85,000 (used, US, 2020s)",
+    "facts": [
+      {"y": 2019, "t": "Unveiled in November; a window-smash demo goes wrong on stage"},
+      {"y": 2023, "t": "First customer deliveries at an event on November 30"},
+      {"y": 2024, "t": "Recall for an accelerator-pedal fault in April"},
+      {"y": 2024, "t": "Kelley Blue Book estimates about 39,000 sold in the US"},
+      {"y": 2025, "t": "A $69,990 Long Range rear-drive version arrives in April and is dropped by September"},
+      {"y": 2025, "t": "US sales fall about 48% to roughly 20,000, by Kelley Blue Book estimates"}
+    ],
+    "confirm": ["built", "price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+      "https://www.aol.com/articles/tesla-cybertruck-sales-plunged-48-162125246.html",
+      "https://www.kbb.com/tesla/cybertruck/2025/long-range-pickup-4d-6-ft/"
+    ]
+  },
+  {
+    "year": 2024,
+    "run": "2024–present",
+    "built": "about 139,500 delivered in 2024; about 500,000 delivered by August 2026",
+    "price": "about ¥215,900 (2024, China), roughly $30,000",
+    "value": "not firmly known",
+    "facts": [
+      {"y": 2023, "t": "Xiaomi’s first car is revealed on December 28"},
+      {"y": 2024, "t": "Goes on sale on March 28; the base car costs ¥215,900"},
+      {"y": 2025, "t": "Xiaomi delivers its 200,000th SU7 in March"},
+      {"y": 2025, "t": "An SU7 crashes into a guardrail and burns in March, killing three; Xiaomi says driver assistance was on"},
+      {"y": 2025, "t": "The high-power SU7 Ultra sets a 7:04.957 production-EV record at the Nürburgring in April"},
+      {"y": 2025, "t": "Xiaomi recalls 116,887 SU7s in September over its highway driver-assist system"},
+      {"y": 2026, "t": "A new-generation SU7 launches on March 19; the first version ended production in February"}
+    ],
+    "confirm": ["value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Xiaomi_SU7",
+      "https://cnevpost.com/2026/08/17/xiaomi-su7-500000-cumulative-deliveries/",
+      "https://carnewschina.com/2025/12/02/xiaomi-delivers-500000-vehicles-in-19-months-ev-revenue-hits-4-10-b-usd/"
+    ]
+  },
+  {
+    "year": 2025,
+    "run": "2025–present",
+    "built": "about 180 for the 2025 model year",
+    "price": "$174,995 including destination (2025, US)",
+    "value": "not firmly known",
+    "facts": [
+      {"y": 2024, "t": "Revealed in July at Miami with a twin-turbo 5.5-litre flat-plane V8 rated at 1,064 hp"},
+      {"y": 2025, "t": "VIN 001 sells for $3.7 million at a charity auction in January, a record for a Corvette"},
+      {"y": 2025, "t": "Chevrolet reports five US track records and a 6:50.763 Nürburgring lap"},
+      {"y": 2025, "t": "ZR1X hybrid, all-wheel-drive version of about 1,250 hp is priced from $207,395"},
+      {"y": 2025, "t": "The ZR1X laps the Nürburgring in 6:49.275"}
+    ],
+    "confirm": ["value"],
+    "sources": [
+      "https://news.gm.com/home.detail.html/Pages/news/us/en/2025/jan/0109-zr1.html",
+      "https://www.corvetteblogger.com/2025/11/05/the-2025-corvette-zr1-is-officially-the-rarest-first-year-zr1-in-history/",
+      "https://www.motor1.com/news/745211/chevrolet-corvette-zr1-barrett-jackson/",
+      "https://www.motor1.com/news/768116/chevy-corvette-zr1x-pricing/"
+    ]
+  },
+  {
+    "year": 2026,
+    "run": "2026–present",
+    "built": "early production only; Rivian aims for 20,000 to 25,000 deliveries in 2026",
+    "price": "about $57,990 for the launch Performance AWD (2026, US); a $45,000 version is planned for later",
+    "value": "not yet known",
+    "facts": [
+      {"y": 2024, "t": "Unveiled in March as a smaller, cheaper SUV than the R1S"},
+      {"y": 2026, "t": "A tornado damages the plant’s R2 building in April, days before production starts"},
+      {"y": 2026, "t": "Production begins on April 22 in Normal, Illinois, on a single shift"},
+      {"y": 2026, "t": "First public customer deliveries on June 9, after staff cars in April"}
+    ],
+    "confirm": ["value"],
+    "sources": [
+      "https://electrek.co/2026/04/22/rivian-r2-starts-production-tornado-deliveries-spring/",
+      "https://thenextweb.com/news/rivian-r2-deliveries-begin-ev-market-autonomy",
+      "https://cdn-fastly.autoguide.com/auto/rivian-aims-to-make-20-000-r2-suvs-this-year-44630116"
+    ]
+  }
+]

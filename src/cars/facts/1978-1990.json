@@ -1,0 +1,309 @@
+[
+  {
+    "year": 1978,
+    "built": "453 (1978–1981), including about 53 race cars",
+    "price": "about DM 100,000 (1978), roughly $50,000 then",
+    "value": "about $400,000–$650,000 (2020s)",
+    "facts": [
+      { "y": 1978, "t": "BMW takes over the troubled project and starts hand-building the Giugiaro-styled M1" },
+      { "y": 1979, "t": "Procar one-make series begins, supporting Formula One; Niki Lauda wins the first title" },
+      { "y": 1979, "t": "Andy Warhol’s art-car M1 finishes 6th overall and 2nd in class at Le Mans" },
+      { "y": 1980, "t": "Nelson Piquet wins the second and last Procar season" },
+      { "y": 1981, "t": "Production ends; M1s keep racing at Le Mans until 1986" },
+      { "y": 2008, "t": "M1 Hommage concept shown for the car’s 30th anniversary" },
+      { "y": 2014, "t": "The mid-engined i8 hybrid enters production, often seen as the M1’s spiritual successor" },
+      { "y": 2019, "t": "Vision M Next concept shown, drawing partly on the M1" },
+      { "y": 2024, "t": "A 1980 M1 sells for $587,500 at an online auction" }
+    ],
+    "confirm": ["price"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/BMW_M1",
+      "https://www.hagerty.com/valuation-tools/bmw/m1",
+      "https://www.conceptcarz.com/vehicle/valuation/1008/bmw-e26-m1.aspx"
+    ]
+  },
+  {
+    "year": 1979,
+    "run": "1979–1993 (production began in 1978)",
+    "built": "about 2.5 million (1979–1993)",
+    "price": "about $4,500 (1979, base coupe); $4,800 for the hatchback",
+    "value": "about $12,000–$30,000 (2020s), 5.0 V8 cars at the top",
+    "facts": [
+      { "y": 1979, "t": "Third-generation Mustang arrives on the new Fox platform" },
+      { "y": 1979, "t": "A Mustang paces the Indianapolis 500; 10,479 replicas are built" },
+      { "y": 1982, "t": "The 5.0 V8 returns in the GT after a 13-year gap" },
+      { "y": 1984, "t": "Turbocharged four-cylinder SVO model goes on sale" },
+      { "y": 1987, "t": "Smoothed-out front end and new interior give the Fox body a facelift" },
+      { "y": 1993, "t": "The last Fox-body car is built on 26 August; SVT Cobra offered" },
+      { "y": 2021, "t": "Hagerty reports Fox-body values have risen by about 132% since 2013" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ford_Mustang_(third_generation)",
+      "https://www.hagerty.com/valuation-tools/generations/ford-mustang-1979-1993",
+      "https://www.mustangspecs.com/1979-ford-mustang/"
+    ]
+  },
+  {
+    "year": 1980,
+    "built": "about 11,450 (1980–1991)",
+    "price": "about £14,500 (UK, 1981), roughly $29,000 then",
+    "value": "about $40,000–$90,000 (2020s)",
+    "facts": [
+      { "y": 1980, "t": "Unveiled at Geneva with permanent four-wheel drive and a turbocharged five-cylinder" },
+      { "y": 1981, "t": "Hannu Mikkola wins the Swedish Rally, the first big win for the Quattro" },
+      { "y": 1982, "t": "Audi wins the World Rally Championship for manufacturers" },
+      { "y": 1983, "t": "Mikkola takes the drivers’ title" },
+      { "y": 1984, "t": "Stig Blomqvist takes the drivers’ title; short Sport Quattro goes on sale" },
+      { "y": 1985, "t": "Michèle Mouton wins Pikes Peak in a Sport Quattro" },
+      { "y": 1986, "t": "Audi pulls its works team from rallying after Group B accidents" },
+      { "y": 1987, "t": "Walter Röhrl wins Pikes Peak in the Sport Quattro S1" },
+      { "y": 1991, "t": "The last Quattro is built on 17 May" },
+      { "y": 2010, "t": "Audi shows a Quattro concept for the model’s 30th anniversary" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Audi_Quattro",
+      "https://oldcarsdata.com/audi/ur-quattro",
+      "https://www.clubalfa.it/en/rare-1982-audi-quattro-sells-for-76000-this-car-has-a-story-to-tell-22890"
+    ]
+  },
+  {
+    "year": 1981,
+    "run": "1981–1982 (sold as 1981–1983 models)",
+    "built": "about 9,000 (1981–1982)",
+    "price": "$25,000 (1981); $34,000 by 1983",
+    "value": "about $45,000–$65,000 (2020s)",
+    "facts": [
+      { "y": 1981, "t": "First production car announced in January; stainless-steel body and gull-wing doors" },
+      { "y": 1982, "t": "The company goes into receivership in February" },
+      { "y": 1982, "t": "John DeLorean is arrested in October; the company files for bankruptcy" },
+      { "y": 1982, "t": "The last cars are finished on 24 December" },
+      { "y": 1984, "t": "John DeLorean is found not guilty in his drug trial" },
+      { "y": 1985, "t": "“Back to the Future” turns the DeLorean into a time machine" },
+      { "y": 1995, "t": "A Texas company starts supplying parts and restoring DeLoreans" },
+      { "y": 2011, "t": "A restored “Back to the Future Part III” car sells for $541,200" },
+      { "y": 2015, "t": "An estimated 6,500 DeLoreans are still on the road" },
+      { "y": 2022, "t": "An electric DeLorean-inspired concept, the Alpha5, is shown" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/DeLorean_DMC-12",
+      "https://hagerty.com/apps/valuationtools/1981-delorean-dmc~12",
+      "https://oldcarsdata.com/delorean/dmc-12"
+    ]
+  },
+  {
+    "year": 1982,
+    "built": "over 22 million sold worldwide (1982–2026)",
+    "price": "about $8,000 (1983, US base model)",
+    "value": "an early Camry about $2,000–$6,000 (2020s)",
+    "facts": [
+      { "y": 1982, "t": "Introduced in Japan in March as a front-drive family sedan" },
+      { "y": 1983, "t": "Goes on sale in the United States in March" },
+      { "y": 1988, "t": "US production begins in Georgetown, Kentucky, in May" },
+      { "y": 1991, "t": "Wider, larger redesign for the US market" },
+      { "y": 1997, "t": "Overtakes the Ford Taurus as America’s best-selling car" },
+      { "y": 2002, "t": "Starts a long run as the best-selling car in the US" },
+      { "y": 2006, "t": "Camry Hybrid arrives in the US" },
+      { "y": 2017, "t": "Eighth generation on Toyota’s new global platform" },
+      { "y": 2023, "t": "Japanese sales end after 43 years; ninth generation is hybrid-only in the US" }
+    ],
+    "confirm": ["price", "value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Toyota_Camry",
+      "https://theautopian.com/the-2025-toyota-camry-is-barely-more-expensive-than-a-1983-camry-how-much-better-is-it",
+      "https://www.cargurus.ca/research/1983-Toyota-Camry-c4151"
+    ]
+  },
+  {
+    "year": 1983,
+    "built": "about 15 million Chrysler minivans (1983–2019)",
+    "price": "about $9,100 (1984 base model)",
+    "value": "an early minivan about $3,000–$10,000 (2020s)",
+    "facts": [
+      { "y": 1983, "t": "Released in November as 1984 models, creating the minivan segment" },
+      { "y": 1987, "t": "Long-wheelbase Grand Caravan and Grand Voyager join the range" },
+      { "y": 1991, "t": "Second generation arrives with an optional all-wheel drive" },
+      { "y": 1996, "t": "Third generation adds an optional driver’s-side sliding door" },
+      { "y": 2005, "t": "Stow ’n Go seats that fold into the floor are introduced" },
+      { "y": 2008, "t": "Fifth generation arrives on a new platform" },
+      { "y": 2017, "t": "Chrysler Pacifica replaces the Town & Country as the flagship" },
+      { "y": 2019, "t": "Chrysler builds its 15 millionth minivan" },
+      { "y": 2020, "t": "The last Dodge Grand Caravan is built on 21 August" }
+    ],
+    "confirm": ["value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chrysler_minivans",
+      "https://www.cargurus.com/research/1984-Dodge-Caravan-c6482",
+      "https://www.autoblog.com/2008/05/09/future-classic-1984-chrysler-minivans/"
+    ]
+  },
+  {
+    "year": 1984,
+    "built": "about 358,000 (1984–1996)",
+    "price": "$21,800 (1984)",
+    "value": "about $10,000–$20,000; ZR-1 about $30,000–$50,000 (2020s)",
+    "facts": [
+      { "y": 1983, "t": "New fourth generation enters production in January; there is no 1983 model" },
+      { "y": 1984, "t": "Named Motor Trend Car of the Year" },
+      { "y": 1986, "t": "Convertible returns and paces the Indianapolis 500" },
+      { "y": 1989, "t": "ZR-1 with the Lotus-designed 375 hp LT5 V8 shown at Geneva" },
+      { "y": 1990, "t": "A stock ZR-1 sets a 24-hour record at 175.9 mph in Texas" },
+      { "y": 1992, "t": "New LT1 V8 replaces the earlier engine" },
+      { "y": 1996, "t": "Grand Sport send-off edition (1,000 built); last C4 built on 20 June" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C4)",
+      "https://www.hagerty.ca/valuation-tools/generations/chevrolet-corvette-1984-1996",
+      "https://www.hagerty.com/apps/valuationtools/1990-Chevrolet-Corvette"
+    ]
+  },
+  {
+    "year": 1985,
+    "built": "about 8 million (1985–2019)",
+    "price": "about $10,100 (1986 base sedan)",
+    "value": "a good early car about $2,000–$6,000 (2020s)",
+    "facts": [
+      { "y": 1985, "t": "Aerodynamic front-drive sedan launched on 26 December" },
+      { "y": 1986, "t": "Named Motor Trend Car of the Year" },
+      { "y": 1989, "t": "SHO model arrives with a Yamaha-built V6" },
+      { "y": 1992, "t": "Second generation makes it the best-selling car in America until 1996" },
+      { "y": 1996, "t": "Controversial oval-styled redesign" },
+      { "y": 2000, "t": "US sales peak at about 382,000 cars in the year" },
+      { "y": 2007, "t": "The Five Hundred is renamed Taurus" },
+      { "y": 2010, "t": "Sixth generation arrives; SHO had returned with a twin-turbo V6" },
+      { "y": 2012, "t": "Police Interceptor sedan version goes on sale" },
+      { "y": 2019, "t": "The last Taurus leaves the Chicago plant on 1 March" }
+    ],
+    "confirm": ["value"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ford_Taurus",
+      "https://en.wikipedia.org/wiki/Ford_Taurus_(first_generation)",
+      "https://www.iseecars.com/car/1986-ford-taurus-price"
+    ]
+  },
+  {
+    "year": 1986,
+    "built": "about 337, including prototypes (1986–1988); 8 more from spares in 1992–93",
+    "price": "DM 431,550 (1987), roughly $225,000 then",
+    "value": "about $1.6–$2.7 million (2020s)",
+    "facts": [
+      { "y": 1985, "t": "Road version shown at Frankfurt with twin turbos and all-wheel drive" },
+      { "y": 1986, "t": "959s finish first and second in the Paris–Dakar Rally" },
+      { "y": 1987, "t": "First customer deliveries begin" },
+      { "y": 1987, "t": "Road tests record about 198 mph, the fastest production car of its day" },
+      { "y": 1988, "t": "Production ends; a 959S reaches 339 km/h (211 mph) at Nardò" },
+      { "y": 1992, "t": "Porsche builds eight more cars from spare parts" },
+      { "y": 1999, "t": "Bill Gates’s 959, held by US customs for years, is released under a new law" },
+      { "y": 2003, "t": "Canepa Design begins a US upgrade programme for 959s" },
+      { "y": 2018, "t": "A Paris–Dakar 959 sells for $5.9 million at RM Sotheby’s" },
+      { "y": 2024, "t": "A 1987 road car sells for $1.87 million at Mecum" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Porsche_959",
+      "https://www.conceptcarz.com/a28995/rm-sothebys-porsche-auction.aspx",
+      "https://oldcarsdata.com/porsche/959"
+    ]
+  },
+  {
+    "year": 1987,
+    "built": "about 1,311 (1987–1992)",
+    "price": "about $400,000 (1987, US)",
+    "value": "about $2.5–$4 million (2020s)",
+    "facts": [
+      { "y": 1987, "t": "Unveiled in Maranello on 21 July for Ferrari’s 40th anniversary" },
+      { "y": 1987, "t": "The last new Ferrari that Enzo Ferrari approved" },
+      { "y": 1988, "t": "Enzo Ferrari dies in August" },
+      { "y": 1989, "t": "Ferrari claims 201 mph; road tests measure about 197–199 mph" },
+      { "y": 1989, "t": "The F40 LM racer takes third on its Laguna Seca debut" },
+      { "y": 1990, "t": "Speculation sends an F40 to about £1 million at auction" },
+      { "y": 1992, "t": "Road-car production ends" },
+      { "y": 1994, "t": "F40 GTE race cars start in the BPR Global GT series, racing to 1996" },
+      { "y": 2024, "t": "A 1993 F40 LM sells for $11 million at RM Sotheby’s" },
+      { "y": 2024, "t": "Road cars sell for about $2.5–$3.9 million at auction" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ferrari_F40",
+      "https://www.octane-magazine.com/news/ferrari-f40-leads-rm-sothebys-18-2m-london-auction/",
+      "https://www.clubalfa.it/en/ferrari-f40-lm-achieves-new-record-during-monterey-car-week-24324",
+      "https://www.sothebys.com/en/articles/the-six-most-expensive-ferrari-f40s"
+    ]
+  },
+  {
+    "year": 1988,
+    "built": "over 40 million F-Series trucks (1948–2020s)",
+    "price": "about $10,200 (1988 base F-150)",
+    "value": "a clean 1980s truck about $8,000–$20,000 (2020s)",
+    "facts": [
+      { "y": 1948, "t": "F-Series line introduced" },
+      { "y": 1975, "t": "F-150 name first used" },
+      { "y": 1977, "t": "F-Series becomes America’s best-selling pickup" },
+      { "y": 1981, "t": "F-Series becomes the best-selling vehicle of any kind in the US" },
+      { "y": 1987, "t": "Eighth generation brings flush-fitting headlights and a smoother body" },
+      { "y": 1992, "t": "Ninth generation arrives" },
+      { "y": 1997, "t": "Rounded, more car-like tenth generation arrives" },
+      { "y": 2004, "t": "Eleventh generation, with a larger cab and boxier look" },
+      { "y": 2015, "t": "Aluminium-bodied F-150 launched, about 750 lb lighter" },
+      { "y": 2021, "t": "Electric F-150 Lightning unveiled in May; deliveries start in 2022" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ford_F-Series",
+      "https://hagerty.com/valuation-tools/ford/f~150/1988/1988-ford-f~150",
+      "https://cargurus.com/research/1988-Ford-F-150-c4472"
+    ]
+  },
+  {
+    "year": 1989,
+    "built": "over 1.1 million (1989–2020s)",
+    "price": "about $14,000 (1990, US)",
+    "value": "about $7,000–$14,000 for a good first-generation car (2020s)",
+    "facts": [
+      { "y": 1989, "t": "Introduced at the Chicago auto show in February" },
+      { "y": 1992, "t": "250,000th car built in November" },
+      { "y": 1998, "t": "Second generation (NB) with fixed headlights" },
+      { "y": 1999, "t": "500,000th car built in February" },
+      { "y": 2000, "t": "Guinness names it the best-selling two-seat sports car, at 531,890 cars" },
+      { "y": 2004, "t": "Mazdaspeed turbo model, the only factory-turbocharged MX-5 for 2004–2005" },
+      { "y": 2005, "t": "Third generation (NC)" },
+      { "y": 2015, "t": "Fourth generation (ND) goes on sale" },
+      { "y": 2016, "t": "One millionth built on 22 April; wins World Car of the Year" },
+      { "y": 2017, "t": "Folding hard-top RF version arrives" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mazda_MX-5",
+      "https://www.carscoops.com/2025/12/miata-prices-inflation-adjusted-true-cost-analysis/",
+      "https://hagerty.com/apps/valuationtools/1991-Mazda-MX~5_Miata",
+      "https://www.classic.com/m/mazda/mx-5-miata/na-1st-gen/base-model/year-1990/"
+    ]
+  },
+  {
+    "year": 1990,
+    "built": "about 18,000 (1990–2005)",
+    "price": "about $60,000 (1991, US; window stickers show about $60,600)",
+    "value": "about $70,000–$130,000 (2020s)",
+    "facts": [
+      { "y": 1989, "t": "Shown at the Chicago auto show in February; Ayrton Senna helps tune the chassis" },
+      { "y": 1990, "t": "Goes on sale as the first mass-produced car with an all-aluminium body" },
+      { "y": 1992, "t": "Lightweight NSX-R goes into production for Japan" },
+      { "y": 1995, "t": "NSX-T targa arrives and becomes the main US version" },
+      { "y": 1997, "t": "3.2-litre engine replaces the 3.0 on manual cars" },
+      { "y": 2002, "t": "Facelift with fixed headlights" },
+      { "y": 2005, "t": "Production ends on 30 November" },
+      { "y": 2016, "t": "Second-generation hybrid NSX launched" },
+      { "y": 2025, "t": "A 1991 NSX sells for about $163,000 on Bring a Trailer" }
+    ],
+    "confirm": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Honda_NSX_(first_generation)",
+      "https://hagerty.com/apps/valuationtools/1991-Acura-NSX",
+      "https://oldcarsdata.com/acura/nsx/year/1991",
+      "https://www.classic.com/veh/1991-acura-nsx-jh4na1159mt000715-nlQ76XW/"
+    ]
+  }
+]

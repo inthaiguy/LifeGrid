@@ -18,7 +18,7 @@ button, input, select { font: inherit; color: inherit; }
 .body { flex: 1; min-height: 0; display: flex; flex-direction: column-reverse; }
 header { display: flex; align-items: center; gap: 8px; padding: calc(8px + env(safe-area-inset-top)) 12px 8px 6px; }
 /* Line the menu glyph up with the grid's left edge (the grid has 6px of padding). */
-header > button.icon:first-child { margin-left: -10px; }
+header > button.icon:last-child { margin-right: -8px; } /* the menu sits at the far right, its glyph lined up with the page edge */
 header h1 { font-size: 16px; margin: 0; flex: 1; letter-spacing: .02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .meter { display: flex; align-items: baseline; gap: 6px; font-variant-numeric: tabular-nums; }
 .meter b { font-size: 17px; color: var(--accent); }
@@ -113,6 +113,9 @@ button.danger { color: #d64545; }
 @media (min-width: 760px) {
   .body { flex-direction: row; }
   .legend, .body.asking .legend { display: flex; flex-direction: column; gap: 9px; width: 168px; padding: 34px 14px 12px 18px; overflow-y: auto; white-space: normal; font-size: 12.5px; color: var(--ink); border-left: 1px solid var(--line); }
+  .app:not(.fs) main { flex: none; }
+  .app.gridview:not(.fs) { width: fit-content; } /* the header ends where the location key ends */
+  .app:not(.fs) .grid.map { --cw: 34px; width: max-content; min-width: 0; }
   .legend i { width: 12px; height: 12px; border-radius: 3px; flex: none; }
   .legend .key { margin-top: 6px; color: var(--dim); }
   header { padding-left: 6px; padding-right: 14px; } header h1 { font-size: 19px; }

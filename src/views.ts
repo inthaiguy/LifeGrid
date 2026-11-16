@@ -13,7 +13,7 @@ export interface ViewProps {
   s: State;
   /** Call with a month ("YYYY-MM") when the person picks an event, to open that month's editor. Absent on a shared, read-only link. */
   onCell?: (at: YM) => void;
-  /** Only meaningful for views that set `readable`: the header's Read / Overview toggle. */
+  /** Only meaningful for views that set `readable`: full screen shows the words in the cells. */
   read?: boolean;
 }
 
@@ -29,7 +29,7 @@ export interface ViewDef {
   icon: string;
   /** Set false to hide the colour key of places beside the view. */
   legend?: boolean;
-  /** Set true if the view has a words / overview distinction and wants the header's Read toggle. */
+  /** Set true if the view shows the words in its cells when the page is full screen. */
   readable?: boolean;
 }
 export interface View extends ViewDef { Component: ComponentType<ViewProps> }
