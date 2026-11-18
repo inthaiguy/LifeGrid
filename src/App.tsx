@@ -243,7 +243,18 @@ export default function App() {
           onFinish={() => { setIntro(false); setCoach(true); }}
           onImport={() => { setIntro(false); setImporting(true); }}
           onSkip={() => { setIntro(false); setMenu(true); }} />}
-        <main><Shown life={s as Life} s={s} read={read} onCell={VIEWING ? undefined : setEditing} /></main>
+        <main>{s.birth || VIEWING
+          ? <Shown life={s as Life} s={s} read={read} onCell={VIEWING ? undefined : setEditing} />
+          : ( // a blank sheet: a seedling pressed into the page; tapping it opens the first question
+            <button className="seedling" onClick={() => setMenu(true)} aria-label="Begin your life grid: open the first question">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                {['hi', 'lo', 'mid'].map((k) => (
+                  <g key={k} className={k}>
+                    <path d="M47.5 84C47.5 72 47 62 47.5 47L52.5 47C53 62 52.5 72 52.5 84Z" /><path d="M50 54C37 54 27 45 25 29C40 30 50 39 50 54Z" />
+                    <path d="M50 47C52 32 63 22 80 21C79 38 67 47 50 47Z" /><path d="M26 86Q50 72 74 86Z" />
+                  </g>))}
+              </svg>
+            </button>)}</main>
         {s.birth && shown.legend !== false && ( // the horizontal timeline names each home on its own band
           <aside className="legend">
             {places(s).map((p) => <span key={p} title={p}><i style={{ background: colorOf(s, p) }} />{short(p)}</span>)}
