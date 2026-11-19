@@ -1,6 +1,6 @@
 {
   "schema": "life-grid/1",
-  "exportedAt": "2026-11-12T00:00:00.000Z",
+  "exportedAt": "2026-11-19T00:00:00.000Z",
   "name": "Arthur",
   "birth": {
     "month": "1917-12",
@@ -17,7 +17,11 @@
       "place": "Minehead, England"
     },
     {
-      "from": "1936-06",
+      "from": "1924-01",
+      "place": "Bishops Lydeard, England"
+    },
+    {
+      "from": "1936-09",
       "place": "London, England"
     },
     {
@@ -25,41 +29,196 @@
       "place": "Colombo, Sri Lanka"
     }
   ],
-  "stays": [],
+  "stays": [
+    {
+      "from": "1953-04",
+      "to": "1953-04",
+      "place": "New York, United States"
+    }
+  ],
   "cells": [
     {
       "month": "1917-12",
       "text": "Born in Minehead"
     },
     {
-      "month": "1934-01",
-      "text": "Joins the British Interplanetary Society",
+      "month": "1921-04",
+      "text": "Brother Fred is born"
+    },
+    {
+      "month": "1927-09",
+      "text": "Starts at Huish’s Grammar School",
       "confirmed": false
     },
     {
-      "month": "1936-06",
-      "text": "Moves to London"
+      "month": "1928-11",
+      "text": "Discovers Amazing Stories",
+      "confirmed": false
     },
     {
-      "month": "1941-01",
-      "text": "Joins the Royal Air Force",
-      "confirmed": false
+      "month": "1931-05",
+      "text": "Father dies in Bristol hospital"
+    },
+    {
+      "month": "1934-07",
+      "text": "Joins the British Interplanetary Society"
+    },
+    {
+      "month": "1936-09",
+      "text": "In the news: Gazetted civil service auditor"
+    },
+    {
+      "month": "1936-10",
+      "text": "Named treasurer of the BIS London branch"
+    },
+    {
+      "month": "1937-01",
+      "text": "Speaks at Britain’s first SF convention"
+    },
+    {
+      "month": "1937-12",
+      "text": "“Travel by Wire!”, his first story"
+    },
+    {
+      "month": "1938-02",
+      "text": "Plays SF film music to London fans"
+    },
+    {
+      "month": "1938-03",
+      "text": "“How We Went to Mars” published"
+    },
+    {
+      "month": "1938-04",
+      "text": "His rocket verse runs in Novae Terrae"
+    },
+    {
+      "month": "1938-06",
+      "text": "Plans a flat-share with Bill Temple"
+    },
+    {
+      "month": "1938-08",
+      "text": "Gray’s Inn Road flat opens to SF fans"
+    },
+    {
+      "month": "1938-09",
+      "text": "Co-edits the BIS Bulletin with Bill Temple"
+    },
+    {
+      "month": "1938-10",
+      "text": "Lectures on “How to Build a Spaceship”"
+    },
+    {
+      "month": "1939-01",
+      "text": "Profiles Bill Temple in Novae Terrae"
+    },
+    {
+      "month": "1939-03",
+      "text": "Co-edits another BIS Bulletin with Temple"
+    },
+    {
+      "month": "1939-05",
+      "text": "Runs a quiz at the SF Association convention"
+    },
+    {
+      "month": "1940-04",
+      "text": "Writes US fans about London’s balloon barrage"
+    },
+    {
+      "month": "1940-06",
+      "text": "Letter to US fans flags atomic power"
+    },
+    {
+      "month": "1940-08",
+      "text": "In the news: Glasses bar him as RAF navigator"
+    },
+    {
+      "month": "1940-12",
+      "text": "Writes to US fans from Colwyn Bay"
+    },
+    {
+      "month": "1941-04",
+      "text": "Called up into the RAF"
+    },
+    {
+      "month": "1941-05",
+      "text": "In the news: Fans place him at RAF Bridgnorth"
+    },
+    {
+      "month": "1941-07",
+      "text": "Learns radio theory in London for the RAF"
+    },
+    {
+      "month": "1942-02",
+      "text": "“The Awakening” published"
+    },
+    {
+      "month": "1942-03",
+      "text": "In the news: Reported at RAF Yatesbury"
+    },
+    {
+      "month": "1942-07",
+      "text": "“Whacky” in Fantastic Adventures"
+    },
+    {
+      "month": "1942-11",
+      "text": "Adds a note on space radio to Wireless World"
     },
     {
       "month": "1943-05",
       "text": "Commissioned pilot officer"
     },
     {
+      "month": "1943-07",
+      "text": "In the news: Commission gazetted"
+    },
+    {
       "month": "1943-11",
       "text": "Promoted flying officer"
     },
     {
+      "month": "1944-12",
+      "text": "Tells fans the V-2 has reached space"
+    },
+    {
       "month": "1945-02",
-      "text": "Letter on relay satellites"
+      "text": "Wireless World letter on satellite relays"
+    },
+    {
+      "month": "1945-03",
+      "text": "Writes “Rescue Party”"
+    },
+    {
+      "month": "1945-05",
+      "text": "Circulates “The Space-Station” paper"
+    },
+    {
+      "month": "1945-06",
+      "text": "Writes the satellite relay article"
+    },
+    {
+      "month": "1945-07",
+      "text": "Sends satellite article to RAF censor"
+    },
+    {
+      "month": "1945-08",
+      "text": "Sends article to Wireless World"
+    },
+    {
+      "month": "1945-09",
+      "text": "Wireless World accepts his article"
     },
     {
       "month": "1945-10",
       "text": "“Extra-Terrestrial Relays” published"
+    },
+    {
+      "month": "1945-11",
+      "text": "In the news: Wireless World cites his BAA paper"
+    },
+    {
+      "month": "1946-01",
+      "text": "Becomes chairman of the BIS",
+      "confirmed": false
     },
     {
       "month": "1946-04",
@@ -67,7 +226,40 @@
     },
     {
       "month": "1946-05",
-      "text": "“Rescue Party”, first sale"
+      "text": "“Rescue Party”, his first sale, appears"
+    },
+    {
+      "month": "1946-07",
+      "text": "Writes “Guardian Angel”"
+    },
+    {
+      "month": "1946-08",
+      "text": "“Rescue Party” ranks second in Astounding poll"
+    },
+    {
+      "month": "1946-10",
+      "text": "Enters King’s College London",
+      "confirmed": false
+    },
+    {
+      "month": "1946-12",
+      "text": "“Technical Error” published in Fantasy"
+    },
+    {
+      "month": "1947-01",
+      "text": "Writes on astronautics in Everywoman"
+    },
+    {
+      "month": "1947-04",
+      "text": "“Castaway”, as Charles Willis"
+    },
+    {
+      "month": "1947-08",
+      "text": "“The Fires Within”, as E. G. O’Brien"
+    },
+    {
+      "month": "1947-10",
+      "text": "“Inheritance” in New Worlds"
     },
     {
       "month": "1948-01",
@@ -75,9 +267,58 @@
       "confirmed": false
     },
     {
+      "month": "1948-05",
+      "text": "Speaks at the Whitcon SF convention"
+    },
+    {
+      "month": "1948-07",
+      "text": "Graduates from King’s College London",
+      "confirmed": false
+    },
+    {
+      "month": "1948-08",
+      "text": "Corrects magnetron lore from King’s College"
+    },
+    {
+      "month": "1948-09",
+      "text": "“Inheritance” appears in Astounding"
+    },
+    {
+      "month": "1948-11",
+      "text": "“Against the Fall of Night” published"
+    },
+    {
       "month": "1949-01",
       "text": "Assistant editor, Science Abstracts",
       "confirmed": false
+    },
+    {
+      "month": "1949-03",
+      "text": "“Critical Mass” in Lilliput"
+    },
+    {
+      "month": "1949-04",
+      "text": "Attends Loncon, a postwar SF convention"
+    },
+    {
+      "month": "1949-05",
+      "text": "“History Lesson” in Startling Stories"
+    },
+    {
+      "month": "1949-07",
+      "text": "“Transience” in Startling Stories"
+    },
+    {
+      "month": "1949-08",
+      "text": "“The Lion of Comarre” published"
+    },
+    {
+      "month": "1949-09",
+      "text": "“Hide and Seek” in Astounding"
+    },
+    {
+      "month": "1949-12",
+      "text": "“Breaking Strain” published"
     },
     {
       "month": "1950-01",
@@ -85,9 +326,25 @@
       "confirmed": false
     },
     {
-      "month": "1951-02",
+      "month": "1950-03",
+      "text": "“Exile of the Eons” published"
+    },
+    {
+      "month": "1950-04",
+      "text": "“Guardian Angel” published"
+    },
+    {
+      "month": "1950-08",
+      "text": "“A Walk in the Dark” published"
+    },
+    {
+      "month": "1951-01",
       "text": "Becomes a full-time writer",
       "confirmed": false
+    },
+    {
+      "month": "1951-02",
+      "text": "Prelude to Space published"
     },
     {
       "month": "1951-03",
@@ -95,19 +352,50 @@
       "confirmed": false
     },
     {
+      "month": "1951-04",
+      "text": "In the news: Galaxy praises Prelude to Space"
+    },
+    {
       "month": "1951-05",
-      "text": "Prelude to Space published",
+      "text": "Speaks at the Festivention SF convention"
+    },
+    {
+      "month": "1951-06",
+      "text": "“The Sentinel” in 10 Story Fantasy",
       "confirmed": false
     },
     {
-      "month": "1951-08",
+      "month": "1951-07",
       "text": "The Sands of Mars published",
       "confirmed": false
     },
     {
-      "month": "1952-04",
-      "text": "International Fantasy Award for The Exploration of Space",
-      "confirmed": false
+      "month": "1951-08",
+      "text": "“Superiority” published"
+    },
+    {
+      "month": "1951-09",
+      "text": "Chairs Second Astronautical Congress"
+    },
+    {
+      "month": "1951-10",
+      "text": "In the news: F&SF reviews Interplanetary Flight"
+    },
+    {
+      "month": "1951-12",
+      "text": "Writes Astounding about Moon dust"
+    },
+    {
+      "month": "1952-02",
+      "text": "Starts writing Childhood’s End"
+    },
+    {
+      "month": "1952-05",
+      "text": "Sends a recorded speech from his US tour"
+    },
+    {
+      "month": "1952-06",
+      "text": "Wins International Fantasy Award"
     },
     {
       "month": "1952-07",
@@ -115,14 +403,32 @@
       "confirmed": false
     },
     {
+      "month": "1952-09",
+      "text": "Takes on Willy Ley over Moon craters"
+    },
+    {
+      "month": "1952-10",
+      "text": "In the news: Book-of-the-Month Club picks him"
+    },
+    {
+      "month": "1952-12",
+      "text": "Finishes Childhood’s End first draft"
+    },
+    {
+      "month": "1953-01",
+      "text": "Final revision of Childhood’s End"
+    },
+    {
       "month": "1953-02",
-      "text": "Childhood’s End published",
-      "confirmed": false
+      "text": "“The Nine Billion Names of God” published"
     },
     {
       "month": "1953-03",
-      "text": "Marries Marilyn Mayfield",
-      "confirmed": false
+      "text": "“The Possessed” published"
+    },
+    {
+      "month": "1953-04",
+      "text": "Takes Childhood’s End to New York"
     },
     {
       "month": "1953-05",
@@ -130,18 +436,58 @@
     },
     {
       "month": "1953-06",
+      "text": "Marries Marilyn Mayfield"
+    },
+    {
+      "month": "1953-07",
       "text": "Against the Fall of Night (novel) published",
       "confirmed": false
     },
     {
+      "month": "1953-08",
+      "text": "Childhood’s End published"
+    },
+    {
       "month": "1953-09",
-      "text": "Expedition to Earth published",
+      "text": "In the news: Judge for a new SF book club"
+    },
+    {
+      "month": "1953-10",
+      "text": "In the news: F&SF reviews Childhood’s End"
+    },
+    {
+      "month": "1953-11",
+      "text": "In the news: Galaxy praises his far-future tale"
+    },
+    {
+      "month": "1953-12",
+      "text": "Separates from Marilyn Mayfield",
       "confirmed": false
     },
     {
-      "month": "1954-04",
-      "text": "The Exploration of the Moon published",
+      "month": "1954-01",
+      "text": "Takes up scuba diving",
       "confirmed": false
+    },
+    {
+      "month": "1954-02",
+      "text": "In the news: Astounding reviews Childhood’s End"
+    },
+    {
+      "month": "1954-03",
+      "text": "In the news: F&SF lists two of his as best books"
+    },
+    {
+      "month": "1954-04",
+      "text": "“Armaments Race” published"
+    },
+    {
+      "month": "1954-05",
+      "text": "In the news: Galaxy reviews Expedition to Earth"
+    },
+    {
+      "month": "1954-06",
+      "text": "In the news: F&SF reviews Prelude to Space"
     },
     {
       "month": "1954-07",
@@ -149,9 +495,46 @@
       "confirmed": false
     },
     {
+      "month": "1954-08",
+      "text": "The Exploration of the Moon published",
+      "confirmed": false
+    },
+    {
+      "month": "1954-11",
+      "text": "“Patent Pending” published"
+    },
+    {
       "month": "1955-01",
+      "text": "In the news: F&SF reviews Going into Space"
+    },
+    {
+      "month": "1955-02",
       "text": "Earthlight published",
       "confirmed": false
+    },
+    {
+      "month": "1955-05",
+      "text": "In the news: F&SF praises Earthlight"
+    },
+    {
+      "month": "1955-06",
+      "text": "In the news: Named Worldcon guest of honor"
+    },
+    {
+      "month": "1955-07",
+      "text": "Story “?” runs with a naming contest"
+    },
+    {
+      "month": "1955-08",
+      "text": "In the news: F&SF notes Exploration of the Moon"
+    },
+    {
+      "month": "1955-10",
+      "text": "$200 title contest for his story is won"
+    },
+    {
+      "month": "1955-11",
+      "text": "“The Star” published"
     },
     {
       "month": "1956-01",
@@ -159,37 +542,27 @@
     },
     {
       "month": "1956-03",
-      "text": "The Coast of Coral published",
-      "confirmed": false
+      "text": "Dives the Aeonos wreck days after it sank"
     },
     {
-      "month": "1956-04",
-      "text": "The City and the Stars published",
-      "confirmed": false
-    },
-    {
-      "month": "1956-06",
-      "text": "Reach for Tomorrow published",
-      "confirmed": false
-    },
-    {
-      "month": "1956-08",
-      "text": "Venture to the Moon published",
-      "confirmed": false
+      "month": "1956-05",
+      "text": "“Venture to the Moon” in the Evening Standard"
     },
     {
       "month": "1956-09",
       "text": "Hugo for “The Star”"
     },
     {
+      "month": "1956-12",
+      "text": "“The Reluctant Orchid” in Satellite"
+    },
+    {
       "month": "1957-02",
-      "text": "The Deep Range published",
-      "confirmed": false
+      "text": "“The Ultimate Melody” in If"
     },
     {
       "month": "1957-03",
-      "text": "Tales from the White Hart published",
-      "confirmed": false
+      "text": "The Deep Range published"
     },
     {
       "month": "1957-04",
@@ -198,13 +571,23 @@
     },
     {
       "month": "1957-06",
-      "text": "The Making of a Moon published",
-      "confirmed": false
+      "text": "“The Man Who Ploughed the Sea” in Satellite"
+    },
+    {
+      "month": "1957-08",
+      "text": "The Making of a Moon published"
     },
     {
       "month": "1957-09",
-      "text": "The Other Side of the Sky published",
-      "confirmed": false
+      "text": "“Let There Be Light” in Playboy"
+    },
+    {
+      "month": "1957-10",
+      "text": "Hears of Sputnik at a Barcelona congress"
+    },
+    {
+      "month": "1958-02",
+      "text": "“Out From the Sun” in If"
     },
     {
       "month": "1958-03",
@@ -221,29 +604,45 @@
       "confirmed": false
     },
     {
-      "month": "1959-01",
+      "month": "1958-09",
+      "text": "“The Stroke of the Sun” in Galaxy"
+    },
+    {
+      "month": "1959-06",
       "text": "The Challenge of the Spaceship published",
       "confirmed": false
     },
     {
-      "month": "1960-04",
-      "text": "The Challenge of the Sea published",
-      "confirmed": false
+      "month": "1960-03",
+      "text": "The First Five Fathoms published"
     },
     {
-      "month": "1960-07",
-      "text": "The First Five Fathoms published",
-      "confirmed": false
+      "month": "1960-05",
+      "text": "“I Remember Babylon” in Playboy"
+    },
+    {
+      "month": "1960-06",
+      "text": "“Summertime on Icarus” in Vogue"
+    },
+    {
+      "month": "1960-09",
+      "text": "The Challenge of the Sea published"
+    },
+    {
+      "month": "1960-10",
+      "text": "“Into the Comet” in F&SF"
     },
     {
       "month": "1961-03",
-      "text": "A Fall of Moondust published",
-      "confirmed": false
+      "text": "Great Basses wreck found with Mike Wilson"
     },
     {
-      "month": "1961-04",
-      "text": "Indian Ocean Adventure published",
-      "confirmed": false
+      "month": "1961-05",
+      "text": "“Death and the Senator” in Analog"
+    },
+    {
+      "month": "1961-06",
+      "text": "“Before Eden” in Amazing Stories"
     },
     {
       "month": "1961-08",
@@ -251,112 +650,156 @@
       "confirmed": false
     },
     {
-      "month": "1962-03",
+      "month": "1961-09",
+      "text": "A Fall of Moondust published"
+    },
+    {
+      "month": "1961-10",
+      "text": "Indian Ocean Adventure published"
+    },
+    {
+      "month": "1961-11",
+      "text": "“Hate” in If"
+    },
+    {
+      "month": "1961-12",
+      "text": "Gives the Smithsonian a cluster of wreck silver"
+    },
+    {
+      "month": "1962-02",
+      "text": "Plans a wreck dive before falling paralysed"
+    },
+    {
+      "month": "1962-04",
+      "text": "“Dog Star” in Galaxy"
+    },
+    {
+      "month": "1962-06",
       "text": "Profiles of the Future published",
       "confirmed": false
     },
     {
-      "month": "1962-04",
-      "text": "Tales of Ten Worlds published",
-      "confirmed": false
-    },
-    {
-      "month": "1962-08",
-      "text": "Paralysed; later diagnosed as polio",
-      "confirmed": false
+      "month": "1962-09",
+      "text": "Tales of Ten Worlds published"
     },
     {
       "month": "1963-03",
-      "text": "Dolphin Island published",
-      "confirmed": false
+      "text": "Dolphin Island published"
     },
     {
-      "month": "1963-04",
-      "text": "Glide Path published",
-      "confirmed": false
-    },
-    {
-      "month": "1963-08",
+      "month": "1963-07",
       "text": "Stuart Ballantine Medal",
       "confirmed": false
     },
     {
-      "month": "1964-02",
-      "text": "Meets Stanley Kubrick in New York",
-      "confirmed": false
+      "month": "1963-08",
+      "text": "“The Secret” in This Week"
+    },
+    {
+      "month": "1963-09",
+      "text": "Glide Path published"
     },
     {
       "month": "1964-03",
-      "text": "Divorce from Marilyn finalised",
-      "confirmed": false
+      "text": "The Treasure of the Great Reef published"
     },
     {
       "month": "1964-04",
-      "text": "Man and Space published",
-      "confirmed": false
+      "text": "Meets Stanley Kubrick in New York"
     },
     {
-      "month": "1964-06",
+      "month": "1964-05",
+      "text": "“The Food of the Gods” in Playboy"
+    },
+    {
+      "month": "1964-08",
       "text": "Indian Ocean Treasure published",
       "confirmed": false
     },
     {
-      "month": "1964-09",
-      "text": "The Treasure of the Great Reef published",
-      "confirmed": false
+      "month": "1965-02",
+      "text": "Kubrick announces “Journey Beyond The Stars”"
     },
     {
-      "month": "1965-01",
-      "text": "Voices from the Sky published",
-      "confirmed": false
+      "month": "1965-04",
+      "text": "Film gets its title: 2001: A Space Odyssey"
     },
     {
-      "month": "1967-01",
-      "text": "The Nine Billion Names of God published",
-      "confirmed": false
+      "month": "1965-09",
+      "text": "Voices from the Sky published"
     },
     {
-      "month": "1968-03",
-      "text": "2001: A Space Odyssey (novel) published",
-      "confirmed": false
+      "month": "1965-12",
+      "text": "2001 shooting begins at Shepperton"
+    },
+    {
+      "month": "1966-05",
+      "text": "Time Probe anthology published"
+    },
+    {
+      "month": "1966-10",
+      "text": "“A Recursion in Metastories” in Galaxy"
+    },
+    {
+      "month": "1967-05",
+      "text": "The Nine Billion Names of God published"
     },
     {
       "month": "1968-04",
       "text": "2001 film released"
     },
     {
-      "month": "1968-08",
-      "text": "The Promise of Space published",
-      "confirmed": false
+      "month": "1968-06",
+      "text": "2001: A Space Odyssey (novel) published"
     },
     {
-      "month": "1969-01",
-      "text": "Oscar nomination with Kubrick for 2001",
-      "confirmed": false
+      "month": "1968-07",
+      "text": "In the news: Time on “Latter-Day Jules Verne”"
+    },
+    {
+      "month": "1969-02",
+      "text": "Oscar nomination with Kubrick for 2001"
+    },
+    {
+      "month": "1969-04",
+      "text": "Loses the screenplay Oscar to The Producers"
     },
     {
       "month": "1969-07",
       "text": "Narrates Apollo 11 for CBS"
     },
     {
-      "month": "1971-01",
+      "month": "1969-08",
+      "text": "In the news: New Yorker profile of Clarke"
+    },
+    {
+      "month": "1970-01",
+      "text": "Gore Vidal visits him in Ceylon"
+    },
+    {
+      "month": "1970-05",
+      "text": "“Neutron Tide” in Galaxy"
+    },
+    {
+      "month": "1971-09",
       "text": "Into Space published",
       "confirmed": false
     },
     {
-      "month": "1972-02",
-      "text": "Of Time and Stars published",
-      "confirmed": false
+      "month": "1971-12",
+      "text": "“A Meeting with Medusa” in Playboy"
     },
     {
-      "month": "1972-03",
-      "text": "The Wind from the Sun published",
-      "confirmed": false
+      "month": "1972-01",
+      "text": "Playboy dialogue with Alan Watts"
     },
     {
       "month": "1972-04",
-      "text": "Beyond Jupiter published",
-      "confirmed": false
+      "text": "The Wind from the Sun published"
+    },
+    {
+      "month": "1972-05",
+      "text": "“When the Twerms Came” in Playboy"
     },
     {
       "month": "1972-06",
@@ -364,34 +807,41 @@
       "confirmed": false
     },
     {
+      "month": "1972-08",
+      "text": "Of Time and Stars published"
+    },
+    {
       "month": "1972-09",
       "text": "The Lost Worlds of 2001 published",
       "confirmed": false
     },
     {
-      "month": "1973-03",
-      "text": "Rendezvous with Rama published",
-      "confirmed": false
+      "month": "1973-04",
+      "text": "Nebula for “A Meeting with Medusa”"
     },
     {
-      "month": "1973-04",
-      "text": "Nebulas for Rama and “A Meeting with Medusa”",
-      "confirmed": false
+      "month": "1973-06",
+      "text": "Rendezvous with Rama published"
     },
     {
       "month": "1973-08",
-      "text": "The Best of Arthur C. Clarke 1937–1971 published",
-      "confirmed": false
+      "text": "In the news: NYT review of Rama"
     },
     {
-      "month": "1974-01",
-      "text": "Hugo for Rendezvous with Rama",
-      "confirmed": false
+      "month": "1973-09",
+      "text": "Rendezvous with Rama published in the US"
     },
     {
-      "month": "1975-04",
-      "text": "Imperial Earth published",
-      "confirmed": false
+      "month": "1973-10",
+      "text": "The Best of Arthur C. Clarke published"
+    },
+    {
+      "month": "1974-04",
+      "text": "Nebula for Rendezvous with Rama"
+    },
+    {
+      "month": "1974-09",
+      "text": "Hugo for Rendezvous with Rama"
     },
     {
       "month": "1975-07",
@@ -399,13 +849,12 @@
       "confirmed": false
     },
     {
-      "month": "1976-01",
-      "text": "The Best of Arthur C. Clarke 1937–1955 published",
-      "confirmed": false
+      "month": "1975-09",
+      "text": "Imperial Earth published"
     },
     {
-      "month": "1977-03",
-      "text": "The View from Serendip published",
+      "month": "1976-01",
+      "text": "The Best of Arthur C. Clarke 1937–1955 published",
       "confirmed": false
     },
     {
@@ -418,29 +867,32 @@
       "confirmed": false
     },
     {
-      "month": "1979-04",
-      "text": "The Fountains of Paradise published",
-      "confirmed": false
+      "month": "1977-10",
+      "text": "The View from Serendip published"
+    },
+    {
+      "month": "1979-01",
+      "text": "The Fountains of Paradise published"
     },
     {
       "month": "1979-07",
-      "text": "Nebula for The Fountains of Paradise",
-      "confirmed": false
+      "text": "Writes Time essay “The Best Is Yet to Come”"
+    },
+    {
+      "month": "1979-09",
+      "text": "Gives a space elevator address in Munich"
     },
     {
       "month": "1980-04",
-      "text": "Hugo for The Fountains of Paradise",
-      "confirmed": false
+      "text": "Nebula for The Fountains of Paradise"
     },
     {
-      "month": "1980-07",
-      "text": "Mysterious World broadcast",
-      "confirmed": false
+      "month": "1980-08",
+      "text": "Hugo for The Fountains of Paradise"
     },
     {
-      "month": "1982-04",
-      "text": "2010: Odyssey Two published",
-      "confirmed": false
+      "month": "1980-09",
+      "text": "Mysterious World begins on ITV"
     },
     {
       "month": "1982-07",
@@ -448,73 +900,60 @@
       "confirmed": false
     },
     {
-      "month": "1983-01",
-      "text": "The Sentinel published",
-      "confirmed": false
+      "month": "1982-12",
+      "text": "2010: Odyssey Two published"
     },
     {
-      "month": "1984-02",
-      "text": "2010 film released",
-      "confirmed": false
-    },
-    {
-      "month": "1984-03",
-      "text": "The Odyssey File published",
-      "confirmed": false
+      "month": "1983-11",
+      "text": "The Sentinel published"
     },
     {
       "month": "1984-04",
-      "text": "Ascent to Orbit published",
-      "confirmed": false
+      "text": "In the news: Soviet censors lost in space"
     },
     {
-      "month": "1984-06",
-      "text": "Testifies to Congress against SDI",
-      "confirmed": false
+      "month": "1984-07",
+      "text": "1984, Spring published"
     },
     {
       "month": "1984-09",
-      "text": "1984, Spring published",
-      "confirmed": false
+      "text": "Video on SDI and Mars shown to the Senate"
+    },
+    {
+      "month": "1984-12",
+      "text": "2010 film released"
     },
     {
       "month": "1985-04",
-      "text": "Named an SFWA Grand Master",
-      "confirmed": false
-    },
-    {
-      "month": "1985-07",
-      "text": "World of Strange Powers broadcast",
-      "confirmed": false
-    },
-    {
-      "month": "1986-02",
-      "text": "The Songs of Distant Earth published",
-      "confirmed": false
+      "text": "World of Strange Powers begins on ITV"
     },
     {
       "month": "1986-04",
-      "text": "20 July 2019 published",
-      "confirmed": false
+      "text": "Damon Knight Memorial Grand Master Award"
+    },
+    {
+      "month": "1986-05",
+      "text": "In the news: Songs of Distant Earth on NYT list"
     },
     {
       "month": "1986-07",
       "text": "Playboy interview"
     },
     {
-      "month": "1986-08",
-      "text": "Damon Knight Memorial Grand Master Award",
-      "confirmed": false
+      "month": "1986-09",
+      "text": "“The Steam Powered Word Processor” in Analog"
     },
     {
-      "month": "1987-01",
-      "text": "2061: Odyssey Three published",
-      "confirmed": false
+      "month": "1986-11",
+      "text": "Delivers the Nehru Memorial Address"
     },
     {
-      "month": "1988-04",
-      "text": "Cradle published",
-      "confirmed": false
+      "month": "1987-12",
+      "text": "2061: Odyssey Three published"
+    },
+    {
+      "month": "1988-06",
+      "text": "Cradle published"
     },
     {
       "month": "1988-07",
@@ -522,19 +961,12 @@
       "confirmed": false
     },
     {
-      "month": "1989-02",
-      "text": "Rama II published",
-      "confirmed": false
-    },
-    {
-      "month": "1989-03",
-      "text": "Astounding Days published",
-      "confirmed": false
-    },
-    {
       "month": "1989-05",
-      "text": "Made a CBE",
-      "confirmed": false
+      "text": "Astounding Days published"
+    },
+    {
+      "month": "1989-06",
+      "text": "Made a CBE"
     },
     {
       "month": "1989-08",
@@ -542,29 +974,20 @@
       "confirmed": false
     },
     {
-      "month": "1990-03",
-      "text": "Beyond the Fall of Night published",
-      "confirmed": false
+      "month": "1989-11",
+      "text": "Rama II published"
     },
     {
-      "month": "1990-04",
-      "text": "The Ghost from the Grand Banks published",
-      "confirmed": false
+      "month": "1989-12",
+      "text": "Tales from Planet Earth published"
     },
     {
-      "month": "1990-08",
-      "text": "Tales from Planet Earth published",
-      "confirmed": false
+      "month": "1990-07",
+      "text": "Beyond the Fall of Night published"
     },
     {
-      "month": "1991-03",
-      "text": "The Garden of Rama published",
-      "confirmed": false
-    },
-    {
-      "month": "1991-04",
-      "text": "More Than One Universe published",
-      "confirmed": false
+      "month": "1990-10",
+      "text": "The Ghost from the Grand Banks published"
     },
     {
       "month": "1991-08",
@@ -572,39 +995,48 @@
       "confirmed": false
     },
     {
-      "month": "1992-04",
-      "text": "How the World Was One published",
-      "confirmed": false
+      "month": "1991-09",
+      "text": "The Garden of Rama published"
     },
     {
-      "month": "1992-07",
-      "text": "Authorised biography by Neil McAleer",
-      "confirmed": false
+      "month": "1992-06",
+      "text": "How the World Was One published"
     },
     {
-      "month": "1993-03",
-      "text": "The Hammer of God published",
-      "confirmed": false
+      "month": "1992-11",
+      "text": "Authorised biography by Neil McAleer"
     },
     {
-      "month": "1993-04",
-      "text": "Rama Revealed published",
-      "confirmed": false
+      "month": "1993-06",
+      "text": "The Hammer of God published"
     },
     {
-      "month": "1993-08",
-      "text": "By Space Possessed published",
-      "confirmed": false
+      "month": "1993-07",
+      "text": "By Space Possessed published"
     },
     {
-      "month": "1994-01",
-      "text": "The Snows of Olympus published",
-      "confirmed": false
+      "month": "1993-10",
+      "text": "Rama Revealed published"
     },
     {
-      "month": "1996-04",
-      "text": "Richter 10 published",
-      "confirmed": false
+      "month": "1994-07",
+      "text": "Mysterious Universe begins on Discovery"
+    },
+    {
+      "month": "1994-10",
+      "text": "Appears in CBS’s “Without Warning”"
+    },
+    {
+      "month": "1994-11",
+      "text": "The Snows of Olympus published"
+    },
+    {
+      "month": "1996-03",
+      "text": "Richter 10 published"
+    },
+    {
+      "month": "1996-05",
+      "text": "Asteroid 4923 Clarke named for him"
     },
     {
       "month": "1996-07",
@@ -612,62 +1044,157 @@
       "confirmed": false
     },
     {
-      "month": "1997-01",
-      "text": "3001: The Final Odyssey published",
-      "confirmed": false
+      "month": "1996-11",
+      "text": "Appears in the Rama computer game"
+    },
+    {
+      "month": "1997-03",
+      "text": "3001: The Final Odyssey published"
+    },
+    {
+      "month": "1997-10",
+      "text": "In the news: “The cosmic godfather” profile"
+    },
+    {
+      "month": "1997-12",
+      "text": "In the news: 80th birthday tribute"
     },
     {
       "month": "1998-01",
-      "text": "Knighthood announced",
-      "confirmed": false
+      "text": "Named a knight in the New Year Honours"
     },
     {
-      "month": "1999-04",
-      "text": "The Trigger published",
-      "confirmed": false
+      "month": "1998-02",
+      "text": "Denies Sunday Mirror allegations"
     },
     {
-      "month": "1999-07",
-      "text": "Greetings, Carbon-Based Bipeds! published",
-      "confirmed": false
+      "month": "1998-04",
+      "text": "Cleared by Sri Lankan police"
     },
     {
-      "month": "2000-01",
+      "month": "1998-06",
+      "text": "In the news: Illinois honours Clarke"
+    },
+    {
+      "month": "1998-11",
+      "text": "In the news: “A Cerebral Marriage” on 2001"
+    },
+    {
+      "month": "1999-08",
+      "text": "Greetings, Carbon-Based Bipeds! published"
+    },
+    {
+      "month": "1999-09",
+      "text": "In the news: Guardian profile, “Man on the moon”"
+    },
+    {
+      "month": "1999-11",
+      "text": "“Improving the Neighbourhood” in Nature"
+    },
+    {
+      "month": "1999-12",
+      "text": "The Trigger published"
+    },
+    {
+      "month": "2000-03",
       "text": "The Light of Other Days published",
       "confirmed": false
+    },
+    {
+      "month": "2000-04",
+      "text": "Eutelsat dedicates a satellite to Clarke"
     },
     {
       "month": "2000-05",
       "text": "Knighted in Colombo"
     },
     {
-      "month": "2001-01",
-      "text": "The Collected Stories published",
-      "confirmed": false
+      "month": "2000-08",
+      "text": "Records a video interview in Colombo"
     },
     {
-      "month": "2003-01",
-      "text": "Time’s Eye published",
-      "confirmed": false
+      "month": "2000-09",
+      "text": "In the news: Guardian, “The space Odysseus”"
+    },
+    {
+      "month": "2000-12",
+      "text": "In the news: The Island, “Life beyond 2001”"
+    },
+    {
+      "month": "2001-01",
+      "text": "The Collected Stories published"
+    },
+    {
+      "month": "2001-02",
+      "text": "Mourns his friend Roger Caras"
+    },
+    {
+      "month": "2001-03",
+      "text": "Presents an Oscar at the 73rd Academy Awards"
+    },
+    {
+      "month": "2001-09",
+      "text": "Web chat with Leonardo DiCaprio"
+    },
+    {
+      "month": "2001-11",
+      "text": "Appears as a 3-D hologram at Comdex"
+    },
+    {
+      "month": "2002-09",
+      "text": "In the news: Sunday Times visits Clarke’s home"
+    },
+    {
+      "month": "2003-03",
+      "text": "Time’s Eye published"
+    },
+    {
+      "month": "2003-05",
+      "text": "Rereads his Wireless World satellite article"
+    },
+    {
+      "month": "2004-02",
+      "text": "In the news: A.V. Club interview"
+    },
+    {
+      "month": "2004-05",
+      "text": "Heinlein Award announced"
+    },
+    {
+      "month": "2004-08",
+      "text": "In the news: Popular Science encounter"
     },
     {
       "month": "2004-12",
       "text": "Tsunami destroys his diving school"
     },
     {
-      "month": "2005-04",
-      "text": "Sunstorm published",
-      "confirmed": false
+      "month": "2005-02",
+      "text": "Visits tsunami-hit Hikkaduwa"
     },
     {
-      "month": "2005-07",
-      "text": "Awarded Sri Lankabhimanya",
-      "confirmed": false
+      "month": "2005-03",
+      "text": "Sunstorm published"
     },
     {
-      "month": "2007-01",
-      "text": "Firstborn published",
-      "confirmed": false
+      "month": "2005-11",
+      "text": "Awarded Sri Lankabhimanya"
+    },
+    {
+      "month": "2006-03",
+      "text": "In the news: Clarke on Sri Lanka’s clock change"
+    },
+    {
+      "month": "2007-07",
+      "text": "Video address for the Heinlein Centennial"
+    },
+    {
+      "month": "2007-09",
+      "text": "Video greeting for Cassini’s Iapetus flyby"
+    },
+    {
+      "month": "2007-10",
+      "text": "In the news: IEEE Spectrum on Sputnik at 50"
     },
     {
       "month": "2007-12",

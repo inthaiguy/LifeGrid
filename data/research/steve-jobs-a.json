@@ -1,0 +1,666 @@
+{
+ "person": "Steve Jobs",
+ "segment": {
+  "from": "1955-02",
+  "to": "1984-12"
+ },
+ "cells": [
+  {
+   "month": "1955-02",
+   "text": "Born in San Francisco",
+   "confirmed": true,
+   "source": "https://www.computerhistory.org/tdih/february/24/",
+   "kind": "event"
+  },
+  {
+   "month": "1957-01",
+   "text": "Parents adopt a sister, Patty",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1959-01",
+   "text": "Family moves to Mountain View",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1967-01",
+   "text": "Family buys the Los Altos house",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1968-07",
+   "text": "Summer job with Bill Hewlett",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1968-09",
+   "text": "Starts at Homestead High",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1971-10",
+   "text": "Blue box article sparks a business",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1972-06",
+   "text": "Graduates from Homestead High",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1972-09",
+   "text": "Starts at Reed College",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1973-05",
+   "text": "Gets a passport",
+   "confirmed": true,
+   "source": "https://book.stevejobsarchive.com",
+   "kind": "event"
+  },
+  {
+   "month": "1974-02",
+   "text": "Back in his parents’ house",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1974-03",
+   "text": "Joins Atari",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1974-06",
+   "text": "Trip to India",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1975-03",
+   "text": "Woz at first Homebrew meeting",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Homebrew_Computer_Club",
+   "kind": "event"
+  },
+  {
+   "month": "1975-07",
+   "text": "Breakout board with Woz for Atari",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1976-03",
+   "text": "Woz finishes Apple I; Jobs pitches selling",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1976-04",
+   "text": "Apple is founded",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Apple_Inc.",
+   "kind": "event"
+  },
+  {
+   "month": "1976-07",
+   "text": "Apple I goes on sale",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Apple_I",
+   "kind": "event"
+  },
+  {
+   "month": "1976-08",
+   "text": "Shows the Apple I in Atlantic City",
+   "confirmed": true,
+   "source": "https://archive.org/details/kilobaudmagazine-1982-01",
+   "kind": "event"
+  },
+  {
+   "month": "1976-09",
+   "text": "Pitches Apple at WESCON in Los Angeles",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1976-12",
+   "kind": "event"
+  },
+  {
+   "month": "1976-11",
+   "text": "Demos Apple II prototype to BYTE editor",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1977-04",
+   "kind": "event"
+  },
+  {
+   "month": "1976-12",
+   "text": "Tells BYTE: first 16K-RAM computer shipped",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1977-03",
+   "kind": "event"
+  },
+  {
+   "month": "1977-01",
+   "text": "Apple Computer, Inc. incorporated",
+   "confirmed": true,
+   "source": "https://www.computerhistory.org/tdih/january/3/",
+   "kind": "event"
+  },
+  {
+   "month": "1977-02",
+   "text": "Mike Scott hired as first Apple CEO",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Michael_Scott_(Apple)",
+   "kind": "event"
+  },
+  {
+   "month": "1977-03",
+   "text": "In the news: Kilobaud praises the Apple-1",
+   "confirmed": true,
+   "source": "https://archive.org/details/kilobaudmagazine-1977-03",
+   "kind": "news"
+  },
+  {
+   "month": "1977-04",
+   "text": "Apple II shown at West Coast Faire",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1977-05",
+   "text": "First Apple II boards ship",
+   "confirmed": true,
+   "source": "http://apple2history.org/history/ah04/",
+   "kind": "event"
+  },
+  {
+   "month": "1977-06",
+   "text": "Apple II goes on sale",
+   "confirmed": true,
+   "source": "https://www.computerhistory.org/tdih/june/10/",
+   "kind": "event"
+  },
+  {
+   "month": "1977-10",
+   "text": "Chrisann Brennan is pregnant",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Chrisann_Brennan",
+   "kind": "event"
+  },
+  {
+   "month": "1978-01",
+   "text": "In the news: BYTE corrects an Apple II listing",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1978-01",
+   "kind": "news"
+  },
+  {
+   "month": "1978-03",
+   "text": "In the news: Jobs on TVs for the Apple II",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1978-03",
+   "kind": "news"
+  },
+  {
+   "month": "1978-05",
+   "text": "Daughter Lisa is born",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Lisa_Brennan-Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1978-06",
+   "text": "In the news: Jobs spotted at Heath’s booth",
+   "confirmed": true,
+   "source": "https://archive.org/details/kilobaudmagazine-1978-06",
+   "kind": "news"
+  },
+  {
+   "month": "1979-04",
+   "text": "In the news: Apple is Shugart’s top customer",
+   "confirmed": true,
+   "source": "https://archive.org/details/creativecomputing-1979-04",
+   "kind": "news"
+  },
+  {
+   "month": "1979-12",
+   "text": "Visits Xerox PARC",
+   "confirmed": true,
+   "source": "https://www.computerhistory.org/revolution/story/348",
+   "kind": "event"
+  },
+  {
+   "month": "1980-05",
+   "text": "Apple III announced",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Apple_III",
+   "kind": "event"
+  },
+  {
+   "month": "1980-07",
+   "text": "In the news: Jobs pitches the Apple III",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1980-07",
+   "kind": "news"
+  },
+  {
+   "month": "1980-08",
+   "text": "In the news: Jobs on the Apple III’s launch",
+   "confirmed": true,
+   "source": "https://archive.org/details/PersonalComputing198008",
+   "kind": "news"
+  },
+  {
+   "month": "1980-09",
+   "text": "Pushed off the Lisa project",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/History_of_Apple_Inc.",
+   "kind": "event"
+  },
+  {
+   "month": "1980-11",
+   "text": "In the news: COMPUTE! timeline credits Jobs",
+   "confirmed": true,
+   "source": "https://archive.org/details/1980-11-compute-magazine",
+   "kind": "news"
+  },
+  {
+   "month": "1980-12",
+   "text": "Apple goes public",
+   "confirmed": true,
+   "source": "https://www.computerhistory.org/tdih/december/12/",
+   "kind": "event"
+  },
+  {
+   "month": "1981-01",
+   "text": "Gets involved in the Macintosh project",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/macworld/pdf/MacWorld_8404_April_1984_premier.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1981-02",
+   "text": "In the news: Apple IPO makes Jobs rich",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1981-02",
+   "kind": "news"
+  },
+  {
+   "month": "1981-03",
+   "text": "Becomes chairman of Apple",
+   "confirmed": true,
+   "source": "https://tech-insider.org/personal-computers/research/1981/0323.html",
+   "kind": "event"
+  },
+  {
+   "month": "1981-06",
+   "text": "Tells Bill Gates about the Macintosh",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/macworld/pdf/MacWorld_8404_April_1984_premier.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1981-08",
+   "text": "In the news: Jobs backs the Apple III",
+   "confirmed": true,
+   "source": "https://archive.org/details/kilobaudmagazine-1981-08",
+   "kind": "news"
+  },
+  {
+   "month": "1981-09",
+   "text": "In the news: Jobs calls Hayes about Micromodem",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/softalk/pdf/SOFTALK_8109_v2_n01.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1981-10",
+   "text": "Speaks at schools conference in San Jose",
+   "confirmed": true,
+   "source": "https://archive.org/details/1982-01-compute-magazine",
+   "kind": "event"
+  },
+  {
+   "month": "1982-01",
+   "text": "Buys the San Remo apartment",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "kind": "event"
+  },
+  {
+   "month": "1982-02",
+   "text": "Time cover story: ‘The Seeds of Success’",
+   "confirmed": true,
+   "source": "https://time.com/3462424/the-seeds-of-success/",
+   "kind": "event"
+  },
+  {
+   "month": "1982-04",
+   "text": "In the news: Jobs’s condor and bicycle analogy",
+   "confirmed": true,
+   "source": "https://archive.org/details/PersonalComputing198204",
+   "kind": "news"
+  },
+  {
+   "month": "1982-05",
+   "text": "Keynotes AppleFest ’82 in Boston",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/softalk/pdf/SOFTALK_8204_v2_n08.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1982-06",
+   "text": "Speaks to young achievers in New Orleans",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/softalk/pdf/SOFTALK_8208_v2_n12.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1982-07",
+   "text": "In the news: Jobs’s ‘bicycle of information’",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1982-07",
+   "kind": "news"
+  },
+  {
+   "month": "1982-08",
+   "text": "In the news: Jobs’s computers-for-schools bill",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1982-08",
+   "kind": "news"
+  },
+  {
+   "month": "1982-09",
+   "text": "In the news: his Kids Can’t Wait school bill",
+   "confirmed": true,
+   "source": "https://archive.org/details/PersonalComputing198209",
+   "kind": "news"
+  },
+  {
+   "month": "1982-10",
+   "text": "In the news: his ‘S-100 is dead’ remark",
+   "confirmed": true,
+   "source": "https://archive.org/details/PersonalComputing198210",
+   "kind": "news"
+  },
+  {
+   "month": "1982-11",
+   "text": "In the news: BYTE on MOS chips sold to Jobs",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1982-11",
+   "kind": "news"
+  },
+  {
+   "month": "1983-01",
+   "text": "Apple introduces the Lisa",
+   "confirmed": true,
+   "source": "https://www.computerhistory.org/tdih/january/19/",
+   "kind": "event"
+  },
+  {
+   "month": "1983-02",
+   "text": "In the news: Softalk says Jobs backs Mac",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/softalk/pdf/SOFTALK_8302_v3_n06.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1983-03",
+   "text": "In the news: Jobs at the shareholder meeting",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/softalk/pdf/SOFTALK_8303_v3_n07.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1983-04",
+   "text": "Sculley named Apple president and CEO",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/John_Sculley",
+   "kind": "event"
+  },
+  {
+   "month": "1983-05",
+   "text": "In the news: Jobs’s California schools plan",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1983-05",
+   "kind": "news"
+  },
+  {
+   "month": "1983-06",
+   "text": "Speaks at the Aspen design conference",
+   "confirmed": true,
+   "source": "https://stevejobsarchive.com/stories/objects-of-our-life",
+   "kind": "event"
+  },
+  {
+   "month": "1983-07",
+   "text": "In the news: Apple IIe’s origins recalled",
+   "confirmed": true,
+   "source": "https://archive.org/details/creativecomputing-1983-07",
+   "kind": "news"
+  },
+  {
+   "month": "1983-08",
+   "text": "In the news: ‘Apple Cart’ column on the Apple II",
+   "confirmed": true,
+   "source": "https://archive.org/details/creativecomputing-1983-08",
+   "kind": "news"
+  },
+  {
+   "month": "1983-09",
+   "text": "In the news: PC World on Jobs and PARC ideas",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/pcworld/pdf/PC_World_8309_September_1983.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1983-10",
+   "text": "Shows Mac and ‘1984’ ad to sales force",
+   "confirmed": true,
+   "source": "https://book.stevejobsarchive.com",
+   "kind": "event"
+  },
+  {
+   "month": "1983-11",
+   "text": "In the news: PC World interview cites Jobs",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/pcworld/pdf/PC_World_8311_November_1983.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1983-12",
+   "text": "Board dislikes the ‘1984’ ad",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/1984_(advertisement)",
+   "kind": "event"
+  },
+  {
+   "month": "1984-01",
+   "text": "Introduces the Macintosh",
+   "confirmed": true,
+   "source": "https://www.computerhistory.org/tdih/january/24/",
+   "kind": "event"
+  },
+  {
+   "month": "1984-02",
+   "text": "In the news: BYTE’s Macintosh team interview",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1984-02",
+   "kind": "news"
+  },
+  {
+   "month": "1984-03",
+   "text": "In the news: Jobs on IBM and the Mac",
+   "confirmed": true,
+   "source": "https://archive.org/details/PersonalComputing198403",
+   "kind": "news"
+  },
+  {
+   "month": "1984-04",
+   "text": "Joins Sculley and Woz at ‘Apple II Forever’",
+   "confirmed": true,
+   "source": "https://www.vintageapple.org/softalk/pdf/SOFTALK_8406_v4_n10.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1984-05",
+   "text": "Interviewed by Michael Moritz",
+   "confirmed": true,
+   "source": "https://book.stevejobsarchive.com",
+   "kind": "event"
+  },
+  {
+   "month": "1984-06",
+   "text": "In the news: Apple University Consortium",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1984-06",
+   "kind": "news"
+  },
+  {
+   "month": "1984-07",
+   "text": "In the news: Jobs on the new Apple IIc",
+   "confirmed": true,
+   "source": "https://archive.org/details/1984-07-compute-magazine",
+   "kind": "news"
+  },
+  {
+   "month": "1984-08",
+   "text": "In the news: Jobs tours Japan’s factories",
+   "confirmed": true,
+   "source": "https://archive.org/details/creativecomputing-1984-08",
+   "kind": "news"
+  },
+  {
+   "month": "1984-09",
+   "text": "Mac 512K ‘Fat Mac’ ships",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Macintosh_512K",
+   "kind": "event"
+  },
+  {
+   "month": "1984-10",
+   "text": "In the news: Jobs wants a Dynabook",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1984-10",
+   "kind": "news"
+  },
+  {
+   "month": "1984-11",
+   "text": "In the news: Creative Computing’s Apple story",
+   "confirmed": true,
+   "source": "https://archive.org/details/creativecomputing-1984-11",
+   "kind": "news"
+  },
+  {
+   "month": "1984-12",
+   "text": "In the news: BYTE’s ‘The Apple Story’",
+   "confirmed": true,
+   "source": "https://archive.org/details/byte-magazine-1984-12",
+   "kind": "news"
+  }
+ ],
+ "removed": [
+  {
+   "month": "1968-01",
+   "text": "Summer job with Bill Hewlett",
+   "reason": "Placeholder month (January) cannot be right for a summer job; re-dated to 1968-07 (Wikipedia: summer 1968 at age 13), still unconfirmed."
+  },
+  {
+   "month": "1974-01",
+   "text": "Joins Atari",
+   "reason": "Placeholder month; Wikipedia says Jobs returned to Los Altos in Feb 1974 and was hired by Atari soon after, so re-dated to 1974-03 (unconfirmed)."
+  }
+ ],
+ "homes": [
+  {
+   "from": "1955-02",
+   "place": "San Francisco, California",
+   "source": "https://www.computerhistory.org/tdih/february/24/",
+   "note": "unchanged; born in San Francisco (Wikipedia Steve Jobs)"
+  },
+  {
+   "from": "1959-01",
+   "place": "Mountain View, California",
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "note": "unchanged; year verified (Wikipedia: Monta Loma, Mountain View by 1959; county records cited by Mountain View Voice show 286 Diablo Ave owned 1959-1967), month NOT verified"
+  },
+  {
+   "from": "1967-01",
+   "place": "Los Altos, California",
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "note": "unchanged; year verified (family bought 2066 Crist Drive in 1967, mid-7th grade), month NOT verified; one Italian news report says 1968"
+  },
+  {
+   "from": "1972-09",
+   "place": "Portland, Oregon",
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "note": "unchanged; enrolled at Reed College in September 1972"
+  },
+  {
+   "from": "1974-02",
+   "place": "Los Altos, California",
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "note": "unchanged; Wikipedia: in February 1974 Jobs returned to his parents' Los Altos home"
+  },
+  {
+   "from": "1977-01",
+   "place": "Cupertino, California",
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "note": "unchanged but month NOT verified: Wikipedia only says that in 1977 Brennan, Kottke and Jobs moved into a house near Apple's Cupertino office"
+  },
+  {
+   "from": "1983-01",
+   "place": "Los Gatos, California",
+   "source": "https://time.com/archive/6699318/the-updated-book-off-jobs",
+   "note": "NEW; Time, 3 Jan 1983 says he lives in 'Los Gates' (sic), 20 minutes from Cupertino, in a modest home with a mattress and an Apple II; 1983-01 is the earliest verified month, the real move-in was probably earlier and is unknown"
+  },
+  {
+   "from": "1984-01",
+   "place": "Woodside, California",
+   "source": "https://en.wikipedia.org/wiki/Jackling_House",
+   "note": "unchanged but month NOT verified: bought the Jackling House in 1984 and (per Wikipedia) resided there about a decade; Steve Jobs Archive book captions a 1984 Time photo shoot at his Woodside home"
+  },
+  {
+   "from": "1994-01",
+   "place": "Palo Alto, California",
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+   "note": "unchanged; outside my stretch and NOT verified: Wikipedia says only that the family lived in Palo Alto after Reed (1991) and Erin (1995) were born; could not find a move date"
+  }
+ ],
+ "stays": [
+  {
+   "from": "1974-06",
+   "to": "1974-12",
+   "place": "India",
+   "source": "https://en.wikipedia.org/wiki/Steve_Jobs"
+  }
+ ],
+ "summary": {
+  "months_in_segment": 359,
+  "confirmed": 72,
+  "to_confirm": 10,
+  "percent_confirmed": 20.1
+ },
+ "notes": "Sources: archive.org scans of BYTE, Kilobaud, Creative Computing, Personal Computing and COMPUTE! (full text searched for Jobs mentions), vintageapple.org scans (Softalk, Macworld Apr 1984, PC World), Computer History Museum 'This Day in History', Time (Feb 15 1982, Jan 3 1983), the Steve Jobs Archive (stevejobsarchive.com and book.stevejobsarchive.com), and Wikipedia. Nothing is from memory; every cell text comes from a page I opened. Thin areas: 1955-1971 (almost no month-level evidence; year-only items are marked to-confirm with placeholder months, e.g. Patty 1957, Mountain View 1959, Los Altos 1967, HP job 1968, Homestead 1968/1972) and 1973-1975 (Atari, India, Breakout have only a year or season). NYT archive pages (nytimes.com) and web.archive.org could not be fetched, tech-insider.org (NYT mirror) returned 410, folklore.org and Stanford's Macintosh site were unreachable, and Isaacson/Google Books pages show no text, so Apple events after 1980 lean on magazine scans and Wikipedia. The WebSearch budget ran out partway through, so some months may have verifiable items I did not find. Weak cells: several 'In the news' items are brief mentions (1980-11 COMPUTE! timeline, 1983-08 Apple Cart column, 1983-11 PC World interview, 1983-07 Creative Computing, 1984-11 and 1984-12) kept only for dated coverage. 1981-03 (chairman) relies on a search-result snippet of a NYT item mirrored at tech-insider.org (page itself not opened) plus Softalk Jun 1981, which confirms Jobs took Markkula's chairman seat but gives no month. 1982-05 AppleFest '82 rests on Softalk Apr 1982 (keynote planned for May) and Softalk Jul 1982 (Jobs and Woz spoke at the Boston show). 1984-04 date (24 Apr) comes from Softalk Jun 1984, which names Jobs among the speakers. 1981-01 is Burrell Smith's 'around January 1981' (Macworld Apr 1984) and matches Wikipedia's History of Apple (Jan 1981). 1975-03 is Wozniak's first Homebrew meeting (5 Mar 1975); Jobs's own attendance has no month. Sources for the Byte Shop order and the Apple I Homebrew demo conflict (April vs July 1976; Creative Computing says spring), so no cell. Existing cells: Born, Reed, back in parents' house, Apple founded, Apple II shown, Lisa born, IPO and Macintosh are confirmed; 'Joins Atari' and the Hewlett job moved off placeholder months (see removed); India stays at 1974-06 (Wikipedia: mid-1974, about seven months); San Remo purchase kept at 1982 (year only). Percent_confirmed is confirmed cells divided by the 359 months. Locations: Los Gatos is new (Time 1983); India stay months are approximate; Palo Alto 1994 and the Woodside, Cupertino and Mountain View start months are unverified; no stay was recorded for the Oregon commune (All One Farm) because no dates were found."
+}

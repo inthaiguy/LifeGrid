@@ -1,6 +1,6 @@
 {
   "schema": "life-grid/1",
-  "exportedAt": "2026-11-13T00:00:00.000Z",
+  "exportedAt": "2026-11-19T00:00:00.000Z",
   "name": "Tim",
   "birth": {
     "month": "1955-06",
@@ -21,10 +21,6 @@
       "place": "Ferndown, England"
     },
     {
-      "from": "1980-06",
-      "place": "Geneva, Switzerland"
-    },
-    {
       "from": "1980-12",
       "place": "Bournemouth, England"
     },
@@ -33,35 +29,43 @@
       "place": "Geneva, Switzerland"
     },
     {
-      "from": "1994-01",
+      "from": "1994-10",
       "place": "Boston, Massachusetts"
     }
   ],
-  "stays": [],
+  "stays": [
+    {
+      "from": "1980-06",
+      "to": "1980-12",
+      "place": "Geneva, Switzerland"
+    }
+  ],
   "cells": [
     {
       "month": "1955-06",
       "text": "Born in London"
     },
     {
-      "month": "1969-01",
-      "text": "Starts at Emanuel School",
+      "month": "1973-10",
+      "text": "Goes up to Queen's College, Oxford",
       "confirmed": false
     },
     {
-      "month": "1976-03",
+      "month": "1976-05",
       "text": "First in physics at Oxford",
       "confirmed": false
     },
     {
-      "month": "1976-04",
-      "text": "Marries Jane Northcote",
-      "confirmed": false
+      "month": "1976-06",
+      "text": "Physics first, then Plessey in Poole"
     },
     {
-      "month": "1976-08",
-      "text": "Moves to Poole to work at Plessey",
-      "confirmed": false
+      "month": "1976-07",
+      "text": "Marries Jane Northcote"
+    },
+    {
+      "month": "1976-12",
+      "text": "Promoted to engineer at Plessey"
     },
     {
       "month": "1978-01",
@@ -69,31 +73,179 @@
       "confirmed": false
     },
     {
+      "month": "1979-12",
+      "text": "Leaves D. G. Nash Ltd"
+    },
+    {
+      "month": "1980-01",
+      "text": "Goes independent as a consultant"
+    },
+    {
       "month": "1980-06",
       "text": "Contractor at CERN"
     },
     {
+      "month": "1980-10",
+      "text": "Writes the ENQUIRE manual"
+    },
+    {
       "month": "1980-12",
-      "text": "Joins Image Computer Systems",
+      "text": "Six-month CERN contract ends"
+    },
+    {
+      "month": "1981-06",
+      "text": "Ends independent consulting work"
+    },
+    {
+      "month": "1981-07",
+      "text": "Becomes a director at Image Computer Systems",
       "confirmed": false
     },
     {
-      "month": "1984-01",
-      "text": "Returns to CERN as a fellow",
+      "month": "1983-04",
+      "text": "Applies for a CERN fellowship",
       "confirmed": false
+    },
+    {
+      "month": "1984-08",
+      "text": "Leaves Image Computer Systems",
+      "confirmed": false
+    },
+    {
+      "month": "1984-09",
+      "text": "Arrives at CERN as a fellow"
+    },
+    {
+      "month": "1985-09",
+      "text": "FASTBUS software paper at CERN workshop"
+    },
+    {
+      "month": "1985-10",
+      "text": "Co-authors IEEE Nuclear Science paper"
+    },
+    {
+      "month": "1986-01",
+      "text": "Drafts an RPC development strategy"
+    },
+    {
+      "month": "1986-02",
+      "text": "Drafts notes on proposed RPC development"
+    },
+    {
+      "month": "1986-03",
+      "text": "Drafts 'Simple RPC' notes with Pastore"
+    },
+    {
+      "month": "1986-04",
+      "text": "Writes up how the RPC project will work"
+    },
+    {
+      "month": "1986-08",
+      "text": "Writes the RPC User Manual with Pastore"
+    },
+    {
+      "month": "1987-02",
+      "text": "Becomes a CERN staff member"
+    },
+    {
+      "month": "1987-03",
+      "text": "Releases RPC software version 2.0"
+    },
+    {
+      "month": "1987-05",
+      "text": "RPC paper at IEEE San Francisco conference"
+    },
+    {
+      "month": "1987-06",
+      "text": "CERN report on RPC experience"
+    },
+    {
+      "month": "1987-08",
+      "text": "CERN report on the VALET-Plus microcomputer"
+    },
+    {
+      "month": "1987-10",
+      "text": "Co-authors CERN Host Interface paper"
+    },
+    {
+      "month": "1987-11",
+      "text": "Flags an Ethernet bug in RPC 2.0"
+    },
+    {
+      "month": "1988-01",
+      "text": "Releases RPC software version 2.1"
+    },
+    {
+      "month": "1988-02",
+      "text": "Posts a 'Battleships' RPC example"
+    },
+    {
+      "month": "1988-03",
+      "text": "Co-authors Trieste host interface papers"
+    },
+    {
+      "month": "1988-04",
+      "text": "Releases RPC software for OS-9"
+    },
+    {
+      "month": "1988-05",
+      "text": "Makes RPC package numbers invisible"
+    },
+    {
+      "month": "1988-06",
+      "text": "Releases RPC software version 2.2"
+    },
+    {
+      "month": "1988-08",
+      "text": "Co-authors VALET-Plus report for CERN"
+    },
+    {
+      "month": "1988-09",
+      "text": "Paper 'CERN experience' at SIGOPS workshop"
+    },
+    {
+      "month": "1988-10",
+      "text": "Co-authors VALET-Plus paper in Zurich"
+    },
+    {
+      "month": "1988-11",
+      "text": "Previews new RPC compiler features"
+    },
+    {
+      "month": "1989-01",
+      "text": "Releases RPC software version 2.3"
+    },
+    {
+      "month": "1989-02",
+      "text": "Issues new RPC User and Internals manuals"
     },
     {
       "month": "1989-03",
       "text": "Proposes the World Wide Web"
     },
     {
-      "month": "1989-11",
-      "text": "First web client and server talk"
+      "month": "1989-04",
+      "text": "Adds one-way PRAGMA CAST calls to RPC"
     },
     {
-      "month": "1990-03",
-      "text": "Proposal accepted at CERN",
-      "confirmed": false
+      "month": "1989-05",
+      "text": "Adds close and detach routines to RPC"
+    },
+    {
+      "month": "1989-10",
+      "text": "Releases RPC 2.4, now running over TCP"
+    },
+    {
+      "month": "1989-11",
+      "text": "Posts fixes for RPC compiler bugs"
+    },
+    {
+      "month": "1989-12",
+      "text": "Co-authors DELPHI communications paper"
+    },
+    {
+      "month": "1990-05",
+      "text": "Recirculates his Web proposal at CERN"
     },
     {
       "month": "1990-07",
@@ -101,17 +253,129 @@
       "confirmed": false
     },
     {
+      "month": "1990-09",
+      "text": "Boss approves buying a NeXT computer"
+    },
+    {
+      "month": "1990-10",
+      "text": "Starts writing the first Web browser"
+    },
+    {
+      "month": "1990-11",
+      "text": "Formal Web proposal with Robert Cailliau"
+    },
+    {
       "month": "1990-12",
       "text": "Publishes the first website"
+    },
+    {
+      "month": "1991-03",
+      "text": "Line-mode browser released at CERN"
+    },
+    {
+      "month": "1991-05",
+      "text": "Web goes live on CERN’s central machines"
     },
     {
       "month": "1991-08",
       "text": "Invites the world to use the Web"
     },
     {
-      "month": "1994-01",
-      "text": "Founds the W3C at MIT",
+      "month": "1991-12",
+      "text": "Demonstrates the Web at Hypertext ’91"
+    },
+    {
+      "month": "1992-01",
+      "text": "Line-mode browser 1.1 released"
+    },
+    {
+      "month": "1993-04",
+      "text": "CERN releases the Web royalty-free"
+    },
+    {
+      "month": "1994-02",
+      "text": "Meets Dertouzos about a Web consortium"
+    },
+    {
+      "month": "1994-05",
+      "text": "Inducted into the first Web Hall of Fame"
+    },
+    {
+      "month": "1994-07",
+      "text": "MIT and CERN agree to form a Web body"
+    },
+    {
+      "month": "1994-10",
+      "text": "Founds the W3C at MIT"
+    },
+    {
+      "month": "1994-12",
+      "text": "First W3C members’ meeting at MIT"
+    },
+    {
+      "month": "1995-04",
+      "text": "W3C opens its European host at INRIA"
+    },
+    {
+      "month": "1995-10",
+      "text": "Speaks at MIT’s Vannevar Bush symposium"
+    },
+    {
+      "month": "1996-02",
+      "text": "Declaration in the CDA court challenge"
+    },
+    {
+      "month": "1997-02",
+      "text": "Writes “World-Wide Computer” for the ACM"
+    },
+    {
+      "month": "1997-06",
+      "text": "Appointed OBE"
+    },
+    {
+      "month": "1997-12",
+      "text": "Talks on the Web’s full potential in London"
+    },
+    {
+      "month": "1998-03",
+      "text": "Honorary doctorate from Essex"
+    },
+    {
+      "month": "1998-05",
+      "text": "Writes a one-page history of the Web"
+    },
+    {
+      "month": "1998-06",
+      "text": "Wins a MacArthur Fellowship"
+    },
+    {
+      "month": "1998-09",
+      "text": "Publishes the Semantic Web roadmap"
+    },
+    {
+      "month": "1999-03",
+      "text": "Named in Time’s 100 People of the Century"
+    },
+    {
+      "month": "1999-04",
+      "text": "Talks on the Web’s future at MIT LCS"
+    },
+    {
+      "month": "1999-07",
+      "text": "Writes tribute to supervisor Mike Sendall"
+    },
+    {
+      "month": "1999-10",
+      "text": "Publishes “Weaving the Web”",
       "confirmed": false
+    },
+    {
+      "month": "2000-03",
+      "text": "Honorary degree from the Open University"
+    },
+    {
+      "month": "2000-12",
+      "text": "Semantic Web talk at XML 2000"
     },
     {
       "month": "2001-01",
@@ -119,22 +383,120 @@
       "confirmed": false
     },
     {
-      "month": "2004-01",
-      "text": "Takes a chair at Southampton",
-      "confirmed": false
+      "month": "2001-05",
+      "text": "Semantic Web on Scientific American’s cover"
+    },
+    {
+      "month": "2001-08",
+      "text": "Writes tribute to Michael Dertouzos"
+    },
+    {
+      "month": "2001-12",
+      "text": "Wins the 2002 Japan Prize"
+    },
+    {
+      "month": "2002-04",
+      "text": "Receives the Japan Prize"
+    },
+    {
+      "month": "2002-05",
+      "text": "Wins the Prince of Asturias Award"
+    },
+    {
+      "month": "2003-10",
+      "text": "Urges review of the ’906 Web patent"
+    },
+    {
+      "month": "2003-12",
+      "text": "Knighthood announced in New Year Honours"
+    },
+    {
+      "month": "2004-02",
+      "text": "W3C issues RDF and OWL standards"
+    },
+    {
+      "month": "2004-04",
+      "text": "Wins the first Millennium Technology Prize"
+    },
+    {
+      "month": "2004-06",
+      "text": "Receives the Millennium Prize in Helsinki"
     },
     {
       "month": "2004-07",
       "text": "Knighted"
     },
     {
+      "month": "2004-12",
+      "text": "Takes a chair at Southampton"
+    },
+    {
+      "month": "2005-01",
+      "text": "Named Greatest Briton of 2004"
+    },
+    {
+      "month": "2006-05",
+      "text": "Wins the BCS Lovelace Medal"
+    },
+    {
+      "month": "2006-07",
+      "text": "Sets out the rules of Linked Data"
+    },
+    {
+      "month": "2006-11",
+      "text": "Launches the Web Science Research Initiative"
+    },
+    {
+      "month": "2007-01",
+      "text": "Wins the Draper Prize"
+    },
+    {
+      "month": "2007-02",
+      "text": "Keynote on the Mobile Web at 3GSM"
+    },
+    {
+      "month": "2007-03",
+      "text": "Testifies to US Congress on the Web"
+    },
+    {
       "month": "2007-06",
       "text": "Order of Merit"
     },
     {
-      "month": "2009-01",
-      "text": "National Academy of Sciences associate",
-      "confirmed": false
+      "month": "2007-10",
+      "text": "Ranked joint first of 100 living geniuses"
+    },
+    {
+      "month": "2008-03",
+      "text": "In the news: ISP tracking and Phorm"
+    },
+    {
+      "month": "2008-12",
+      "text": "Honorary degree from Manchester"
+    },
+    {
+      "month": "2009-02",
+      "text": "TED talk “The Next Web”"
+    },
+    {
+      "month": "2009-03",
+      "text": "Writes “No Snooping” against ISP spying"
+    },
+    {
+      "month": "2009-04",
+      "text": "Joins the US National Academy of Sciences"
+    },
+    {
+      "month": "2009-06",
+      "text": "Gordon Brown enlists him on open data"
+    },
+    {
+      "month": "2009-08",
+      "text": "Proposes socially aware cloud storage"
+    },
+    {
+      "month": "2009-10",
+      "text": "In the news: sorry for the slashes"
     },
     {
       "month": "2009-11",
@@ -142,8 +504,23 @@
     },
     {
       "month": "2010-01",
-      "text": "Helps create data.gov.uk",
-      "confirmed": false
+      "text": "Helps create data.gov.uk"
+    },
+    {
+      "month": "2010-02",
+      "text": "TED talk on open data going worldwide"
+    },
+    {
+      "month": "2010-04",
+      "text": "In the news: Ordnance Survey opens its data"
+    },
+    {
+      "month": "2010-09",
+      "text": "Wins UNESCO’s Niels Bohr Medal"
+    },
+    {
+      "month": "2010-12",
+      "text": "Writes “Long Live the Web” for Sci Am"
     },
     {
       "month": "2011-01",
@@ -151,50 +528,240 @@
       "confirmed": false
     },
     {
-      "month": "2012-01",
-      "text": "Co-founds the Open Data Institute",
-      "confirmed": false
+      "month": "2011-03",
+      "text": "Gorbachev honours him as a world changer"
+    },
+    {
+      "month": "2011-05",
+      "text": "Honorary degree from Harvard"
+    },
+    {
+      "month": "2011-09",
+      "text": "Joins the Ford Foundation board"
+    },
+    {
+      "month": "2012-04",
+      "text": "Joins the Internet Hall of Fame"
+    },
+    {
+      "month": "2012-05",
+      "text": "Open Data Institute gets £10m backing"
     },
     {
       "month": "2012-07",
       "text": "Olympics opening ceremony in London"
     },
     {
-      "month": "2013-01",
-      "text": "Queen Elizabeth Prize for Engineering",
-      "confirmed": false
+      "month": "2012-09",
+      "text": "In the news: Lunch with the FT"
+    },
+    {
+      "month": "2012-12",
+      "text": "Sultan Qaboos Order from Oman"
+    },
+    {
+      "month": "2013-03",
+      "text": "Queen Elizabeth Prize for Engineering"
+    },
+    {
+      "month": "2013-06",
+      "text": "Receives the engineering prize from the Queen"
+    },
+    {
+      "month": "2013-09",
+      "text": "Honorary degree from St Andrews"
+    },
+    {
+      "month": "2013-10",
+      "text": "Backs the Alliance for Affordable Internet"
+    },
+    {
+      "month": "2014-03",
+      "text": "TED talk: a Magna Carta for the Web"
+    },
+    {
+      "month": "2014-05",
+      "text": "Honorary degree from Yale"
     },
     {
       "month": "2014-06",
       "text": "Marries Rosemary Leith"
     },
     {
+      "month": "2014-08",
+      "text": "In the news: Wired on the Web at 25"
+    },
+    {
+      "month": "2014-09",
+      "text": "Honorary Freedom of the City of London"
+    },
+    {
+      "month": "2014-10",
+      "text": "Pride of Britain special award"
+    },
+    {
+      "month": "2014-12",
+      "text": "Shares the Mohammed bin Rashid Knowledge Award"
+    },
+    {
+      "month": "2015-04",
+      "text": "Wins the Gottlieb Duttweiler Prize"
+    },
+    {
+      "month": "2015-09",
+      "text": "Estonia’s Order of the Cross of Terra Mariana"
+    },
+    {
+      "month": "2016-02",
+      "text": "Wins the Charleston-EFG Keynes Prize"
+    },
+    {
+      "month": "2016-06",
+      "text": "In the news: NYT on reinventing the Web"
+    },
+    {
       "month": "2016-10",
       "text": "Joins Oxford and Christ Church"
+    },
+    {
+      "month": "2016-12",
+      "text": "In the news: putting data back with owners"
+    },
+    {
+      "month": "2017-03",
+      "text": "In the news: DRM in Web video standard"
     },
     {
       "month": "2017-04",
       "text": "Receives the Turing Award"
     },
     {
+      "month": "2017-07",
+      "text": "Approves the EME video DRM specification"
+    },
+    {
+      "month": "2017-09",
+      "text": "Web video DRM becomes a W3C standard"
+    },
+    {
+      "month": "2017-10",
+      "text": "Essay: blockchains too slow, costly, public"
+    },
+    {
+      "month": "2017-12",
+      "text": "Urges action to save net neutrality"
+    },
+    {
+      "month": "2018-03",
+      "text": "Open letter: the Web is under threat"
+    },
+    {
+      "month": "2018-07",
+      "text": "In the news: “I was devastated” interview"
+    },
+    {
       "month": "2018-09",
       "text": "Announces Inrupt and Solid"
+    },
+    {
+      "month": "2018-11",
+      "text": "Unveils the Contract for the Web in Lisbon"
+    },
+    {
+      "month": "2019-01",
+      "text": "In the news: The Times on MeWe"
+    },
+    {
+      "month": "2019-03",
+      "text": "The Web turns 30"
     },
     {
       "month": "2019-11",
       "text": "Launches the Contract for the Web"
     },
     {
+      "month": "2020-02",
+      "text": "In the news: FT on reshaping the internet"
+    },
+    {
+      "month": "2020-06",
+      "text": "Guardian op-ed: internet access is a right"
+    },
+    {
+      "month": "2020-07",
+      "text": "Time essay on sharing data in COVID-19"
+    },
+    {
+      "month": "2020-12",
+      "text": "In the news: Inrupt’s personal data pods"
+    },
+    {
       "month": "2021-06",
       "text": "Sells the Web’s source code as an NFT"
     },
     {
+      "month": "2021-09",
+      "text": "Joins Proton’s advisory board"
+    },
+    {
+      "month": "2021-12",
+      "text": "In the news: Inrupt raises $30 million"
+    },
+    {
+      "month": "2022-09",
+      "text": "Wins the Seoul Peace Prize"
+    },
+    {
+      "month": "2024-02",
+      "text": "Essay: The Dysfunction of Social Networks"
+    },
+    {
+      "month": "2024-09",
+      "text": "Announces the Web Foundation will close"
+    },
+    {
+      "month": "2024-10",
+      "text": "Solid project moves to the ODI"
+    },
+    {
+      "month": "2024-12",
+      "text": "Writes “A Vision of a New World”"
+    },
+    {
+      "month": "2025-01",
+      "text": "Tests an AI assistant with a Solid pod"
+    },
+    {
+      "month": "2025-08",
+      "text": "In the news: Stephen Fry to narrate memoir"
+    },
+    {
       "month": "2025-09",
-      "text": "Memoir \"This Is for Everyone\" published"
+      "text": "Memoir “This Is for Everyone” published"
+    },
+    {
+      "month": "2025-10",
+      "text": "Memoir tour: Boston, New York, San Francisco"
     },
     {
       "month": "2025-11",
       "text": "On Desert Island Discs"
+    },
+    {
+      "month": "2026-01",
+      "text": "Memoir tour: Jaipur and Sydney Opera House"
+    },
+    {
+      "month": "2026-03",
+      "text": "Memoir tour: New Orleans Book Festival"
+    },
+    {
+      "month": "2026-05",
+      "text": "Appears at the Hay Festival"
+    },
+    {
+      "month": "2026-09",
+      "text": "Memoir out in paperback"
     }
   ]
 }

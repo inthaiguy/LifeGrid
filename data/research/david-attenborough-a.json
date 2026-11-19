@@ -1,0 +1,471 @@
+{
+ "person": "David Attenborough",
+ "segment": {
+  "from": "1926-05",
+  "to": "1966-12"
+ },
+ "cells": [
+  {
+   "month": "1926-05",
+   "text": "Born in Isleworth",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1928-01",
+   "text": "Younger brother John is born",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/John_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1932-01",
+   "text": "Family moves to Leicester",
+   "confirmed": false,
+   "source": "https://leicester.omeka.net/items/show/1257",
+   "kind": "event"
+  },
+  {
+   "month": "1936-01",
+   "text": "Hears Grey Owl lecture in Leicester",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1939-01",
+   "text": "Family takes in two Jewish refugee girls",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Frederick_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1944-01",
+   "text": "Geology course at Nottingham",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1945-01",
+   "text": "Scholarship to Clare College, Cambridge",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1947-01",
+   "text": "Called up for National Service",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1950-04",
+   "text": "Marries Jane Oriel",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1950-07",
+   "text": "BBC turns him down as a radio producer",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1952-01",
+   "text": "Joins the BBC full-time",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1953-07",
+   "text": "Animal Patterns, his first nature series",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1953-07-09_50_1271",
+   "kind": "event"
+  },
+  {
+   "month": "1953-10",
+   "text": "Produces Animal, Vegetable, Mineral?",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1953-10-22_50_1286",
+   "kind": "event"
+  },
+  {
+   "month": "1954-09",
+   "text": "Leaves for Sierra Leone on first Zoo Quest",
+   "confirmed": true,
+   "source": "https://www.discoverwildlife.com/david-attenborough/david-attenborough-zoo-quest",
+   "kind": "event"
+  },
+  {
+   "month": "1954-12",
+   "text": "Zoo Quest is first broadcast",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Zoo_Quest",
+   "kind": "event"
+  },
+  {
+   "month": "1955-01",
+   "text": "First Zoo Quest ends with the rare Picathartes",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1955-02-03_53_1353",
+   "kind": "event"
+  },
+  {
+   "month": "1955-02",
+   "text": "In the news: critic thanks the Zoo Quest team",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1955-02-03_53_1353",
+   "kind": "news"
+  },
+  {
+   "month": "1955-08",
+   "text": "Zoo Quest to West Africa shown as one film",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1955-08-25_54_1382",
+   "kind": "event"
+  },
+  {
+   "month": "1955-09",
+   "text": "Zoo Quest to Guiana begins",
+   "confirmed": true,
+   "source": "https://thetvdb.com/series/zoo-quest/allseasons/official",
+   "kind": "event"
+  },
+  {
+   "month": "1955-10",
+   "text": "Trans-Antarctic Expedition show with Fuchs",
+   "confirmed": true,
+   "source": "https://commons.wikimedia.org/wiki/File:David_Pratt,_David_Attenborough,_Dr._V._E._Fuchs_on_The_Trans-Antarctic_Expedition.jpg",
+   "kind": "event"
+  },
+  {
+   "month": "1955-12",
+   "text": "In the news: letter defending background music",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1955-12-15_54_1398",
+   "kind": "news"
+  },
+  {
+   "month": "1956-01",
+   "text": "In the news: row over background music",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1956-01-05_55_1401",
+   "kind": "news"
+  },
+  {
+   "month": "1956-03",
+   "text": "Interviews Hillary and Fuchs for the BBC",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1956-04-05_55_1410",
+   "kind": "event"
+  },
+  {
+   "month": "1956-09",
+   "text": "In the news: Zoo Quest to Guiana, the book",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1956-09-13_56_1433",
+   "kind": "news"
+  },
+  {
+   "month": "1956-10",
+   "text": "Zoo Quest for a Dragon begins",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1956-10-11_56_1437",
+   "kind": "event"
+  },
+  {
+   "month": "1956-11",
+   "text": "Komodo dragon climaxes Zoo Quest",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1956-11-15_56_1442",
+   "kind": "event"
+  },
+  {
+   "month": "1957-01",
+   "text": "Declines the new Natural History Unit job",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1957-03",
+   "text": "Phones Dr Fuchs live at Shackleton Base",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1957-04-04_57_1462",
+   "kind": "event"
+  },
+  {
+   "month": "1957-08",
+   "text": "Zoo Quest for a Dragon shown as one film",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1957-08-15_58_1481",
+   "kind": "event"
+  },
+  {
+   "month": "1957-10",
+   "text": "In the news: New Guinea birds at London Zoo",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1957-10-31_58_1492",
+   "kind": "news"
+  },
+  {
+   "month": "1957-11",
+   "text": "Quest for the Paradise Birds begins",
+   "confirmed": true,
+   "source": "https://thetvdb.com/series/zoo-quest/allseasons/official",
+   "kind": "event"
+  },
+  {
+   "month": "1957-12",
+   "text": "Paradise birds found as the series ends",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1957-12-26_58_1500",
+   "kind": "event"
+  },
+  {
+   "month": "1958-01",
+   "text": "Meets Prince Charles and Princess Anne",
+   "confirmed": true,
+   "source": "https://www.discoverwildlife.com/david-attenborough/david-attenborough-zoo-quest",
+   "kind": "event"
+  },
+  {
+   "month": "1958-03",
+   "text": "Produces and narrates Naga head-hunter film",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1958-04-03_59_1514",
+   "kind": "event"
+  },
+  {
+   "month": "1958-05",
+   "text": "Produces The Crossing of the Antarctic",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1958-05-22_59_1521",
+   "kind": "event"
+  },
+  {
+   "month": "1959-03",
+   "text": "Zoo Quest in Paraguay begins",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1959-03-26_61_1565",
+   "kind": "event"
+  },
+  {
+   "month": "1959-04",
+   "text": "Zoo Quest in Paraguay ends",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1959-04-30_61_1570",
+   "kind": "event"
+  },
+  {
+   "month": "1959-05",
+   "text": "In the news: TV naturalists sell animal books",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1959-05-28_61_1574",
+   "kind": "news"
+  },
+  {
+   "month": "1959-09",
+   "text": "In the news: critic praises his summer films",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1959-09-10_62_1589",
+   "kind": "news"
+  },
+  {
+   "month": "1960-04",
+   "text": "The People of Paradise begins",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1960-04-28_63_1622",
+   "kind": "event"
+  },
+  {
+   "month": "1960-05",
+   "text": "People of Paradise ends with Royal Tonga",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_People_of_Paradise",
+   "kind": "event"
+  },
+  {
+   "month": "1960-08",
+   "text": "Edits Travellers' Tales, voices Zulu film",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1960-09-01_64_1640",
+   "kind": "event"
+  },
+  {
+   "month": "1960-10",
+   "text": "In the news: his cargo-cult photo in Listener",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1960-10-20_64_1647",
+   "kind": "news"
+  },
+  {
+   "month": "1961-01",
+   "text": "First BAFTA, a Television Special Award",
+   "confirmed": false,
+   "source": "https://www.discoverwildlife.com/people/david-attenborough-facts",
+   "kind": "event"
+  },
+  {
+   "month": "1961-02",
+   "text": "Elsa the Lioness airs",
+   "confirmed": true,
+   "source": "https://thetvdb.com/series/zoo-quest/allseasons/official",
+   "kind": "event"
+  },
+  {
+   "month": "1961-06",
+   "text": "Zoo Quest to Madagascar begins",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1961-06-08_65_1680",
+   "kind": "event"
+  },
+  {
+   "month": "1961-07",
+   "text": "His mother Mary dies in a car crash",
+   "confirmed": true,
+   "source": "https://leicester.omeka.net/items/show/1261",
+   "kind": "event"
+  },
+  {
+   "month": "1961-10",
+   "text": "His Adventure film series begins",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1961-10-12_66_1698",
+   "kind": "event"
+  },
+  {
+   "month": "1961-12",
+   "text": "In the news: building up the Adventure series",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1961-12-21_66_1708",
+   "kind": "news"
+  },
+  {
+   "month": "1963-04",
+   "text": "Quest Under Capricorn begins",
+   "confirmed": true,
+   "source": "https://thetvdb.com/series/zoo-quest/allseasons/official",
+   "kind": "event"
+  },
+  {
+   "month": "1963-05",
+   "text": "Last Zoo Quest episode is shown",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Zoo_Quest",
+   "kind": "event"
+  },
+  {
+   "month": "1965-03",
+   "text": "Controller of BBC Two",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/BBC_Two",
+   "kind": "event"
+  },
+  {
+   "month": "1965-08",
+   "text": "Zambezi, a three-part river film, airs",
+   "confirmed": true,
+   "source": "https://thetvdb.com/series/adventure/allseasons/official",
+   "kind": "event"
+  },
+  {
+   "month": "1965-09",
+   "text": "Opens BBC Two in Wales",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/BBC_Two_Wales",
+   "kind": "event"
+  },
+  {
+   "month": "1965-10",
+   "text": "Call My Bluff, which he commissioned, starts",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Call_My_Bluff",
+   "kind": "event"
+  },
+  {
+   "month": "1965-11",
+   "text": "Man Alive, which he commissioned, starts",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Man_Alive_(British_TV_series)",
+   "kind": "event"
+  },
+  {
+   "month": "1966-01",
+   "text": "Conceives Civilisation with Kenneth Clark",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Civilisation_(TV_series)",
+   "kind": "event"
+  },
+  {
+   "month": "1966-04",
+   "text": "The Money Programme starts on BBC Two",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Money_Programme",
+   "kind": "event"
+  },
+  {
+   "month": "1966-06",
+   "text": "Chronicle archaeology series starts",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Chronicle_(British_TV_programme)",
+   "kind": "event"
+  },
+  {
+   "month": "1966-07",
+   "text": "Introduces BBC Two to Scotland",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/BBC_Two_Scotland",
+   "kind": "event"
+  }
+ ],
+ "removed": [
+  {
+   "month": "1954-01",
+   "text": "Zoo Quest is first broadcast",
+   "reason": "Month wrong: first broadcast was 21 Dec 1954 (Wikipedia infobox, TheTVDB, Listener 6 Jan 1955 caption for the 28 Dec episode). Re-entered as 1954-12."
+  }
+ ],
+ "homes": [
+  {
+   "from": "1926-05",
+   "place": "Isleworth, England",
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "note": "unchanged (born Isleworth 8 May 1926; father then principal of Borough Road College, Isleworth)"
+  },
+  {
+   "from": "1932-01",
+   "place": "Leicester, England",
+   "source": "https://leicester.omeka.net/items/show/1257",
+   "note": "unchanged; University of Leicester Special Collections says College House became the family home when Frederick took up the principalship in 1932 (Wikipedia: principal 1932-1951). A Leicester Mercury cutting of Oct 1931 already shows his parents at College House, so the move may be late 1931; month unverified"
+  },
+  {
+   "from": "1945-10",
+   "place": "Cambridge, England",
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "note": "unchanged; Clare College scholarship 1945, month unverified (Michaelmas term start assumed)"
+  },
+  {
+   "from": "1952-01",
+   "place": "Richmond, Surrey, England",
+   "source": "https://en.wikipedia.org/wiki/London_Borough_of_Richmond_upon_Thames",
+   "note": "changed from 'London, England': Wikipedia (citing Richmond and Twickenham Times, 28 Mar 2014, Freedom of the Borough) says he has lived in the borough since 1952; Wikipedia's main article says he lives near Richmond Park. Richmond has been in Greater London since 1965. Year-level only, street and month unverified, and I found no later move up to Nov 2026"
+  }
+ ],
+ "stays": [],
+ "summary": {
+  "months_in_segment": 488,
+  "confirmed": 48,
+  "to_confirm": 12,
+  "percent_confirmed": 9.8
+ },
+ "living_check": "Alive as far as I can verify: the English Wikipedia article (https://en.wikipedia.org/wiki/David_Attenborough) was last edited 16 Nov 2026, still reads 'born 8 May 1926' with no death date, and his name does not appear in Wikipedia's 'Deaths in 2026' list. It records his 100th birthday on 8 May 2026 (BBC News and Guardian reports cited there). I could not open an independent news piece dated Nov 2026 (WebSearch quota was exhausted, BBC/Guardian blocked for fetching).",
+ "notes": "NOTES. (1) Tooling: WebSearch quota ran out early; BBC Genome sits behind a human-verification wall; bbc.co.uk, theguardian.com, telegraph, britannica, papers past, trove and le.ac.uk were blocked or 403 for fetching. I did not bypass those walls. A Wayback copy of one Genome page (BBC-2 Comes to Wales, 12 Sep 1965) was read once and agreed with Wikipedia, but later Genome-via-archive reads were refused by the environment, so 1965-09 and 1966-07 cite Wikipedia (which cites Genome). (2) Main month evidence: full text of The Listener (BBC) issues 1952-1961 on archive.org (about 520 weekly issues read; 10 issues missing: 1952-05-29, 1952-07-03, 1956-02-23 to 1956-03-15, 1956-08-23, 1956-12-06, 1960-02-25, 1961-02-02). Listener issues from 1962 on are lending-restricted, so 1962-1964 has no cells and 1965-66 rests on Wikipedia and TheTVDB. (3) TheTVDB episode air dates (crowd-sourced) are used for broadcast starts and ends; I cross-checked them against Listener dates for 12+ episodes (28 Dec 1954, 25 Jan 1955, 17 Aug 1955, 5 Oct and 2 Nov 1956, 1 and 15 Dec 1957, 21 Apr 1960, 2, 16 and 23 Jun 1961) and all matched. TheTVDB is the only source for Elsa the Lioness (3 Feb 1961), Zambezi (9/16/23 Aug 1965) and the 1963 Quest Under Capricorn run. (4) 'Talk of Many Things' (Jan 1957) and many other Listener 'Attenborough' hits are his brother Richard; excluded. (5) Rejected a hobby timeline site's claims: Travellers' Tales 'first shown 14 Sept 1960' (Listener shows a Travellers' Tales item in Jan 1959 and an episode on 20 Jul 1960) and Zambezi 'first episode 23 Aug 1965' (TheTVDB: 9 Aug). (6) 1965-03: Wikipedia gives 4 March 1965 citing The Times 5 Mar 1965 p6 ('Mr. David Attenborough is New B.B.C.-2 Head'); a Getty caption on Discover Wildlife also says 4 Mar 1965. (7) 1965-10, 1965-11 and 1966-04: the month is the first broadcast; that he commissioned these shows is from Wikipedia's BBC Two and David Attenborough pages (citing The Guardian). (8) Not verified, left as placeholders flagged confirmed:false with the existing file's months where it had them: Grey Owl lecture (Wikipedia says 1936; the first British tour ran Oct 1935 to early 1936), refugee girls' arrival, Nottingham course, Clare scholarship, National Service (1947 to 1949, North Wales and Firth of Forth; month and split unverified so no stay is listed), marriage 1950 (1950-04 carried over from the existing file, unverified), BBC rejection 1950 (1950-07 carried over), joining the BBC 1952 (existing 1952-01 kept; a hobby site says trainee 1952), NHU 1957, first BAFTA 'Television Special Award' 1961 (Discover Wildlife; month unknown), Civilisation conceived 1966. Not found at all: children Robert and Susan's birth months, LSE study dates (early 1960s), the months of every Zoo Quest expedition except Sierra Leone leaving in Sept 1954 (Discover Wildlife; end unknown, so no stay entry), the 1949-52 address (publishing job, marriage) and the exact Richmond move. (9) Sierra Leone 'Sept 1954' comes from the Discover Wildlife article text. (10) 1961-10: start date (5 Oct 1961) is from Listener 12 Oct 1961; that Adventure was his series is from Listener 21 Dec 1961 ('David Attenborough is building up this programme') and Wikipedia's Travel and Exploration Unit history. (11) percent_confirmed = confirmed cells / 488 months; all cells together cover about 13% of months. Weakest areas: 1927-1951 (almost nothing month-level), 1962-1964 (no cells), and any months in 1952-1961 where the Listener did not name him."
+}

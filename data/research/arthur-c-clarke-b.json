@@ -1,0 +1,1065 @@
+{
+ "person": "Arthur C. Clarke",
+ "segment": {
+  "from": "1956-01",
+  "to": "2008-03"
+ },
+ "cells": [
+  {
+   "month": "1956-01",
+   "text": "Moves to Ceylon",
+   "confirmed": true,
+   "source": "https://www.sundaytimes.lk/071216/Plus/plus0001.html",
+   "kind": "event"
+  },
+  {
+   "month": "1956-03",
+   "text": "Dives the Aeonos wreck days after it sank",
+   "confirmed": true,
+   "source": "https://www.sundaytimes.lk/071216/Plus/plus0001.html",
+   "kind": "event"
+  },
+  {
+   "month": "1956-06",
+   "text": "Reach for Tomorrow published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Reach_for_Tomorrow",
+   "kind": "event"
+  },
+  {
+   "month": "1956-08",
+   "text": "Venture to the Moon published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1956-09",
+   "text": "Hugo for “The Star”",
+   "confirmed": false,
+   "source": "https://www.thehugoawards.org/hugo-history/1956-hugo-awards/",
+   "kind": "event"
+  },
+  {
+   "month": "1957-03",
+   "text": "The Deep Range published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/book-reviews/arthur-c-clarke/deep-range/",
+   "kind": "event"
+  },
+  {
+   "month": "1957-04",
+   "text": "The Reefs of Taprobane published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1957-08",
+   "text": "The Making of a Moon published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1957-10",
+   "text": "Hears of Sputnik at a Barcelona congress",
+   "confirmed": true,
+   "source": "https://spectrum.ieee.org/remembering-sputnik-sir-arthur-c-clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1958-03",
+   "text": "Boy Beneath the Sea published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1958-06",
+   "text": "“The Songs of Distant Earth” on the cover of If",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Songs_of_Distant_Earth",
+   "kind": "event"
+  },
+  {
+   "month": "1958-08",
+   "text": "Voice Across the Sea published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1959-06",
+   "text": "The Challenge of the Spaceship published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1960-03",
+   "text": "The First Five Fathoms published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1960-05",
+   "text": "“I Remember Babylon” in Playboy",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/I_Remember_Babylon",
+   "kind": "event"
+  },
+  {
+   "month": "1960-09",
+   "text": "The Challenge of the Sea published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1961-03",
+   "text": "Great Basses wreck found with Mike Wilson",
+   "confirmed": true,
+   "source": "http://coins.lakdiva.org.lk/clarke/1701_surat_1r_ag.html",
+   "kind": "event"
+  },
+  {
+   "month": "1961-05",
+   "text": "“Death and the Senator” in Analog",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Death_and_the_Senator",
+   "kind": "event"
+  },
+  {
+   "month": "1961-08",
+   "text": "UNESCO–Kalinga Prize",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Kalinga_Prize",
+   "kind": "event"
+  },
+  {
+   "month": "1961-09",
+   "text": "A Fall of Moondust published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/book-reviews/arthur-c-clarke/fall-of-moondust/",
+   "kind": "event"
+  },
+  {
+   "month": "1961-10",
+   "text": "Indian Ocean Adventure published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1962-06",
+   "text": "Profiles of the Future published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1962-08",
+   "text": "Paralysed; later diagnosed as polio",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1962-09",
+   "text": "Tales of Ten Worlds published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1963-03",
+   "text": "Dolphin Island published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1963-08",
+   "text": "Stuart Ballantine Medal",
+   "confirmed": false,
+   "source": "https://www.fi.edu/en/awards/laureates/arthur-c-clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1963-09",
+   "text": "Glide Path published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/book-reviews/arthur-c-clarke/glide-path/",
+   "kind": "event"
+  },
+  {
+   "month": "1964-03",
+   "text": "The Treasure of the Great Reef published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1964-04",
+   "text": "Meets Stanley Kubrick in New York",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)",
+   "kind": "event"
+  },
+  {
+   "month": "1964-08",
+   "text": "Indian Ocean Treasure published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1965-01",
+   "text": "Voices from the Sky published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1965-02",
+   "text": "Kubrick announces “Journey Beyond The Stars”",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)",
+   "kind": "event"
+  },
+  {
+   "month": "1965-04",
+   "text": "Film gets its title: 2001: A Space Odyssey",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)",
+   "kind": "event"
+  },
+  {
+   "month": "1965-12",
+   "text": "2001 shooting begins at Shepperton",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)",
+   "kind": "event"
+  },
+  {
+   "month": "1966-05",
+   "text": "Time Probe anthology published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1967-05",
+   "text": "The Nine Billion Names of God published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1968-04",
+   "text": "2001 film released",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)",
+   "kind": "event"
+  },
+  {
+   "month": "1968-06",
+   "text": "2001: A Space Odyssey (novel) published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)",
+   "kind": "event"
+  },
+  {
+   "month": "1968-07",
+   "text": "In the news: Time on “Latter-Day Jules Verne”",
+   "confirmed": true,
+   "source": "https://content.time.com/time/subscriber/article/0,33009,900286,00.html",
+   "kind": "news"
+  },
+  {
+   "month": "1969-02",
+   "text": "Oscar nomination with Kubrick for 2001",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/41st_Academy_Awards",
+   "kind": "event"
+  },
+  {
+   "month": "1969-04",
+   "text": "Loses the screenplay Oscar to The Producers",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/41st_Academy_Awards",
+   "kind": "event"
+  },
+  {
+   "month": "1969-07",
+   "text": "Narrates Apollo 11 for CBS",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1969-08",
+   "text": "In the news: New Yorker profile of Clarke",
+   "confirmed": true,
+   "source": "https://www.newyorker.com/magazine/1969/08/09/ego-chamber",
+   "kind": "news"
+  },
+  {
+   "month": "1970-01",
+   "text": "Gore Vidal visits him in Ceylon",
+   "confirmed": true,
+   "source": "https://www.sundaytimes.lk/071216/Plus/plus0001.html",
+   "kind": "event"
+  },
+  {
+   "month": "1971-09",
+   "text": "Into Space published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1971-12",
+   "text": "“A Meeting with Medusa” in Playboy",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/A_Meeting_with_Medusa",
+   "kind": "event"
+  },
+  {
+   "month": "1972-01",
+   "text": "Playboy dialogue with Alan Watts",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1972-02",
+   "text": "Of Time and Stars published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1972-04",
+   "text": "The Wind from the Sun published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1972-06",
+   "text": "Report on Planet Three published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1972-09",
+   "text": "The Lost Worlds of 2001 published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/The_Lost_Worlds_of_2001",
+   "kind": "event"
+  },
+  {
+   "month": "1973-04",
+   "text": "Nebula for “A Meeting with Medusa”",
+   "confirmed": false,
+   "source": "https://sfadb.com/Arthur_C_Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1973-06",
+   "text": "Rendezvous with Rama published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Rendezvous_with_Rama",
+   "kind": "event"
+  },
+  {
+   "month": "1973-08",
+   "text": "In the news: NYT review of Rama",
+   "confirmed": true,
+   "source": "https://timesmachine.nytimes.com/timesmachine/1973/08/22/90469240.html?zoom=14",
+   "kind": "news"
+  },
+  {
+   "month": "1973-09",
+   "text": "Rendezvous with Rama published in the US",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1974-04",
+   "text": "Nebula for Rendezvous with Rama",
+   "confirmed": false,
+   "source": "https://sfadb.com/Arthur_C_Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1974-09",
+   "text": "Hugo for Rendezvous with Rama",
+   "confirmed": false,
+   "source": "https://sfadb.com/Hugo_Awards_1974",
+   "kind": "event"
+  },
+  {
+   "month": "1975-04",
+   "text": "Imperial Earth published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Imperial_Earth",
+   "kind": "event"
+  },
+  {
+   "month": "1975-07",
+   "text": "Sri Lanka grants resident guest status",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1976-01",
+   "text": "The Best of Arthur C. Clarke 1937–1955 published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1977-07",
+   "text": "Leslie Ekanayake dies",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1977-08",
+   "text": "The Best of Arthur C. Clarke 1956–1972 published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1977-10",
+   "text": "The View from Serendip published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1979-04",
+   "text": "The Fountains of Paradise published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/The_Fountains_of_Paradise",
+   "kind": "event"
+  },
+  {
+   "month": "1979-07",
+   "text": "Writes Time essay “The Best Is Yet to Come”",
+   "confirmed": true,
+   "source": "https://content.time.com/time/subscriber/article/0,33009,920504,00.html",
+   "kind": "event"
+  },
+  {
+   "month": "1980-04",
+   "text": "Nebula for The Fountains of Paradise",
+   "confirmed": false,
+   "source": "https://sfadb.com/Arthur_C_Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1980-08",
+   "text": "Hugo for The Fountains of Paradise",
+   "confirmed": false,
+   "source": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/",
+   "kind": "event"
+  },
+  {
+   "month": "1980-09",
+   "text": "Mysterious World begins on ITV",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke%27s_Mysterious_World",
+   "kind": "event"
+  },
+  {
+   "month": "1982-07",
+   "text": "Marconi Prize",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1982-12",
+   "text": "2010: Odyssey Two published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2010:_Odyssey_Two",
+   "kind": "event"
+  },
+  {
+   "month": "1983-01",
+   "text": "The Sentinel published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1984-03",
+   "text": "The Odyssey File published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1984-04",
+   "text": "In the news: Soviet censors lost in space",
+   "confirmed": true,
+   "source": "https://www.scribd.com/doc/16321467/The-Ukrainian-Weekly-198415",
+   "kind": "news"
+  },
+  {
+   "month": "1984-06",
+   "text": "Testifies to Congress against SDI",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1984-09",
+   "text": "1984, Spring published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1984-12",
+   "text": "2010 film released",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2010:_The_Year_We_Make_Contact",
+   "kind": "event"
+  },
+  {
+   "month": "1985-04",
+   "text": "World of Strange Powers begins on ITV",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke%27s_World_of_Strange_Powers",
+   "kind": "event"
+  },
+  {
+   "month": "1986-02",
+   "text": "The Songs of Distant Earth published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/The_Songs_of_Distant_Earth",
+   "kind": "event"
+  },
+  {
+   "month": "1986-05",
+   "text": "In the news: Songs of Distant Earth on NYT list",
+   "confirmed": true,
+   "source": "https://www.nytimes.com/1986/05/25/books/c-best-sellers-may-25-1986-567486.html",
+   "kind": "news"
+  },
+  {
+   "month": "1986-07",
+   "text": "Playboy interview",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1986-08",
+   "text": "Damon Knight Memorial Grand Master Award",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/SFWA_Grand_Master_Award",
+   "kind": "event"
+  },
+  {
+   "month": "1986-09",
+   "text": "“The Steam Powered Word Processor” in Analog",
+   "confirmed": true,
+   "source": "https://history.computer.org/pioneers/clarke.html",
+   "kind": "event"
+  },
+  {
+   "month": "1986-11",
+   "text": "Delivers the Nehru Memorial Address",
+   "confirmed": true,
+   "source": "https://clarkefoundation.org/?p=145",
+   "kind": "event"
+  },
+  {
+   "month": "1987-12",
+   "text": "2061: Odyssey Three published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/2061:_Odyssey_Three",
+   "kind": "event"
+  },
+  {
+   "month": "1988-07",
+   "text": "Post-polio syndrome diagnosed",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1988-08",
+   "text": "Cradle published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1989-02",
+   "text": "Rama II published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Rama_II_(novel)",
+   "kind": "event"
+  },
+  {
+   "month": "1989-06",
+   "text": "Made a CBE",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1989-08",
+   "text": "Chancellor of the International Space University",
+   "confirmed": false,
+   "source": "https://clarkefoundation.org/?p=145",
+   "kind": "event"
+  },
+  {
+   "month": "1990-03",
+   "text": "Astounding Days published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1990-06",
+   "text": "Tales from Planet Earth published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1990-07",
+   "text": "Beyond the Fall of Night published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Beyond_the_Fall_of_Night",
+   "kind": "event"
+  },
+  {
+   "month": "1990-11",
+   "text": "The Ghost from the Grand Banks published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1991-04",
+   "text": "More Than One Universe published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1991-08",
+   "text": "Marilyn Mayfield dies",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1991-09",
+   "text": "The Garden of Rama published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Rama",
+   "kind": "event"
+  },
+  {
+   "month": "1992-06",
+   "text": "How the World Was One published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1992-07",
+   "text": "Authorised biography by Neil McAleer",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1993-06",
+   "text": "The Hammer of God published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1993-08",
+   "text": "By Space Possessed published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1993-10",
+   "text": "Rama Revealed published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Rama_Revealed",
+   "kind": "event"
+  },
+  {
+   "month": "1994-01",
+   "text": "The Snows of Olympus published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1994-07",
+   "text": "Mysterious Universe begins on Discovery",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke%27s_Mysterious_Universe",
+   "kind": "event"
+  },
+  {
+   "month": "1994-10",
+   "text": "Appears in CBS’s “Without Warning”",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Without_Warning_(1994_film)",
+   "kind": "event"
+  },
+  {
+   "month": "1996-03",
+   "text": "Richter 10 published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Richter_10",
+   "kind": "event"
+  },
+  {
+   "month": "1996-05",
+   "text": "Asteroid 4923 Clarke named for him",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/4923_Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1996-07",
+   "text": "Childhood Ends published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke_bibliography",
+   "kind": "event"
+  },
+  {
+   "month": "1997-03",
+   "text": "3001: The Final Odyssey published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1997-10",
+   "text": "In the news: “The cosmic godfather” profile",
+   "confirmed": true,
+   "source": "https://www.timeshighereducation.com/node/96341",
+   "kind": "news"
+  },
+  {
+   "month": "1997-12",
+   "text": "In the news: 80th birthday tribute",
+   "confirmed": true,
+   "source": "https://coins.lakdiva.org.lk/media/st_1997.12_arthur.clarke.html",
+   "kind": "news"
+  },
+  {
+   "month": "1998-01",
+   "text": "Named a knight in the New Year Honours",
+   "confirmed": true,
+   "source": "https://news.bbc.co.uk/2/hi/uk_news/43739.stm",
+   "kind": "event"
+  },
+  {
+   "month": "1998-02",
+   "text": "Denies Sunday Mirror allegations",
+   "confirmed": true,
+   "source": "https://www.upi.com/Archives/1998/02/02/Clarke-denies-being-a-pedophile/4493806650268/",
+   "kind": "event"
+  },
+  {
+   "month": "1998-04",
+   "text": "Cleared by Sri Lankan police",
+   "confirmed": true,
+   "source": "https://news.bbc.co.uk/2/hi/south_asia/74938.stm",
+   "kind": "event"
+  },
+  {
+   "month": "1999-08",
+   "text": "Greetings, Carbon-Based Bipeds! published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1999-09",
+   "text": "In the news: Guardian profile, “Man on the moon”",
+   "confirmed": true,
+   "source": "https://www.theguardian.com/books/1999/sep/12/sciencefictionfantasyandhorror.arthurcclarke",
+   "kind": "news"
+  },
+  {
+   "month": "1999-12",
+   "text": "The Trigger published",
+   "confirmed": false,
+   "source": "https://www.kirkusreviews.com/author/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "2000-04",
+   "text": "The Light of Other Days published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/The_Light_of_Other_Days",
+   "kind": "event"
+  },
+  {
+   "month": "2000-05",
+   "text": "Knighted in Colombo",
+   "confirmed": true,
+   "source": "https://news.bbc.co.uk/2/hi/south_asia/765385.stm",
+   "kind": "event"
+  },
+  {
+   "month": "2000-08",
+   "text": "Records a video interview in Colombo",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/video2000.html",
+   "kind": "event"
+  },
+  {
+   "month": "2000-09",
+   "text": "In the news: Guardian, “The space Odysseus”",
+   "confirmed": true,
+   "source": "https://www.theguardian.com/books/2000/sep/28/sciencefictionfantasyandhorror.arthurcclarke",
+   "kind": "news"
+  },
+  {
+   "month": "2000-12",
+   "text": "In the news: The Island, “Life beyond 2001”",
+   "confirmed": true,
+   "source": "http://www.island.lk/2000/12/20/midwee01.html",
+   "kind": "news"
+  },
+  {
+   "month": "2001-01",
+   "text": "The Collected Stories published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Collected_Stories_of_Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "2003-03",
+   "text": "Time’s Eye published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Time%27s_Eye",
+   "kind": "event"
+  },
+  {
+   "month": "2004-02",
+   "text": "In the news: A.V. Club interview",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Last_Theorem",
+   "kind": "news"
+  },
+  {
+   "month": "2004-05",
+   "text": "Heinlein Award announced",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "2004-08",
+   "text": "In the news: Popular Science encounter",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "news"
+  },
+  {
+   "month": "2004-12",
+   "text": "Tsunami destroys his diving school",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "2005-02",
+   "text": "Visits tsunami-hit Hikkaduwa",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/2005trip/",
+   "kind": "event"
+  },
+  {
+   "month": "2005-03",
+   "text": "Sunstorm published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Sunstorm_(novel)",
+   "kind": "event"
+  },
+  {
+   "month": "2005-11",
+   "text": "Awarded Sri Lankabhimanya",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "2007-07",
+   "text": "Video address for the Heinlein Centennial",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "2007-09",
+   "text": "Video greeting for Cassini’s Iapetus flyby",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "2007-10",
+   "text": "In the news: IEEE Spectrum on Sputnik at 50",
+   "confirmed": true,
+   "source": "https://spectrum.ieee.org/remembering-sputnik-sir-arthur-c-clarke",
+   "kind": "news"
+  },
+  {
+   "month": "2007-12",
+   "text": "90th birthday audio message",
+   "confirmed": true,
+   "source": "https://www.sundaytimes.lk/071216/Plus/plus0001.html",
+   "kind": "event"
+  },
+  {
+   "month": "2008-03",
+   "text": "Dies in Colombo",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  }
+ ],
+ "removed": [
+  {
+   "month": "1956-03",
+   "text": "The Coast of Coral published",
+   "reason": "Only the year (1956) could be verified; month collides with the verified Aeonos dive (Sunday Times of Sri Lanka, 16 Dec 2007: dived the wreck days after it sank in March 1956)."
+  },
+  {
+   "month": "1956-04",
+   "text": "The City and the Stars published",
+   "reason": "Wikipedia infobox gives 27 Jan 1956 (Frederick Muller, UK), not April; January collides with the verified Moves to Ceylon cell. Month otherwise unverifiable."
+  },
+  {
+   "month": "1957-02",
+   "text": "The Deep Range published",
+   "reason": "Moved, not dropped: Kirkus gives pub date 20 Mar 1957, now at 1957-03."
+  },
+  {
+   "month": "1957-03",
+   "text": "Tales from the White Hart published",
+   "reason": "Only the year (1957, Ballantine) is verifiable; month collides with the verified Deep Range (20 Mar 1957)."
+  },
+  {
+   "month": "1957-06",
+   "text": "The Making of a Moon published",
+   "reason": "Moved, not dropped: Kirkus gives pub date 7 Aug 1957, now at 1957-08."
+  },
+  {
+   "month": "1957-09",
+   "text": "The Other Side of the Sky published",
+   "reason": "Wikipedia gives 1958 (Harcourt), the bibliography 1957/8, Kirkus lists 3 Feb 1957; sources conflict and no month is verifiable."
+  },
+  {
+   "month": "1964-02",
+   "text": "Meets Stanley Kubrick in New York",
+   "reason": "Moved, not dropped: first meeting was 22 April 1964 at Trader Vic's, now at 1964-04."
+  },
+  {
+   "month": "1964-03",
+   "text": "Divorce from Marilyn finalised",
+   "reason": "Valid event but only the year (1964) is known; month collides with the verified Treasure of the Great Reef (Kirkus 11 Mar 1964)."
+  },
+  {
+   "month": "1964-04",
+   "text": "Man and Space published",
+   "reason": "Only the year (1964) is verifiable; month collides with the verified Kubrick meeting (22 Apr 1964)."
+  },
+  {
+   "month": "1968-03",
+   "text": "2001: A Space Odyssey (novel) published",
+   "reason": "Moved, not dropped: Wikipedia infobox gives June 1968, now at 1968-06."
+  },
+  {
+   "month": "1968-08",
+   "text": "The Promise of Space published",
+   "reason": "Kirkus lists Harper pub date 5 Jun 1968, which collides with the 2001 novel; August is not supported."
+  },
+  {
+   "month": "1969-01",
+   "text": "Oscar nomination with Kubrick for 2001",
+   "reason": "Moved, not dropped: nominations were announced 24 Feb 1969, now at 1969-02."
+  },
+  {
+   "month": "1972-04",
+   "text": "Beyond Jupiter published",
+   "reason": "Only the year (1972) is verifiable; month collides with the verified Wind from the Sun (Kirkus 19 Apr 1972)."
+  },
+  {
+   "month": "1973-08",
+   "text": "The Best of Arthur C. Clarke 1937–1971 published",
+   "reason": "Month unverifiable; collides with the dated NYT review of Rama (22 Aug 1973)."
+  },
+  {
+   "month": "1974-01",
+   "text": "Hugo for Rendezvous with Rama",
+   "reason": "Moved, not dropped: Hugos are presented at Worldcon (Discon II, 29 Aug-2 Sep 1974), so the month is Aug/Sep, now F at 1974-09."
+  },
+  {
+   "month": "1979-07",
+   "text": "Nebula for The Fountains of Paradise",
+   "reason": "Moved, not dropped: the 1979 Nebula was presented in 1980 (sfadb lists 1980); now F at 1980-04. July 1979 is now the dated Time essay."
+  },
+  {
+   "month": "1984-04",
+   "text": "Ascent to Orbit published",
+   "reason": "Only the year (1984) is verifiable; month collides with the dated Ukrainian Weekly piece (8 Apr 1984)."
+  },
+  {
+   "month": "1985-04",
+   "text": "Named an SFWA Grand Master",
+   "reason": "SFWA's list gives 1986 only (Clarke page conflicts 1985/1986); duplicate of the 1986 Grand Master cell. April 1985 is now World of Strange Powers (3 Apr 1985)."
+  },
+  {
+   "month": "1986-04",
+   "text": "20 July 2019 published",
+   "reason": "Kirkus review issue is Nov 1986, so April is unlikely; November collides with the verified Nehru Memorial Address (Nov 1986)."
+  },
+  {
+   "month": "2007-01",
+   "text": "Firstborn published",
+   "reason": "Wikipedia infobox and Kirkus give 26 Dec 2007; collides with the 90th birthday cell for Dec 2007. January is wrong."
+  }
+ ],
+ "homes": [],
+ "stays": [],
+ "summary": {
+  "months_in_segment": 627,
+  "confirmed": 81,
+  "to_confirm": 54,
+  "percent_confirmed": 12.9
+ },
+ "notes": "The shared WebSearch budget ran out early, so almost all work was WebFetch of known pages (Wikipedia incl. its reference lists, Kirkus, Time archive, UPI, THES, Sunday Times of Sri Lanka, lakdiva.org.lk, IEEE Spectrum, the Clarke Foundation, sfadb). ISFDB, the Locus index, SF Encyclopedia, Fancyclopedia, NYT, BBC, Guardian, New Yorker, Wired and web.archive.org could not be fetched. Months for most books after 1973 could not be verified because Wikipedia gives only the year. BOOK MONTHS: Kirkus entries with an explicit day (not the 1st or 15th) are used as publication dates for 1957-1973 and 1977 (confirmed); entries on the 1st/15th are only review-issue dates and are marked to confirm. Kirkus dates for later books are visibly unreliable (Imperial Earth Jan 1975, Fountains Jan 1978, Songs of Distant Earth Apr 1987), so they were not used as proof. NEWS/CITATION CELLS: for the NYT (1973-08, 1986-05), New Yorker (1969-08), BBC (1998-01, 1998-04, 2000-05), Guardian (1999-09, 2000-09), The Island (2000-12), A.V. Club (2004-02), Popular Science (2004-08), Playboy (1972-01, 1986-07) and Ukrainian Weekly (1984-04, issue dated 8 Apr 1984 per Scribd) items, the date comes from the citation in a Wikipedia reference list I opened; I could not open the article itself, so treat the headline wording as drawn from the citation title. AWARDS: Hugo and Nebula months are marked to confirm. Worldcon dates straddle Aug/Sep (1956 31 Aug-3 Sep; 1974 29 Aug-2 Sep; 1980 29 Aug-1 Sep; 1969 28 Aug-1 Sep) and no ceremony date was found; Nebula ceremony dates were not found (April used as placeholder). The 1969 Hugo for 2001 (Dramatic Presentation) is omitted because August 1969 holds the dated New Yorker profile. SFWA Grand Master is 1986 per SFWA, month unknown (August is the old placeholder). Kalinga Prize: lists give 1961, UNESCO Courier says 1962 award; month unknown. Stuart Ballantine Medal 1963, month unknown. Marconi 1982, month unknown. CONFLICTS RESOLVED: Ceylon arrival is January 1956 per the Sunday Times of Sri Lanka (16 Dec 2007), other sources say Dec 1955. 2010: Odyssey Two is Dec 1982 per Wikipedia infobox (Kirkus issue Nov 1982). The Light of Other Days is Apr 2000 per Wikipedia (Kirkus 24 Feb 2000). Rama Revealed is Oct 1993 (UK) vs Kirkus Feb 1994. The Garden of Rama is Sept 1991. 2001 novel is June 1968. Knighthood was gazetted 30 Dec 1997 but BBC reported it 1 Jan 1998, so the cell sits in 1998-01 and the 80th birthday is in 1997-12. 2061 is Dec 1987 per Wikipedia (UK). SINGLE-SOURCE: the Great Basses wreck date (22 Mar 1961) and the Ceylon Astronomical Society (June 1959 on one lakdiva page, 1960 on another, so omitted) come from Kavan Ratnatunga's lakdiva.org.lk pages; Wikipedia gives only the year 1961. The Nehru Memorial Address (Nov 1986) comes from a photo caption on the Clarke Foundation page. Heinlein Award 2004-05 is the 22 May 2004 press-release date cited on Wikipedia. THIN AREAS: 1975-1976, 1978, 1981, 1983, 1987-1988, 1995, 2001-2002, 2006 have little or nothing verifiable; the SDI testimony (1984), polio (1962), post-polio diagnosis (1988), Marilyn Mayfield's death (1991), McAleer biography (1992), resident guest status (1975) are year-only facts kept at their old placeholder months. Nothing from memory was marked confirmed. percent_confirmed is confirmed cells divided by 627 months."
+}

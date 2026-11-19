@@ -1,0 +1,1070 @@
+{
+ "1955-06": {
+  "text": "Born in London",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/Longer.html",
+  "kind": "event"
+ },
+ "1973-10": {
+  "text": "Goes up to Queen's College, Oxford",
+  "confirmed": false,
+  "source": "https://www.w3.org/People/Berners-Lee/Longer.html",
+  "kind": "event"
+ },
+ "1976-05": {
+  "text": "First in physics at Oxford",
+  "confirmed": false,
+  "source": "https://www.w3.org/People/Berners-Lee/Longer.html",
+  "kind": "event"
+ },
+ "1976-06": {
+  "text": "Physics first, then Plessey in Poole",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1976-07": {
+  "text": "Marries Jane Northcote",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Don_Northcote",
+  "kind": "event"
+ },
+ "1976-12": {
+  "text": "Promoted to engineer at Plessey",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1978-01": {
+  "text": "Joins D. G. Nash",
+  "confirmed": false,
+  "source": "https://www.w3.org/People/Berners-Lee/Longer.html",
+  "kind": "event"
+ },
+ "1979-12": {
+  "text": "Leaves D. G. Nash Ltd",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1980-01": {
+  "text": "Goes independent as a consultant",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1980-06": {
+  "text": "Contractor at CERN",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1980-10": {
+  "text": "Writes the ENQUIRE manual",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1980/Enquire/manual/",
+  "kind": "event"
+ },
+ "1980-12": {
+  "text": "Six-month CERN contract ends",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1981-06": {
+  "text": "Ends independent consulting work",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1981-07": {
+  "text": "Becomes a director at Image Computer Systems",
+  "confirmed": false,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1983-04": {
+  "text": "Applies for a CERN fellowship",
+  "confirmed": false,
+  "source": "https://archive.org/details/tim-berners-lee-weaving-the-web-the-original-design-and-ultimate-destiny-of-the-",
+  "kind": "event"
+ },
+ "1984-08": {
+  "text": "Leaves Image Computer Systems",
+  "confirmed": false,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1984-09": {
+  "text": "Arrives at CERN as a fellow",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1985-09": {
+  "text": "FASTBUS software paper at CERN workshop",
+  "confirmed": true,
+  "source": "https://inspirehep.net/literature/234341",
+  "kind": "event"
+ },
+ "1985-10": {
+  "text": "Co-authors IEEE Nuclear Science paper",
+  "confirmed": true,
+  "source": "https://inspirehep.net/literature/218230",
+  "kind": "event"
+ },
+ "1986-01": {
+  "text": "Drafts an RPC development strategy",
+  "confirmed": true,
+  "source": "https://repository.cern/records/5z9tc-tee75",
+  "kind": "event"
+ },
+ "1986-02": {
+  "text": "Drafts notes on proposed RPC development",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1989/proposal.html",
+  "kind": "event"
+ },
+ "1986-03": {
+  "text": "Drafts 'Simple RPC' notes with Pastore",
+  "confirmed": true,
+  "source": "https://repository.cern/records/p36ge-h6514",
+  "kind": "event"
+ },
+ "1986-04": {
+  "text": "Writes up how the RPC project will work",
+  "confirmed": true,
+  "source": "https://repository.cern/records/jsvfg-e0x13",
+  "kind": "event"
+ },
+ "1986-08": {
+  "text": "Writes the RPC User Manual with Pastore",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/Internals/rpcimp.sgml",
+  "kind": "event"
+ },
+ "1987-02": {
+  "text": "Becomes a CERN staff member",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1987-03": {
+  "text": "Releases RPC software version 2.0",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/2.0_release.txt",
+  "kind": "event"
+ },
+ "1987-05": {
+  "text": "RPC paper at IEEE San Francisco conference",
+  "confirmed": true,
+  "source": "https://inspirehep.net/literature/246941",
+  "kind": "event"
+ },
+ "1987-06": {
+  "text": "CERN report on RPC experience",
+  "confirmed": true,
+  "source": "https://repository.cern/records/kgffn-v0m26",
+  "kind": "event"
+ },
+ "1987-08": {
+  "text": "CERN report on the VALET-Plus microcomputer",
+  "confirmed": true,
+  "source": "https://inspirehep.net/literature/248170",
+  "kind": "event"
+ },
+ "1987-10": {
+  "text": "Co-authors CERN Host Interface paper",
+  "confirmed": true,
+  "source": "https://inspirehep.net/literature/250845",
+  "kind": "event"
+ },
+ "1987-11": {
+  "text": "Flags an Ethernet bug in RPC 2.0",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1988-01": {
+  "text": "Releases RPC software version 2.1",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/ProjectHistory.html",
+  "kind": "event"
+ },
+ "1988-02": {
+  "text": "Posts a 'Battleships' RPC example",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1988-03": {
+  "text": "Co-authors Trieste host interface papers",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+  "kind": "event"
+ },
+ "1988-04": {
+  "text": "Releases RPC software for OS-9",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1988-05": {
+  "text": "Makes RPC package numbers invisible",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1988-06": {
+  "text": "Releases RPC software version 2.2",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/2.2_release.txt",
+  "kind": "event"
+ },
+ "1988-08": {
+  "text": "Co-authors VALET-Plus report for CERN",
+  "confirmed": true,
+  "source": "https://repository.cern/records/jx1gx-tfg98",
+  "kind": "event"
+ },
+ "1988-09": {
+  "text": "Paper 'CERN experience' at SIGOPS workshop",
+  "confirmed": true,
+  "source": "https://doi.org/10.1145/504092.504100",
+  "kind": "event"
+ },
+ "1988-10": {
+  "text": "Co-authors VALET-Plus paper in Zurich",
+  "confirmed": true,
+  "source": "https://inspirehep.net/literature/265309",
+  "kind": "event"
+ },
+ "1988-11": {
+  "text": "Previews new RPC compiler features",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1989-01": {
+  "text": "Releases RPC software version 2.3",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/2.3_release.txt",
+  "kind": "event"
+ },
+ "1989-02": {
+  "text": "Issues new RPC User and Internals manuals",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1989-03": {
+  "text": "Proposes the World Wide Web",
+  "confirmed": true,
+  "source": "https://info.cern.ch/Proposal.html",
+  "kind": "event"
+ },
+ "1989-04": {
+  "text": "Adds one-way PRAGMA CAST calls to RPC",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1989-05": {
+  "text": "Adds close and detach routines to RPC",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1989-10": {
+  "text": "Releases RPC 2.4, now running over TCP",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/2.4_release.txt",
+  "kind": "event"
+ },
+ "1989-11": {
+  "text": "Posts fixes for RPC compiler bugs",
+  "confirmed": true,
+  "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+  "kind": "event"
+ },
+ "1989-12": {
+  "text": "Co-authors DELPHI communications paper",
+  "confirmed": true,
+  "source": "https://inspirehep.net/literature/2726294",
+  "kind": "event"
+ },
+ "1990-05": {
+  "text": "Recirculates his Web proposal at CERN",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1990-07": {
+  "text": "Marries Nancy Carlson",
+  "confirmed": false,
+  "source": "https://www.nytimes.com/1990/07/15/style/nancy-carlson-is-wed-to-timothy-berners-lee.html",
+  "kind": "event"
+ },
+ "1990-09": {
+  "text": "Boss approves buying a NeXT computer",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1990-10": {
+  "text": "Starts writing the first Web browser",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/Longer.html",
+  "kind": "event"
+ },
+ "1990-11": {
+  "text": "Formal Web proposal with Robert Cailliau",
+  "confirmed": true,
+  "source": "https://www.w3.org/Proposal.html",
+  "kind": "event"
+ },
+ "1990-12": {
+  "text": "Publishes the first website",
+  "confirmed": true,
+  "source": "https://timeline.web.cern.ch/node/398",
+  "kind": "event"
+ },
+ "1991-03": {
+  "text": "Line-mode browser released at CERN",
+  "confirmed": true,
+  "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/",
+  "kind": "event"
+ },
+ "1991-05": {
+  "text": "Web goes live on CERN’s central machines",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1991-08": {
+  "text": "Invites the world to use the Web",
+  "confirmed": true,
+  "source": "https://web30.web.cern.ch/web-history.html",
+  "kind": "event"
+ },
+ "1991-12": {
+  "text": "Demonstrates the Web at Hypertext ’91",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1992-01": {
+  "text": "Line-mode browser 1.1 released",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1993-04": {
+  "text": "CERN releases the Web royalty-free",
+  "confirmed": true,
+  "source": "https://web30.web.cern.ch/web-history.html",
+  "kind": "event"
+ },
+ "1994-02": {
+  "text": "Meets Dertouzos about a Web consortium",
+  "confirmed": true,
+  "source": "https://www.w3.org/2005/01/timelines/description",
+  "kind": "event"
+ },
+ "1994-05": {
+  "text": "Inducted into the first Web Hall of Fame",
+  "confirmed": true,
+  "source": "https://www.computerhistory.org/blog/woodstock-of-the-web-at-25/",
+  "kind": "event"
+ },
+ "1994-07": {
+  "text": "MIT and CERN agree to form a Web body",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1994-10": {
+  "text": "Founds the W3C at MIT",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1994-12": {
+  "text": "First W3C members’ meeting at MIT",
+  "confirmed": true,
+  "source": "https://www.w3.org/History.html",
+  "kind": "event"
+ },
+ "1995-04": {
+  "text": "W3C opens its European host at INRIA",
+  "confirmed": true,
+  "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/",
+  "kind": "event"
+ },
+ "1995-10": {
+  "text": "Speaks at MIT’s Vannevar Bush symposium",
+  "confirmed": true,
+  "source": "https://www.w3.org/Talks/9510_Bush/Talk.html",
+  "kind": "event"
+ },
+ "1996-02": {
+  "text": "Declaration in the CDA court challenge",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/9602affi.html",
+  "kind": "event"
+ },
+ "1997-02": {
+  "text": "Writes “World-Wide Computer” for the ACM",
+  "confirmed": true,
+  "source": "https://dl.acm.org/doi/10.1145/253671.253704",
+  "kind": "event"
+ },
+ "1997-06": {
+  "text": "Appointed OBE",
+  "confirmed": true,
+  "source": "https://www.thegazette.co.uk/London/issue/54794/supplement/24",
+  "kind": "event"
+ },
+ "1997-12": {
+  "text": "Talks on the Web’s full potential in London",
+  "confirmed": true,
+  "source": "https://www.w3.org/1998/02/Potential.html",
+  "kind": "event"
+ },
+ "1998-03": {
+  "text": "Honorary doctorate from Essex",
+  "confirmed": true,
+  "source": "https://www1.essex.ac.uk/honorary_graduates/or/1998/t-berners-lee-oration.aspx",
+  "kind": "event"
+ },
+ "1998-05": {
+  "text": "Writes a one-page history of the Web",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/ShortHistory.html",
+  "kind": "event"
+ },
+ "1998-06": {
+  "text": "Wins a MacArthur Fellowship",
+  "confirmed": true,
+  "source": "https://news.mit.edu/1998/macarthur-0603",
+  "kind": "event"
+ },
+ "1998-09": {
+  "text": "Publishes the Semantic Web roadmap",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/Semantic.html",
+  "kind": "event"
+ },
+ "1999-03": {
+  "text": "Named in Time’s 100 People of the Century",
+  "confirmed": true,
+  "source": "https://time.com/archive/6735027/network-designer-tim-berners-lee/",
+  "kind": "event"
+ },
+ "1999-04": {
+  "text": "Talks on the Web’s future at MIT LCS",
+  "confirmed": true,
+  "source": "https://www.w3.org/1999/04/13-tbl.html",
+  "kind": "event"
+ },
+ "1999-07": {
+  "text": "Writes tribute to supervisor Mike Sendall",
+  "confirmed": true,
+  "source": "https://www.w3.org/1999/07/dms.html",
+  "kind": "event"
+ },
+ "1999-10": {
+  "text": "Publishes “Weaving the Web”",
+  "confirmed": false,
+  "source": "https://en.wikipedia.org/wiki/Weaving_the_Web",
+  "kind": "event"
+ },
+ "2000-03": {
+  "text": "Honorary degree from the Open University",
+  "confirmed": true,
+  "source": "https://news.bbc.co.uk/2/hi/uk_news/education/696176.stm",
+  "kind": "event"
+ },
+ "2000-12": {
+  "text": "Semantic Web talk at XML 2000",
+  "confirmed": true,
+  "source": "https://www.w3.org/2000/Talks/1206-xml2k-tbl/Overview.html",
+  "kind": "event"
+ },
+ "2001-01": {
+  "text": "Fellow of the Royal Society",
+  "confirmed": false,
+  "source": "https://royalsociety.org/people/timothy-berners-lee-11074/",
+  "kind": "event"
+ },
+ "2001-05": {
+  "text": "Semantic Web on Scientific American’s cover",
+  "confirmed": true,
+  "source": "https://www.w3.org/news/2001/semantic-web-featured-in-scientific-american",
+  "kind": "event"
+ },
+ "2001-08": {
+  "text": "Writes tribute to Michael Dertouzos",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/2001/MLD.html",
+  "kind": "event"
+ },
+ "2001-12": {
+  "text": "Wins the 2002 Japan Prize",
+  "confirmed": true,
+  "source": "https://news.mit.edu/2001/bernerslee-1219",
+  "kind": "event"
+ },
+ "2002-04": {
+  "text": "Receives the Japan Prize",
+  "confirmed": true,
+  "source": "https://www.w3.org/2002/04/Japan/Lecture.html",
+  "kind": "event"
+ },
+ "2002-05": {
+  "text": "Wins the Prince of Asturias Award",
+  "confirmed": true,
+  "source": "https://www.fpa.es/en/princess-of-asturias-awards/laureates/2002-lawrence-roberts-robert-kahn-vinton-cerf-tim-berners-lee/",
+  "kind": "event"
+ },
+ "2003-10": {
+  "text": "Urges review of the ’906 Web patent",
+  "confirmed": true,
+  "source": "https://www.w3.org/2003/10/27-rogan.html",
+  "kind": "event"
+ },
+ "2003-12": {
+  "text": "Knighthood announced in New Year Honours",
+  "confirmed": true,
+  "source": "https://www.w3.org/press-releases/2003/timbl-knighted/",
+  "kind": "event"
+ },
+ "2004-02": {
+  "text": "W3C issues RDF and OWL standards",
+  "confirmed": true,
+  "source": "https://www.w3.org/2004/01/sws-pressrelease",
+  "kind": "event"
+ },
+ "2004-04": {
+  "text": "Wins the first Millennium Technology Prize",
+  "confirmed": true,
+  "source": "https://news.mit.edu/2004/berners-0428",
+  "kind": "event"
+ },
+ "2004-06": {
+  "text": "Receives the Millennium Prize in Helsinki",
+  "confirmed": true,
+  "source": "https://www.w3.org/news/2004/tim-berners-lee-receives-millennium-technology-prize-in-helsinki",
+  "kind": "event"
+ },
+ "2004-07": {
+  "text": "Knighted",
+  "confirmed": true,
+  "source": "https://www.w3.org/press-releases/2004/timbl-knighted",
+  "kind": "event"
+ },
+ "2004-12": {
+  "text": "Takes a chair at Southampton",
+  "confirmed": true,
+  "source": "https://www.southampton.ac.uk/news/2004/12/world-wide-web-inventor.page",
+  "kind": "event"
+ },
+ "2005-01": {
+  "text": "Named Greatest Briton of 2004",
+  "confirmed": true,
+  "source": "https://www.telegraph.co.uk/news/uknews/1482211/Three-loud-cheers-for-the-father-of-the-web.html",
+  "kind": "event"
+ },
+ "2006-05": {
+  "text": "Wins the BCS Lovelace Medal",
+  "confirmed": true,
+  "source": "https://www.computerweekly.com/feature/BCS-honours-inventor-of-the-web-and-computer-imaging-pioneer",
+  "kind": "event"
+ },
+ "2006-07": {
+  "text": "Sets out the rules of Linked Data",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/LinkedData.html",
+  "kind": "event"
+ },
+ "2006-11": {
+  "text": "Launches the Web Science Research Initiative",
+  "confirmed": true,
+  "source": "https://news.mit.edu/2006/wsri",
+  "kind": "event"
+ },
+ "2007-01": {
+  "text": "Wins the Draper Prize",
+  "confirmed": true,
+  "source": "https://news.mit.edu/2007/draper-prize.html",
+  "kind": "event"
+ },
+ "2007-02": {
+  "text": "Keynote on the Mobile Web at 3GSM",
+  "confirmed": true,
+  "source": "https://www.w3.org/2007/Talks/0222-3gsm-tbl/text",
+  "kind": "event"
+ },
+ "2007-03": {
+  "text": "Testifies to US Congress on the Web",
+  "confirmed": true,
+  "source": "https://dig.csail.mit.edu/2007/03/01-ushouse-future-of-the-web.html",
+  "kind": "event"
+ },
+ "2007-06": {
+  "text": "Order of Merit",
+  "confirmed": true,
+  "source": "https://www.southampton.ac.uk/news/2007/06/sir-tim-berners-lee-the-order-of-merit.page",
+  "kind": "event"
+ },
+ "2007-10": {
+  "text": "Ranked joint first of 100 living geniuses",
+  "confirmed": true,
+  "source": "https://playbill.com/article/glass-barenboim-domingo-dolly-parton-on-list-of-top-100-living-geniuses",
+  "kind": "event"
+ },
+ "2008-03": {
+  "text": "In the news: ISP tracking and Phorm",
+  "confirmed": true,
+  "source": "http://news.bbc.co.uk/1/hi/technology/7299875.stm",
+  "kind": "news"
+ },
+ "2008-12": {
+  "text": "Honorary degree from Manchester",
+  "confirmed": true,
+  "source": "http://www.manchester.ac.uk/aboutus/news/display/?id=4216",
+  "kind": "event"
+ },
+ "2009-02": {
+  "text": "TED talk “The Next Web”",
+  "confirmed": true,
+  "source": "https://www.ted.com/talks/tim_berners_lee_the_next_web",
+  "kind": "event"
+ },
+ "2009-03": {
+  "text": "Writes “No Snooping” against ISP spying",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/NoSnooping.html",
+  "kind": "event"
+ },
+ "2009-04": {
+  "text": "Joins the US National Academy of Sciences",
+  "confirmed": true,
+  "source": "http://www8.nationalacademies.org/onpinews/newsitem.aspx?RecordID=04282009",
+  "kind": "event"
+ },
+ "2009-06": {
+  "text": "Gordon Brown enlists him on open data",
+  "confirmed": true,
+  "source": "https://www.w3.org/People/Berners-Lee/Longer.html",
+  "kind": "event"
+ },
+ "2009-08": {
+  "text": "Proposes socially aware cloud storage",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/CloudStorage.html",
+  "kind": "event"
+ },
+ "2009-10": {
+  "text": "In the news: sorry for the slashes",
+  "confirmed": true,
+  "source": "http://news.bbc.co.uk/1/hi/technology/8306631.stm",
+  "kind": "news"
+ },
+ "2009-11": {
+  "text": "Launches the Web Foundation",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/World_Wide_Web_Foundation",
+  "kind": "event"
+ },
+ "2010-01": {
+  "text": "Helps create data.gov.uk",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Data.gov.uk",
+  "kind": "event"
+ },
+ "2010-02": {
+  "text": "TED talk on open data going worldwide",
+  "confirmed": true,
+  "source": "https://www.ted.com/talks/tim_berners_lee_the_year_open_data_went_worldwide",
+  "kind": "event"
+ },
+ "2010-04": {
+  "text": "In the news: Ordnance Survey opens its data",
+  "confirmed": true,
+  "source": "http://news.bbc.co.uk/1/hi/technology/8597779.stm",
+  "kind": "news"
+ },
+ "2010-09": {
+  "text": "Wins UNESCO’s Niels Bohr Medal",
+  "confirmed": true,
+  "source": "http://www.nbi.ku.dk/english/namely_names/2010/unesco_niels_bohr_gold_medal_awarded_to_prominent_physicists/",
+  "kind": "event"
+ },
+ "2010-12": {
+  "text": "Writes “Long Live the Web” for Sci Am",
+  "confirmed": true,
+  "source": "https://www.scientificamerican.com/article/long-live-the-web/",
+  "kind": "event"
+ },
+ "2011-01": {
+  "text": "Divorces Nancy Carlson",
+  "confirmed": false,
+  "source": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+  "kind": "event"
+ },
+ "2011-03": {
+  "text": "Gorbachev honours him as a world changer",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Awards_and_honours_presented_to_Tim_Berners-Lee",
+  "kind": "event"
+ },
+ "2011-05": {
+  "text": "Honorary degree from Harvard",
+  "confirmed": true,
+  "source": "https://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/",
+  "kind": "event"
+ },
+ "2011-09": {
+  "text": "Joins the Ford Foundation board",
+  "confirmed": true,
+  "source": "https://webfoundation.org/2011/09/sir-tim-berners-lee-ford-board/",
+  "kind": "event"
+ },
+ "2012-04": {
+  "text": "Joins the Internet Hall of Fame",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Internet_Hall_of_Fame",
+  "kind": "event"
+ },
+ "2012-05": {
+  "text": "Open Data Institute gets £10m backing",
+  "confirmed": true,
+  "source": "https://www.theguardian.com/government-computing-network/2012/may/23/open-data-institute-plans-published-cabinet-office",
+  "kind": "event"
+ },
+ "2012-07": {
+  "text": "Olympics opening ceremony in London",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/2012_Summer_Olympics_opening_ceremony",
+  "kind": "event"
+ },
+ "2012-09": {
+  "text": "In the news: Lunch with the FT",
+  "confirmed": true,
+  "source": "https://www.ft.com/content/b022ff6c-f673-11e1-9fff-00144feabdc0",
+  "kind": "news"
+ },
+ "2012-12": {
+  "text": "Sultan Qaboos Order from Oman",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Awards_and_honours_presented_to_Tim_Berners-Lee",
+  "kind": "event"
+ },
+ "2013-03": {
+  "text": "Queen Elizabeth Prize for Engineering",
+  "confirmed": true,
+  "source": "https://webfoundation.org/2013/03/sir-tim-berners-lee-receives-inaugural-queen-elizabeth-prize-for-engineering/",
+  "kind": "event"
+ },
+ "2013-06": {
+  "text": "Receives the engineering prize from the Queen",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Queen_Elizabeth_Prize_for_Engineering",
+  "kind": "event"
+ },
+ "2013-09": {
+  "text": "Honorary degree from St Andrews",
+  "confirmed": true,
+  "source": "https://archive.st-andrews.ac.uk/graduation/2013/tim-berners-lee/index.html",
+  "kind": "event"
+ },
+ "2013-10": {
+  "text": "Backs the Alliance for Affordable Internet",
+  "confirmed": true,
+  "source": "https://www.theguardian.com/technology/2013/oct/07/google-berners-lee-alliance-broadband-africa",
+  "kind": "event"
+ },
+ "2014-03": {
+  "text": "TED talk: a Magna Carta for the Web",
+  "confirmed": true,
+  "source": "https://www.ted.com/talks/tim_berners_lee_a_magna_carta_for_the_web",
+  "kind": "event"
+ },
+ "2014-05": {
+  "text": "Honorary degree from Yale",
+  "confirmed": true,
+  "source": "https://news.yale.edu/2014/05/19/yale-awards-12-honorary-degrees-2014-graduation",
+  "kind": "event"
+ },
+ "2014-06": {
+  "text": "Marries Rosemary Leith",
+  "confirmed": true,
+  "source": "http://webfoundation.org/tim-berners-lee-married-rosemary-leith/",
+  "kind": "event"
+ },
+ "2014-08": {
+  "text": "In the news: Wired on the Web at 25",
+  "confirmed": true,
+  "source": "https://www.wired.com/story/tim-berners-lee/",
+  "kind": "news"
+ },
+ "2014-09": {
+  "text": "Honorary Freedom of the City of London",
+  "confirmed": true,
+  "source": "https://www.cityoflondon.gov.uk/about-the-city/what-we-do/media-centre/news-releases/2014/Pages/sir-tim-berners-lee-awarded-honorary-freedom-of-the-city-of-london.aspx",
+  "kind": "event"
+ },
+ "2014-10": {
+  "text": "Pride of Britain special award",
+  "confirmed": true,
+  "source": "https://www.mirror.co.uk/news/uk-news/pride-britain-sir-tim-berners-lee-4391329",
+  "kind": "event"
+ },
+ "2014-12": {
+  "text": "Shares the Mohammed bin Rashid Knowledge Award",
+  "confirmed": true,
+  "source": "http://www.khaleejtimes.com/kt-article-display-1.asp?xfile=data/nationgeneral/2014/December/nationgeneral_December56.xml&section=nationgeneral",
+  "kind": "event"
+ },
+ "2015-04": {
+  "text": "Wins the Gottlieb Duttweiler Prize",
+  "confirmed": true,
+  "source": "http://www.gdi.ch/en/Think-Tank/GDI-News/News-Detail/Tim-Berners-Lee-awarded-the-Gottlieb-Duttweiler-Prize-2015",
+  "kind": "event"
+ },
+ "2015-09": {
+  "text": "Estonia’s Order of the Cross of Terra Mariana",
+  "confirmed": true,
+  "source": "https://president.ee/en/media/press-releases/11604-news-in-pictures-president-ilves-presents-high-decoration-of-the-republic-of-estonia-to-the-creator-of-the-worldwideweb-in-new-york/layout-visit.html",
+  "kind": "event"
+ },
+ "2016-02": {
+  "text": "Wins the Charleston-EFG Keynes Prize",
+  "confirmed": true,
+  "source": "https://www.charleston.org.uk/wp-content/uploads/2016/02/160201-Sir-Tim-Berners-Lee-announced-as-winner-of-Charleston-EFG-John-Maynard-Keynes-Prize-finalv2.pdf",
+  "kind": "event"
+ },
+ "2016-06": {
+  "text": "In the news: NYT on reinventing the Web",
+  "confirmed": true,
+  "source": "https://www.nytimes.com/2016/06/08/technology/the-webs-creator-looks-to-reinvent-it.html",
+  "kind": "news"
+ },
+ "2016-10": {
+  "text": "Joins Oxford and Christ Church",
+  "confirmed": true,
+  "source": "https://www.ox.ac.uk/news/2016-10-27-sir-tim-berners-lee-joins-oxfords-department-computer-science",
+  "kind": "event"
+ },
+ "2016-12": {
+  "text": "In the news: putting data back with owners",
+  "confirmed": true,
+  "source": "https://techcrunch.com/2016/12/19/putting-data-back-into-the-hands-of-owners/",
+  "kind": "news"
+ },
+ "2017-03": {
+  "text": "In the news: DRM in Web video standard",
+  "confirmed": true,
+  "source": "https://www.theregister.com/offbeat/2017/03/06/sir-tim-berners-lee-refuses-to-be-king-canute-approves-drm-as-web-standard/1340572",
+  "kind": "news"
+ },
+ "2017-04": {
+  "text": "Receives the Turing Award",
+  "confirmed": true,
+  "source": "https://awards.acm.org/about/2016-turing",
+  "kind": "event"
+ },
+ "2017-07": {
+  "text": "Approves the EME video DRM specification",
+  "confirmed": true,
+  "source": "https://sdtimes.com/digital-restrictions-management/drm-concerns-arise-as-w3cs-tim-berners-lee-approves-the-eme-specification/",
+  "kind": "event"
+ },
+ "2017-09": {
+  "text": "Web video DRM becomes a W3C standard",
+  "confirmed": true,
+  "source": "https://www.theregister.com/security/2017/09/18/drm-now-a-formal-web-recommendation-after-protest-vote-fails/442648",
+  "kind": "event"
+ },
+ "2017-10": {
+  "text": "Essay: blockchains too slow, costly, public",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/Blockchain.html",
+  "kind": "event"
+ },
+ "2017-12": {
+  "text": "Urges action to save net neutrality",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/NetNeutrality.html",
+  "kind": "event"
+ },
+ "2018-03": {
+  "text": "Open letter: the Web is under threat",
+  "confirmed": true,
+  "source": "https://webfoundation.org/2018/03/web-birthday-29/",
+  "kind": "event"
+ },
+ "2018-07": {
+  "text": "In the news: “I was devastated” interview",
+  "confirmed": true,
+  "source": "https://www.vanityfair.com/news/2018/07/the-man-who-created-the-world-wide-web-has-some-regrets",
+  "kind": "news"
+ },
+ "2018-09": {
+  "text": "Announces Inrupt and Solid",
+  "confirmed": true,
+  "source": "https://www.engadget.com/2018/09/30/tim-berners-lee-solid-data-control/",
+  "kind": "event"
+ },
+ "2018-11": {
+  "text": "Unveils the Contract for the Web in Lisbon",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/World_Wide_Web_Foundation",
+  "kind": "event"
+ },
+ "2019-01": {
+  "text": "In the news: The Times on MeWe",
+  "confirmed": true,
+  "source": "https://www.thetimes.co.uk/article/sir-tim-berners-lee-s-app-mewe-is-used-by-neo-nazis-and-perverts-svflhn32s",
+  "kind": "news"
+ },
+ "2019-03": {
+  "text": "The Web turns 30",
+  "confirmed": true,
+  "source": "https://webfoundation.org/2019/03/web-birthday-30/",
+  "kind": "event"
+ },
+ "2019-11": {
+  "text": "Launches the Contract for the Web",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Contract_for_the_Web",
+  "kind": "event"
+ },
+ "2020-02": {
+  "text": "In the news: FT on reshaping the internet",
+  "confirmed": true,
+  "source": "https://www.ft.com/content/343febdc-5573-11ea-abe5-8e03987b7b20",
+  "kind": "news"
+ },
+ "2020-06": {
+  "text": "Guardian op-ed: internet access is a right",
+  "confirmed": true,
+  "source": "https://www.theguardian.com/commentisfree/2020/jun/04/covid-19-internet-universal-right-lockdown-online",
+  "kind": "event"
+ },
+ "2020-07": {
+  "text": "Time essay on sharing data in COVID-19",
+  "confirmed": true,
+  "source": "https://time.com/5867314/we-need-to-change-how-we-share-our-personal-data-online-in-the-age-of-covid-19/",
+  "kind": "event"
+ },
+ "2020-12": {
+  "text": "In the news: Inrupt’s personal data pods",
+  "confirmed": true,
+  "source": "https://www.bostonglobe.com/2020/12/29/business/web-inventor-tim-berners-lee-wants-personal-empowerment-users-through-his-data-startup/",
+  "kind": "news"
+ },
+ "2021-06": {
+  "text": "Sells the Web’s source code as an NFT",
+  "confirmed": true,
+  "source": "https://www.cnbc.com/2021/06/15/web-nft-source-code-is-being-auctioned-by-inventor-tim-berners-lee.html",
+  "kind": "event"
+ },
+ "2021-09": {
+  "text": "Joins Proton’s advisory board",
+  "confirmed": true,
+  "source": "https://proton.me/blog/sir-tim-berners-lee-advisory-board",
+  "kind": "event"
+ },
+ "2021-12": {
+  "text": "In the news: Inrupt raises $30 million",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Inrupt",
+  "kind": "news"
+ },
+ "2022-09": {
+  "text": "Wins the Seoul Peace Prize",
+  "confirmed": true,
+  "source": "https://m.koreaherald.com/view.php?ud=20220928000610",
+  "kind": "event"
+ },
+ "2024-02": {
+  "text": "Essay: The Dysfunction of Social Networks",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/Dysfunction.html",
+  "kind": "event"
+ },
+ "2024-09": {
+  "text": "Announces the Web Foundation will close",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/World_Wide_Web_Foundation",
+  "kind": "event"
+ },
+ "2024-10": {
+  "text": "Solid project moves to the ODI",
+  "confirmed": true,
+  "source": "https://en.wikipedia.org/wiki/Solid_(web_decentralization_project)",
+  "kind": "event"
+ },
+ "2024-12": {
+  "text": "Writes “A Vision of a New World”",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/Vision.html",
+  "kind": "event"
+ },
+ "2025-01": {
+  "text": "Tests an AI assistant with a Solid pod",
+  "confirmed": true,
+  "source": "https://www.w3.org/DesignIssues/Works.html",
+  "kind": "event"
+ },
+ "2025-08": {
+  "text": "In the news: Stephen Fry to narrate memoir",
+  "confirmed": true,
+  "source": "https://www.thebookseller.com/news/stephen-fry-to-voice-audiobook-of-tim-berners-lees-memoir",
+  "kind": "news"
+ },
+ "2025-09": {
+  "text": "Memoir “This Is for Everyone” published",
+  "confirmed": true,
+  "source": "https://thisisforeveryone.timbl.com/",
+  "kind": "event"
+ },
+ "2025-10": {
+  "text": "Memoir tour: Boston, New York, San Francisco",
+  "confirmed": true,
+  "source": "https://thisisforeveryone.timbl.com/",
+  "kind": "event"
+ },
+ "2025-11": {
+  "text": "On Desert Island Discs",
+  "confirmed": true,
+  "source": "https://www.bbc.co.uk/programmes/m002m96c",
+  "kind": "event"
+ },
+ "2026-01": {
+  "text": "Memoir tour: Jaipur and Sydney Opera House",
+  "confirmed": true,
+  "source": "https://thisisforeveryone.timbl.com/",
+  "kind": "event"
+ },
+ "2026-03": {
+  "text": "Memoir tour: New Orleans Book Festival",
+  "confirmed": true,
+  "source": "https://thisisforeveryone.timbl.com/",
+  "kind": "event"
+ },
+ "2026-05": {
+  "text": "Appears at the Hay Festival",
+  "confirmed": true,
+  "source": "https://thisisforeveryone.timbl.com/",
+  "kind": "event"
+ },
+ "2026-09": {
+  "text": "Memoir out in paperback",
+  "confirmed": true,
+  "source": "https://thisisforeveryone.timbl.com/",
+  "kind": "event"
+ }
+}

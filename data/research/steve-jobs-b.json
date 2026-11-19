@@ -1,0 +1,712 @@
+{
+  "person": "Steve Jobs",
+  "segment": {
+    "from": "1985-01",
+    "to": "2011-10"
+  },
+  "cells": [
+    {
+      "month": "1985-02",
+      "text": "Gets the National Medal of Technology",
+      "confirmed": true,
+      "source": "https://www.presidency.ucsb.edu/documents/remarks-the-presentation-ceremony-for-the-national-technology-awards",
+      "kind": "event"
+    },
+    {
+      "month": "1985-05",
+      "text": "Stripped of operating duties at Apple",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1985/06/01/apple-sets-corporate-reshuffling/291ec9f2-0507-47b7-adbb-4e7a5c52b01d/",
+      "kind": "event"
+    },
+    {
+      "month": "1985-07",
+      "text": "Visits the Soviet Union",
+      "confirmed": true,
+      "source": "https://rferl.org/a/steve-jobs-goes-to-soviet-union-apple/27648378.html",
+      "kind": "event"
+    },
+    {
+      "month": "1985-09",
+      "text": "Quits Apple, starts NeXT",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1985/09/18/apple-chairman-jobs-resigns/db356e9b-9706-4b8f-88d2-3f3c27caa837/",
+      "kind": "event"
+    },
+    {
+      "month": "1986-02",
+      "text": "Buys Pixar",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1986/02/11/jobs-buys-lucasfilm-graphics-division/836ef062-ead3-4a16-a601-8e4d18a3c96c/",
+      "kind": "event"
+    },
+    {
+      "month": "1987-02",
+      "text": "In the news: Perot's $20M stake in NeXT",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1987/02/08/computer-industry-wary-of-jobs-perot-alliance/723d012c-c810-4788-90bd-d5f5abc54727/",
+      "kind": "news"
+    },
+    {
+      "month": "1987-09",
+      "text": "In the news: NeXT eyes business market",
+      "confirmed": true,
+      "source": "https://www.upi.com/Archives/1987/09/10/Jobs-new-firm-may-tackle-business-computer-market/7551558244800/",
+      "kind": "news"
+    },
+    {
+      "month": "1988-05",
+      "text": "In the news: Fortune on Jobs's secret NeXT",
+      "confirmed": true,
+      "source": "https://money.cnn.com/magazines/fortune/fortune_archive/1988/05/23/70568/",
+      "kind": "news"
+    },
+    {
+      "month": "1988-10",
+      "text": "NeXT computer launch",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1988/10/13/amid-hoopla-next-computer-is-unveiled-by-pc-pioneer-jobs/7786847b-539b-49b1-9771-fea07df76407/",
+      "kind": "event"
+    },
+    {
+      "month": "1989-03",
+      "text": "In the news: NeXT to sell to businesses",
+      "confirmed": true,
+      "source": "https://www.upi.com/Archives/1989/03/30/Businessland-to-sell-Next-computers/2671607237200/",
+      "kind": "news"
+    },
+    {
+      "month": "1989-06",
+      "text": "In the news: IBM licenses NeXT software",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1989/06/03/steve-jobs-banks-next-hopes-on-ibm-move/97ef7ed3-c42a-4db8-85aa-9be3932d0d35/",
+      "kind": "news"
+    },
+    {
+      "month": "1989-10",
+      "text": "Meets Laurene Powell at Stanford",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "1990-01",
+      "text": "In the news: NeXT teams with TRW",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1990/01/17/next-inc-trw-unit-team-up/1e1f0c67-4f5f-4787-b46e-c9a20a2e50dd/",
+      "kind": "news"
+    },
+    {
+      "month": "1990-09",
+      "text": "NeXTcube introduced",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/NeXTcube",
+      "kind": "event"
+    },
+    {
+      "month": "1991-03",
+      "text": "Marries Laurene Powell",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "1991-09",
+      "text": "Son Reed is born",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Reed_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "1993-02",
+      "text": "NeXT quits making computers",
+      "confirmed": false,
+      "source": "https://www.upi.com/Archives/1993/05/25/NeXT-ships-new-operating-system-Teams-with-HP/5212738302400/",
+      "kind": "event"
+    },
+    {
+      "month": "1993-03",
+      "text": "Father Paul Jobs dies",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "1993-05",
+      "text": "In the news: NeXT goes software-only",
+      "confirmed": true,
+      "source": "https://www.upi.com/Archives/1993/05/25/NeXT-ships-new-operating-system-Teams-with-HP/5212738302400/",
+      "kind": "news"
+    },
+    {
+      "month": "1993-11",
+      "text": "In the news: Sun partners with NeXT",
+      "confirmed": true,
+      "source": "https://www.upi.com/Archives/1993/11/23/Sun-Microsystems-forms-alliance-with-Next/6685754030800/",
+      "kind": "news"
+    },
+    {
+      "month": "1994-12",
+      "text": "In the news: NeXT's success vs Apple",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1994/12/11/steve-jobss-next-success-mirrors-changes-at-apple/c58a320f-6f9f-48c1-9bdc-1a2de4d9316d/",
+      "kind": "news"
+    },
+    {
+      "month": "1995-08",
+      "text": "Daughter Erin is born",
+      "confirmed": false,
+      "source": "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "1995-09",
+      "text": "In the news: Fortune on Jobs and Pixar",
+      "confirmed": true,
+      "source": "https://money.cnn.com/magazines/fortune/fortune_archive/1995/09/18/206099/index.htm",
+      "kind": "news"
+    },
+    {
+      "month": "1995-11",
+      "text": "Toy Story released",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Toy_Story",
+      "kind": "event"
+    },
+    {
+      "month": "1996-02",
+      "text": "In the news: Wired interviews Jobs",
+      "confirmed": false,
+      "source": "https://www.wired.com/1996/02/jobs-2/",
+      "kind": "news"
+    },
+    {
+      "month": "1996-12",
+      "text": "Apple agrees to buy NeXT",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1996/12/21/steve-jobs-returning-to-apple/af56b10e-4b2f-4e61-8865-78f22301210f/",
+      "kind": "event"
+    },
+    {
+      "month": "1997-02",
+      "text": "Apple acquires NeXT",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/NeXT",
+      "kind": "event"
+    },
+    {
+      "month": "1997-03",
+      "text": "In the news: Fortune on Apple's turmoil",
+      "confirmed": true,
+      "source": "https://fortune.com/1997/03/03/somethings-rotten-in-cupertino/",
+      "kind": "news"
+    },
+    {
+      "month": "1997-07",
+      "text": "In the news: Jobs poised to retake Apple",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1997/07/31/apple-stock-gains-on-reports-of-a-jobs-return/47936e7d-3436-4a4c-886a-6073a61dbaf6/",
+      "kind": "news"
+    },
+    {
+      "month": "1997-08",
+      "text": "Microsoft invests $150M in Apple",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Macworld_Conference_%26_Expo",
+      "kind": "event"
+    },
+    {
+      "month": "1997-09",
+      "text": "Interim CEO of Apple",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1997/09/17/jobs-comes-full-circle/40425fa7-9377-408e-83d8-e59bb4e07972/",
+      "kind": "event"
+    },
+    {
+      "month": "1997-11",
+      "text": "Launches the online Apple Store",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Apple_Store_(online)",
+      "kind": "event"
+    },
+    {
+      "month": "1998-01",
+      "text": "Promises an Apple profit at Macworld",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Macworld_Conference_%26_Expo",
+      "kind": "event"
+    },
+    {
+      "month": "1998-03",
+      "text": "Kills Newton, Cyberdog and OpenDoc",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "1998-05",
+      "text": "Unveils the iMac",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/IMac_G3",
+      "kind": "event"
+    },
+    {
+      "month": "1998-07",
+      "text": "Daughter Eve is born",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Eve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "1998-08",
+      "text": "iMac released",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/IMac_G3",
+      "kind": "event"
+    },
+    {
+      "month": "1998-09",
+      "text": "In the news: The fruit of Jobs's labor",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1998/09/26/the-fruit-of-steve-jobss-labor/e12eedea-5747-462c-a192-4677f37b3e79/",
+      "kind": "news"
+    },
+    {
+      "month": "1998-11",
+      "text": "Pixar's A Bug's Life opens",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/A_Bug%27s_Life",
+      "kind": "event"
+    },
+    {
+      "month": "1999-01",
+      "text": "Macworld: five profitable quarters",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Macworld_Conference_%26_Expo",
+      "kind": "event"
+    },
+    {
+      "month": "1999-07",
+      "text": "Unveils the iBook at Macworld",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/1999/07/22/apple-shows-shape-of-laptops-to-come/5f2df770-e52b-45fa-b50b-0031c64671b1/",
+      "kind": "event"
+    },
+    {
+      "month": "1999-10",
+      "text": "In the news: TIME cover story",
+      "confirmed": true,
+      "source": "https://content.time.com/time/covers/0,16641,19991018,00.html",
+      "kind": "news"
+    },
+    {
+      "month": "1999-11",
+      "text": "Pixar's Toy Story 2 opens",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Toy_Story_2",
+      "kind": "event"
+    },
+    {
+      "month": "2000-01",
+      "text": "Becomes permanent CEO",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/archive/business/2000/01/06/jobs-drops-interim-title/5efd57b0-438a-4819-9379-97b64eef36c8/",
+      "kind": "event"
+    },
+    {
+      "month": "2000-07",
+      "text": "Unveils the Power Mac G4 Cube",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Power_Mac_G4_Cube",
+      "kind": "event"
+    },
+    {
+      "month": "2000-11",
+      "text": "Pixar's Emeryville campus opens",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Pixar",
+      "kind": "event"
+    },
+    {
+      "month": "2001-01",
+      "text": "Introduces iTunes",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2001/01/09Apple-Introduces-iTunes-Worlds-Best-and-Easiest-To-Use-Jukebox-Software/",
+      "kind": "event"
+    },
+    {
+      "month": "2001-05",
+      "text": "First Apple Stores open",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2001/05/21Apple-Retail-Stores-Welcome-Over-7700-People-in-First-Two-Days/",
+      "kind": "event"
+    },
+    {
+      "month": "2001-10",
+      "text": "Unveils the iPod",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2001/10/23Apple-Presents-iPod/",
+      "kind": "event"
+    },
+    {
+      "month": "2001-11",
+      "text": "Pixar's Monsters, Inc. opens",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Monsters,_Inc.",
+      "kind": "event"
+    },
+    {
+      "month": "2002-01",
+      "text": "Unveils the flat-panel iMac",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2002/01/07Apple-Unveils-the-New-iMac/",
+      "kind": "event"
+    },
+    {
+      "month": "2002-05",
+      "text": "WWDC: Mac OS 9 declared end-of-life",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Worldwide_Developers_Conference",
+      "kind": "event"
+    },
+    {
+      "month": "2002-07",
+      "text": "Launches .Mac",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2002/07/17Apple-Launches-Mac/",
+      "kind": "event"
+    },
+    {
+      "month": "2003-04",
+      "text": "Opens the iTunes Music Store",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2003/04/28Apple-Launches-the-iTunes-Music-Store/",
+      "kind": "event"
+    },
+    {
+      "month": "2003-05",
+      "text": "Pixar's Finding Nemo opens",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Finding_Nemo",
+      "kind": "event"
+    },
+    {
+      "month": "2003-06",
+      "text": "WWDC: shows the Power Mac G5",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Worldwide_Developers_Conference",
+      "kind": "event"
+    },
+    {
+      "month": "2003-10",
+      "text": "Cancer diagnosed",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "2004-01",
+      "text": "Introduces the iPod mini",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2004/01/06Apple-Introduces-iPod-mini/",
+      "kind": "event"
+    },
+    {
+      "month": "2004-02",
+      "text": "In the news: Fortune asks what Jobs wants",
+      "confirmed": true,
+      "source": "https://money.cnn.com/magazines/fortune/fortune_archive/2004/02/23/362197/index.htm",
+      "kind": "news"
+    },
+    {
+      "month": "2004-06",
+      "text": "WWDC: new displays, Tiger preview",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Worldwide_Developers_Conference",
+      "kind": "event"
+    },
+    {
+      "month": "2004-07",
+      "text": "Has pancreatic cancer surgery",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "2004-10",
+      "text": "Launches the U2 iPod",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2004/10/26Apple-Introduces-the-U2-iPod/",
+      "kind": "event"
+    },
+    {
+      "month": "2004-11",
+      "text": "Pixar's The Incredibles opens",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/The_Incredibles",
+      "kind": "event"
+    },
+    {
+      "month": "2005-01",
+      "text": "Introduces the iPod shuffle",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2005/01/11Apple-Introduces-iPod-shuffle/",
+      "kind": "event"
+    },
+    {
+      "month": "2005-06",
+      "text": "Stanford commencement speech",
+      "confirmed": true,
+      "source": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says",
+      "kind": "event"
+    },
+    {
+      "month": "2005-09",
+      "text": "Introduces the iPod nano",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2005/09/07Apple-Introduces-iPod-nano/",
+      "kind": "event"
+    },
+    {
+      "month": "2006-01",
+      "text": "Disney buys Pixar",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Pixar",
+      "kind": "event"
+    },
+    {
+      "month": "2006-02",
+      "text": "In the news: Fortune profiles Jobs",
+      "confirmed": true,
+      "source": "https://money.cnn.com/magazines/fortune/fortune_archive/2006/02/20/8369108/index.htm",
+      "kind": "news"
+    },
+    {
+      "month": "2006-05",
+      "text": "Disney completes Pixar deal",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Pixar",
+      "kind": "event"
+    },
+    {
+      "month": "2006-08",
+      "text": "WWDC: finishes the Intel switch",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2006/08/07Apple-Unveils-New-Mac-Pro-Featuring-Quad-64-bit-Xeon-Processors/",
+      "kind": "event"
+    },
+    {
+      "month": "2007-01",
+      "text": "Unveils the iPhone",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/",
+      "kind": "event"
+    },
+    {
+      "month": "2007-02",
+      "text": "Calls for DRM-free music",
+      "confirmed": true,
+      "source": "https://www.washingtonpost.com/wp-dyn/content/article/2007/02/06/AR2007020601764.html",
+      "kind": "event"
+    },
+    {
+      "month": "2007-06",
+      "text": "iPhone goes on sale",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "2007-08",
+      "text": "Unveils the aluminum iMac",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2007/08/07Apple-Unveils-New-iMac/",
+      "kind": "event"
+    },
+    {
+      "month": "2007-09",
+      "text": "Cuts the iPhone price to $399",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2007/09/05Apple-Sets-iPhone-Price-at-399-for-this-Holiday-Season/",
+      "kind": "event"
+    },
+    {
+      "month": "2007-10",
+      "text": "Promises an iPhone developer kit",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/App_Store_(Apple)",
+      "kind": "event"
+    },
+    {
+      "month": "2008-01",
+      "text": "Unveils the MacBook Air",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Macworld_Conference_%26_Expo",
+      "kind": "event"
+    },
+    {
+      "month": "2008-03",
+      "text": "In the news: Fortune probes his health",
+      "confirmed": true,
+      "source": "https://fortune.com/2008/03/05/the-trouble-with-steve-jobs/",
+      "kind": "news"
+    },
+    {
+      "month": "2008-06",
+      "text": "WWDC: App Store and 3G iPhone",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Worldwide_Developers_Conference",
+      "kind": "event"
+    },
+    {
+      "month": "2008-07",
+      "text": "The App Store opens",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/App_Store_(Apple)",
+      "kind": "event"
+    },
+    {
+      "month": "2008-08",
+      "text": "Bloomberg runs his obituary by mistake",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "2008-09",
+      "text": "'Let's Rock' keynote",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "2008-12",
+      "text": "Won't give the Macworld keynote",
+      "confirmed": true,
+      "source": "https://www.computerworld.com/article/1476210/steve-jobs-a-timeline.html",
+      "kind": "event"
+    },
+    {
+      "month": "2009-01",
+      "text": "Takes medical leave from Apple",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2009/01/14Apple-Media-Advisory/",
+      "kind": "event"
+    },
+    {
+      "month": "2009-04",
+      "text": "Liver transplant",
+      "confirmed": false,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "2009-06",
+      "text": "Back at Apple after liver transplant",
+      "confirmed": true,
+      "source": "https://www.computerworld.com/article/1476210/steve-jobs-a-timeline.html",
+      "kind": "event"
+    },
+    {
+      "month": "2010-01",
+      "text": "iPad announced",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2010/01/27Apple-Launches-iPad/",
+      "kind": "event"
+    },
+    {
+      "month": "2010-04",
+      "text": "iPad goes on sale",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "kind": "event"
+    },
+    {
+      "month": "2010-06",
+      "text": "Presents the iPhone 4",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2010/06/07Apple-Presents-iPhone-4/",
+      "kind": "event"
+    },
+    {
+      "month": "2010-07",
+      "text": "Holds the iPhone 4 antenna press event",
+      "confirmed": true,
+      "source": "https://en.wikipedia.org/wiki/Antennagate",
+      "kind": "event"
+    },
+    {
+      "month": "2010-09",
+      "text": "Unveils the new Apple TV",
+      "confirmed": true,
+      "source": "https://www.computerworld.com/article/1476210/steve-jobs-a-timeline.html",
+      "kind": "event"
+    },
+    {
+      "month": "2011-01",
+      "text": "Takes a second medical leave",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2011/01/17Apple-Media-Advisory/",
+      "kind": "event"
+    },
+    {
+      "month": "2011-03",
+      "text": "Appears to launch the iPad 2",
+      "confirmed": true,
+      "source": "https://www.upi.com/Business_News/2011/03/02/Apple-CEO-Steve-Jobs-gets-standing-ovation/12761299093214/",
+      "kind": "event"
+    },
+    {
+      "month": "2011-06",
+      "text": "Unveils iCloud at WWDC",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2011/06/06Apple-Introduces-iCloud/",
+      "kind": "event"
+    },
+    {
+      "month": "2011-08",
+      "text": "Steps down as CEO",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2011/08/24Letter-from-Steve-Jobs/",
+      "kind": "event"
+    },
+    {
+      "month": "2011-10",
+      "text": "Dies in Palo Alto",
+      "confirmed": true,
+      "source": "https://www.apple.com/newsroom/2011/10/05Statement-by-Apples-Board-of-Directors/",
+      "kind": "event"
+    }
+  ],
+  "removed": [
+    {
+      "month": "1985-01",
+      "text": "Founds NeXT",
+      "reason": "Placeholder month was wrong. Jobs told Apple's board on 12 Sep 1985 he would start a new company and resigned on 17 Sep 1985; NeXT dates from that month. Folded into the 1985-09 cell (\"Quits Apple, starts NeXT\")."
+    },
+    {
+      "month": "1986-01",
+      "text": "Buys Pixar",
+      "reason": "Wrong month. The Graphics Group spin-out and Jobs's purchase closed 3 Feb 1986 (Wikipedia Pixar; Washington Post 11 Feb 1986). Moved to 1986-02."
+    },
+    {
+      "month": "1991-01",
+      "text": "Marries Laurene Powell",
+      "reason": "Wrong month. They married 18 Mar 1991 at the Ahwahnee Hotel, Yosemite (Wikipedia, Laurene Powell Jobs). Moved to 1991-03."
+    },
+    {
+      "month": "2003-01",
+      "text": "Cancer diagnosed",
+      "reason": "Wrong month. Wikipedia (citing Isaacson) dates the diagnosis to October 2003. Moved to 2003-10."
+    }
+  ],
+  "homes": [],
+  "stays": [],
+  "summary": {
+    "months_in_segment": 322,
+    "confirmed": 92,
+    "to_confirm": 4,
+    "percent_confirmed": 28.6
+  },
+  "notes": "Counts: 96 cells (92 confirmed, 4 to confirm) = 29.8% of months with a cell. Source access: nytimes.com, latimes.com, chicagotribune.com, apnews.com, wired.com, bloomberg.com, web.archive.org and tech-insider.org could not be opened, so no NYT/LA Times/Wired citations. Washington Post archive pages return 403 to fetch; their month comes from search-result snippets (article date in the URL and headline), not from an opened page. Fortune archive pages on money.cnn.com (1988-05, 1995-09, 2004-02, 2006-02) returned 503; month taken from the search-result title (which carries the issue date). Stanford Report returned 403 for the 2005-06 speech; month is from the Wikipedia reference list (June 2005; speech was 12 Jun 2005) and the Stanford URL was not opened. Opened and read directly: Apple newsroom pages (2000-2011), UPI archive pages, Fortune 1997-03 and 2008-03, Time cover pages, Reagan presidency.ucsb.edu page, RFE/RL, Computerworld timeline, and Wikipedia pages (Steve Jobs, NeXT, NeXTcube, Pixar, IMac G3, Laurene Powell Jobs, Eve Jobs, Reed Jobs, Toy Story, Toy Story 2, A Bug's Life, Monsters Inc, Finding Nemo, The Incredibles, Macworld Expo, WWDC, App Store, Apple Store online, Power Mac G4 Cube, Antennagate). Many month facts therefore rest on Wikipedia as the opened source; Apple press releases and the Washington Post/UPI/Fortune items are the better primary evidence where used. To confirm (4): 1993-02 NeXT leaves hardware (UPI of May 1993 only says \"earlier this year\"; Feb is from memory); 1995-08 Erin born (Wikipedia gives only 1995; month from memory); 1996-02 Wired Jobs interview (page could not be opened; issue month from memory); 2009-04 liver transplant (Wikipedia says April 2009 but Isaacson and Memphis reports are generally given as 21 Mar 2009, so left unconfirmed). Existing-cell fixes: 2001-10 text changed from \"iPod released\" to \"Unveils the iPod\" (announced 23 Oct 2001; went on sale 10 Nov 2001). 1985-09 text now covers NeXT founding. 1997-09 interim-CEO cell kept (formal board naming 16 Sep 1997; he was de facto running Apple from July). 2011-10 location (Palo Alto home) comes from Wikipedia; the Apple board statement gives the date only. Weak spots: 1992 is empty (no verifiable item; a Washington Post 2 Mar 1992 piece titled \"NeXT's Giant Step\" could not be checked for relevance). 1986-1987, 1990-1996 are thin and lean on news mentions. Several Pixar film-release cells (1998-11, 1999-11, 2000-11, 2001-11, 2003-05, 2004-11) are included because Jobs owned and chaired Pixar then, but Wikipedia does not credit him as producer on those pages. Macworld/WWDC keynote cells (1997-08, 1998-01, 1999-01, 2002-05, 2003-06, 2004-06, 2008-01, 2008-06) rest on the Wikipedia Macworld and WWDC pages, which say Jobs gave the keynote but do not cite per-year sources. Not used or not checked: Jobs settling with Apple (Jan 1986), Clara Jobs death (early 1986, no month), Pixar-Disney deals (1991, 1997), Sept 2009 return to the stage, Fortune CEO of the Decade (Nov 2009), California Hall of Fame (2007, month unknown), D5 with Gates (May 2007). All from memory or only year-level sources, so left out."
+}

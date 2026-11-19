@@ -1,0 +1,211 @@
+{
+ "person": "David Attenborough",
+ "segment": {
+  "from": "1926-05",
+  "to": "1966-12"
+ },
+ "cells": [
+  {
+   "month": "1931-10",
+   "text": "In the news: parents pictured at College House",
+   "confirmed": true,
+   "source": "https://leicester.omeka.net/items/show/1257",
+   "kind": "news"
+  },
+  {
+   "month": "1937-07",
+   "text": "Mother helps greet Basque refugee children",
+   "confirmed": true,
+   "source": "https://leicester.omeka.net/exhibits/show/mary-attenborough/mary-and-her-humanitarian-cont",
+   "kind": "event"
+  },
+  {
+   "month": "1939-08",
+   "text": "Family takes in two Jewish refugee girls",
+   "confirmed": true,
+   "source": "https://leicester.omeka.net/exhibits/show/mary-attenborough/mary-and-her-humanitarian-cont",
+   "kind": "event"
+  },
+  {
+   "month": "1950-02",
+   "text": "Marries Jane Oriel",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/David_Attenborough",
+   "kind": "event"
+  },
+  {
+   "month": "1952-09",
+   "text": "Starts the BBC television training course",
+   "confirmed": true,
+   "source": "https://link.springer.com/chapter/10.1007/978-3-030-19982-1_3",
+   "kind": "event"
+  },
+  {
+   "month": "1953-01",
+   "text": "Produces Julian Huxley's coelacanth talk",
+   "confirmed": false,
+   "source": "https://archive.org/details/listener_1953-01-22_49_1247",
+   "kind": "event"
+  },
+  {
+   "month": "1953-12",
+   "text": "Produces The Dreaded Savage, an Orinoco talk",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1953-12-17_50_1294",
+   "kind": "event"
+  },
+  {
+   "month": "1954-01",
+   "text": "Produces It's a Small World, a close-up series",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1954-01-21_51_1299",
+   "kind": "event"
+  },
+  {
+   "month": "1955-03",
+   "text": "Zoo Quest team visits London Zoo",
+   "confirmed": true,
+   "source": "https://archive.org/details/twitter-712669401556750337",
+   "kind": "event"
+  },
+  {
+   "month": "1956-12",
+   "text": "In the news: journal reviews Zoo Quest to Guiana",
+   "confirmed": true,
+   "source": "https://doi.org/10.2307/1790219",
+   "kind": "news"
+  },
+  {
+   "month": "1957-04",
+   "text": "Zoo Quest to Guiana is published in the US",
+   "confirmed": true,
+   "source": "https://archive.org/details/catalogofcopyrig3111lib",
+   "kind": "event"
+  },
+  {
+   "month": "1957-09",
+   "text": "Natural History Unit he turned down gets a head",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/BBC_Studios_Natural_History_Unit",
+   "kind": "event"
+  },
+  {
+   "month": "1958-02",
+   "text": "Produces films of a Cambridge Sahara expedition",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1958-02-20_59_1508",
+   "kind": "event"
+  },
+  {
+   "month": "1959-08",
+   "text": "Narrates the sailing film Sails Off Singapore",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1959-08-20_62_1586",
+   "kind": "event"
+  },
+  {
+   "month": "1960-11",
+   "text": "Quest in Paradise, his South Seas book, appears",
+   "confirmed": true,
+   "source": "https://archive.org/details/catalogofcopyrig3151libr",
+   "kind": "event"
+  },
+  {
+   "month": "1961-03",
+   "text": "His Travellers' Tales follows Stanley's route",
+   "confirmed": true,
+   "source": "https://archive.org/details/travellers-tales-s05e02-in-search-of-stanley-1961-x264",
+   "kind": "event"
+  },
+  {
+   "month": "1961-09",
+   "text": "His series Japan shows Zen monks meditating",
+   "confirmed": true,
+   "source": "https://archive.org/details/listener_1961-09-07_66_1693",
+   "kind": "event"
+  },
+  {
+   "month": "1961-11",
+   "text": "Zoo Quest to Madagascar is published as a book",
+   "confirmed": true,
+   "source": "https://archive.org/details/catalogofcopyrig3161lib",
+   "kind": "event"
+  },
+  {
+   "month": "1962-08",
+   "text": "His Adventure series follows a balloon in Africa",
+   "confirmed": true,
+   "source": "https://archive.org/details/adventure-s03e06-balloon-from-zanzibar-1962-x264",
+   "kind": "event"
+  },
+  {
+   "month": "1964-06",
+   "text": "In the news: Quest Under Capricorn is reviewed",
+   "confirmed": true,
+   "source": "https://doi.org/10.2307/1794621",
+   "kind": "news"
+  },
+  {
+   "month": "1964-08",
+   "text": "Looks at life on Fair Isle for the BBC",
+   "confirmed": true,
+   "source": "https://archive.org/details/twitter-1296431797064962049",
+   "kind": "event"
+  },
+  {
+   "month": "1965-05",
+   "text": "BBC Two starts Sunday Cricket on his watch",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/BBC_Two",
+   "kind": "event"
+  },
+  {
+   "month": "1965-12",
+   "text": "First Floodlit Trophy final on his BBC Two",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/BBC2_Floodlit_Trophy",
+   "kind": "event"
+  },
+  {
+   "month": "1966-01",
+   "text": "Rugby Special starts on his BBC Two",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/BBC_Two",
+   "kind": "event"
+  },
+  {
+   "month": "1966-12",
+   "text": "Royal Society journal prints his ritual studies",
+   "confirmed": true,
+   "source": "https://doi.org/10.1098/rstb.1966.0044",
+   "kind": "event"
+  }
+ ],
+ "corrections": [
+  {
+   "month": "1939-01",
+   "text": "Family takes in two Jewish refugee girls",
+   "reason": "Placeholder month replaced: University of Leicester exhibit says the family had taken in the Bejach sisters by August 1939 (put in touch in May 1939). Re-entered as 1939-08."
+  },
+  {
+   "month": "1950-04",
+   "text": "Marries Jane Oriel",
+   "reason": "Placeholder with no source. Wikipedia, Britannica and Wikidata give only 1950; several lifestyle sites give 17 Feb 1950 at St Anne, Kew Green, not independently verified. Moved to 1950-02 as confirmed:false."
+  },
+  {
+   "month": "1952-01",
+   "text": "Joins the BBC full-time",
+   "reason": "Month unsupported (Wikipedia and the BECTU interview say only 1952). Gouyon 2019 ch.3 endnote (BBC WAC T16/240/1, seen via search snippet) dates his TV training course 22 Sep-17 Oct 1952. Re-entered as 1952-09; the full-time start itself stays year-level."
+  },
+  {
+   "month": "1966-01",
+   "text": "Conceives Civilisation with Kenneth Clark",
+   "reason": "Slot taken by a confirmed event (Rugby Special, 1 Jan 1966). Wikipedia dates the Civilisation idea only to 1966, no month. Drop it, or keep it as an unconfirmed cell in another 1966 month."
+  }
+ ],
+ "summary": {
+  "new_confirmed": 22,
+  "upgraded": 1
+ },
+ "notes": "SCOPE. Goal was 50 new confirmed cells; this pass reaches 23 (22 new plus 1 upgrade), so about 71 of 488 months (14.5%) once merged. The shared WebSearch cap was reached partway through (a few dozen searches), BBC Genome/bbc.co.uk, le.ac.uk, Papers Past (bot wall), Trove, BNA, Springer (login redirect), Britannica and several news sites could not be fetched, and I did not bypass any wall or touch lending-restricted Listener issues (1962 onward).\nEVIDENCE USED. (1) Univ. of Leicester Special Collections exhibit and item pages (omeka): Oct 1931 Leicester Mercury photo of his parents at College House; July 1937 Basque children met by his mother; 'by August 1939 ... had taken in two young German-Jewish refugees' (Richard's Wikipedia page says Sept 1939; the university's wording is used). (2) Listener full text on archive.org (public 1952-61 issues): programme months for The Dreaded Savage (Dec 1953), It's a Small World (Jan 1954), the Cambridge Sahara films (Feb 1958), Sails Off Singapore (12 Aug 1959), Japan (1 Sep 1961). For these five the Listener gives the month but does NOT name him; his role (producer/narrator) comes from Wikipedia's David Attenborough filmography, whose rows are unreferenced. Downgrade them if you want a stricter rule. (3) US Catalog of Copyright Entries on archive.org (public domain; entry date = date of publication per its key): Zoo Quest to Guiana Lutterworth 11 Sep 1956 (matches the first-pass Listener news cell at 1956-09, so that cell could read 'Zoo Quest to Guiana is published'), Crowell US edition 15 Apr 1957, Quest in Paradise 25 Nov 1960, Zoo Quest to Madagascar 17 Nov 1961 (Lutterworth). (4) Crossref/JSTOR: Geographical Journal reviews of Zoo Quest to Guiana (vol 122 no 4, Dec 1956) and Quest under Capricorn (vol 130 no 2, June 1964); three Attenborough papers in Phil. Trans. R. Soc. B 251(772), issued 29 Dec 1966. (5) BBC Archive #OnThisDay posts archived on archive.org: 23 Mar 1955 Zoo Quest team at London Zoo; 20 Aug 1964 Fair Isle film (Wikipedia filmography: 1964 series Indoors and Out: Man and the Land). (6) archive.org uploads that reproduce the Radio Times billing: Travellers' Tales 'In Search of Stanley', Fri 17 Mar 1961, 'Presenter/Series edited by David Attenborough'; Adventure 'Balloon From Zanzibar', Thu 23 Aug 1962, 'Series edited by David Attenborough'. Both are fan uploads, weekdays check out, but they are not official BBC pages. (7) Wikipedia: BBC Two and Timeline of BBC Two (Sunday Cricket 2 May 1965, Rugby Special 1 Jan 1966, both listed as his innovations), BBC2 Floodlit Trophy (he was 'instrumental', first final 14 Dec 1965), BBC Studios Natural History Unit (first Head named Sept 1957 after he declined the job).\nWEAKEST. 1952-09 rests on a search-result snippet of a paywalled Springer chapter (Gouyon 2019 ch.3, citing BBC WAC T16/240/1: course 22 Sep-17 Oct 1952); I could not open it. 1950-02 (marriage 17 Feb 1950) is only on lifestyle sites, so it is confirmed:false. 1953-01 (Huxley's coelacanth talk; Listener 22 Jan 1953) is confirmed:false because Wikipedia dates his 'Coelacanth' to 1952.\nSTILL UNVERIFIABLE. Month of: Grey Owl lecture (his first British tour ran 17 Oct 1935 to 14 Feb 1936, so 1936-01 is only plausible), Clare scholarship/entry, National Service call-up (1947-49), 1950 BBC rejection, 1949-52 publishing job, Robert's and Susan's births, move to College House, Natural History Unit refusal, LSE study, SFTA award 1961 (year only), RTS and ZSL silver medals 1966 (year only), 1962 Australia trip and Adelaide Festival film, Civilisation idea. 1927-1930, 1933-35, 1940-44, 1946-49, 1951 stay empty; no month-level source found.\nDATA QUIRKS. archive.org item listener_1961-01-11_67_1711 is really the 11 Jan 1962 issue (public); listener_1953-07-03_48_1218 is really 3 Jul 1952. Neither names him. The Listener's 'World Zoos' series (he presented it per Wikipedia) was on air Dec 1961-Jan 1962 but the month is ambiguous, so no cell. Trans-Antarctic caption of 3 Nov 1955 (Pratt/Attenborough) belongs to the Oct 1955 show already in the first pass."
+}

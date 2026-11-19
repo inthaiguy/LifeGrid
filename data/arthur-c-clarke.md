@@ -1,18 +1,13 @@
 # Arthur C. Clarke sample sheet
 
-`arthur-c-clarke.json` is a `life-grid/1` file built from his Wikipedia biography
-(https://en.wikipedia.org/wiki/Arthur_C._Clarke). Import it from the menu ("Import a sheet").
+`arthur-c-clarke.json` is a `life-grid/1` file researched in November 2026 from Wikipedia (https://en.wikipedia.org/wiki/Arthur_C._Clarke) and the sources below. Import it from the menu ("Import a sheet"). The source of every cell is in `research/arthur-c-clarke.sources.json`; the raw research files are `research/arthur-c-clarke-*.json`.
 
-- **Fixed months** come straight from dated events: his birth (16 Dec 1917), commission and promotion in the RAF,
-  the *Wireless World* letter (Feb 1945) and paper (Oct 1945), the first stories (Apr and May 1946), the 2001 film
-  (Apr 1968), the Apollo 11 broadcast (Jul 1969), Leslie Ekanayake's death (Jul 1977), his knighthood (May 2000),
-  the tsunami (Dec 2004) and his death (19 Mar 2008). "Hugo for The Star" is placed in Sep 1956 from memory.
-- **Confirmed months** (20): dates the Wikipedia pages give with a month, e.g. birth, RAF commission and promotion,
-  the 1945 *Wireless World* letter and paper, "Rescue Party", the 2001 film, Apollo 11, Ekanayake's death, the knighthood,
-  the tsunami, his death. "Hugo for The Star" (Sep 1956) is from memory.
-- **To confirm** (114, `confirmed: false`): his books and other events that the pages date only by year. Each sits in a
-  month of that year chosen only to keep them apart, so the *year* is real and the *month* is a placeholder.
-  They show as "to confirm" and do not count toward the percentage.
-- No filler: every cell is an event. Years with no known event stay empty. Homes (Minehead, London, Ceylon) are kept for the colors.
-- The file has a `death` entry (19 Mar 2008), so the grid and the percentage stop there. The year rows go on to today with a faded count of years since.
-- Left out on purpose: contested allegations from 1998.
+- **Confirmed months** (243, 22.4% of 1084 months): a source gives the month. 37 of them are "In the news" cells, where the month comes from a dated article or listing.
+- **To confirm** (39, `confirmed: false`): the year is sourced but the month is a placeholder chosen to keep items apart. They show as "to confirm" and do not count toward the percentage.
+- No filler: every one of the 282 cells is an event.
+- A month is only filled when a source gives that month. Where several things happened, the cell holds the most notable one.
+- Book and story months come from Wikipedia infoboxes, archive.org magazine scans (Astounding, Galaxy, F&SF), US copyright records, Kirkus reviews and ISFDB snippets; award months from SFWA and sfadb.
+- Homes: Minehead to 1924, Bishops Lydeard (year only), London from Sep 1936 (London Gazette), Colombo from 1956 (year only). The only verified stay is New York in Apr 1953.
+- Still unverified: Kalinga, Ballantine and Marconi months, his move to Ceylon and Unawatuna dates, King's College and RAF discharge dates; 1976, 1978, 1981, 1987 and 1995 have no cell.
+- The file has a `death` entry, so the grid stops there.
+- Search was rate-limited during research, and several sites (NYT, BBC, Guardian) could not be opened; dates taken from search snippets or Wikipedia citations are listed in the research notes.

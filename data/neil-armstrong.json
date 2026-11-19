@@ -1,6 +1,6 @@
 {
   "schema": "life-grid/1",
-  "exportedAt": "2026-11-13T00:00:00.000Z",
+  "exportedAt": "2026-11-19T00:00:00.000Z",
   "name": "Neil",
   "birth": {
     "month": "1930-08",
@@ -33,6 +33,14 @@
       "place": "San Diego, California"
     },
     {
+      "from": "1952-09",
+      "place": "West Lafayette, Indiana"
+    },
+    {
+      "from": "1955-03",
+      "place": "Cleveland, Ohio"
+    },
+    {
       "from": "1955-07",
       "place": "Edwards, California"
     },
@@ -42,14 +50,50 @@
     },
     {
       "from": "1971-08",
-      "place": "Cincinnati, Ohio"
+      "place": "Lebanon, Ohio"
+    },
+    {
+      "from": "1994-06",
+      "place": "Indian Hill, Ohio"
     }
   ],
-  "stays": [],
+  "stays": [
+    {
+      "from": "1951-07",
+      "to": "1951-07",
+      "place": "Barbers Point, Hawaii"
+    },
+    {
+      "from": "1951-08",
+      "to": "1952-03",
+      "place": "Korea (aboard USS Essex)"
+    }
+  ],
   "cells": [
     {
       "month": "1930-08",
       "text": "Born in Washington Township"
+    },
+    {
+      "month": "1933-06",
+      "text": "Sister June is born"
+    },
+    {
+      "month": "1935-02",
+      "text": "Brother Dean is born"
+    },
+    {
+      "month": "1936-07",
+      "text": "First airplane ride, in a Ford Trimotor"
+    },
+    {
+      "month": "1941-12",
+      "text": "Joins the new Scout troop in Upper Sandusky",
+      "confirmed": false
+    },
+    {
+      "month": "1943-06",
+      "text": "His Scout troop starts a monthly newspaper"
     },
     {
       "month": "1944-01",
@@ -57,21 +101,58 @@
       "confirmed": false
     },
     {
+      "month": "1945-10",
+      "text": "Sees Purdue beat Ohio State; picks Purdue"
+    },
+    {
       "month": "1946-08",
       "text": "Student pilot certificate and first solo"
     },
     {
-      "month": "1947-01",
-      "text": "Starts aeronautical engineering at Purdue",
+      "month": "1946-10",
+      "text": "Approved as an assistant scoutmaster"
+    },
+    {
+      "month": "1947-03",
+      "text": "Earns the rank of Eagle Scout",
       "confirmed": false
+    },
+    {
+      "month": "1947-05",
+      "text": "Graduates from Blume High School",
+      "confirmed": false
+    },
+    {
+      "month": "1947-08",
+      "text": "Enlists in the Naval Reserve"
+    },
+    {
+      "month": "1947-09",
+      "text": "Starts aeronautical engineering at Purdue"
+    },
+    {
+      "month": "1947-12",
+      "text": "Gets a Navy aviation officer-candidate contract"
     },
     {
       "month": "1949-01",
       "text": "Navy call-up to Pensacola"
     },
     {
+      "month": "1949-02",
+      "text": "Becomes a naval aviation midshipman"
+    },
+    {
+      "month": "1949-04",
+      "text": "Navy orders for officer-candidate training"
+    },
+    {
       "month": "1949-09",
       "text": "First solo in a Navy trainer"
+    },
+    {
+      "month": "1949-10",
+      "text": "Troop's recharter form lists him as an Eagle"
     },
     {
       "month": "1950-03",
@@ -94,6 +175,10 @@
       "text": "Promoted to ensign"
     },
     {
+      "month": "1951-07",
+      "text": "Trains in Hawaii before the Korea cruise"
+    },
+    {
       "month": "1951-08",
       "text": "First combat in Korea"
     },
@@ -102,12 +187,53 @@
       "text": "Ejects after his wing hits a cable"
     },
     {
+      "month": "1951-12",
+      "text": "Recommended for a second Air Medal award"
+    },
+    {
+      "month": "1952-01",
+      "text": "Flies a third of his 78 Korea missions"
+    },
+    {
+      "month": "1952-02",
+      "text": "Regular commission ends; joins the Reserve"
+    },
+    {
+      "month": "1952-03",
+      "text": "Flies his last Korea mission, number 78"
+    },
+    {
+      "month": "1952-05",
+      "text": "Posted to transport squadron VR-32"
+    },
+    {
       "month": "1952-08",
       "text": "Released from active duty"
     },
     {
+      "month": "1952-09",
+      "text": "Returns to Purdue"
+    },
+    {
+      "month": "1952-12",
+      "text": "Gold Star for a third Air Medal is presented"
+    },
+    {
       "month": "1953-05",
       "text": "Promoted to lieutenant (jg)"
+    },
+    {
+      "month": "1953-06",
+      "text": "Completes a Navy Reserve questionnaire"
+    },
+    {
+      "month": "1954-05",
+      "text": "Damages the club plane in a farm field",
+      "confirmed": false
+    },
+    {
+      "month": "1954-11",
+      "text": "Co-directs a campus musical at Purdue"
     },
     {
       "month": "1955-01",
@@ -118,20 +244,95 @@
       "text": "First NACA test flight"
     },
     {
+      "month": "1955-06",
+      "text": "Leaves NACA Lewis as an Edwards job opens"
+    },
+    {
       "month": "1955-07",
       "text": "Reports to Edwards"
+    },
+    {
+      "month": "1955-09",
+      "text": "Charter member of the test pilots' society",
+      "confirmed": false
+    },
+    {
+      "month": "1955-10",
+      "text": "Flies the Bell X-5 on its last program flight"
     },
     {
       "month": "1956-01",
       "text": "Marries Janet Shearon"
     },
     {
+      "month": "1956-03",
+      "text": "B-29 propeller disintegrates; lands safely"
+    },
+    {
+      "month": "1957-01",
+      "text": "Visits Convair about a B-58 X-15 launcher"
+    },
+    {
+      "month": "1957-06",
+      "text": "Son Eric is born"
+    },
+    {
       "month": "1957-08",
       "text": "First rocket-powered flight, X-1B"
     },
     {
+      "month": "1957-10",
+      "text": "Test pilots' first banquet, as Sputnik launches"
+    },
+    {
+      "month": "1957-11",
+      "text": "First reaction-control flight in the X-1B"
+    },
+    {
+      "month": "1958-01",
+      "text": "Flies the X-1B on its last NACA flight"
+    },
+    {
+      "month": "1958-06",
+      "text": "Picked for Man in Space Soonest"
+    },
+    {
+      "month": "1958-07",
+      "text": "X-15 centrifuge tests at Johnsville wrap up"
+    },
+    {
+      "month": "1958-08",
+      "text": "Man in Space Soonest loses its funding"
+    },
+    {
       "month": "1958-10",
       "text": "NASA is founded; he joins"
+    },
+    {
+      "month": "1958-11",
+      "text": "Project Mercury replaces his space program"
+    },
+    {
+      "month": "1959-04",
+      "text": "Daughter Karen is born"
+    },
+    {
+      "month": "1959-06",
+      "text": "Test subject in a centrifuge launch study",
+      "confirmed": false
+    },
+    {
+      "month": "1960-04",
+      "text": "Secretly named a Dyna-Soar pilot",
+      "confirmed": false
+    },
+    {
+      "month": "1960-05",
+      "text": "X-15 reentry training begins in an NT-33A"
+    },
+    {
+      "month": "1960-06",
+      "text": "Tests a new X-15 control aid in a simulator"
     },
     {
       "month": "1960-10",
@@ -142,8 +343,16 @@
       "text": "First X-15 flight"
     },
     {
+      "month": "1960-12",
+      "text": "Second X-15 flight"
+    },
+    {
       "month": "1961-06",
       "text": "Daughter Karen diagnosed with a tumor"
+    },
+    {
+      "month": "1961-12",
+      "text": "Flies X-15 No. 3 on its first flights"
     },
     {
       "month": "1962-01",
@@ -151,31 +360,144 @@
     },
     {
       "month": "1962-03",
-      "text": "Chosen for the X-20 Dyna-Soar"
+      "text": "Chosen for the X-20 Dyna-Soar",
+      "confirmed": false
     },
     {
       "month": "1962-04",
-      "text": "Sixth X-15 flight, over 207,000 ft"
+      "text": "X-15 flight to 207,500 ft; overshoots Edwards"
+    },
+    {
+      "month": "1962-05",
+      "text": "F-104 trouble forces landing at Nellis AFB"
+    },
+    {
+      "month": "1962-06",
+      "text": "Applies for the astronaut corps a week late"
+    },
+    {
+      "month": "1962-07",
+      "text": "Final X-15 flight, at Mach 5.74"
     },
     {
       "month": "1962-09",
-      "text": "Selected as an astronaut"
+      "text": "Named one of NASA’s “New Nine” astronauts"
+    },
+    {
+      "month": "1962-10",
+      "text": "Tours Cape Canaveral with the New Nine"
+    },
+    {
+      "month": "1963-01",
+      "text": "Assigned trainers and simulators"
+    },
+    {
+      "month": "1963-04",
+      "text": "Son Mark is born"
+    },
+    {
+      "month": "1963-05",
+      "text": "Weightless flights at Wright-Patterson"
+    },
+    {
+      "month": "1963-06",
+      "text": "Jungle survival training in Panama"
+    },
+    {
+      "month": "1963-07",
+      "text": "Centrifuge training at Johnsville, Pennsylvania"
+    },
+    {
+      "month": "1963-08",
+      "text": "Desert survival training in Nevada"
+    },
+    {
+      "month": "1963-09",
+      "text": "Water survival training at Pensacola"
+    },
+    {
+      "month": "1963-11",
+      "text": "Helicopter flying lessons begin"
+    },
+    {
+      "month": "1964-02",
+      "text": "Flies the X-14 hover jet at NASA Ames"
+    },
+    {
+      "month": "1964-03",
+      "text": "Geology training at the Grand Canyon"
+    },
+    {
+      "month": "1964-04",
+      "text": "Geology field training in West Texas"
+    },
+    {
+      "month": "1964-06",
+      "text": "Geology field trip to Philmont Ranch, N.M."
     },
     {
       "month": "1965-02",
       "text": "Backup commander, Gemini 5"
     },
     {
+      "month": "1965-07",
+      "text": "Gemini 5 backup crew trains for water egress"
+    },
+    {
+      "month": "1965-08",
+      "text": "Backs up Gemini 5, watches the launch"
+    },
+    {
+      "month": "1965-09",
+      "text": "Named command pilot of Gemini 8"
+    },
+    {
+      "month": "1965-11",
+      "text": "Gemini 8 crews pose for their official portrait"
+    },
+    {
+      "month": "1966-01",
+      "text": "Water-egress drills in the Gulf for Gemini 8"
+    },
+    {
+      "month": "1966-02",
+      "text": "Crewmate Elliot See dies in a T-38 crash"
+    },
+    {
       "month": "1966-03",
       "text": "Gemini 8: first docking in space"
+    },
+    {
+      "month": "1966-07",
+      "text": "Gemini 10 reuses his Gemini 8 Agena target"
+    },
+    {
+      "month": "1966-09",
+      "text": "Backup commander for Gemini 11"
+    },
+    {
+      "month": "1966-10",
+      "text": "South American goodwill tour with Dick Gordon"
     },
     {
       "month": "1967-01",
       "text": "In Washington on the day of the Apollo 1 fire"
     },
     {
+      "month": "1967-03",
+      "text": "First astronaut to fly the lunar trainer"
+    },
+    {
+      "month": "1967-04",
+      "text": "Named backup commander for Apollo 9"
+    },
+    {
+      "month": "1967-11",
+      "text": "Backup crew with Lovell, Aldrin made official"
+    },
+    {
       "month": "1968-05",
-      "text": "Ejects from the lunar landing trainer"
+      "text": "Ejects seconds before the lunar trainer crashes"
     },
     {
       "month": "1968-12",
@@ -186,46 +508,384 @@
       "text": "Apollo 11 crew named"
     },
     {
+      "month": "1969-02",
+      "text": "Moon geology field trip with Aldrin in Texas"
+    },
+    {
+      "month": "1969-03",
+      "text": "Apollo 11 crew gets top simulator priority"
+    },
+    {
+      "month": "1969-04",
+      "text": "NASA confirms Armstrong will exit first"
+    },
+    {
+      "month": "1969-05",
+      "text": "Apollo 11 crew drills water egress in the Gulf"
+    },
+    {
+      "month": "1969-06",
+      "text": "Rehearses the landing eight times in a day"
+    },
+    {
       "month": "1969-07",
       "text": "Walks on the Moon"
     },
     {
+      "month": "1969-08",
+      "text": "Medal of Freedom after ticker-tape parades"
+    },
+    {
+      "month": "1969-09",
+      "text": "Addresses Congress; world tour begins"
+    },
+    {
+      "month": "1969-10",
+      "text": "Giant Leap tour: Europe and Asia"
+    },
+    {
+      "month": "1969-11",
+      "text": "Giant Leap tour ends at the White House"
+    },
+    {
+      "month": "1969-12",
+      "text": "Giant Leap tour adds a Canada leg"
+    },
+    {
       "month": "1970-01",
-      "text": "Master’s degree at USC",
-      "confirmed": false
+      "text": "Master’s degree at USC"
+    },
+    {
+      "month": "1970-02",
+      "text": "Receives the Hubbard Medal from Agnew"
     },
     {
       "month": "1970-04",
-      "text": "Helps investigate the Apollo 13 accident",
-      "confirmed": false
+      "text": "Helps investigate the Apollo 13 accident"
+    },
+    {
+      "month": "1970-05",
+      "text": "Visits the USSR and meets Kosygin"
+    },
+    {
+      "month": "1970-06",
+      "text": "Apollo 13 board report is released"
+    },
+    {
+      "month": "1970-10",
+      "text": "Meets Soyuz 9 cosmonauts at a backyard party"
+    },
+    {
+      "month": "1971-06",
+      "text": "Gives Ohio State’s commencement address"
     },
     {
       "month": "1971-08",
       "text": "Leaves NASA, teaches at Cincinnati"
     },
     {
-      "month": "1978-01",
-      "text": "Congressional Space Medal of Honor",
-      "confirmed": false
+      "month": "1971-10",
+      "text": "Receives West Point’s Thayer Award"
+    },
+    {
+      "month": "1971-12",
+      "text": "Explains his move to teaching at a news event"
+    },
+    {
+      "month": "1972-02",
+      "text": "Addresses a space seminar at Augustana College"
+    },
+    {
+      "month": "1972-03",
+      "text": "Made a freeman of Langholm, Scotland"
+    },
+    {
+      "month": "1972-07",
+      "text": "Attends opening of Wapakoneta space museum"
+    },
+    {
+      "month": "1973-02",
+      "text": "In the news: Scouts’ National Eagle Award"
+    },
+    {
+      "month": "1974-03",
+      "text": "Gina Lollobrigida visits his UC class"
+    },
+    {
+      "month": "1975-12",
+      "text": "Speaks to a Virginia chamber of commerce"
+    },
+    {
+      "month": "1976-08",
+      "text": "Descends into Ecuador’s Los Tayos cave"
+    },
+    {
+      "month": "1976-10",
+      "text": "Inducted into International Space Hall of Fame"
+    },
+    {
+      "month": "1977-05",
+      "text": "Flight-test class at Lunken Airport"
+    },
+    {
+      "month": "1978-10",
+      "text": "Receives the Congressional Space Medal of Honor"
+    },
+    {
+      "month": "1978-11",
+      "text": "Farm accident severs tip of his ring finger"
     },
     {
       "month": "1979-01",
-      "text": "National Aviation Hall of Fame",
+      "text": "Begins appearing in Chrysler ads"
+    },
+    {
+      "month": "1979-02",
+      "text": "Sets five records in the Learjet 28"
+    },
+    {
+      "month": "1979-06",
+      "text": "Gives only press conference at 10th anniversary",
       "confirmed": false
     },
     {
-      "month": "1986-01",
-      "text": "Serves on the Challenger commission",
+      "month": "1979-07",
+      "text": "Rose Garden with Carter for Apollo 11’s 10th"
+    },
+    {
+      "month": "1979-10",
+      "text": "Enshrined in National Aviation Hall of Fame",
       "confirmed": false
     },
     {
-      "month": "1994-01",
-      "text": "Divorces Janet; marries Carol Knight",
+      "month": "1980-01",
+      "text": "Resigns from the University of Cincinnati"
+    },
+    {
+      "month": "1981-12",
+      "text": "Testifies to a House science committee"
+    },
+    {
+      "month": "1982-05",
+      "text": "Returns to Cincinnati as commencement speaker",
       "confirmed": false
+    },
+    {
+      "month": "1982-06",
+      "text": "Gives UC’s commencement address"
+    },
+    {
+      "month": "1983-03",
+      "text": "In the news: false report of his conversion"
+    },
+    {
+      "month": "1983-12",
+      "text": "In the news: Esquire probes his first words"
+    },
+    {
+      "month": "1984-05",
+      "text": "Interviewed for The X-15 Project"
+    },
+    {
+      "month": "1984-07",
+      "text": "Gives Reagan a Moon-flown flag at the 15th"
+    },
+    {
+      "month": "1985-04",
+      "text": "Reaches the North Pole on an expedition"
+    },
+    {
+      "month": "1986-02",
+      "text": "Named vice chairman of Challenger commission"
+    },
+    {
+      "month": "1986-06",
+      "text": "Challenger commission report goes to Reagan"
+    },
+    {
+      "month": "1986-07",
+      "text": "His space commission’s report is delivered"
+    },
+    {
+      "month": "1988-11",
+      "text": "In the news: his face carved in York Minster"
+    },
+    {
+      "month": "1989-07",
+      "text": "In the news: 20 years after the Moon landing"
+    },
+    {
+      "month": "1991-02",
+      "text": "Mild heart attack while skiing in Aspen"
+    },
+    {
+      "month": "1991-09",
+      "text": "In the news: Lancaster Walk of Honor"
+    },
+    {
+      "month": "1994-06",
+      "text": "Marries Carol Knight after divorce from Janet"
+    },
+    {
+      "month": "1994-07",
+      "text": "Joins Clinton for Apollo 11’s 25th"
+    },
+    {
+      "month": "1995-12",
+      "text": "In the news: Hallmark suit settled"
+    },
+    {
+      "month": "1996-01",
+      "text": "Panel with Cernan and Rutan at Richmond Forum"
+    },
+    {
+      "month": "1997-04",
+      "text": "Gives $10,000 to Purdue Bands’ campaign"
+    },
+    {
+      "month": "1999-07",
+      "text": "Apollo 11 crew gets the Langley Gold Medal"
+    },
+    {
+      "month": "2000-02",
+      "text": "Keynotes the century’s top engineering feats"
+    },
+    {
+      "month": "2000-08",
+      "text": "Elected chairman of EDO Corporation"
+    },
+    {
+      "month": "2001-09",
+      "text": "Records his NASA oral history interview"
+    },
+    {
+      "month": "2002-02",
+      "text": "Announces retirement as EDO board chairman"
+    },
+    {
+      "month": "2002-05",
+      "text": "Hands EDO’s chairmanship to Jim Smith"
+    },
+    {
+      "month": "2003-02",
+      "text": "Attends the Columbia memorial service",
+      "confirmed": false
+    },
+    {
+      "month": "2004-07",
+      "text": "At the White House for Apollo 11’s 35th"
+    },
+    {
+      "month": "2004-10",
+      "text": "Purdue names engineering hall for him"
+    },
+    {
+      "month": "2005-05",
+      "text": "Barber dispute over selling his hair"
+    },
+    {
+      "month": "2005-08",
+      "text": "At Edwards as X-15 pilots get astronaut wings"
+    },
+    {
+      "month": "2005-09",
+      "text": "In the news: Mars mission 20 years away"
+    },
+    {
+      "month": "2005-10",
+      "text": "Authorized biography First Man published"
+    },
+    {
+      "month": "2005-11",
+      "text": "Rare 60 Minutes interview airs"
+    },
+    {
+      "month": "2006-04",
+      "text": "NASA names him Ambassador of Exploration"
+    },
+    {
+      "month": "2006-10",
+      "text": "In the news: software finds his missing “a”"
+    },
+    {
+      "month": "2007-07",
+      "text": "Casts his footprint at Marshall"
+    },
+    {
+      "month": "2007-10",
+      "text": "Purdue’s Armstrong Hall is dedicated"
+    },
+    {
+      "month": "2008-08",
+      "text": "NASA’s 50th: astronaut reunion in Cleveland"
+    },
+    {
+      "month": "2008-09",
+      "text": "NASA’s 50th gala: a platinum Fly Me to the Moon"
+    },
+    {
+      "month": "2009-07",
+      "text": "Meets Obama on Apollo 11’s 40th anniversary"
+    },
+    {
+      "month": "2009-08",
+      "text": "Congress awards Apollo 11 crew a Gold Medal"
+    },
+    {
+      "month": "2009-10",
+      "text": "At a Distinguished Eagle Scout event in Dayton"
+    },
+    {
+      "month": "2010-03",
+      "text": "Receives Naval Astronaut wings aboard Ike"
+    },
+    {
+      "month": "2010-04",
+      "text": "Co-signs letter against Obama’s NASA plan"
+    },
+    {
+      "month": "2010-05",
+      "text": "Testifies to the Senate on NASA’s future"
+    },
+    {
+      "month": "2010-10",
+      "text": "USO tour: Bahrain, Iraq and the USS Truman"
+    },
+    {
+      "month": "2010-11",
+      "text": "In the news: still happy to go to Mars"
+    },
+    {
+      "month": "2010-12",
+      "text": "In the news: why the moonwalk was short"
+    },
+    {
+      "month": "2011-08",
+      "text": "USO Legends tour reaches Kabul"
+    },
+    {
+      "month": "2011-09",
+      "text": "Testifies to the House on human spaceflight"
+    },
+    {
+      "month": "2011-11",
+      "text": "Receives the Congressional Gold Medal"
+    },
+    {
+      "month": "2012-02",
+      "text": "Joins Glenn at Ohio State’s Friendship 7 dinner"
+    },
+    {
+      "month": "2012-04",
+      "text": "Sits in Atlantis’s commander seat at Kennedy"
+    },
+    {
+      "month": "2012-05",
+      "text": "In the news: rare interview for accountants"
     },
     {
       "month": "2012-08",
-      "text": "Dies in Fairfield, Ohio"
+      "text": "Dies at 82 after heart surgery"
     }
   ]
 }

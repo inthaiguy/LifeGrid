@@ -1,0 +1,185 @@
+{
+ "person": "Neil Armstrong",
+ "segment": {
+  "from": "1930-08",
+  "to": "1961-12"
+ },
+ "cells": [
+  {
+   "month": "1933-06",
+   "text": "Sister June is born",
+   "confirmed": true,
+   "source": "https://pl.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1935-02",
+   "text": "Brother Dean is born",
+   "confirmed": true,
+   "source": "https://pl.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1941-12",
+   "text": "Joins the new Scout troop in Upper Sandusky",
+   "confirmed": false,
+   "source": "https://onscouting.org/2018/10/10/10-scouting-facts-you-probably-didnt-know-about-eagle-scout-neil-armstrong/",
+   "kind": "event"
+  },
+  {
+   "month": "1943-06",
+   "text": "His Scout troop starts a monthly newspaper",
+   "confirmed": true,
+   "source": "https://onscouting.org/2018/10/10/10-scouting-facts-you-probably-didnt-know-about-eagle-scout-neil-armstrong/",
+   "kind": "event"
+  },
+  {
+   "month": "1946-10",
+   "text": "Approved as an assistant scoutmaster",
+   "confirmed": true,
+   "source": "https://archives.lib.purdue.edu/repositories/2/archival_objects/39085",
+   "kind": "event"
+  },
+  {
+   "month": "1947-08",
+   "text": "Enlists in the Naval Reserve",
+   "confirmed": true,
+   "source": "https://www.history.navy.mil/research/histories/biographies-list/bios-a/armstrong-neil-a/Armstrong-Neil-Text.html",
+   "kind": "event"
+  },
+  {
+   "month": "1947-12",
+   "text": "Gets a Navy aviation officer-candidate contract",
+   "confirmed": true,
+   "source": "https://archives.lib.purdue.edu/repositories/2/archival_objects/39361",
+   "kind": "event"
+  },
+  {
+   "month": "1949-04",
+   "text": "Navy orders for officer-candidate training",
+   "confirmed": true,
+   "source": "https://archives.lib.purdue.edu/repositories/2/archival_objects/39276",
+   "kind": "event"
+  },
+  {
+   "month": "1949-10",
+   "text": "Troop's recharter form lists him as an Eagle",
+   "confirmed": true,
+   "source": "https://onscouting.org/2019/08/09/recharter-form-confirms-neil-armstrongs-status-as-eagle-scout-boys-life-subscriber/",
+   "kind": "event"
+  },
+  {
+   "month": "1951-12",
+   "text": "Recommended for a second Air Medal award",
+   "confirmed": true,
+   "source": "https://archives.lib.purdue.edu/repositories/2/archival_objects/39249",
+   "kind": "event"
+  },
+  {
+   "month": "1952-12",
+   "text": "Gold Star for a third Air Medal is presented",
+   "confirmed": true,
+   "source": "https://archives.lib.purdue.edu/repositories/2/archival_objects/39239",
+   "kind": "event"
+  },
+  {
+   "month": "1953-06",
+   "text": "Completes a Navy Reserve questionnaire",
+   "confirmed": true,
+   "source": "https://archives.lib.purdue.edu/repositories/2/archival_objects/39276",
+   "kind": "event"
+  },
+  {
+   "month": "1955-06",
+   "text": "Leaves NACA Lewis as an Edwards job opens",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/from-pilot-to-first-on-the-moon-armstrongs-start-in-cleveland-2/",
+   "kind": "event"
+  },
+  {
+   "month": "1955-09",
+   "text": "Charter member of the test pilots' society",
+   "confirmed": false,
+   "source": "https://www.nationalacademies.org/read/18477/chapter/4",
+   "kind": "event"
+  },
+  {
+   "month": "1957-01",
+   "text": "Visits Convair about a B-58 X-15 launcher",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/wp-content/uploads/2015/01/601242main_X15ExtendingFrontiersFlight-ebook.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1957-06",
+   "text": "Son Eric is born",
+   "confirmed": true,
+   "source": "https://www.aol.com/neil-armstrongs-children-astronaut-sons-130000057.html",
+   "kind": "event"
+  },
+  {
+   "month": "1957-10",
+   "text": "Test pilots' first banquet, as Sputnik launches",
+   "confirmed": true,
+   "source": "https://www.nationalacademies.org/read/18477/chapter/4",
+   "kind": "event"
+  },
+  {
+   "month": "1958-07",
+   "text": "X-15 centrifuge tests at Johnsville wrap up",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/wp-content/uploads/2015/01/601242main_X15ExtendingFrontiersFlight-ebook.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1958-08",
+   "text": "Man in Space Soonest loses its funding",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1958-11",
+   "text": "Project Mercury replaces his space program",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1959-04",
+   "text": "Daughter Karen is born",
+   "confirmed": true,
+   "source": "https://www.aol.com/neil-armstrongs-children-astronaut-sons-130000057.html",
+   "kind": "event"
+  },
+  {
+   "month": "1960-05",
+   "text": "X-15 reentry training begins in an NT-33A",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/wp-content/uploads/2015/01/601242main_X15ExtendingFrontiersFlight-ebook.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1960-06",
+   "text": "Tests a new X-15 control aid in a simulator",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/wp-content/uploads/2015/01/601242main_X15ExtendingFrontiersFlight-ebook.pdf",
+   "kind": "event"
+  }
+ ],
+ "corrections": [
+  {
+   "month": "1941-09",
+   "text": "Joins the Boy Scouts in Upper Sandusky",
+   "reason": "Placeholder month is wrong. Scouting magazine (citing Hansen) says Upper Sandusky had no troop when the family arrived in 1941 and Troop 25 was formed after Pearl Harbor (7 Dec 1941), with Armstrong among the 32 who joined right away. Moved to 1941-12 as 'to confirm' (formation month itself not given)."
+  }
+ ],
+ "summary": {
+  "new_confirmed": 21,
+  "upgraded": 0,
+  "new_to_confirm": 2,
+  "confirmed_total_with_first_pass": 61,
+  "percent_confirmed": 16.2
+ },
+ "notes": "BELOW TARGET: 21 new confirmed (61 of 377 = 16.2%), not 35. The shared WebSearch budget ran out mid-run, so the last third came from direct fetches only (NASA PDFs, Wikipedia in other languages, onscouting.org). Purdue Archives (Cloudflare), archive.org lending copy of Hansen, Hoosier State Chronicles and CDNC were blocked; I did not try to get round them. SOURCE CAVEATS. (1) Purdue Archives cells (1946-10, 1947-12, 1949-04, 1951-12, 1952-12, 1953-06) take the month from item titles/series notes seen in search snippets (document dates, not an essay about the event; item 39085 calls him 'Neil Armstrong, Jr.'). 1953-06 and 1949-10 are low-value paperwork/roster items; drop them if too trivial. (2) 1947-08: NHHC bio says he enlisted in the Naval Reserve 25 Aug 1947; the page failed TLS directly so I read a Wayback copy. (3) 1933-06 and 1935-02: Polish Wikipedia (citing Hansen, Polish ed. p. 36) gives June 6 1933 and Dean 22 Feb 1935; Turkish Wikipedia agrees on years. (4) 1957-06 and 1959-04: People magazine via AOL gives 30 Jun 1957 (Eric) and 13 Apr 1959 (Karen); Polish Wikipedia gives the same dates; NAE/Wikipedia give only years. (5) 1955-06: NASA Glenn history says a High Speed Flight Station job opened 'in June' and he left Lewis; NASA Armstrong page says he reported 11 Jul 1955 (already 1955-07). (6) 1957-01, 1958-07, 1960-05, 1960-06 come from Jenkins, X-15: Extending the Frontiers of Flight (NASA SP-2007-562): memo on his 22 Jan 1957 Convair visit; Johnsville centrifuge X-15 tests completed 12 Jul 1958 with him among the pilots (his own runs not separately dated); NT-33A reentry training series for six pilots incl. Armstrong began May 1960 (his own flights could fall later); North American simulator tests 'as early as June 1960' with Armstrong, Walker, White. (7) 1957-10: NAE tribute puts the first SETP banquet in Oct 1957 (Sputnik); Wikipedia SETP gives 4 Oct 1957; the NAE does not say he attended, only that he was a charter member. 1955-09 (to confirm): SETP founded Sep 1955 (Wikipedia) and NAE calls him a charter member, but no page names his joining month. (8) 1958-08 and 1958-11 are dates of the program he joined (ARPA funding cut 1 Aug 1958; Mercury superseded it 5 Nov 1958, per his Wikipedia article). CONFLICTS LEFT UNRESOLVED. Ensign promotion: NHHC 1959 bio says 24 Feb 1951, Wikipedia and NHHC H-Gram 033 say 5 Jun 1951 (first-pass 1951-06 kept). Post-Essex squadron: Wikipedia VR-32, H-Gram says VR-52; H-Gram says Essex returned May 1952. Dyna-Soar: Wikipedia X-20 article lists him among seven secretly chosen April 1960 (Czech/Slovak/Ukrainian Wikipedias copy that), his own article says consultant group Nov 1960 and selection 15 Mar 1962, NAE says 'secretly named in 1960'; first-pass 1960-04 stays to-confirm. Karen's diagnosis: Wikipedia June 1961, NAE 'summer 1961'. Jenkins also has him at the X-15 rollout on 15 Oct 1958 (alternative for 1958-10). CHECKED, NO NEW MONTH. Wikipedia's X-15 list gives only 30 Nov 1960, 9 Dec 1960, 19 and 20 Dec 1961 before 1962 (abort 19 Dec); Hallion SP-4303 X-1B appendix confirms 15 Aug 1957, 27 Nov 1957, 16 Jan 1958, 23 Jan 1958 and X-5 25 Oct 1955. NASA Glenn's 1955 Lewis flight log (scanned) shows him first flying 1 Mar 1955. Paresev and Dyna-Soar selection dates fall in 1962. STILL UNVERIFIABLE (left empty): Eagle Scout and Blume graduation months (1947 only), Wapakoneta move (1944 only), Michener's Essex visit ('late 1951'), 1954 Aeronca incident, centrifuge run month (Astronautix gives 18 Jun 1959 for the program; first-pass 1959-06 stays to-confirm), summer 1961 Seattle trips, most of 1956-1961 at Edwards, and nearly all of 1931-1945 and 1953-1954."
+}

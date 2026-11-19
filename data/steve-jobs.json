@@ -1,6 +1,6 @@
 {
   "schema": "life-grid/1",
-  "exportedAt": "2026-11-13T00:00:00.000Z",
+  "exportedAt": "2026-11-19T00:00:00.000Z",
   "name": "Steve",
   "birth": {
     "month": "1955-02",
@@ -37,6 +37,10 @@
       "place": "Cupertino, California"
     },
     {
+      "from": "1983-01",
+      "place": "Los Gatos, California"
+    },
+    {
       "from": "1984-01",
       "place": "Woodside, California"
     },
@@ -45,11 +49,27 @@
       "place": "Palo Alto, California"
     }
   ],
-  "stays": [],
+  "stays": [
+    {
+      "from": "1974-06",
+      "to": "1974-12",
+      "place": "India"
+    }
+  ],
   "cells": [
     {
       "month": "1955-02",
       "text": "Born in San Francisco"
+    },
+    {
+      "month": "1957-01",
+      "text": "Parents adopt a sister, Patty",
+      "confirmed": false
+    },
+    {
+      "month": "1959-01",
+      "text": "Family moves to Mountain View",
+      "confirmed": false
     },
     {
       "month": "1967-01",
@@ -57,8 +77,22 @@
       "confirmed": false
     },
     {
-      "month": "1968-01",
+      "month": "1968-07",
       "text": "Summer job with Bill Hewlett",
+      "confirmed": false
+    },
+    {
+      "month": "1968-09",
+      "text": "Starts at Homestead High",
+      "confirmed": false
+    },
+    {
+      "month": "1971-10",
+      "text": "Blue box article sparks a business"
+    },
+    {
+      "month": "1972-06",
+      "text": "Graduates from Homestead High",
       "confirmed": false
     },
     {
@@ -66,13 +100,17 @@
       "text": "Starts at Reed College"
     },
     {
-      "month": "1974-01",
-      "text": "Joins Atari",
-      "confirmed": false
+      "month": "1973-05",
+      "text": "Gets a passport"
     },
     {
       "month": "1974-02",
       "text": "Back in his parents’ house"
+    },
+    {
+      "month": "1974-03",
+      "text": "Joins Atari",
+      "confirmed": false
     },
     {
       "month": "1974-06",
@@ -80,21 +118,145 @@
       "confirmed": false
     },
     {
+      "month": "1975-03",
+      "text": "Woz at first Homebrew meeting"
+    },
+    {
+      "month": "1975-07",
+      "text": "Breakout board with Woz for Atari",
+      "confirmed": false
+    },
+    {
+      "month": "1976-03",
+      "text": "Woz finishes Apple I; Jobs pitches selling"
+    },
+    {
       "month": "1976-04",
       "text": "Apple is founded"
     },
     {
+      "month": "1976-07",
+      "text": "Apple I goes on sale"
+    },
+    {
+      "month": "1976-08",
+      "text": "Shows the Apple I in Atlantic City"
+    },
+    {
+      "month": "1976-09",
+      "text": "Pitches Apple at WESCON in Los Angeles"
+    },
+    {
+      "month": "1976-11",
+      "text": "Demos Apple II prototype to BYTE editor"
+    },
+    {
+      "month": "1976-12",
+      "text": "Tells BYTE: first 16K-RAM computer shipped"
+    },
+    {
+      "month": "1977-01",
+      "text": "Apple Computer, Inc. incorporated"
+    },
+    {
+      "month": "1977-02",
+      "text": "Mike Scott hired as first Apple CEO"
+    },
+    {
+      "month": "1977-03",
+      "text": "In the news: Kilobaud praises the Apple-1"
+    },
+    {
       "month": "1977-04",
-      "text": "Apple II shown"
+      "text": "Apple II shown at West Coast Faire"
+    },
+    {
+      "month": "1977-05",
+      "text": "First Apple II boards ship"
+    },
+    {
+      "month": "1977-06",
+      "text": "Apple II goes on sale"
+    },
+    {
+      "month": "1977-10",
+      "text": "Chrisann Brennan is pregnant"
+    },
+    {
+      "month": "1978-01",
+      "text": "In the news: BYTE corrects an Apple II listing"
+    },
+    {
+      "month": "1978-03",
+      "text": "In the news: Jobs on TVs for the Apple II"
     },
     {
       "month": "1978-05",
       "text": "Daughter Lisa is born"
     },
     {
+      "month": "1978-06",
+      "text": "In the news: Jobs spotted at Heath’s booth"
+    },
+    {
+      "month": "1979-04",
+      "text": "In the news: Apple is Shugart’s top customer"
+    },
+    {
+      "month": "1979-12",
+      "text": "Visits Xerox PARC"
+    },
+    {
+      "month": "1980-05",
+      "text": "Apple III announced"
+    },
+    {
+      "month": "1980-07",
+      "text": "In the news: Jobs pitches the Apple III"
+    },
+    {
+      "month": "1980-08",
+      "text": "In the news: Jobs on the Apple III’s launch"
+    },
+    {
+      "month": "1980-09",
+      "text": "Pushed off the Lisa project"
+    },
+    {
+      "month": "1980-11",
+      "text": "In the news: COMPUTE! timeline credits Jobs"
+    },
+    {
       "month": "1980-12",
-      "text": "Apple goes public",
-      "confirmed": false
+      "text": "Apple goes public"
+    },
+    {
+      "month": "1981-01",
+      "text": "Gets involved in the Macintosh project"
+    },
+    {
+      "month": "1981-02",
+      "text": "In the news: Apple IPO makes Jobs rich"
+    },
+    {
+      "month": "1981-03",
+      "text": "Becomes chairman of Apple"
+    },
+    {
+      "month": "1981-06",
+      "text": "Tells Bill Gates about the Macintosh"
+    },
+    {
+      "month": "1981-08",
+      "text": "In the news: Jobs backs the Apple III"
+    },
+    {
+      "month": "1981-09",
+      "text": "In the news: Jobs calls Hayes about Micromodem"
+    },
+    {
+      "month": "1981-10",
+      "text": "Speaks at schools conference in San Jose"
     },
     {
       "month": "1982-01",
@@ -102,72 +264,475 @@
       "confirmed": false
     },
     {
+      "month": "1982-02",
+      "text": "Time cover story: ‘The Seeds of Success’"
+    },
+    {
+      "month": "1982-04",
+      "text": "In the news: Jobs’s condor and bicycle analogy"
+    },
+    {
+      "month": "1982-05",
+      "text": "Keynotes AppleFest ’82 in Boston"
+    },
+    {
+      "month": "1982-06",
+      "text": "Speaks to young achievers in New Orleans"
+    },
+    {
+      "month": "1982-07",
+      "text": "In the news: Jobs’s ‘bicycle of information’"
+    },
+    {
+      "month": "1982-08",
+      "text": "In the news: Jobs’s computers-for-schools bill"
+    },
+    {
+      "month": "1982-09",
+      "text": "In the news: his Kids Can’t Wait school bill"
+    },
+    {
+      "month": "1982-10",
+      "text": "In the news: his ‘S-100 is dead’ remark"
+    },
+    {
+      "month": "1982-11",
+      "text": "In the news: BYTE on MOS chips sold to Jobs"
+    },
+    {
+      "month": "1983-01",
+      "text": "Apple introduces the Lisa"
+    },
+    {
+      "month": "1983-02",
+      "text": "In the news: Softalk says Jobs backs Mac"
+    },
+    {
+      "month": "1983-03",
+      "text": "In the news: Jobs at the shareholder meeting"
+    },
+    {
+      "month": "1983-04",
+      "text": "Sculley named Apple president and CEO"
+    },
+    {
+      "month": "1983-05",
+      "text": "In the news: Jobs’s California schools plan"
+    },
+    {
+      "month": "1983-06",
+      "text": "Speaks at the Aspen design conference"
+    },
+    {
+      "month": "1983-07",
+      "text": "In the news: Apple IIe’s origins recalled"
+    },
+    {
+      "month": "1983-08",
+      "text": "In the news: ‘Apple Cart’ column on the Apple II"
+    },
+    {
+      "month": "1983-09",
+      "text": "In the news: PC World on Jobs and PARC ideas"
+    },
+    {
+      "month": "1983-10",
+      "text": "Shows Mac and ‘1984’ ad to sales force"
+    },
+    {
+      "month": "1983-11",
+      "text": "In the news: PC World interview cites Jobs"
+    },
+    {
+      "month": "1983-12",
+      "text": "Board dislikes the ‘1984’ ad"
+    },
+    {
       "month": "1984-01",
       "text": "Introduces the Macintosh"
     },
     {
-      "month": "1985-01",
-      "text": "Founds NeXT",
-      "confirmed": false
+      "month": "1984-02",
+      "text": "In the news: BYTE’s Macintosh team interview"
+    },
+    {
+      "month": "1984-03",
+      "text": "In the news: Jobs on IBM and the Mac"
+    },
+    {
+      "month": "1984-04",
+      "text": "Joins Sculley and Woz at ‘Apple II Forever’"
+    },
+    {
+      "month": "1984-05",
+      "text": "Interviewed by Michael Moritz"
+    },
+    {
+      "month": "1984-06",
+      "text": "In the news: Apple University Consortium"
+    },
+    {
+      "month": "1984-07",
+      "text": "In the news: Jobs on the new Apple IIc"
+    },
+    {
+      "month": "1984-08",
+      "text": "In the news: Jobs tours Japan’s factories"
+    },
+    {
+      "month": "1984-09",
+      "text": "Mac 512K ‘Fat Mac’ ships"
+    },
+    {
+      "month": "1984-10",
+      "text": "In the news: Jobs wants a Dynabook"
+    },
+    {
+      "month": "1984-11",
+      "text": "In the news: Creative Computing’s Apple story"
+    },
+    {
+      "month": "1984-12",
+      "text": "In the news: BYTE’s ‘The Apple Story’"
+    },
+    {
+      "month": "1985-02",
+      "text": "Gets the National Medal of Technology"
+    },
+    {
+      "month": "1985-05",
+      "text": "Stripped of operating duties at Apple"
+    },
+    {
+      "month": "1985-07",
+      "text": "Visits the Soviet Union"
     },
     {
       "month": "1985-09",
-      "text": "Resigns from Apple"
+      "text": "Quits Apple, starts NeXT"
     },
     {
-      "month": "1986-01",
-      "text": "Buys Pixar",
-      "confirmed": false
+      "month": "1986-02",
+      "text": "Buys Pixar"
+    },
+    {
+      "month": "1987-02",
+      "text": "In the news: Perot's $20M stake in NeXT"
+    },
+    {
+      "month": "1987-09",
+      "text": "In the news: NeXT eyes business market"
+    },
+    {
+      "month": "1988-05",
+      "text": "In the news: Fortune on Jobs's secret NeXT"
     },
     {
       "month": "1988-10",
       "text": "NeXT computer launch"
     },
     {
-      "month": "1991-01",
-      "text": "Marries Laurene Powell",
+      "month": "1989-03",
+      "text": "In the news: NeXT to sell to businesses"
+    },
+    {
+      "month": "1989-06",
+      "text": "In the news: IBM licenses NeXT software"
+    },
+    {
+      "month": "1989-10",
+      "text": "Meets Laurene Powell at Stanford"
+    },
+    {
+      "month": "1990-01",
+      "text": "In the news: NeXT teams with TRW"
+    },
+    {
+      "month": "1990-09",
+      "text": "NeXTcube introduced"
+    },
+    {
+      "month": "1991-03",
+      "text": "Marries Laurene Powell"
+    },
+    {
+      "month": "1991-09",
+      "text": "Son Reed is born"
+    },
+    {
+      "month": "1993-02",
+      "text": "NeXT quits making computers",
       "confirmed": false
     },
     {
-      "month": "1995-11",
-      "text": "Toy Story released",
+      "month": "1993-03",
+      "text": "Father Paul Jobs dies"
+    },
+    {
+      "month": "1993-05",
+      "text": "In the news: NeXT goes software-only"
+    },
+    {
+      "month": "1993-11",
+      "text": "In the news: Sun partners with NeXT"
+    },
+    {
+      "month": "1994-12",
+      "text": "In the news: NeXT's success vs Apple"
+    },
+    {
+      "month": "1995-08",
+      "text": "Daughter Erin is born",
       "confirmed": false
+    },
+    {
+      "month": "1995-09",
+      "text": "In the news: Fortune on Jobs and Pixar"
+    },
+    {
+      "month": "1995-11",
+      "text": "Toy Story released"
+    },
+    {
+      "month": "1996-02",
+      "text": "In the news: Wired interviews Jobs",
+      "confirmed": false
+    },
+    {
+      "month": "1996-12",
+      "text": "Apple agrees to buy NeXT"
     },
     {
       "month": "1997-02",
       "text": "Apple acquires NeXT"
     },
     {
+      "month": "1997-03",
+      "text": "In the news: Fortune on Apple's turmoil"
+    },
+    {
+      "month": "1997-07",
+      "text": "In the news: Jobs poised to retake Apple"
+    },
+    {
+      "month": "1997-08",
+      "text": "Microsoft invests $150M in Apple"
+    },
+    {
       "month": "1997-09",
       "text": "Interim CEO of Apple"
     },
     {
+      "month": "1997-11",
+      "text": "Launches the online Apple Store"
+    },
+    {
+      "month": "1998-01",
+      "text": "Promises an Apple profit at Macworld"
+    },
+    {
+      "month": "1998-03",
+      "text": "Kills Newton, Cyberdog and OpenDoc"
+    },
+    {
+      "month": "1998-05",
+      "text": "Unveils the iMac"
+    },
+    {
+      "month": "1998-07",
+      "text": "Daughter Eve is born"
+    },
+    {
       "month": "1998-08",
-      "text": "iMac released",
-      "confirmed": false
+      "text": "iMac released"
+    },
+    {
+      "month": "1998-09",
+      "text": "In the news: The fruit of Jobs's labor"
+    },
+    {
+      "month": "1998-11",
+      "text": "Pixar's A Bug's Life opens"
+    },
+    {
+      "month": "1999-01",
+      "text": "Macworld: five profitable quarters"
+    },
+    {
+      "month": "1999-07",
+      "text": "Unveils the iBook at Macworld"
+    },
+    {
+      "month": "1999-10",
+      "text": "In the news: TIME cover story"
+    },
+    {
+      "month": "1999-11",
+      "text": "Pixar's Toy Story 2 opens"
     },
     {
       "month": "2000-01",
-      "text": "Becomes permanent CEO",
-      "confirmed": false
+      "text": "Becomes permanent CEO"
+    },
+    {
+      "month": "2000-07",
+      "text": "Unveils the Power Mac G4 Cube"
+    },
+    {
+      "month": "2000-11",
+      "text": "Pixar's Emeryville campus opens"
+    },
+    {
+      "month": "2001-01",
+      "text": "Introduces iTunes"
+    },
+    {
+      "month": "2001-05",
+      "text": "First Apple Stores open"
     },
     {
       "month": "2001-10",
-      "text": "iPod released",
-      "confirmed": false
+      "text": "Unveils the iPod"
     },
     {
-      "month": "2003-01",
-      "text": "Cancer diagnosed",
-      "confirmed": false
+      "month": "2001-11",
+      "text": "Pixar's Monsters, Inc. opens"
+    },
+    {
+      "month": "2002-01",
+      "text": "Unveils the flat-panel iMac"
+    },
+    {
+      "month": "2002-05",
+      "text": "WWDC: Mac OS 9 declared end-of-life"
+    },
+    {
+      "month": "2002-07",
+      "text": "Launches .Mac"
+    },
+    {
+      "month": "2003-04",
+      "text": "Opens the iTunes Music Store"
+    },
+    {
+      "month": "2003-05",
+      "text": "Pixar's Finding Nemo opens"
+    },
+    {
+      "month": "2003-06",
+      "text": "WWDC: shows the Power Mac G5"
+    },
+    {
+      "month": "2003-10",
+      "text": "Cancer diagnosed"
+    },
+    {
+      "month": "2004-01",
+      "text": "Introduces the iPod mini"
+    },
+    {
+      "month": "2004-02",
+      "text": "In the news: Fortune asks what Jobs wants"
+    },
+    {
+      "month": "2004-06",
+      "text": "WWDC: new displays, Tiger preview"
+    },
+    {
+      "month": "2004-07",
+      "text": "Has pancreatic cancer surgery"
+    },
+    {
+      "month": "2004-10",
+      "text": "Launches the U2 iPod"
+    },
+    {
+      "month": "2004-11",
+      "text": "Pixar's The Incredibles opens"
+    },
+    {
+      "month": "2005-01",
+      "text": "Introduces the iPod shuffle"
+    },
+    {
+      "month": "2005-06",
+      "text": "Stanford commencement speech"
+    },
+    {
+      "month": "2005-09",
+      "text": "Introduces the iPod nano"
     },
     {
       "month": "2006-01",
       "text": "Disney buys Pixar"
     },
     {
+      "month": "2006-02",
+      "text": "In the news: Fortune profiles Jobs"
+    },
+    {
+      "month": "2006-05",
+      "text": "Disney completes Pixar deal"
+    },
+    {
+      "month": "2006-08",
+      "text": "WWDC: finishes the Intel switch"
+    },
+    {
+      "month": "2007-01",
+      "text": "Unveils the iPhone"
+    },
+    {
+      "month": "2007-02",
+      "text": "Calls for DRM-free music"
+    },
+    {
       "month": "2007-06",
-      "text": "iPhone launch"
+      "text": "iPhone goes on sale"
+    },
+    {
+      "month": "2007-08",
+      "text": "Unveils the aluminum iMac"
+    },
+    {
+      "month": "2007-09",
+      "text": "Cuts the iPhone price to $399"
+    },
+    {
+      "month": "2007-10",
+      "text": "Promises an iPhone developer kit"
+    },
+    {
+      "month": "2008-01",
+      "text": "Unveils the MacBook Air"
+    },
+    {
+      "month": "2008-03",
+      "text": "In the news: Fortune probes his health"
+    },
+    {
+      "month": "2008-06",
+      "text": "WWDC: App Store and 3G iPhone"
+    },
+    {
+      "month": "2008-07",
+      "text": "The App Store opens"
+    },
+    {
+      "month": "2008-08",
+      "text": "Bloomberg runs his obituary by mistake"
+    },
+    {
+      "month": "2008-09",
+      "text": "'Let's Rock' keynote"
+    },
+    {
+      "month": "2008-12",
+      "text": "Won't give the Macworld keynote"
+    },
+    {
+      "month": "2009-01",
+      "text": "Takes medical leave from Apple"
     },
     {
       "month": "2009-04",
@@ -175,14 +740,44 @@
       "confirmed": false
     },
     {
+      "month": "2009-06",
+      "text": "Back at Apple after liver transplant"
+    },
+    {
       "month": "2010-01",
-      "text": "iPad announced",
-      "confirmed": false
+      "text": "iPad announced"
+    },
+    {
+      "month": "2010-04",
+      "text": "iPad goes on sale"
+    },
+    {
+      "month": "2010-06",
+      "text": "Presents the iPhone 4"
+    },
+    {
+      "month": "2010-07",
+      "text": "Holds the iPhone 4 antenna press event"
+    },
+    {
+      "month": "2010-09",
+      "text": "Unveils the new Apple TV"
+    },
+    {
+      "month": "2011-01",
+      "text": "Takes a second medical leave"
+    },
+    {
+      "month": "2011-03",
+      "text": "Appears to launch the iPad 2"
+    },
+    {
+      "month": "2011-06",
+      "text": "Unveils iCloud at WWDC"
     },
     {
       "month": "2011-08",
-      "text": "Steps down as CEO",
-      "confirmed": false
+      "text": "Steps down as CEO"
     },
     {
       "month": "2011-10",

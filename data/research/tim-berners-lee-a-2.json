@@ -1,0 +1,265 @@
+{
+  "person": "Tim Berners-Lee",
+  "segment": {
+    "from": "1955-06",
+    "to": "1989-12"
+  },
+  "cells": [
+    {
+      "month": "1976-06",
+      "text": "Physics first, then Plessey in Poole",
+      "confirmed": true,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1976-12",
+      "text": "Promoted to engineer at Plessey",
+      "confirmed": true,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1979-12",
+      "text": "Leaves D. G. Nash Ltd",
+      "confirmed": true,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1980-01",
+      "text": "Goes independent as a consultant",
+      "confirmed": true,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1981-06",
+      "text": "Ends independent consulting work",
+      "confirmed": true,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1981-07",
+      "text": "Becomes a director at Image Computer Systems",
+      "confirmed": false,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1983-04",
+      "text": "Applies for a CERN fellowship",
+      "confirmed": false,
+      "source": "https://archive.org/details/tim-berners-lee-weaving-the-web-the-original-design-and-ultimate-destiny-of-the-",
+      "kind": "event"
+    },
+    {
+      "month": "1984-08",
+      "text": "Leaves Image Computer Systems",
+      "confirmed": false,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1984-09",
+      "text": "Arrives at CERN as a fellow",
+      "confirmed": true,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1986-01",
+      "text": "Drafts an RPC development strategy",
+      "confirmed": true,
+      "source": "https://repository.cern/records/5z9tc-tee75",
+      "kind": "event"
+    },
+    {
+      "month": "1986-03",
+      "text": "Drafts 'Simple RPC' notes with Pastore",
+      "confirmed": true,
+      "source": "https://repository.cern/records/p36ge-h6514",
+      "kind": "event"
+    },
+    {
+      "month": "1986-04",
+      "text": "Writes up how the RPC project will work",
+      "confirmed": true,
+      "source": "https://repository.cern/records/jsvfg-e0x13",
+      "kind": "event"
+    },
+    {
+      "month": "1986-08",
+      "text": "Writes the RPC User Manual with Pastore",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/Internals/rpcimp.sgml",
+      "kind": "event"
+    },
+    {
+      "month": "1987-02",
+      "text": "Becomes a CERN staff member",
+      "confirmed": true,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1987-03",
+      "text": "Releases RPC software version 2.0",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/2.0_release.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1987-06",
+      "text": "CERN report on RPC experience",
+      "confirmed": true,
+      "source": "https://repository.cern/records/kgffn-v0m26",
+      "kind": "event"
+    },
+    {
+      "month": "1987-11",
+      "text": "Flags an Ethernet bug in RPC 2.0",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1988-01",
+      "text": "Releases RPC software version 2.1",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/ProjectHistory.html",
+      "kind": "event"
+    },
+    {
+      "month": "1988-02",
+      "text": "Posts a 'Battleships' RPC example",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1988-03",
+      "text": "Co-authors Trieste host interface papers",
+      "confirmed": true,
+      "source": "https://www.w3.org/People/Berners-Lee/MIT-CV.html",
+      "kind": "event"
+    },
+    {
+      "month": "1988-04",
+      "text": "Releases RPC software for OS-9",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1988-05",
+      "text": "Makes RPC package numbers invisible",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1988-06",
+      "text": "Releases RPC software version 2.2",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/2.2_release.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1988-08",
+      "text": "Co-authors VALET-Plus report for CERN",
+      "confirmed": true,
+      "source": "https://repository.cern/records/jx1gx-tfg98",
+      "kind": "event"
+    },
+    {
+      "month": "1988-09",
+      "text": "Paper 'CERN experience' at SIGOPS workshop",
+      "confirmed": true,
+      "source": "https://doi.org/10.1145/504092.504100",
+      "kind": "event"
+    },
+    {
+      "month": "1988-11",
+      "text": "Previews new RPC compiler features",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1989-01",
+      "text": "Releases RPC software version 2.3",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/2.3_release.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1989-02",
+      "text": "Issues new RPC User and Internals manuals",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1989-04",
+      "text": "Adds one-way PRAGMA CAST calls to RPC",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1989-05",
+      "text": "Adds close and detach routines to RPC",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1989-10",
+      "text": "Releases RPC 2.4, now running over TCP",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/2.4_release.txt",
+      "kind": "event"
+    },
+    {
+      "month": "1989-11",
+      "text": "Posts fixes for RPC compiler bugs",
+      "confirmed": true,
+      "source": "https://www.w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/OldNotes.txt",
+      "kind": "event"
+    }
+  ],
+  "corrections": [
+    {
+      "month": "1984-01",
+      "text": "Returns to CERN as a fellow",
+      "reason": "Placeholder month. Arrival is now confirmed as September 1984 by his own MIT CV (Fellow Sept 1984 - Feb 1987), Hopgood's W3C-hosted History of the Web and Weaving the Web (arriving eventually in September 1984). Replaced by the confirmed 1984-09 cell; drop 1984-01."
+    },
+    {
+      "month": "1976-09",
+      "text": "Starts at Plessey in Poole",
+      "reason": "Placeholder month. His MIT CV gives Plessey Assistant Engineer June 1976 - Dec 1976, so the start is June 1976 (confirmed 1976-06 cell). Drop 1976-09."
+    },
+    {
+      "month": "1976-06",
+      "text": "First in physics at Oxford",
+      "reason": "Placeholder month for the degree (only the year 1976 is sourced). The month now carries the confirmed Plessey start, with the cell text 'Physics first, then Plessey in Poole'; the degree itself still has no sourced month."
+    },
+    {
+      "month": "1981-01",
+      "text": "Joins Image Computer Systems",
+      "reason": "Placeholder month. His own CVs put the Image directorship in mid-1981 (1993 CV: June 1981 - July 1984; 1995 MIT CV: July 1981 - Aug 1984), after consulting that both CVs say ran Jan 1980 - June 1981. Wikipedia's 'late 1980' is contradicted. Moved to 1981-07 (unconfirmed because the two CVs differ by a month); drop 1981-01."
+    },
+    {
+      "month": "1969-09",
+      "text": "Starts at Emanuel School",
+      "reason": "Possibly wrong year, not just an unconfirmed month: W3C bio and Who's Who say 1969-1973, but Emanuel School's own alumni profile of him is labelled OE 1966-1973 (https://www.emanuel.org.uk/?p=1631). Entry year disputed; keep unconfirmed or drop."
+    }
+  ],
+  "summary": {
+    "new_confirmed": 27,
+    "upgraded": 2
+  },
+  "notes": "RESULT: 29 confirmed cells (27 brand-new months plus 2 upgrades of first-pass placeholders: 1984-09 replaces 1984-01, 1976-06 replaces 1976-09/1976-06) and 3 unconfirmed cells (1981-07, 1983-04, 1984-08). Short of the 55-new target: after the first-pass months, month-level sources exist only for his working life (CVs, CERN reports, his own RPC release notes), not for 1955-1975 or most of 1976-1983. KEY SOURCES. (1) His own CV for MIT, dated 24 Mar 1995 and hosted by W3C (w3.org/People/Berners-Lee/MIT-CV.html): Plessey Assistant Engineer June 1976 - Dec 1976, Engineer from Dec 1976, D.G. Nash 1978 - Dec 1979, consultant Jan 1980 - June 1981, Image director July 1981 - Aug 1984, CERN Fellow Sept 1984 - Feb 1987, staff member from Feb 1987; it also lists the Trieste conference of 28-30 Mar 1988. A 1993 CV on the W3C history mirror (History/1992/nfs_dxcern_mirror/Public/CV/timcv4.ps) agrees on every month except Image (June 1981 - July 1984), which is why the two Image cells are unconfirmed. (2) Bob Hopgood's History of the Web (Oxford Brookes, hosted at w3.org/2012/08/history-of-the-web/origins.htm) and Weaving the Web both say he arrived back at CERN in September 1984 (Weaving the Web also says he decided to apply in the spring of 1983). (3) The W3C mirror of his RPC project files (w3.org/History/1992/nfs_dxcern_mirror/rpc/doc/History/): ProjectHistory.html gives release months (2.0 March 1987, 2.1 January 1988, 2.2 June 1988, 2.3 January 1989, 2.4 October 1989) and OldNotes.txt is his VAX Notes conference with timestamped posts by VXCERN::TIMBL ('Tim Berners-Lee CERN/DD'), used for 1987-11, 1988-02, 1988-04, 1988-05, 1988-11, 1989-02, 1989-04, 1989-05 and 1989-11. I did NOT use posts from the shared VXCERN::RPC account. (4) CERN repository / CDS records read through CDS's public OAI-PMH interface (cds.cern.ch is behind Anubis bot protection, which I did not try to get round): 14 Jan, 17 Mar and 9 Apr 1986 RPC drafts (CERN-DD-OC-TBL-RPC notes), CERN-DD-87-13 (Jun 1987), CERN-DD-88-13 (Aug 1988). I cite repository.cern record pages, which are open. (5) Crossref/ACM: 'CERN experience', EW88 SIGOPS European Workshop, Cambridge UK, 18 Sep 1988 (sole author Tim Berners-Lee, CERN). CHECKS ON FIRST-PASS CELLS. 1987-05 is corroborated by his own 8 Oct 1987 note ('I submitted a short paper ... to the Real-Time conference in San Francisco last May'). His CVs also give IEEE Trans. Nucl. Sci. issue months Feb 1986 and Aug 1987, matching 1986-02 and 1987-08. 1980-06: Hopgood and Wikipedia's ENQUIRE page give the start as 23 June 1980. The removed 1989-11 'first web client and server talk' stays removed: Wikipedia's 'mid-November' sentence has no year and W3C/Hopgood date the NeXT arrival to Sept 1990 and the first server to Nov-Dec 1990. Possible clash in the first-pass 'homes' list: it puts Bournemouth (Image) from 1980-12, but his CVs have him consulting until June 1981 and at Image from mid-1981. MONTH COLLISIONS (one headline per month): other dated items exist for months already filled and were left out of cells. 1985-10: 2 Oct 1985 note 'Datagrams and OC Group software' (CERN-DD-OC-MPWG). 1988-02: IEEE Trans. Nucl. Sci. 35(1) Feb 1988 carries 'The CERN Host Interface' (Crossref). 1988-04: CERN-DD-88-8 report on the host interface and optical interconnect (Apr 1988). 1988-10: CERN-DD-88-15 and CERN-DD-88-19 reports (Oct 1988). 1989-02: CERN-DD-89-5 'Software support for the CERN Host Interface' (Feb 1989). 1989-10: IEEE Trans. Nucl. Sci. 36(5) Oct 1989 'The integration of VAX and VALET-plus data acquisition software' (he is a co-author). 1989-12: his RPC wish-list document is dated December 1989. UNVERIFIED / LEFT EMPTY. No month found for: birth-to-1975 childhood; Emanuel School entry (start year itself disputed, see corrections); Oxford matriculation (1973) and finals/degree (1976); the 1975 vacation work and 1976 thank-you letter in Walter Bodmer's Oxford genetics lab (Bodleian blog, 7 Jan 2014, years only; the catalogue record is behind Anubis); Plessey promotions to Senior Engineer (1977) and Principal Engineer (1977-78); joining D.G. Nash (1978); the 1982 one-week course he taught in Paris on the Image Lx213i graphics processor (year only); the 1989 CERN computing school lecture on networked information systems (his CV says 'Italy, 1989' but the 1989 CERN School of Computing was in Bad Herrenalb, so I did not use it). A Companies House entry for Image Computer Systems Limited (01553871) shows incorporation on 30 March 1981, but I could not confirm it is Poole's company, so it is not used. The 1976-07 marriage cell still rests on Wikipedia's citation of the Cambridge Daily News of 19 July 1976 (newspaper not seen). Many Wikipedia 'Tim Berners-Lee' details for this stretch cite his 2025 memoir 'This Is for Everyone', which I could not read. Web search budget ran out partway; all later work used direct fetches and public APIs (INSPIRE-HEP, Crossref, OpenAlex, CDS OAI, repository.cern, W3C)."
+}

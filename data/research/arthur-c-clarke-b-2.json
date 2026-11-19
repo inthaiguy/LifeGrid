@@ -1,0 +1,563 @@
+{
+ "person": "Arthur C. Clarke",
+ "segment": {
+  "from": "1956-01",
+  "to": "2008-03"
+ },
+ "cells": [
+  {
+   "month": "1956-05",
+   "text": "“Venture to the Moon” in the Evening Standard",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Venture_to_the_Moon",
+   "kind": "event"
+  },
+  {
+   "month": "1956-09",
+   "text": "Hugo for “The Star”",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/clarke_bio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1956-12",
+   "text": "“The Reluctant Orchid” in Satellite",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Reluctant_Orchid",
+   "kind": "event"
+  },
+  {
+   "month": "1957-02",
+   "text": "“The Ultimate Melody” in If",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Ultimate_Melody",
+   "kind": "event"
+  },
+  {
+   "month": "1957-06",
+   "text": "“The Man Who Ploughed the Sea” in Satellite",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Man_Who_Ploughed_the_Sea",
+   "kind": "event"
+  },
+  {
+   "month": "1957-09",
+   "text": "“Let There Be Light” in Playboy",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Let_There_Be_Light_(Clarke_short_story)",
+   "kind": "event"
+  },
+  {
+   "month": "1958-02",
+   "text": "“Out From the Sun” in If",
+   "confirmed": true,
+   "source": "https://archive.org/details/1958-02_IF",
+   "kind": "event"
+  },
+  {
+   "month": "1958-09",
+   "text": "“The Stroke of the Sun” in Galaxy",
+   "confirmed": true,
+   "source": "https://archive.org/details/galaxymagazine-1958-09",
+   "kind": "event"
+  },
+  {
+   "month": "1960-06",
+   "text": "“Summertime on Icarus” in Vogue",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Summertime_on_Icarus",
+   "kind": "event"
+  },
+  {
+   "month": "1960-10",
+   "text": "“Into the Comet” in F&SF",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Into_the_Comet",
+   "kind": "event"
+  },
+  {
+   "month": "1961-06",
+   "text": "“Before Eden” in Amazing Stories",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Before_Eden",
+   "kind": "event"
+  },
+  {
+   "month": "1961-11",
+   "text": "“Hate” in If",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Hate_(short_story)",
+   "kind": "event"
+  },
+  {
+   "month": "1961-12",
+   "text": "Gives the Smithsonian a cluster of wreck silver",
+   "confirmed": true,
+   "source": "https://coins.lakdiva.org.lk/clarke/greatbasses/exhibit.html",
+   "kind": "event"
+  },
+  {
+   "month": "1962-02",
+   "text": "Plans a wreck dive before falling paralysed",
+   "confirmed": true,
+   "source": "https://www.timeshighereducation.com/node/87263",
+   "kind": "event"
+  },
+  {
+   "month": "1962-04",
+   "text": "“Dog Star” in Galaxy",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Dog_Star_(short_story)",
+   "kind": "event"
+  },
+  {
+   "month": "1963-08",
+   "text": "“The Secret” in This Week",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Secret_(short_story)",
+   "kind": "event"
+  },
+  {
+   "month": "1964-05",
+   "text": "“The Food of the Gods” in Playboy",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Food_of_the_Gods_(short_story)",
+   "kind": "event"
+  },
+  {
+   "month": "1965-09",
+   "text": "Voices from the Sky published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/pl.cgi?269459",
+   "kind": "event"
+  },
+  {
+   "month": "1966-10",
+   "text": "“A Recursion in Metastories” in Galaxy",
+   "confirmed": true,
+   "source": "https://archive.org/details/Galaxy_v25n01_1966-10",
+   "kind": "event"
+  },
+  {
+   "month": "1970-05",
+   "text": "“Neutron Tide” in Galaxy",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neutron_Tide",
+   "kind": "event"
+  },
+  {
+   "month": "1972-05",
+   "text": "“When the Twerms Came” in Playboy",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/When_the_Twerms_Came",
+   "kind": "event"
+  },
+  {
+   "month": "1972-08",
+   "text": "Of Time and Stars published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/publisher_one_author.cgi?13+17",
+   "kind": "event"
+  },
+  {
+   "month": "1973-04",
+   "text": "Nebula for “A Meeting with Medusa”",
+   "confirmed": true,
+   "source": "https://nebulas.sfwa.org/award-year/1972/",
+   "kind": "event"
+  },
+  {
+   "month": "1973-10",
+   "text": "The Best of Arthur C. Clarke published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/pl.cgi?35749",
+   "kind": "event"
+  },
+  {
+   "month": "1974-04",
+   "text": "Nebula for Rendezvous with Rama",
+   "confirmed": true,
+   "source": "https://nebulas.sfwa.org/award-year/1973/",
+   "kind": "event"
+  },
+  {
+   "month": "1974-09",
+   "text": "Hugo for Rendezvous with Rama",
+   "confirmed": true,
+   "source": "https://fancyclopedia.org/1974_Hugos",
+   "kind": "event"
+  },
+  {
+   "month": "1975-09",
+   "text": "Imperial Earth published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/pl.cgi?118311",
+   "kind": "event"
+  },
+  {
+   "month": "1979-01",
+   "text": "The Fountains of Paradise published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/title.cgi?1903",
+   "kind": "event"
+  },
+  {
+   "month": "1979-09",
+   "text": "Gives a space elevator address in Munich",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Space_elevator",
+   "kind": "event"
+  },
+  {
+   "month": "1980-04",
+   "text": "Nebula for The Fountains of Paradise",
+   "confirmed": true,
+   "source": "https://nebulas.sfwa.org/award-year/1979/",
+   "kind": "event"
+  },
+  {
+   "month": "1980-08",
+   "text": "Hugo for The Fountains of Paradise",
+   "confirmed": true,
+   "source": "https://fancyclopedia.org/1980_Hugos",
+   "kind": "event"
+  },
+  {
+   "month": "1983-11",
+   "text": "The Sentinel published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/title.cgi?25639",
+   "kind": "event"
+  },
+  {
+   "month": "1984-07",
+   "text": "1984, Spring published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/pl.cgi?109901",
+   "kind": "event"
+  },
+  {
+   "month": "1984-09",
+   "text": "Video on SDI and Mars shown to the Senate",
+   "confirmed": true,
+   "source": "https://www.oocities.org/dowdelwood/ACCMcAleer1984Two.htm",
+   "kind": "event"
+  },
+  {
+   "month": "1986-04",
+   "text": "Damon Knight Memorial Grand Master Award",
+   "confirmed": true,
+   "source": "https://www.sfadb.com/Nebula_Awards_1986",
+   "kind": "event"
+  },
+  {
+   "month": "1988-06",
+   "text": "Cradle published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/publisher_one_author.cgi?13+17",
+   "kind": "event"
+  },
+  {
+   "month": "1989-05",
+   "text": "Astounding Days published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/pl.cgi?188333",
+   "kind": "event"
+  },
+  {
+   "month": "1989-11",
+   "text": "Rama II published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/title.cgi?1340",
+   "kind": "event"
+  },
+  {
+   "month": "1989-12",
+   "text": "Tales from Planet Earth published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/ch.cgi?17",
+   "kind": "event"
+  },
+  {
+   "month": "1990-10",
+   "text": "The Ghost from the Grand Banks published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/publisher_one_author.cgi?13+17",
+   "kind": "event"
+  },
+  {
+   "month": "1992-06",
+   "text": "How the World Was One published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/publisher_one_author.cgi?13+17",
+   "kind": "event"
+  },
+  {
+   "month": "1992-11",
+   "text": "Authorised biography by Neil McAleer",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/book-reviews/neil-mcaleer/arthur-c-clarke/",
+   "kind": "event"
+  },
+  {
+   "month": "1993-06",
+   "text": "The Hammer of God published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/book-reviews/arthur-c-clarke/the-hammer-of-god/",
+   "kind": "event"
+  },
+  {
+   "month": "1993-07",
+   "text": "By Space Possessed published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/publisher_one_author.cgi?13+17",
+   "kind": "event"
+  },
+  {
+   "month": "1994-11",
+   "text": "The Snows of Olympus published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/title.cgi?590261",
+   "kind": "event"
+  },
+  {
+   "month": "1996-03",
+   "text": "Richter 10 published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/pl.cgi?28132",
+   "kind": "event"
+  },
+  {
+   "month": "1996-11",
+   "text": "Appears in the Rama computer game",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Rama_(video_game)",
+   "kind": "event"
+  },
+  {
+   "month": "1997-03",
+   "text": "3001: The Final Odyssey published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/book-reviews/arthur-c-clarke/3001-the-final-odyssey/",
+   "kind": "event"
+  },
+  {
+   "month": "1998-06",
+   "text": "In the news: Illinois honours Clarke",
+   "confirmed": true,
+   "source": "https://www.sundaytimes.lk/980607/news2.html",
+   "kind": "news"
+  },
+  {
+   "month": "1998-11",
+   "text": "In the news: “A Cerebral Marriage” on 2001",
+   "confirmed": true,
+   "source": "https://www.sundaytimes.lk/981101/plus11.html",
+   "kind": "news"
+  },
+  {
+   "month": "1999-08",
+   "text": "Greetings, Carbon-Based Bipeds! published",
+   "confirmed": true,
+   "source": "https://www.kirkusreviews.com/book-reviews/arthur-c-clarke/greetings-carbon-based-bipeds/",
+   "kind": "event"
+  },
+  {
+   "month": "1999-11",
+   "text": "“Improving the Neighbourhood” in Nature",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Improving_the_Neighbourhood",
+   "kind": "event"
+  },
+  {
+   "month": "1999-12",
+   "text": "The Trigger published",
+   "confirmed": true,
+   "source": "https://www.isfdb.org/cgi-bin/title.cgi?1017725",
+   "kind": "event"
+  },
+  {
+   "month": "2000-04",
+   "text": "Eutelsat dedicates a satellite to Clarke",
+   "confirmed": true,
+   "source": "https://www.irishtimes.com/business/author-of-2001-gets-namesake-1.265186",
+   "kind": "event"
+  },
+  {
+   "month": "2001-02",
+   "text": "Mourns his friend Roger Caras",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/update_Apr02.html",
+   "kind": "event"
+  },
+  {
+   "month": "2001-03",
+   "text": "Presents an Oscar at the 73rd Academy Awards",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/73rd_Academy_Awards",
+   "kind": "event"
+  },
+  {
+   "month": "2001-09",
+   "text": "Web chat with Leonardo DiCaprio",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/update_Apr02.html",
+   "kind": "event"
+  },
+  {
+   "month": "2001-11",
+   "text": "Appears as a 3-D hologram at Comdex",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/update_Apr02.html",
+   "kind": "event"
+  },
+  {
+   "month": "2002-09",
+   "text": "In the news: Sunday Times visits Clarke’s home",
+   "confirmed": true,
+   "source": "https://www.sundaytimes.lk/020901/plus/4.html",
+   "kind": "news"
+  },
+  {
+   "month": "2003-05",
+   "text": "Rereads his Wireless World satellite article",
+   "confirmed": true,
+   "source": "https://coins.lakdiva.org.lk/clarke/greatbasses/exhibit.html",
+   "kind": "event"
+  },
+  {
+   "month": "2006-03",
+   "text": "In the news: Clarke on Sri Lanka’s clock change",
+   "confirmed": true,
+   "source": "https://www.sundaytimes.lk/060319/plus/1.html",
+   "kind": "news"
+  }
+ ],
+ "corrections": [
+  {
+   "month": "1956-06",
+   "text": "Reach for Tomorrow published",
+   "reason": "ISFDB (Ballantine hardcover H-135), 45worlds and Author Wars give March 1956 for the first printing; that month holds the confirmed Aeonos dive, so the book is left out. June is unsupported."
+  },
+  {
+   "month": "1956-08",
+   "text": "Venture to the Moon published",
+   "reason": "Moved, not dropped: Wikipedia infobox and ISFDB date the six-story series to May 1956 (London Evening Standard); now the new 1956-05 cell."
+  },
+  {
+   "month": "1962-08",
+   "text": "Paralysed; later diagnosed as polio",
+   "reason": "August is unsupported. Clarke’s own Times Higher Education article (29 Jun 2001) puts the accident and onset in the Feb-Mar 1962 window, six weeks in hospital, then England a few months later. Replaced by a verified 1962-02 cell (planning the dive)."
+  },
+  {
+   "month": "1963-08",
+   "text": "Stuart Ballantine Medal",
+   "reason": "Month never verified (1963 only); the slot now holds the confirmed “The Secret” (This Week, 11 Aug 1963). Drop the placeholder."
+  },
+  {
+   "month": "1965-01",
+   "text": "Voices from the Sky published",
+   "reason": "Moved, not dropped: ISFDB dates the Harper & Row first edition to Sep 1965 (1965-09)."
+  },
+  {
+   "month": "1972-02",
+   "text": "Of Time and Stars published",
+   "reason": "Moved, not dropped: ISFDB dates the Gollancz first edition to Aug 1972 (1972-08)."
+  },
+  {
+   "month": "1975-04",
+   "text": "Imperial Earth published",
+   "reason": "Moved, not dropped: ISFDB gives the Gollancz hardcover as Sep 1975 (a dealer record gives 18 Sep 1975)."
+  },
+  {
+   "month": "1979-04",
+   "text": "The Fountains of Paradise published",
+   "reason": "Moved, not dropped: ISFDB dates both the Gollancz and Harcourt hardcovers to Jan 1979."
+  },
+  {
+   "month": "1983-01",
+   "text": "The Sentinel published",
+   "reason": "Moved, not dropped: ISFDB dates the Berkley edition to Nov 1983."
+  },
+  {
+   "month": "1984-03",
+   "text": "The Odyssey File published",
+   "reason": "March 1984 is unsupported: ISFDB gives Jan 1985 (Del Rey/Ballantine) and Peter Hyams’s Wikipedia page says 1985, while Clarke’s page says 1984. Left unconfirmed; drop the March placeholder."
+  },
+  {
+   "month": "1984-06",
+   "text": "Testifies to Congress against SDI",
+   "reason": "Not testimony in person: McAleer’s biography says Clarke videotaped a talk in Aug 1984 that was shown to the Senate Foreign Relations Committee in Sep 1984 (hearing “East-West cooperation in outer space”). Replaced by the 1984-09 cell."
+  },
+  {
+   "month": "1984-09",
+   "text": "1984, Spring published",
+   "reason": "Moved, not dropped: ISFDB gives the Granada edition as Jul 1984 (1984-07); September now holds the Senate video cell."
+  },
+  {
+   "month": "1986-02",
+   "text": "The Songs of Distant Earth published",
+   "reason": "February is unsupported: ISFDB dates the Del Rey hardcover to May 1986, which is already held by the confirmed NYT best-seller cell. Left out."
+  },
+  {
+   "month": "1986-08",
+   "text": "Damon Knight Memorial Grand Master Award",
+   "reason": "Moved, not dropped: SFWA conferred it in 1985 with the ceremony in 1986; the Nebula banquet was 26 Apr 1986 (1986-04)."
+  },
+  {
+   "month": "1988-08",
+   "text": "Cradle published",
+   "reason": "Moved, not dropped: ISFDB gives the Gollancz hardcover as Jun 1988 (US Warner edition Aug 1988 per Kirkus)."
+  },
+  {
+   "month": "1989-02",
+   "text": "Rama II published",
+   "reason": "Moved, not dropped: ISFDB gives Gollancz Nov 1989 (Bantam Spectra Dec 1989)."
+  },
+  {
+   "month": "1990-03",
+   "text": "Astounding Days published",
+   "reason": "Moved, not dropped: first edition is Gollancz 1989 (copyright page); ISFDB gives May 1989. March 1990 is only the US Bantam trade paperback."
+  },
+  {
+   "month": "1990-06",
+   "text": "Tales from Planet Earth published",
+   "reason": "Moved, not dropped: ISFDB gives the Legend hardcover as Dec 1989; June 1990 is a US/paperback date."
+  },
+  {
+   "month": "1990-11",
+   "text": "The Ghost from the Grand Banks published",
+   "reason": "Moved, not dropped: ISFDB gives the Gollancz hardcover as Oct 1990 (Kirkus Nov 1990 is the US edition)."
+  },
+  {
+   "month": "1991-04",
+   "text": "More Than One Universe published",
+   "reason": "April is unsupported: ISFDB dates the Bantam Spectra edition to Sep 1991, which collides with the confirmed Garden of Rama. Left out."
+  },
+  {
+   "month": "1992-07",
+   "text": "Authorised biography by Neil McAleer",
+   "reason": "Moved, not dropped: Kirkus gives pub date 1 Nov 1992 (review issue 1 Sep 1992)."
+  },
+  {
+   "month": "1993-08",
+   "text": "By Space Possessed published",
+   "reason": "Moved, not dropped: ISFDB gives the Gollancz hardcover as Jul 1993."
+  },
+  {
+   "month": "1994-01",
+   "text": "The Snows of Olympus published",
+   "reason": "Moved, not dropped: ISFDB gives the Gollancz hardcover as Nov 1994."
+  },
+  {
+   "month": "2000-04",
+   "text": "The Light of Other Days published",
+   "reason": "Sources conflict (Kirkus 24 Feb 2000, ISFDB Tor Mar 2000, Wikipedia infobox 16 Apr 2000) so no month is verifiable; the April slot now holds the dated Eutelsat dedication. Drop the placeholder."
+  }
+ ],
+ "summary": {
+  "new_confirmed": 34,
+  "upgraded": 27
+ },
+ "notes": "SECOND PASS. Web search quota ended partway, so some leads stayed open (listed below). Every cell here has an explicit month in a page I opened or in a search snippet; nothing is from memory. Where an upgrade keeps the first-pass text, only the month moved (or stayed) and the old placeholder month, when different, is in \"corrections\": 1956-09, 1965-09, 1972-08, 1973-04, 1974-04, 1974-09, 1975-09, 1979-01, 1980-04, 1980-08, 1983-11, 1984-07, 1986-04, 1988-06, 1989-05, 1989-11, 1989-12, 1990-10, 1992-06, 1992-11, 1993-06, 1993-07, 1994-11, 1996-03, 1997-03, 1999-08, 1999-12. summary.upgraded counts those 27 same-event cells; summary.new_confirmed counts the 34 other cells (some of them, e.g. 1956-05, 1962-02, 1963-08, 1984-09, 2000-04, replace a first-pass placeholder with a different, verified event; see corrections). With these the file has 81 + 27 + 34 = 142 confirmed months of 627 (22.6%). BOOK MONTHS: ISFDB cannot be fetched directly (Cloudflare 403), so its month-level publication records were read through search snippets only; ISFDB months sometimes come from Amazon or Locus and are single-source. Where UK and US editions differ I used the earliest edition ISFDB shows (usually Gollancz), except The Trigger, which sits at the US Bantam month (Dec 1999; ISFDB and Kirkus 1 Dec 1999) because the UK Voyager month (Nov 1999) holds the Nature story, and Richter 10 (Mar 1996: Bantam Spectra copyright note, Kirkus; ISFDB’s own Gollancz record shows both Feb and May 1996). Kirkus pages from the 1980s on show a separate Pub Date and review Issue date (3001: pub 12 Mar 1997, issue 1 Jan 1997; Hammer of God: pub 15 Jun 1993, issue 15 Apr 1993; McAleer: pub 1 Nov 1992, issue 1 Sep 1992), so 1st/15th pub dates there are usable as month-level dates. Kirkus’s dated entries for Imperial Earth (Jan 1975) and Fountains of Paradise (Jan 1978) have the wrong year (ISFDB: Gollancz Sep 1975, both hardcovers Jan 1979); only the Jan month agrees for Fountains. SHORT-STORY CELLS: months come from Wikipedia story infoboxes (pub_date) and from archive.org scans I opened: If Feb 1958 (contents list “Out From the Sun”), Galaxy Sep 1958 (full text lists “The Stroke of the Sun” by Clarke) and Galaxy Oct 1966 (contents list “A Recursion in Metastories”, the retitled “The Longest Science-Fiction Story Ever Told”). Venture to the Moon: Wikipedia infobox and ISFDB both give May 1956 (Evening Standard). Skipped for month collisions with confirmed cells: What Goes Up (F&SF Jan 1956), Saturn Rising (F&SF Mar 1961), Sunjammer/The Wind from the Sun (Boys’ Life Mar 1964), The Next Tenants (Satellite SF Feb 1957, same month as The Ultimate Melody), and Reach for Tomorrow (Ballantine Mar 1956 per ISFDB/45worlds, same month as the Aeonos dive). AWARDS: Nebulas are dated by the ceremony: 28 Apr 1973 (1972 awards, “A Meeting with Medusa”), 27 Apr 1974 (1973 awards, Rama), 26 Apr 1980 (1979 awards, Fountains), all from SFWA award-year pages as quoted in search snippets (SFWA pages redirect when fetched). Grand Master: SFWA says conferred 1985 with the ceremony in 1986; the sfadb page I opened lists the Claremont Hotel banquet on 26 Apr 1986 with Clarke as Grand Master. Hugos: Fancyclopedia (fetch blocked, read via snippet) gives the presentation as 1 Sep 1974 and 31 Aug 1980; for 1956 the lakdiva biography page I opened says Clarke took part in the Worldcon “in September of 1956” where “The Star” won, and Fancyclopedia puts the presentation on 3 or 4 Sep (Worldcon ran 31 Aug-3 Sep). LIFE EVENTS: 1962-02: Clarke’s own article “Painful memory of a silent stalker” (THES, 29 Jun 2001) says “In February 1962, I was planning a dive” before the head injury, overnight paralysis and six weeks in hospital; the exact day of onset is not given, so the cell is worded as the dive plan. 1984-09: McAleer’s biography excerpt (page opened) says Clarke videotaped a talk in Aug 1984 (opening with SDI, then a joint Mars mission) that was shown to the Senate Foreign Relations Committee on 17 Sep 1984; a library catalogue record dates that hearing (S. Hrg. 98-1064, “East-West cooperation in outer space”) 13 Sep 1984, so the month is solid but the “testified in person” claim is not. 1961-12: the Smithsonian accession record (7 Dec 1961, about 1000 silver rupees from the Great Basses wreck) is quoted on Kavan Ratnatunga’s lakdiva page, which names Clarke as donor; the same page captions a photo “seen in May 2003 reading” the Feb 1945 Wireless World. 1979-09: Clarke’s space-elevator address to the XXXth International Astronautical Congress, Munich, 20 Sep 1979, per the Wikipedia Space elevator reference list. 1996-11: Wikipedia Rama (video game) gives North American release Nov 1996 and says Clarke appears in it. 2000-04: Irish Times, 28 Apr 2000, “Author of ‘2001’ gets namesake” (Eutelsat dedicates its latest satellite to him). 2001-02, -09, -11: Clarke’s own “Egogram 2001” (signed 28 Dec 2001) says Roger Caras died on 19 Feb, he took part in a web discussion with Leonardo DiCaprio on 28 Sep, and appeared as a 3-D hologram at Comdex in Las Vegas on 13 Nov. 2001-03: Wikipedia 73rd Academy Awards lists Clarke as presenter (introduced by Tom Hanks), ceremony 25 Mar 2001. NEWS CELLS (Sunday Times of Sri Lanka): 7 Jun 1998 “Clarke honoured” (University of Illinois award; the page is dated), 1 Nov 1998 “A crerbral Marriage” (sic) by Richard Boyle, part one of a feature on Kubrick and Clarke making 2001 (the page is dated), 1 Sep 2002 “Sri Lanka is India without the hassle” (travel piece that visits his Colombo home; date taken from the 020901 URL, the page itself shows only a 2001 copyright footer) and 19 Mar 2006 “Tussle over time ticks on” (Clarke statement on the half-hour clock change; date from the 060319 URL, and the article’s April 14 change and “a decade” after 1996 fit 2006). The same URL convention matched the printed dates for the two 1998 pages. STILL UNVERIFIABLE (placeholders left as they were in the first pass, month unknown): The Reefs of Taprobane, Boy Beneath the Sea, Voice Across the Sea, The Challenge of the Spaceship (Kirkus 15 Jun 1959 only), Profiles of the Future (Kirkus 15 Jun 1962 vs ISFDB Gollancz 1962 and Harper 1963), Indian Ocean Treasure, Into Space, The Lost Worlds of 2001, The Best of Arthur C. Clarke 1937-1955 (ISFDB: Sphere 1976, no month) and 1956-1972 (1977), Report on Planet Three (ISFDB Gollancz Jun 1972 but a second record Jan 1973), The Light of Other Days, Childhood Ends (1996), Kalinga Prize (1961 vs UNESCO Courier 1962), Stuart Ballantine Medal, Marconi (a Nature notice reportedly dated Aug 1982 and the presentation by Prince Claus in The Hague could not be opened, so no month), resident guest status, post-polio diagnosis (1988, Johns Hopkins, year only), ISU chancellor, Marilyn Mayfield’s death. Washington Post archive items surfaced in search (16 Nov 1982 “The Galactic Dreamer Returns”, 9 Mar 1992 “Arthur C. Clarke’s Red Thumb”, 9 Jan 1999 “‘2001’ Writer Disputes Millennium’s Turn”) but the pages return 403 so they were not used. Gaps still empty: 1976, 1978, 1981, 1987, 1995 (no month-dated item found before the search quota ended). A 2025 BJHS article on Clarke and Sri Lanka (Cambridge Core) was fetched but its PDF text could not be decoded."
+}

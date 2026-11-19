@@ -1,0 +1,434 @@
+{
+ "person": "Neil Armstrong",
+ "segment": {
+  "from": "1930-08",
+  "to": "1961-12"
+ },
+ "cells": [
+  {
+   "month": "1930-08",
+   "text": "Born in Washington Township",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1936-07",
+   "text": "First airplane ride, in a Ford Trimotor",
+   "confirmed": true,
+   "source": "https://vindyarchives.com/news/2012/aug/25/armstrongs-love-aviation-began-plane-ride-warren",
+   "kind": "event"
+  },
+  {
+   "month": "1941-09",
+   "text": "Joins the Boy Scouts in Upper Sandusky",
+   "confirmed": false,
+   "source": "https://scoutingalumni.org/about/notable-bsa-alumni/armstrong-neil-alden/",
+   "kind": "event"
+  },
+  {
+   "month": "1944-01",
+   "text": "Family settles in Wapakoneta",
+   "confirmed": false,
+   "source": "https://www.armstrongmuseum.org/exploring-the-area",
+   "kind": "event"
+  },
+  {
+   "month": "1945-10",
+   "text": "Sees Purdue beat Ohio State; picks Purdue",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1946-08",
+   "text": "Student pilot certificate and first solo",
+   "confirmed": true,
+   "source": "https://www.armstrongmuseum.org/airfield-of-dreams-where-armstrong-learned-to-fly",
+   "kind": "event"
+  },
+  {
+   "month": "1947-03",
+   "text": "Earns the rank of Eagle Scout",
+   "confirmed": false,
+   "source": "https://scoutingalumni.org/about/notable-bsa-alumni/armstrong-neil-alden/",
+   "kind": "event"
+  },
+  {
+   "month": "1947-05",
+   "text": "Graduates from Blume High School",
+   "confirmed": false,
+   "source": "https://www.armstrongmuseum.org/exploring-the-area",
+   "kind": "event"
+  },
+  {
+   "month": "1947-09",
+   "text": "Starts aeronautical engineering at Purdue",
+   "confirmed": true,
+   "source": "https://engineering.purdue.edu/AAECourses/Spotlights/20120825_Spotlight_NeilArmstrongDied",
+   "kind": "event"
+  },
+  {
+   "month": "1949-01",
+   "text": "Navy call-up to Pensacola",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1949-02",
+   "text": "Becomes a naval aviation midshipman",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1949-09",
+   "text": "First solo in a Navy trainer",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1950-03",
+   "text": "First carrier landing, USS Cabot",
+   "confirmed": true,
+   "source": "https://history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-033/h-033-4.html",
+   "kind": "event"
+  },
+  {
+   "month": "1950-08",
+   "text": "Qualified naval aviator",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1950-11",
+   "text": "Assigned to VF-51",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1951-01",
+   "text": "First jet flight",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1951-06",
+   "text": "Promoted to ensign",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1951-07",
+   "text": "Trains in Hawaii before the Korea cruise",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1951-08",
+   "text": "First combat in Korea",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1951-09",
+   "text": "Ejects after his wing hits a cable",
+   "confirmed": true,
+   "source": "https://www.nationalacademies.org/read/18477/chapter/4",
+   "kind": "event"
+  },
+  {
+   "month": "1952-01",
+   "text": "Flies a third of his 78 Korea missions",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1952-02",
+   "text": "Regular commission ends; joins the Reserve",
+   "confirmed": true,
+   "source": "https://history.navy.mil/research/histories/biographies-list/bios-a/armstrong-neil-a/Armstrong-Neil-Text.html",
+   "kind": "event"
+  },
+  {
+   "month": "1952-03",
+   "text": "Flies his last Korea mission, number 78",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1952-05",
+   "text": "Posted to transport squadron VR-32",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1952-08",
+   "text": "Released from active duty",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1952-09",
+   "text": "Returns to Purdue",
+   "confirmed": true,
+   "source": "https://engineering.purdue.edu/AAECourses/Spotlights/20120825_Spotlight_NeilArmstrongDied",
+   "kind": "event"
+  },
+  {
+   "month": "1953-05",
+   "text": "Promoted to lieutenant (jg)",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1954-05",
+   "text": "Damages the club plane in a farm field",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1954-11",
+   "text": "Co-directs a campus musical at Purdue",
+   "confirmed": true,
+   "source": "https://www.purdue.edu/newsroom/releases/2018/Q4/music-and-theater-played-roles-in-first-man-neil-armstrongs-time-at-purdue.html",
+   "kind": "event"
+  },
+  {
+   "month": "1955-01",
+   "text": "Graduates from Purdue",
+   "confirmed": true,
+   "source": "https://engineering.purdue.edu/AAECourses/Spotlights/20120825_Spotlight_NeilArmstrongDied",
+   "kind": "event"
+  },
+  {
+   "month": "1955-03",
+   "text": "First NACA test flight",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1955-07",
+   "text": "Reports to Edwards",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1955-10",
+   "text": "Flies the Bell X-5 on its last program flight",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/image-article/flight-research-pilots-45",
+   "kind": "event"
+  },
+  {
+   "month": "1956-01",
+   "text": "Marries Janet Shearon",
+   "confirmed": true,
+   "source": "https://www.nationalacademies.org/read/18477/chapter/4",
+   "kind": "event"
+  },
+  {
+   "month": "1956-03",
+   "text": "B-29 propeller disintegrates; lands safely",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1957-08",
+   "text": "First rocket-powered flight, X-1B",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/image-article/flight-research-pilots-45",
+   "kind": "event"
+  },
+  {
+   "month": "1957-11",
+   "text": "First reaction-control flight in the X-1B",
+   "confirmed": true,
+   "source": "http://www.astronautix.com/x/x-1b.html",
+   "kind": "event"
+  },
+  {
+   "month": "1958-01",
+   "text": "Flies the X-1B on its last NACA flight",
+   "confirmed": true,
+   "source": "http://www.astronautix.com/x/x-1b.html",
+   "kind": "event"
+  },
+  {
+   "month": "1958-06",
+   "text": "Picked for Man in Space Soonest",
+   "confirmed": true,
+   "source": "https://www.nationalacademies.org/read/18477/chapter/4",
+   "kind": "event"
+  },
+  {
+   "month": "1958-10",
+   "text": "NASA is founded; he joins",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1959-06",
+   "text": "Test subject in a centrifuge launch study",
+   "confirmed": false,
+   "source": "http://www.astronautix.com/a/armstrong.html",
+   "kind": "event"
+  },
+  {
+   "month": "1960-04",
+   "text": "Secretly named a Dyna-Soar pilot",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Boeing_X-20_Dyna-Soar",
+   "kind": "event"
+  },
+  {
+   "month": "1960-10",
+   "text": "Resigns Navy Reserve commission",
+   "confirmed": true,
+   "source": "https://history.navy.mil/research/histories/biographies-list/bios-a/armstrong-neil-a/Armstrong-Neil-Text.html",
+   "kind": "event"
+  },
+  {
+   "month": "1960-11",
+   "text": "First X-15 flight",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/image-article/flight-research-pilots-45",
+   "kind": "event"
+  },
+  {
+   "month": "1960-12",
+   "text": "Second X-15 flight",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/List_of_X-15_flights",
+   "kind": "event"
+  },
+  {
+   "month": "1961-06",
+   "text": "Daughter Karen diagnosed with a tumor",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1961-12",
+   "text": "Flies X-15 No. 3 on its first flights",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/List_of_X-15_flights",
+   "kind": "event"
+  }
+ ],
+ "removed": [
+  {
+   "month": "1947-01",
+   "text": "Starts aeronautical engineering at Purdue",
+   "reason": "Month was a placeholder. Purdue's College of Engineering says he entered in September 1947 (freshman engineering). Moved to 1947-09 and confirmed."
+  }
+ ],
+ "homes": [
+  {
+   "from": "1930-08",
+   "place": "Washington Township, Ohio",
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "note": "unchanged. Wikipedia (Hansen) says the family then moved among about 16 Ohio towns in his first 14 years (e.g. Warren, Upper Sandusky); no dated list found, so not itemised."
+  },
+  {
+   "from": "1944-01",
+   "place": "Wapakoneta, Ohio",
+   "source": "https://www.armstrongmuseum.org/exploring-the-area",
+   "note": "unchanged. Only the year 1944 is verified (Armstrong Air & Space Museum: family returned and bought 601 W. Benton St.); month is a placeholder."
+  },
+  {
+   "from": "1947-09",
+   "place": "West Lafayette, Indiana",
+   "source": "https://engineering.purdue.edu/AAECourses/Spotlights/20120825_Spotlight_NeilArmstrongDied",
+   "note": "unchanged; month now verified (Purdue: entered September 1947)."
+  },
+  {
+   "from": "1949-01",
+   "place": "Pensacola, Florida",
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "note": "unchanged. Purdue says he withdrew January 1949; call-up arrived 26 Jan 1949, midshipman 24 Feb 1949, so he may only have reported in February. Also trained briefly at Corpus Christi, Texas in 1950 (no dates found)."
+  },
+  {
+   "from": "1950-11",
+   "place": "San Diego, California",
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "note": "unchanged (assigned to VF-51 on 27 Nov 1950; Wikipedia says he first served with FASRON 7 at NAS San Diego, so he may have arrived earlier in autumn 1950). Covers the Essex home port and VR-32 posting until Aug 1952."
+  },
+  {
+   "from": "1952-09",
+   "place": "West Lafayette, Indiana",
+   "source": "https://engineering.purdue.edu/AAECourses/Spotlights/20120825_Spotlight_NeilArmstrongDied",
+   "note": "NEW. Existing file had no Purdue return; Purdue says he returned September 1952 and graduated January 1955."
+  },
+  {
+   "from": "1955-03",
+   "place": "Cleveland, Ohio",
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "note": "NEW. NACA Lewis lab; first test flight there 1 Mar 1955; moved to Edwards within about five months (NAE tribute). Arrival month at Cleveland not separately verified."
+  },
+  {
+   "from": "1955-07",
+   "place": "Edwards, California",
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "note": "unchanged (reported 11 Jul 1955). Lived in Edwards bachelor quarters, wife Janet in Westwood (Los Angeles); after one semester they moved to a house in the Antelope Valley near Edwards (no date found; Juniper Hills not verified)."
+  },
+  {
+   "from": "1962-09",
+   "place": "Houston, Texas",
+   "source": "https://www.nasa.gov/image-article/flight-research-pilots-45",
+   "note": "unchanged. NASA page: left the Flight Research Center for the Manned Spacecraft Center, Houston, September 1962. Home suburb was El Lago (Wikipedia El Lago page lists him as a resident, no dates), so 'El Lago, Texas' would be more precise."
+  },
+  {
+   "from": "1971-08",
+   "place": "Lebanon, Ohio",
+   "source": "https://www.nationalacademies.org/read/18477/chapter/4",
+   "note": "CHANGED from 'Cincinnati, Ohio'. He taught at the University of Cincinnati (NASA page: resigned from NASA Aug 1971, professor 1971-1979) but lived on a 300-acre farm near Lebanon, Ohio (NAE tribute; Wikipedia 'Lebanon, Ohio' says he made his home there 23 years). Start month taken from the NASA resignation; farm purchase date not verified."
+  },
+  {
+   "from": "1994-06",
+   "place": "Indian Hill, Ohio",
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "note": "NEW, approximate. He divorced Janet in 1994, married Carol Knight 12 Jun 1994 and they lived in Indian Hill (Cincinnati suburb); move date not found, month is the wedding month. Died 25 Aug 2012 at Mercy Health Fairfield Hospital, Fairfield, Ohio."
+  }
+ ],
+ "stays": [
+  {
+   "from": "1951-07",
+   "to": "1951-07",
+   "place": "Barbers Point, Hawaii",
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong"
+  },
+  {
+   "from": "1951-08",
+   "to": "1952-03",
+   "place": "Korea (aboard USS Essex)",
+   "source": "https://en.wikipedia.org/wiki/USS_Essex_(CV-9)"
+  }
+ ],
+ "summary": {
+  "months_in_segment": 377,
+  "confirmed": 40,
+  "to_confirm": 7,
+  "percent_confirmed": 10.6
+ },
+ "notes": "COVERAGE IS BELOW TARGET (about 12% of months filled, 10.6% confirmed). The shared WebSearch budget ran out part way through, so everything after that came from direct page fetches only. No 'news' cells: no newspaper archive (NYT, Ohio/Indiana papers, Chronicling America, Purdue Exponent, Wapakoneta Daily News) could be searched. Google Books (Hansen, First Man) was blocked by a captcha and I did not try to get round it; Britannica, Ohio History Connection, nationalaviation.org and Purdue archives returned 403, and history.navy.mil failed TLS, so the NHHC dates (first carrier landing 2 Mar 1950; commission ended 25 Feb 1952; Reserve resignation 21 Oct 1960) are cited from search-result snippets and cross-checked against Wikipedia (which cites Hansen 2005). Most Navy/NACA day-level dates rest on the English Wikipedia article (Hansen pp. 68-134); I opened and read its wikitext, not Hansen. Weakest areas: 1930-1945 childhood (only the Warren flight, July 1936, a date from a Warren volunteer group that Hansen hedges), 1947-48, 1953-54 at Purdue, 1956-1959 at Edwards, 1961 (only Karen's diagnosis and the Dec X-15-3 flights). Unverified, from memory only, so NOT included: births of Eric (about mid-1957), Karen (about 1959) and Mark (1963); sibling births (June, Dean); Eagle Scout and Blume graduation months; summer 1961 Dyna-Soar trips to Seattle (NAE tribute, no month); James Michener visit to Essex 'late 1951'; Air Medal/Gold Star award months (Purdue archive snippets conflict: citation for operations from 11 Dec 1951, another dated 1 Dec 1952); Paresev flights (undated); X-15 'ball nose' first flight (undated). Placeholder-month cells (confirmed false): 1941-09 Scout troop (year 1941 only), 1944-01 Wapakoneta (1944 only), 1947-03 Eagle Scout (1947 only), 1947-05 Blume graduation (1947 only), 1954-05 Aeronca incident (1954 only), 1959-06 Johnsville centrifuge (Encyclopedia Astronautica dates the program 18 Jun 1959, unclear if that is his run), 1960-04 Dyna-Soar (Wikipedia X-20 page says seven pilots secretly chosen April 1960, citing van Pelt; the Armstrong article says he joined the pilot consultant group Nov 1960 (Hansen pp. 171-173); NAE says 'secretly named in 1960'). 1945-10 is deduced: Armstrong's article says he saw Purdue beat Ohio State at Ohio Stadium in 1945; the 1945 Ohio State season article gives that game as 20 Oct 1945 (Purdue 35-13). 1957-11, 1958-01 (X-1B flights 25 and 27, 27 Nov 1957 and 23 Jan 1958) come from Encyclopedia Astronautica's X-1B flight log, consistent with NASA's 'Bell X-1B (4 flights, first on August 15, 1957)'. 1955-10 X-5: NASA page says his one X-5 flight, the last in the program, was 25 Oct 1955. X-15 dates (30 Nov 1960, 9 Dec 1960, 19/20 Dec 1961) are from Wikipedia's List of X-15 flights (Jenkins/McDowell); NASA's page confirms 30 Nov 1960. Discrepancy: NHHC snippet gives 23 Aug 1950 for qualification, Wikipedia says notified 16 Aug, ceremony 23 Aug; same month. Locations: no residence evidence found for Juniper Hills; Armstrong's Houston-area home was El Lago; Washington, D.C. (Deputy Associate Administrator for Aeronautics, 1969/70-1971, sources conflict on start) could be a stay but residence there is not verified; no later overseas tour or Gemini/Apollo trip lasts months, so no stays after 1952 are proposed."
+}

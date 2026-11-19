@@ -1,0 +1,659 @@
+{
+ "person": "Arthur C. Clarke",
+ "segment": {
+  "from": "1917-12",
+  "to": "1955-12"
+ },
+ "cells": [
+  {
+   "month": "1917-12",
+   "text": "Born in Minehead",
+   "confirmed": true,
+   "source": "https://www.theiet.org/membership/library-archives/the-iet-archives/biographies/arthur-c-clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1921-04",
+   "text": "Brother Fred is born",
+   "confirmed": true,
+   "source": "https://www.oocities.org/dowdelwood/ACCMcAleerSomerset.htm",
+   "kind": "event"
+  },
+  {
+   "month": "1927-09",
+   "text": "Starts at Huish’s Grammar School",
+   "confirmed": false,
+   "source": "https://history.computer.org/pioneers/clarke.html",
+   "kind": "event"
+  },
+  {
+   "month": "1928-11",
+   "text": "Discovers Amazing Stories",
+   "confirmed": false,
+   "source": "https://www.oocities.org/dowdelwood/ACCMcAleerSomerset.htm",
+   "kind": "event"
+  },
+  {
+   "month": "1931-05",
+   "text": "Father dies in Bristol hospital",
+   "confirmed": true,
+   "source": "https://www.oocities.org/dowdelwood/ACCMcAleerSomerset.htm",
+   "kind": "event"
+  },
+  {
+   "month": "1934-01",
+   "text": "Joins the British Interplanetary Society",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1936-09",
+   "text": "In the news: Gazetted civil service auditor",
+   "confirmed": true,
+   "source": "https://www.thegazette.co.uk/London/issue/34321/page/5798",
+   "kind": "news"
+  },
+  {
+   "month": "1937-12",
+   "text": "“Travel by Wire!”, his first story",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1938-02",
+   "text": "Plays SF film music to London fans",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1938-03",
+   "text": "“How We Went to Mars” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1938-06",
+   "text": "Plans a flat-share with Bill Temple",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1938-08",
+   "text": "Gray’s Inn Road flat opens to SF fans",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1938-09",
+   "text": "Co-edits the BIS Bulletin with Bill Temple",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1938-10",
+   "text": "Lectures on “How to Build a Spaceship”",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1941-01",
+   "text": "Joins the Royal Air Force",
+   "confirmed": false,
+   "source": "https://www.theiet.org/membership/library-archives/the-iet-archives/biographies/arthur-c-clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1942-02",
+   "text": "“The Awakening” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1942-07",
+   "text": "“Whacky” in Fantastic Adventures",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1943-05",
+   "text": "Commissioned pilot officer",
+   "confirmed": true,
+   "source": "https://www.thegazette.co.uk/London/issue/36089/supplement/3163",
+   "kind": "event"
+  },
+  {
+   "month": "1943-07",
+   "text": "In the news: Commission gazetted",
+   "confirmed": true,
+   "source": "https://www.thegazette.co.uk/London/issue/36089/supplement/3163",
+   "kind": "news"
+  },
+  {
+   "month": "1943-11",
+   "text": "Promoted flying officer",
+   "confirmed": true,
+   "source": "https://www.thegazette.co.uk/London/issue/36271/supplement/5289",
+   "kind": "event"
+  },
+  {
+   "month": "1945-02",
+   "text": "Wireless World letter on satellite relays",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/1945ww/",
+   "kind": "event"
+  },
+  {
+   "month": "1945-03",
+   "text": "Writes “Rescue Party”",
+   "confirmed": true,
+   "source": "https://clarkefoundation.org/arthur-c-clarke-biography/",
+   "kind": "event"
+  },
+  {
+   "month": "1945-05",
+   "text": "Circulates “The Space-Station” paper",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/1945ww/",
+   "kind": "event"
+  },
+  {
+   "month": "1945-06",
+   "text": "Writes the satellite relay article",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/1945ww/",
+   "kind": "event"
+  },
+  {
+   "month": "1945-07",
+   "text": "Sends satellite article to RAF censor",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/1945ww/",
+   "kind": "event"
+  },
+  {
+   "month": "1945-08",
+   "text": "Sends article to Wireless World",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/1945ww/",
+   "kind": "event"
+  },
+  {
+   "month": "1945-09",
+   "text": "Wireless World accepts his article",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/1945ww/",
+   "kind": "event"
+  },
+  {
+   "month": "1945-10",
+   "text": "“Extra-Terrestrial Relays” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/1945ww/",
+   "kind": "event"
+  },
+  {
+   "month": "1946-01",
+   "text": "Becomes chairman of the BIS",
+   "confirmed": false,
+   "source": "https://encyclopedia.com/arts/educational-magazines/clarke-arthur-charles-1917",
+   "kind": "event"
+  },
+  {
+   "month": "1946-04",
+   "text": "“Loophole” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1946-05",
+   "text": "“Rescue Party”, his first sale, appears",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Rescue_Party",
+   "kind": "event"
+  },
+  {
+   "month": "1946-07",
+   "text": "Writes “Guardian Angel”",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Childhood%27s_End",
+   "kind": "event"
+  },
+  {
+   "month": "1946-10",
+   "text": "Enters King’s College London",
+   "confirmed": false,
+   "source": "https://history.computer.org/pioneers/clarke.html",
+   "kind": "event"
+  },
+  {
+   "month": "1947-04",
+   "text": "“Castaway”, as Charles Willis",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1947-08",
+   "text": "“The Fires Within”, as E. G. O’Brien",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1947-10",
+   "text": "“Inheritance” in New Worlds",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1948-01",
+   "text": "Writes “The Sentinel” for a BBC contest",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/The_Sentinel_(short_story)",
+   "kind": "event"
+  },
+  {
+   "month": "1948-05",
+   "text": "Speaks at the Whitcon SF convention",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1948-07",
+   "text": "Graduates from King’s College London",
+   "confirmed": false,
+   "source": "https://history.computer.org/pioneers/clarke.html",
+   "kind": "event"
+  },
+  {
+   "month": "1948-11",
+   "text": "“Against the Fall of Night” published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Against_the_Fall_of_Night",
+   "kind": "event"
+  },
+  {
+   "month": "1949-01",
+   "text": "Assistant editor, Science Abstracts",
+   "confirmed": false,
+   "source": "https://www.theiet.org/membership/library-archives/the-iet-archives/biographies/arthur-c-clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1949-03",
+   "text": "“Critical Mass” in Lilliput",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1949-04",
+   "text": "Attends Loncon, a postwar SF convention",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1949-05",
+   "text": "“History Lesson” in Startling Stories",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1949-07",
+   "text": "“Transience” in Startling Stories",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1949-08",
+   "text": "“The Lion of Comarre” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1949-09",
+   "text": "“Hide and Seek” in Astounding",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1949-12",
+   "text": "“Breaking Strain” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1950-01",
+   "text": "Interplanetary Flight published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Interplanetary_Flight",
+   "kind": "event"
+  },
+  {
+   "month": "1950-03",
+   "text": "“Exile of the Eons” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1950-04",
+   "text": "“Guardian Angel” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1950-08",
+   "text": "“A Walk in the Dark” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1951-01",
+   "text": "Becomes a full-time writer",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1951-02",
+   "text": "Prelude to Space published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/pulp/1951_feb_GSFN.html",
+   "kind": "event"
+  },
+  {
+   "month": "1951-03",
+   "text": "The Exploration of Space published",
+   "confirmed": false,
+   "source": "https://encyclopedia.com/arts/educational-magazines/clarke-arthur-charles-1917",
+   "kind": "event"
+  },
+  {
+   "month": "1951-04",
+   "text": "“The Sentinel” in 10 Story Fantasy",
+   "confirmed": false,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1951-05",
+   "text": "The Sands of Mars published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/The_Sands_of_Mars",
+   "kind": "event"
+  },
+  {
+   "month": "1951-08",
+   "text": "“Superiority” published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Superiority_(short_story)",
+   "kind": "event"
+  },
+  {
+   "month": "1951-09",
+   "text": "Chairs Second Astronautical Congress",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/International_Astronautical_Congress",
+   "kind": "event"
+  },
+  {
+   "month": "1952-02",
+   "text": "Starts writing Childhood’s End",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Childhood%27s_End",
+   "kind": "event"
+  },
+  {
+   "month": "1952-04",
+   "text": "Wins International Fantasy Award",
+   "confirmed": false,
+   "source": "https://encyclopedia.com/arts/educational-magazines/clarke-arthur-charles-1917",
+   "kind": "event"
+  },
+  {
+   "month": "1952-07",
+   "text": "Islands in the Sky published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Islands_in_the_Sky",
+   "kind": "event"
+  },
+  {
+   "month": "1952-12",
+   "text": "Finishes Childhood’s End first draft",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Childhood%27s_End",
+   "kind": "event"
+  },
+  {
+   "month": "1953-01",
+   "text": "Final revision of Childhood’s End",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Childhood%27s_End",
+   "kind": "event"
+  },
+  {
+   "month": "1953-02",
+   "text": "“The Nine Billion Names of God” published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Star_Science_Fiction_Stories",
+   "kind": "event"
+  },
+  {
+   "month": "1953-03",
+   "text": "“The Possessed” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1953-04",
+   "text": "Takes Childhood’s End to New York",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Childhood%27s_End",
+   "kind": "event"
+  },
+  {
+   "month": "1953-05",
+   "text": "“Jupiter Five” on the cover of If",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1953-06",
+   "text": "Marries Marilyn Mayfield",
+   "confirmed": true,
+   "source": "https://encyclopedia.com/arts/educational-magazines/clarke-arthur-charles-1917",
+   "kind": "event"
+  },
+  {
+   "month": "1953-07",
+   "text": "Against the Fall of Night (novel) published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Against_the_Fall_of_Night",
+   "kind": "event"
+  },
+  {
+   "month": "1953-08",
+   "text": "Childhood’s End published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Childhood%27s_End",
+   "kind": "event"
+  },
+  {
+   "month": "1953-09",
+   "text": "Expedition to Earth published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Expedition_to_Earth",
+   "kind": "event"
+  },
+  {
+   "month": "1953-12",
+   "text": "Separates from Marilyn Mayfield",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "kind": "event"
+  },
+  {
+   "month": "1954-01",
+   "text": "Takes up scuba diving",
+   "confirmed": false,
+   "source": "https://encyclopedia.com/arts/educational-magazines/clarke-arthur-charles-1917",
+   "kind": "event"
+  },
+  {
+   "month": "1954-03",
+   "text": "The Exploration of the Moon published",
+   "confirmed": false,
+   "source": "https://encyclopedia.com/arts/educational-magazines/clarke-arthur-charles-1917",
+   "kind": "event"
+  },
+  {
+   "month": "1954-04",
+   "text": "“The Deep Range” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1954-07",
+   "text": "The Young Traveller in Space published",
+   "confirmed": false,
+   "source": "https://encyclopedia.com/arts/educational-magazines/clarke-arthur-charles-1917",
+   "kind": "event"
+  },
+  {
+   "month": "1954-11",
+   "text": "“Patent Pending” published",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1955-01",
+   "text": "Earthlight published",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Earthlight_(novel)",
+   "kind": "event"
+  },
+  {
+   "month": "1955-07",
+   "text": "Story “?” runs with a naming contest",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1955-11",
+   "text": "“The Star” published",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/The_Star_(Clarke_short_story)",
+   "kind": "event"
+  }
+ ],
+ "removed": [
+  {
+   "month": "1936-06",
+   "text": "Moves to London",
+   "reason": "Month unsupported. London Gazette (8 Sep 1936) lists Arthur Charles Clarke as Assistant Auditor, Exchequer and Audit Department, certified 6 Aug 1936 after open competition. Exact arrival month in London not found; replaced by a 1936-09 Gazette news cell."
+  },
+  {
+   "month": "1951-02",
+   "text": "Becomes a full-time writer",
+   "reason": "Slot now holds the verified Prelude to Space (Feb 1951). Full-time-writer date is year-only (Wikipedia/Contemporary Authors 1951; IET and IEEE say 1950), so kept as an unconfirmed placeholder at 1951-01."
+  },
+  {
+   "month": "1951-05",
+   "text": "Prelude to Space published",
+   "reason": "Wrong month: Galaxy Science Fiction Novel #3 is dated Feb 1951 (lakdiva pulp archive); re-added at 1951-02."
+  },
+  {
+   "month": "1951-08",
+   "text": "The Sands of Mars published",
+   "reason": "Month unverified (sources give 1951 only) and the slot holds the verified Aug 1951 “Superiority”; kept as unconfirmed placeholder at 1951-05."
+  },
+  {
+   "month": "1953-02",
+   "text": "Childhood’s End published",
+   "reason": "Wrong month: Ballantine published it in August 1953 (Wikipedia); re-added at 1953-08. Feb 1953 now holds the Star SF Stories No. 1 debut of “The Nine Billion Names of God”."
+  },
+  {
+   "month": "1953-03",
+   "text": "Marries Marilyn Mayfield",
+   "reason": "Wrong month: Contemporary Authors gives the marriage as 15 June 1953; re-added at 1953-06."
+  },
+  {
+   "month": "1953-06",
+   "text": "Against the Fall of Night (novel) published",
+   "reason": "Month unverified (Gnome Press 1953, year only) and June 1953 now holds the marriage; kept as unconfirmed placeholder at 1953-07."
+  },
+  {
+   "month": "1954-04",
+   "text": "The Exploration of the Moon published",
+   "reason": "Month unverified (1954, year only) and the slot holds the verified Apr 1954 “The Deep Range”; kept as unconfirmed placeholder at 1954-03."
+  }
+ ],
+ "homes": [
+  {
+   "from": "1917-12",
+   "place": "Minehead, England",
+   "source": "https://www.oocities.org/dowdelwood/ACCMcAleerSomerset.htm",
+   "note": "unchanged for the start. McAleer ch. 1: born at his mother's house, 4 Blenheim Road; Minehead 'remained his home for the first few years'. He is then recorded as living on a farm near Chard (Beetham, bought after 1918, dates not given) before 1924; not added as a separate home because no month is verifiable."
+  },
+  {
+   "from": "1924-01",
+   "place": "Bishops Lydeard, England",
+   "source": "https://www.oocities.org/dowdelwood/ACCMcAleerSomerset.htm",
+   "note": "NEW vs existing file (which keeps him in Minehead until 1936). McAleer: 'the family moved in in 1924' to Ballifants farm; Wikipedia says he grew up in Bishops Lydeard. Only the year is verified, so 1924-01 is a placeholder month."
+  },
+  {
+   "from": "1936-09",
+   "place": "London, England",
+   "source": "https://www.thegazette.co.uk/London/issue/34321/page/5798",
+   "note": "CHANGED from 1936-06. London Gazette 8 Sep 1936 gazettes his civil service appointment (Assistant Auditor, Exchequer and Audit Department, certified 6 Aug 1936). Wikipedia/Clarke Foundation say only 'moved to London in 1936'; the exact arrival month is not verified, 1936-09 is the best-supported month. Later London addresses (Norfolk Square bedsit in June 1938; 88 Gray's Inn Road flat from about Aug 1938) stay in London."
+  },
+  {
+   "from": "1956-01",
+   "place": "Colombo, Sri Lanka",
+   "source": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+   "note": "UNCHANGED but only the year is verified (Wikipedia and Clarke Foundation: emigrated 1956). Wikipedia says he lived 'first in Unawatuna on the south coast and then in Colombo'; I could not find the month of arrival or the date of the later move to Colombo, so the Unawatuna period is not split out."
+  }
+ ],
+ "stays": [
+  {
+   "from": "1953-04",
+   "to": "1953-04",
+   "place": "New York, United States",
+   "source": "https://en.wikipedia.org/wiki/Childhood%27s_End"
+  }
+ ],
+ "summary": {
+  "months_in_segment": 457,
+  "confirmed": 58,
+  "to_confirm": 23,
+  "percent_confirmed": 12.7
+ },
+ "notes": "Web search budget ran out mid-run (limit shared by all agents), so research after that point used only direct page fetches; no further searching was done. STRONGEST: 1945 satellite-paper chain (lakdiva.org.lk/clarke/1945ww), story/magazine publication months (lakdiva.org.lk/clarke/biblio.html, cross-checked against Wikipedia for Rescue Party, Superiority, Against the Fall of Night, The Star, Jupiter Five, Travel by Wire!, How We Went to Mars), Gazette commissions (I read the scanned pages: Cpl Arthur Charles Clarke 1097727 to Plt Off 27 May 1943; Plt Off (prob.) A. C. Clarke 144811 to Flg Off 27 Nov 1943), Childhood's End writing timeline (Wikipedia), marriage 15 June 1953 (Contemporary Authors via encyclopedia.com). WEAK: 1917-1936 (only McAleer ch. 1 excerpt gave months), 1939-1944 wartime (RAF join month, postings, Yatesbury/Honiley dates, demob date, promotion to flight lieutenant all unverified), 1946-1948 (BIS chairmanship, King's College entry and degree months are placeholders), all 1950-1955 book publication months (Interplanetary Flight, Exploration of Space, Sands of Mars, Islands in the Sky, Expedition to Earth, Exploration of the Moon, Young Traveller, Earthlight: year-only, placeholders kept unconfirmed), 1954-55 diving/Great Barrier Reef/first Ceylon trip dates not found. CONFLICTS: Wikipedia says he joined the Board of Education as a pensions auditor in 1936 but the Gazette it cites lists him under Exchequer and Audit Department (auditors there audit other departments, so both may be true). BIS joining is 1934 (Wikipedia) vs 1936 (Clarke Foundation). Wikipedia says 'Technical Error' first appeared in Thrilling Wonder Stories 1950 as 'The Reversed Man' while lakdiva gives Fantasy, Dec 1946, so I left Dec 1946 empty. lakdiva dates 'All the Time in the World' both 1951 and July 1952 so I omitted it. A lakdiva pulp page lists Jupiter Five under June 1953 but the bibliography page and Wikipedia say the May 1953 issue of If; I used May. 1951-02 Prelude to Space rests on a single source (lakdiva pulp archive, Galaxy Science Fiction Novel #3). JUDGEMENT CALLS: 1951-09 congress dates (3-8 Sep 1951) come from Wikipedia's IAC table; Clarke's role as chair of the Second International Astronautics Congress comes from Contemporary Authors (encyclopedia.com), not the Wikipedia page cited. 1938-02, 1938-06, 1938-08, 1938-09, 1938-10, 1948-05 and 1949-04 come from one TAFF fan-history ebook (Bill Temple collection) quoting dated Novae Terrae reports (13 Feb, 11 and 18 Aug, 23 Oct 1938), the BIS Bulletin of Sept 1938, the 1948 Whitcon booklet (month taken from Wikipedia's Eastercon page: Whitsun, end of May 1948) and the editor's note on the 16 Apr 1949 convention; they are fan-history, lower authority than a newspaper. The same ebook also says the RAF sent Clarke to Colwyn Bay after the flat broke up, which conflicts with RAF service starting 1941, so I ignored it. Unconfirmed placeholder months are only there to hold year-only facts. percent_confirmed is confirmed cells divided by 457 segment months (1917-12 to 1955-12 inclusive; the brief said about 456). OUTSIDE MY STRETCH but noticed: Wikipedia gives the 2001 novel as June 1968 (file has 1968-03); Wikipedia says Clarke lived in Sri Lanka first at Unawatuna then Colombo. NYT, Times, Guardian and ISFDB could not be reached (NYT blocked for search, ISFDB 403, arthurcclarke.org 523, SF Encyclopedia 429), so no newspaper mentions beyond the London Gazette. STAYS: only the April 1953 New York trip (Wikipedia, Childhood's End) is verified; its length and the Florida trip where he married (15 June 1953) are not. No other stays could be verified for the RAF years (Yatesbury and Honiley appear in Wikipedia without dates), the 1964-65 New York/Hotel Chelsea period, or 1969 Apollo coverage."
+}

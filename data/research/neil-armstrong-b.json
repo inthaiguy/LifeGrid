@@ -1,0 +1,649 @@
+{
+ "person": "Neil Armstrong",
+ "segment": {
+  "from": "1962-01",
+  "to": "2012-08"
+ },
+ "cells": [
+  {
+   "month": "1962-01",
+   "text": "Karen dies, aged two",
+   "confirmed": true,
+   "source": "https://www.nationalacademies.org/read/18477/chapter/4",
+   "kind": "event"
+  },
+  {
+   "month": "1962-03",
+   "text": "Chosen for the X-20 Dyna-Soar",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1962-04",
+   "text": "X-15 flight to 207,500 ft; overshoots Edwards",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/image-article/april-20-1962",
+   "kind": "event"
+  },
+  {
+   "month": "1962-05",
+   "text": "F-104 trouble forces landing at Nellis AFB",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/image-article/may-21-1962/",
+   "kind": "event"
+  },
+  {
+   "month": "1962-06",
+   "text": "Applies for the astronaut corps a week late",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/60-years-ago-nasa-selects-a-second-group-of-astronauts",
+   "kind": "event"
+  },
+  {
+   "month": "1962-07",
+   "text": "Final X-15 flight, at Mach 5.74",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/people/neil-a-armstrong/",
+   "kind": "event"
+  },
+  {
+   "month": "1962-09",
+   "text": "Named one of NASA’s “New Nine” astronauts",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/60-years-ago-nasa-selects-a-second-group-of-astronauts",
+   "kind": "event"
+  },
+  {
+   "month": "1962-10",
+   "text": "Tours Cape Canaveral with the New Nine",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/60-years-ago-nasa-selects-a-second-group-of-astronauts",
+   "kind": "event"
+  },
+  {
+   "month": "1963-01",
+   "text": "Assigned trainers and simulators",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/SP-4002/p2a.htm",
+   "kind": "event"
+  },
+  {
+   "month": "1963-04",
+   "text": "Son Mark is born",
+   "confirmed": true,
+   "source": "https://archives.museumofflight.org/agents/people/3566",
+   "kind": "event"
+  },
+  {
+   "month": "1963-05",
+   "text": "Weightless flights at Wright-Patterson",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/NASA_Astronaut_Group_2",
+   "kind": "event"
+  },
+  {
+   "month": "1963-06",
+   "text": "Jungle survival training in Panama",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/60-years-ago-nasa-selects-a-second-group-of-astronauts",
+   "kind": "event"
+  },
+  {
+   "month": "1963-07",
+   "text": "Centrifuge training at Johnsville, Pennsylvania",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/60-years-ago-nasa-selects-a-second-group-of-astronauts",
+   "kind": "event"
+  },
+  {
+   "month": "1963-08",
+   "text": "Desert survival training in Nevada",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/SP-4002/p2a.htm",
+   "kind": "event"
+  },
+  {
+   "month": "1963-09",
+   "text": "Water survival training at Pensacola",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/60-years-ago-nasa-selects-a-second-group-of-astronauts",
+   "kind": "event"
+  },
+  {
+   "month": "1963-11",
+   "text": "Helicopter flying lessons begin",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/60-years-ago-nasa-selects-a-second-group-of-astronauts",
+   "kind": "event"
+  },
+  {
+   "month": "1965-02",
+   "text": "Backup commander, Gemini 5",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/SP-4002/p3a.htm",
+   "kind": "event"
+  },
+  {
+   "month": "1965-08",
+   "text": "Backs up Gemini 5, watches the launch",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Gemini_5",
+   "kind": "event"
+  },
+  {
+   "month": "1965-09",
+   "text": "Named command pilot of Gemini 8",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/SP-4002/p3a.htm",
+   "kind": "event"
+  },
+  {
+   "month": "1966-02",
+   "text": "Crewmate Elliot See dies in a T-38 crash",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1966-03",
+   "text": "Gemini 8: first docking in space",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/geminis-first-docking-turns-to-wild-ride-in-orbit/",
+   "kind": "event"
+  },
+  {
+   "month": "1966-07",
+   "text": "Gemini 10 reuses his Gemini 8 Agena target",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Gemini_10",
+   "kind": "event"
+  },
+  {
+   "month": "1966-09",
+   "text": "Backup commander for Gemini 11",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Gemini_11",
+   "kind": "event"
+  },
+  {
+   "month": "1966-10",
+   "text": "South American goodwill tour with Dick Gordon",
+   "confirmed": true,
+   "source": "https://andina.pe/agencia/noticia-el-dia-neil-armstrong-conquisto-lima-759267.aspx",
+   "kind": "event"
+  },
+  {
+   "month": "1967-01",
+   "text": "In Washington on the day of the Apollo 1 fire",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1967-03",
+   "text": "First astronaut to fly the lunar trainer",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/50-years-ago-armstrong-survives-training-crash",
+   "kind": "event"
+  },
+  {
+   "month": "1967-04",
+   "text": "Named backup commander for Apollo 9",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1967-11",
+   "text": "Backup crew with Lovell, Aldrin made official",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1968-05",
+   "text": "Ejects seconds before the lunar trainer crashes",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/50-years-ago-armstrong-survives-training-crash",
+   "kind": "event"
+  },
+  {
+   "month": "1968-12",
+   "text": "Offered command of Apollo 11",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1969-01",
+   "text": "Apollo 11 crew named",
+   "confirmed": true,
+   "source": "https://apolloexplorer.co.uk/books/SP-4205/ch13-3.html",
+   "kind": "event"
+  },
+  {
+   "month": "1969-03",
+   "text": "Apollo 11 crew gets top simulator priority",
+   "confirmed": true,
+   "source": "https://apolloexplorer.co.uk/books/SP-4205/ch13-3.html",
+   "kind": "event"
+  },
+  {
+   "month": "1969-04",
+   "text": "NASA confirms Armstrong will exit first",
+   "confirmed": true,
+   "source": "https://apolloexplorer.co.uk/books/SP-4205/ch13-3.html",
+   "kind": "event"
+  },
+  {
+   "month": "1969-06",
+   "text": "Rehearses the landing eight times in a day",
+   "confirmed": true,
+   "source": "https://apolloexplorer.co.uk/books/SP-4205/ch13-3.html",
+   "kind": "event"
+  },
+  {
+   "month": "1969-07",
+   "text": "Walks on the Moon",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/people/neil-a-armstrong/",
+   "kind": "event"
+  },
+  {
+   "month": "1969-08",
+   "text": "Medal of Freedom after ticker-tape parades",
+   "confirmed": true,
+   "source": "https://www.presidency.ucsb.edu/documents/remarks-dinner-los-angeles-honoring-the-apollo-11-astronauts",
+   "kind": "event"
+  },
+  {
+   "month": "1969-09",
+   "text": "Addresses Congress; world tour begins",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Apollo_11",
+   "kind": "event"
+  },
+  {
+   "month": "1969-10",
+   "text": "Giant Leap tour: Europe and Asia",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/feature/50-years-ago-apollo-11-astronauts-return-from-around-the-world-goodwill-tour",
+   "kind": "event"
+  },
+  {
+   "month": "1969-11",
+   "text": "Giant Leap tour ends at the White House",
+   "confirmed": true,
+   "source": "https://presidency.ucsb.edu/node/240047",
+   "kind": "event"
+  },
+  {
+   "month": "1969-12",
+   "text": "Giant Leap tour adds a Canada leg",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/feature/50-years-ago-apollo-11-astronauts-return-from-around-the-world-goodwill-tour",
+   "kind": "event"
+  },
+  {
+   "month": "1970-01",
+   "text": "Master’s degree at USC",
+   "confirmed": true,
+   "source": "https://viterbischool.usc.edu/news/2025/12/ever-wondered-what-alumnus-neil-armstrong-learned-at-usc/",
+   "kind": "event"
+  },
+  {
+   "month": "1970-04",
+   "text": "Helps investigate the Apollo 13 accident",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/50-years-ago-apollo-13-review-board-report",
+   "kind": "event"
+  },
+  {
+   "month": "1970-05",
+   "text": "Visits the USSR and meets Kosygin",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/feature/50-years-ago-armstrong-visits-the-soviet-union",
+   "kind": "event"
+  },
+  {
+   "month": "1970-06",
+   "text": "Apollo 13 board report is released",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/history/50-years-ago-apollo-13-review-board-report",
+   "kind": "event"
+  },
+  {
+   "month": "1971-08",
+   "text": "Leaves NASA, teaches at Cincinnati",
+   "confirmed": true,
+   "source": "https://www.nasa.gov/people/neil-a-armstrong/",
+   "kind": "event"
+  },
+  {
+   "month": "1971-10",
+   "text": "Receives West Point’s Thayer Award",
+   "confirmed": true,
+   "source": "https://www.westpointaog.org/?p=5311",
+   "kind": "event"
+  },
+  {
+   "month": "1972-04",
+   "text": "Visits Langholm, Scotland; made a freeman",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1972-07",
+   "text": "Attends opening of Wapakoneta space museum",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Armstrong_Air_and_Space_Museum",
+   "kind": "event"
+  },
+  {
+   "month": "1976-07",
+   "text": "Honorary president of cave expedition in Ecuador",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Cueva_de_los_Tayos",
+   "kind": "event"
+  },
+  {
+   "month": "1976-10",
+   "text": "Inducted into International Space Hall of Fame",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/International_Space_Hall_of_Fame",
+   "kind": "event"
+  },
+  {
+   "month": "1978-10",
+   "text": "Receives the Congressional Space Medal of Honor",
+   "confirmed": true,
+   "source": "https://airandspace.si.edu/collection-objects/medal-congressional-space-medal-honor-armstrong/nasm_A20200012000",
+   "kind": "event"
+  },
+  {
+   "month": "1978-11",
+   "text": "Farm accident severs tip of his ring finger",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1979-01",
+   "text": "Begins appearing in Chrysler ads",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1979-07",
+   "text": "Gives only press conference at 10th anniversary",
+   "confirmed": false,
+   "source": "https://magazine.uc.edu/editors_picks/recent_features/armstrong.html",
+   "kind": "event"
+  },
+  {
+   "month": "1979-10",
+   "text": "Enshrined in National Aviation Hall of Fame",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1980-01",
+   "text": "Resigns from the University of Cincinnati",
+   "confirmed": true,
+   "source": "https://magazine.uc.edu/editors_picks/recent_features/armstrong.html",
+   "kind": "event"
+  },
+  {
+   "month": "1981-12",
+   "text": "Testifies to a House science committee",
+   "confirmed": true,
+   "source": "https://www.upi.com/News_Photos/view/upi/310ae3317906dc51c84d6d7fc1f4a056/Neil-Armstrong-in-testimony-before-the-House-Committee-on-Science-and-Technology/",
+   "kind": "event"
+  },
+  {
+   "month": "1982-06",
+   "text": "Returns to Cincinnati as commencement speaker",
+   "confirmed": false,
+   "source": "https://magazine.uc.edu/editors_picks/recent_features/armstrong.html",
+   "kind": "event"
+  },
+  {
+   "month": "1983-03",
+   "text": "In the news: false report of his conversion",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "news"
+  },
+  {
+   "month": "1985-04",
+   "text": "Reaches the North Pole on an expedition",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1986-02",
+   "text": "Named vice chairman of Challenger commission",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster",
+   "kind": "event"
+  },
+  {
+   "month": "1986-06",
+   "text": "Challenger commission report goes to Reagan",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Rogers_Commission",
+   "kind": "event"
+  },
+  {
+   "month": "1989-07",
+   "text": "In the news: 20 years after the Moon landing",
+   "confirmed": true,
+   "source": "https://www.upi.com/Archives/1989/07/20/Personality-Spotlight-Neil-Armstrong-First-man-on-the-moon/5535616910400/",
+   "kind": "news"
+  },
+  {
+   "month": "1991-02",
+   "text": "Mild heart attack while skiing in Aspen",
+   "confirmed": true,
+   "source": "https://www.nationalacademies.org/read/18477/chapter/4",
+   "kind": "event"
+  },
+  {
+   "month": "1991-09",
+   "text": "In the news: Lancaster Walk of Honor",
+   "confirmed": true,
+   "source": "https://www.newspapers.com/clip/36299181/the_los_angeles_times/",
+   "kind": "news"
+  },
+  {
+   "month": "1994-06",
+   "text": "Marries Carol Knight after divorce from Janet",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "1994-07",
+   "text": "Joins Clinton for Apollo 11’s 25th",
+   "confirmed": true,
+   "source": "https://www.upi.com/Archives/1994/07/20/Clinton-Apollo-11-astronauts-mark-25th/8768807606247/",
+   "kind": "event"
+  },
+  {
+   "month": "1995-12",
+   "text": "In the news: Hallmark suit settled",
+   "confirmed": true,
+   "source": "https://www.chicagotribune.com/1995/12/02/neil-armstrong-hallmark-settle/",
+   "kind": "news"
+  },
+  {
+   "month": "1999-07",
+   "text": "Apollo 11 crew gets the Langley Gold Medal",
+   "confirmed": true,
+   "source": "http://edition.cnn.com/TECH/space/9907/20/apollo.11.awards/",
+   "kind": "event"
+  },
+  {
+   "month": "2002-02",
+   "text": "Announces retirement as EDO board chairman",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "2003-02",
+   "text": "Attends the Columbia memorial service",
+   "confirmed": false,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "2004-07",
+   "text": "At the White House for Apollo 11’s 35th",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "2004-10",
+   "text": "Purdue names engineering hall for him",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "2005-05",
+   "text": "Barber dispute over selling his hair",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "news"
+  },
+  {
+   "month": "2005-09",
+   "text": "In the news: Mars mission 20 years away",
+   "confirmed": true,
+   "source": "https://www.usatoday.com/tech/science/space/2005-09-06-mars-armstrong_x.htm",
+   "kind": "news"
+  },
+  {
+   "month": "2005-10",
+   "text": "Authorized biography First Man published",
+   "confirmed": true,
+   "source": "http://www.collectspace.com/news/news-013003b.html",
+   "kind": "event"
+  },
+  {
+   "month": "2005-11",
+   "text": "Rare 60 Minutes interview airs",
+   "confirmed": true,
+   "source": "https://www.cbsnews.com/news/being-the-first-man-on-the-moon/",
+   "kind": "event"
+  },
+  {
+   "month": "2006-04",
+   "text": "NASA names him Ambassador of Exploration",
+   "confirmed": true,
+   "source": "https://www.collectspace.com/news/news-041806a.html",
+   "kind": "event"
+  },
+  {
+   "month": "2007-10",
+   "text": "Purdue’s Armstrong Hall is dedicated",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "2009-07",
+   "text": "Meets Obama on Apollo 11’s 40th anniversary",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Apollo_11",
+   "kind": "event"
+  },
+  {
+   "month": "2009-08",
+   "text": "Congress awards Apollo 11 crew a Gold Medal",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Apollo_11",
+   "kind": "event"
+  },
+  {
+   "month": "2010-03",
+   "text": "Receives Naval Astronaut wings aboard Ike",
+   "confirmed": true,
+   "source": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+   "kind": "event"
+  },
+  {
+   "month": "2010-04",
+   "text": "Co-signs letter against Obama’s NASA plan",
+   "confirmed": true,
+   "source": "https://www.nbcnews.com/id/wbna36470363",
+   "kind": "event"
+  },
+  {
+   "month": "2010-11",
+   "text": "In the news: still happy to go to Mars",
+   "confirmed": true,
+   "source": "http://www.nu.nl/wetenschap/2382331/neil-armstrong-wil-nog-best-mars.html",
+   "kind": "news"
+  },
+  {
+   "month": "2010-12",
+   "text": "In the news: why the moonwalk was short",
+   "confirmed": true,
+   "source": "http://www.space.com/10469-neil-armstrong-explains-famous-apollo-11-moonwalk.html",
+   "kind": "news"
+  },
+  {
+   "month": "2011-11",
+   "text": "Receives the Congressional Gold Medal",
+   "confirmed": true,
+   "source": "https://www.collectspace.com/news/news-111611a.html",
+   "kind": "event"
+  },
+  {
+   "month": "2012-08",
+   "text": "Dies at 82 after heart surgery",
+   "confirmed": true,
+   "source": "https://www.collectspace.com/news/news-082512a.html",
+   "kind": "event"
+  }
+ ],
+ "removed": [
+  {
+   "month": "1978-01",
+   "text": "Congressional Space Medal of Honor",
+   "reason": "Placeholder month was wrong: Carter presented the medal on 1 Oct 1978 (NASM collection record); moved to 1978-10 as confirmed."
+  },
+  {
+   "month": "1979-01",
+   "text": "National Aviation Hall of Fame",
+   "reason": "Only the year (1979) is known; the Jan placeholder collided with the confirmed Jan 1979 Chrysler-ads cell. Kept as unconfirmed at 1979-10 (month is a placeholder)."
+  },
+  {
+   "month": "1986-01",
+   "text": "Serves on the Challenger commission",
+   "reason": "Challenger was lost 28 Jan 1986; the commission was formed in Feb 1986. Moved to 1986-02 (appointment) and 1986-06 (report)."
+  },
+  {
+   "month": "1994-01",
+   "text": "Divorces Janet; marries Carol Knight",
+   "reason": "Marriage was 12 Jun 1994 (Wikipedia, citing Hansen); divorce month not found. Moved to 1994-06."
+  }
+ ],
+ "homes": [],
+ "stays": [],
+ "summary": {
+  "months_in_segment": 608,
+  "confirmed": 79,
+  "to_confirm": 8,
+  "percent_confirmed": 13
+ },
+ "notes": "Result: 87 months filled (14.3% of 608). WebSearch quota ran out mid-run, so later decades were built from Wikipedia citations, NASA history pages and a few direct fetches. Weak areas: 1964 (nothing found), 1973-1975, 1977, 1982-1984, 1987-1988, 1990, 1992-1993, 1996-1998, 2000-2001, 2008 (no dated source reachable). NYT, LA Times, Chicago Tribune, USA Today, Reuters, Wired and newspapers.com blocked WebFetch; four news cells (1991-09, 1995-12, 2005-09, 2010-11) take their month from the dated citation in the Wikipedia reference list and the article URL/title, not from an opened page. Unconfirmed (month from memory or inferred): 1962-03 X-20 (sources conflict: Wikipedia/Hansen say selected 15 Mar 1962, other accounts say 1960 consultant group and exclusion from the Sept 1962 list), 1972-04 Langholm (year known only), 1976-07 Los Tayos (expedition ran Jul-Aug 1976), 1979-07 press conference (UC says it marked the 10th anniversary), 1979-10 NAHF (year only, month is a placeholder), 1982-06 UC commencement (year only), 2002-02 EDO retirement (date taken from the press-release URL pr2002/02r0208; Wikipedia cites it as 2000), 2003-02 Columbia memorial (service was 4 Feb 2003 at JSC; Wikipedia only says 2003). Corrections: NAE tribute gives the LLRV ejection as 6 Mar 1968; NASA says 6 May 1968. 1962-06 relies on NASA text (deadline 1 June, his application a week late). 1963-07 centrifuge month is inferred from NASA text (\"the following month\" after June). Group-training months (1962-10, 1963-05..11) describe the New Nine as a group; Armstrong is named in the Aug 1963 photo caption (SP-4002). 1969-10 and 1969-12 months come from the NASA tour dates (29 Sep-5 Nov; Canada 2-3 Dec). 1967-03 wording follows NASA (\"first LLRV flight by an astronaut\"). Death place left out because sources differ (Fairfield hospital vs Cincinnati area); surgery was 7 Aug 2012. Cells sit at months where one item had to be chosen: 1962-01 (Karen’s death over the 17 Jan X-15 flight), 1969-09 (Congress address 16 Sep over tour start 29 Sep), 2005-05 (barber dispute; Dayton Daily News ran it 1 Jun 2005). Not used: 1963-11 Langley Gemini simulator study (6 Nov 1963, seen only in a search snippet), 1970-11 Agnew awards clip (blocked). Honorary or board items with only a year (CG&E 1973, United Airlines 1978, NAE 1978, Eaton, Thiokol 1989, Wright Brothers Trophy 2001) left out rather than guess a month."
+}

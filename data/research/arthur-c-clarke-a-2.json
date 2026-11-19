@@ -1,0 +1,362 @@
+{
+ "person": "Arthur C. Clarke",
+ "segment": {
+  "from": "1917-12",
+  "to": "1955-12"
+ },
+ "cells": [
+  {
+   "month": "1934-07",
+   "text": "Joins the British Interplanetary Society",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/ThenAgain.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1936-10",
+   "text": "Named treasurer of the BIS London branch",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/ThenAgain.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1937-01",
+   "text": "Speaks at Britain’s first SF convention",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/UKcons1.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1938-04",
+   "text": "His rocket verse runs in Novae Terrae",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/ThenAgain.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1939-01",
+   "text": "Profiles Bill Temple in Novae Terrae",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/ThenAgain.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1939-03",
+   "text": "Co-edits another BIS Bulletin with Temple",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1939-05",
+   "text": "Runs a quiz at the SF Association convention",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/UKcons1.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1940-04",
+   "text": "Writes US fans about London’s balloon barrage",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/HomeFront.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1940-06",
+   "text": "Letter to US fans flags atomic power",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/HomeFront.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1940-08",
+   "text": "In the news: Glasses bar him as RAF navigator",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/HomeFront.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1940-12",
+   "text": "Writes to US fans from Colwyn Bay",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/HomeFront.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1941-04",
+   "text": "Called up into the RAF",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/HomeFront.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1941-05",
+   "text": "In the news: Fans place him at RAF Bridgnorth",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/HomeFront.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1941-07",
+   "text": "Learns radio theory in London for the RAF",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/HomeFront.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1942-03",
+   "text": "In the news: Reported at RAF Yatesbury",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/Temple.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1942-11",
+   "text": "Adds a note on space radio to Wireless World",
+   "confirmed": true,
+   "source": "https://www.worldradiohistory.com/UK/Wireless-World/40s/Wireless-World-1942-11.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1944-12",
+   "text": "Tells fans the V-2 has reached space",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/HomeFront.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1945-11",
+   "text": "In the news: Wireless World cites his BAA paper",
+   "confirmed": true,
+   "source": "https://www.worldradiohistory.com/UK/Wireless-World/40s/Wireless-World-1945-11.pdf",
+   "kind": "news"
+  },
+  {
+   "month": "1946-08",
+   "text": "“Rescue Party” ranks second in Astounding poll",
+   "confirmed": true,
+   "source": "https://archive.org/details/Astounding_v37n06_1946-08_cape1736",
+   "kind": "event"
+  },
+  {
+   "month": "1946-12",
+   "text": "“Technical Error” published in Fantasy",
+   "confirmed": true,
+   "source": "https://lakdiva.org.lk/clarke/biblio.html",
+   "kind": "event"
+  },
+  {
+   "month": "1947-01",
+   "text": "Writes on astronautics in Everywoman",
+   "confirmed": true,
+   "source": "https://fanac.org/fanzines/Fantasy_Review/fantasy_review_1_v1n1_gillings_1947-02.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1948-08",
+   "text": "Corrects magnetron lore from King’s College",
+   "confirmed": true,
+   "source": "https://archive.org/details/Astounding_v41n06_1948-08_cape1736",
+   "kind": "event"
+  },
+  {
+   "month": "1948-09",
+   "text": "“Inheritance” appears in Astounding",
+   "confirmed": true,
+   "source": "https://archive.org/details/Astounding_v42n01_1948-09_cape1736",
+   "kind": "event"
+  },
+  {
+   "month": "1951-04",
+   "text": "In the news: Galaxy praises Prelude to Space",
+   "confirmed": true,
+   "source": "https://archive.org/details/Galaxy_v02n01_1951-04",
+   "kind": "news"
+  },
+  {
+   "month": "1951-05",
+   "text": "Speaks at the Festivention SF convention",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/UKcons1.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1951-10",
+   "text": "In the news: F&SF reviews Interplanetary Flight",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v002n05_1951-10_AK",
+   "kind": "news"
+  },
+  {
+   "month": "1951-12",
+   "text": "Writes Astounding about Moon dust",
+   "confirmed": true,
+   "source": "https://archive.org/details/Astounding_v48n04_1951-12_Gorgon776",
+   "kind": "event"
+  },
+  {
+   "month": "1952-05",
+   "text": "Sends a recorded speech from his US tour",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/UKcons2.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1952-06",
+   "text": "Wins International Fantasy Award",
+   "confirmed": true,
+   "source": "https://taff.org.uk/ebooks/UKcons2.pdf",
+   "kind": "event"
+  },
+  {
+   "month": "1952-09",
+   "text": "Takes on Willy Ley over Moon craters",
+   "confirmed": true,
+   "source": "https://archive.org/details/Astounding_v50n01_1952-09_Gorgon776",
+   "kind": "event"
+  },
+  {
+   "month": "1952-10",
+   "text": "In the news: Book-of-the-Month Club picks him",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v003n06_1952-10",
+   "kind": "news"
+  },
+  {
+   "month": "1953-09",
+   "text": "In the news: Judge for a new SF book club",
+   "confirmed": true,
+   "source": "https://archive.org/details/Astounding_v52n01_1953-09_dtsg0318",
+   "kind": "news"
+  },
+  {
+   "month": "1953-10",
+   "text": "In the news: F&SF reviews Childhood’s End",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v005n04_1953-10",
+   "kind": "news"
+  },
+  {
+   "month": "1953-11",
+   "text": "In the news: Galaxy praises his far-future tale",
+   "confirmed": true,
+   "source": "https://archive.org/details/galaxymagazine-1953-11",
+   "kind": "news"
+  },
+  {
+   "month": "1954-02",
+   "text": "In the news: Astounding reviews Childhood’s End",
+   "confirmed": true,
+   "source": "https://archive.org/details/Astounding_v52n06_1954-02_cape1736",
+   "kind": "news"
+  },
+  {
+   "month": "1954-03",
+   "text": "In the news: F&SF lists two of his as best books",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v006n03_1954-03",
+   "kind": "news"
+  },
+  {
+   "month": "1954-05",
+   "text": "In the news: Galaxy reviews Expedition to Earth",
+   "confirmed": true,
+   "source": "https://archive.org/details/galaxymagazine-1954-05",
+   "kind": "news"
+  },
+  {
+   "month": "1954-06",
+   "text": "In the news: F&SF reviews Prelude to Space",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v006n06_1954-06_AK",
+   "kind": "news"
+  },
+  {
+   "month": "1955-01",
+   "text": "In the news: F&SF reviews Going into Space",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v008n01_1955-01",
+   "kind": "news"
+  },
+  {
+   "month": "1955-05",
+   "text": "In the news: F&SF praises Earthlight",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v008n05_1955-05",
+   "kind": "news"
+  },
+  {
+   "month": "1955-06",
+   "text": "In the news: Named Worldcon guest of honor",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v008n06_1955-06",
+   "kind": "news"
+  },
+  {
+   "month": "1955-08",
+   "text": "In the news: F&SF notes Exploration of the Moon",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v009n02_1955-08",
+   "kind": "news"
+  },
+  {
+   "month": "1955-10",
+   "text": "$200 title contest for his story is won",
+   "confirmed": true,
+   "source": "https://archive.org/details/Fantasy_Science_Fiction_v009n04_1955-10",
+   "kind": "event"
+  }
+ ],
+ "corrections": [
+  {
+   "month": "1934-01",
+   "text": "Joins the British Interplanetary Society",
+   "reason": "Month wrong. Les Johnson, the BIS's first Hon. Secretary, lists Arthur C. Clarke's joining as 30 July 1934 (THEN Again, ch. 'The First Decade'). Replaced by the 1934-07 cell in this file."
+  },
+  {
+   "month": "1941-01",
+   "text": "Joins the Royal Air Force",
+   "reason": "Month wrong. Futurian War Digest #7 (April 1941) says Clarke 'has been called up (beginning of April)'; #8 (May 1941) has him an A/C2 at RAF Bridgnorth. Replaced by the 1941-04 cell in this file."
+  },
+  {
+   "month": "1952-04",
+   "text": "Wins International Fantasy Award",
+   "reason": "Month wrong. The 1952 award results were announced and the trophy handed over (to his brother) at the London SF convention of 31 May to 1 June 1952 (British SF Conventions vol. 2). Replaced by the 1952-06 cell in this file."
+  },
+  {
+   "month": "1954-04",
+   "text": "“The Deep Range” published",
+   "reason": "Doubtful. lakdiva gives Argosy (UK) Apr 1954, but Wikipedia (citing Clarke's headnote) says the story first appeared in Star Science Fiction Stories No. 3, published Jan 1955, and in Argosy only in Feb 1956. The Apr 1954 magazine with a verified Clarke story is Adventure: “Armaments Race” (Wikipedia and lakdiva agree). Safer text for this month: “Armaments Race” published."
+  },
+  {
+   "month": "1955-01",
+   "text": "Earthlight published",
+   "reason": "Unverified and probably early. Reviews of the Ballantine novel run F&SF May 1955, Galaxy June 1955, Astounding June 1955, which points to spring 1955. The Jan 1955 slot now holds a verified F&SF review of Going into Space. Drop or move the placeholder."
+  },
+  {
+   "month": "1953-09",
+   "text": "Expedition to Earth published",
+   "reason": "Unverified and probably late. F&SF (Apr 1954) calls it 'the very last new science fiction book of 1953' and Galaxy reviews it in May 1954 as his second Ballantine book in five months. The Sep 1953 slot now holds a verified Astounding item. Drop or move the placeholder."
+  },
+  {
+   "month": "1954-03",
+   "text": "The Exploration of the Moon published",
+   "reason": "Unverified and probably wrong. F&SF (Aug 1955) announces it as a new Harper book and Galaxy/Astounding review it in Sep 1955. The Mar 1954 slot now holds a verified F&SF item. Drop or move the placeholder."
+  },
+  {
+   "month": "1951-04",
+   "text": "“The Sentinel” in 10 Story Fantasy",
+   "reason": "Not a month. The issue is dated Spring 1951 (season only). The Apr 1951 slot now holds a verified Galaxy review of Prelude to Space."
+  },
+  {
+   "month": "1951-05",
+   "text": "The Sands of Mars published",
+   "reason": "Year-only placeholder. The May 1951 slot now holds Festivention (11-12 May 1951, British SF Conventions vol. 1). Sands of Mars has no verified month: Galaxy and Astounding review the US Gnome edition in Oct 1952, Kirkus dates its review issue 1 Apr 1952."
+  }
+ ],
+ "summary": {
+  "new_confirmed": 40,
+  "upgraded": 3
+ },
+ "notes": "WEB SEARCH quota ran out part-way (shared limit), so everything here comes from direct page and file fetches. METHOD: pulled full texts of dated primary or near-primary sources and read them for Clarke. (1) Rob Hansen fan-history ebooks on taff.org.uk (HomeFront 1939-45, THEN Again, British SF Conventions vols 1-2, Temple at the Bar): they quote Futurian War Digest, VOM, Novae Terrae, convention programmes and reports with issue dates, and Les Johnson's BIS membership list (Clarke 30 July 1934). (2) archive.org scans of Astounding, Galaxy and F&SF 1946-55 (text read directly): Brass Tacks letters, reader polls, contents pages, book reviews and notes. Each cell's month is the issue month. (3) worldradiohistory.com Wireless World PDFs, OCR'd with tesseract: Nov 1942 p.253 (his note in the Brains Trust on interplanetary radio) and Nov 1945 (note on his British Astronomical Association paper). (4) Fantasy Review (fanac.org) for the Jan 1947 Everywoman article and for Fantasy's Dec 1946 launch (supports lakdiva's Technical Error entry). CONFIDENCE: all 43 cells are confirmed true because the source names that month (or the exact date). Fan-history cells give issue or event months from quoted fanzines; for kind 'news' the month is when the item was published, not necessarily when it happened. JUDGEMENT CALLS: 1936-10 treasurer appointment is Ted Carnell's contemporary account as quoted by Hansen (first London BIS meeting, 23 Oct 1936, Prof Low's office); 1940-08 and 1941-05 are fan-press reports (rejected as navigator for glasses; at Bridgnorth as A/C2); 1946-12 rests on lakdiva (Technical Error, Fantasy, Dec 1946) plus Gillings saying Fantasy started in Dec 1946 and that Technical Error appeared in it; Wikipedia's 1950 date is the retitled 'The Reversed Man'; 1952-06 is when the IFA was presented at the convention (his brother accepted); 1955-06 is F&SF naming him guest of honor of the Aug-Sep 1956 New York Worldcon; 1953-09 is Astounding listing him as a judge of Sidgwick & Jackson's new SF Book Club. SLOTS: Where a confirmed cell lands on a first-pass unconfirmed placeholder (1951-04, 1951-05, 1953-09, 1954-03, 1955-01) the placeholder fact is listed under corrections so the caller can drop or move it. Net total if merged: 58 + 43 = 101 confirmed of 457 (22.1%). 'upgraded' = 1934-07, 1941-04, 1952-06 (same fact as a first-pass cell, now with a verified month). STILL UNVERIFIABLE / left empty: BIS chairmanship month (1946), King's College entry and degree months, Science Abstracts job, going full-time, scuba start, separation from Marilyn, Great Barrier Reef trip, demob date and Flight Lieutenant promotion (Gazette text search only finds the two known 1943 notices for service no. 144811), JBIS Dec 1946 'Challenge of the Spaceship' (a Taylor and Francis page was 403, so not used), exact Honiley/GCA postings (a hobbyist page says Elsham Wolds trials July-Aug 1943, not used). NOT USED: NYT review of Sands of Mars (14 Sep 1952) and Hartford Courant (7 Feb 1954) are only Wikipedia citations; NYT, ISFDB, Trove, Papers Past, loc.gov were blocked. Kirkus gives Islands in the Sky pub date 15 June 1952 (review issue 1 June), so the first-pass 1952-07 placeholder is probably June, but that slot now holds the IFA. Fantasy Review issues are bi-monthly so their news items were not month-specific. CONFLICTS: Temple ebook says RAF sent Clarke to Colwyn Bay in 1939; contemporary fanzines show him at Colwyn Bay in Dec 1940 (own letter) and called up in Apr 1941, so the ebook's account is garbled (reason for Colwyn Bay not stated). Coroncon (22-25 May 1953, London) shows Clarke absent in Florida, consistent with the first-pass 1953 US trip; no cell added as May 1953 is taken. EXTRA FACTS if the app wants stays/homes: Clarke co-rented 88 Gray's Inn Road with Bill Temple from about Aug 1938 (Temple ebook); US tour before 31 May 1952 after the Book-of-the-Month Club choice (start and end months unverified)."
+}
