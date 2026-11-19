@@ -3,7 +3,7 @@ import Timeline from '../Timeline';
 
 export const view: ViewDef = {
   id: 'hw',
-  name: 'Timeline with significant events',
+  name: 'Timeline with events',
   at: 10,
   icon: 'M3 12h18M7 12v-5M12 12v-7M17 12v-4M9.5 12v5M14.5 12v6',
   legend: false,

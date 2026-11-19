@@ -448,3 +448,48 @@ button.seedling:focus-visible { outline: 2px solid var(--accent); outline-offset
 }
 
 .more summary:focus:not(:focus-visible) { outline: none; }
+
+button.icon svg.switch rect { stroke-width: 2.1; } button.icon svg.switch circle { fill: currentColor; stroke: none; }
+
+/* View rule, wide screens: the header never scrolls. The area under it is the scroll box and spans the window,
+   so the vertical scroll bar is always at the far right and starts beneath the header. Content stays centred. */
+@media (min-width: 760px) {
+  .app { height: 100dvh; min-height: 0; }
+  .app .body, .app:not(.fs) .body { flex: 1; min-height: 0; overflow-y: auto; width: auto; max-width: none; margin: 0; padding-inline: max(0px, calc((100% - 1080px) / 2)); }
+  .app.gridview:not(.fs) .body { width: auto; max-width: none; padding-inline: 0; justify-content: center; }
+  .app.fs .body { padding-inline: 0; }
+  .legend, .body.asking .legend { top: 0; }
+  .row.head { top: 0; } /* pins to the top of the scroll box, which already sits under the header */
+}
+
+/* View switcher: on click the row of dots slides one dot to the right, and the whole mark lightens for a moment. */
+button.icon svg.switch.go, header button.icon svg.pulse { animation: switch-pulse .32s ease-out; }
+button.icon svg.switch.go .slide { animation: switch-dots .32s cubic-bezier(.3, .7, .2, 1); }
+@keyframes switch-dots { from { transform: translateX(-4.9px); } to { transform: none; } }
+@keyframes switch-pulse { 0%, 45% { color: color-mix(in srgb, var(--ink) 60%, var(--bg)); } 100% { color: var(--ink); } }
+@media (prefers-reduced-motion: reduce) { header button.icon svg.pulse, button.icon svg.switch.go, button.icon svg.switch.go .slide { animation: none; } }
+
+/* Tech timeline and Birth car scroll inside their own box: let that box span the window so its scroll bar sits at the far right. */
+@media (min-width: 760px) {
+  .app:not(.fs):has(.techv, .carv) .body { width: auto; max-width: none; margin: 0; padding-inline: 0; }
+  .app:not(.fs) .techv, .app:not(.fs) .carv { padding-inline: max(14px, calc((100% - 1080px) / 2)) !important; }
+}
+
+/* The title is the way home: it returns to the default view. */
+header h1 button.home { all: unset; cursor: pointer; max-width: 100%; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom; }
+header h1 button.home:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+/* Grid labels (year, age, month names) read 40% stronger under the pointer. */
+.grid .yr, .grid .age, .grid .mh { transition: color .12s; }
+.grid .yr:hover, .grid .mh:hover { color: color-mix(in srgb, var(--dim) 60%, #000); }
+.grid .row:not(.head) .age:hover { color: color-mix(in srgb, var(--ink) 60%, #000); }
+.grid .row.head .age:hover { color: color-mix(in srgb, var(--dim) 60%, #000); }
+@media (prefers-color-scheme: dark) {
+  .grid .yr:hover, .grid .mh:hover, .grid .row.head .age:hover { color: color-mix(in srgb, var(--dim) 60%, #fff); }
+  .grid .row:not(.head) .age:hover { color: color-mix(in srgb, var(--ink) 60%, #fff); }
+}
+
+/* View chips carry each view's own icon. */
+.views button.chip svg { flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.shelf a.link.repo { font-size: 13px; color: var(--dim); text-decoration: underline; padding: 4px 0; align-self: flex-start; }

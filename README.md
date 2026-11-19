@@ -20,46 +20,86 @@ Months that a source only gives as a year are marked "to confirm". The source fi
 ## Why
 
 - **Short questions fill a long life.** One answer fills many cells; a yearly tradition fills that month in every year.
-- **Eight views of the same data:** grid, three timelines (one with world events), tree, voyager, spiral, and a tech timeline that sets your life beside a century of inventions.
+- **Nine views of the same data:** grid, three timelines (one with world events), tree, voyager, spiral, a tech timeline beside a century of inventions, and the car of your birth year.
 - **Private by design.** No backend. Your grid lives in your browser and in the link, and goes nowhere else.
 - **Shareable.** The whole grid is in the URL. Share a read-only link, or open your own on another device.
 - **Yours to keep.** Export JSON or CSV, import a sheet, undo any change.
 - **Works on a phone** as well as a large screen.
 
-## Use a Life Grid link in your own project
+## The data: a whole life in a link
 
-A link carries the whole life, so any page can read one. The reader is a single file with no
-dependencies, served with open CORS, so you can import it directly:
+A life is five things: `name`, `birth` (month and place), `homes` (where you lived, in order), `stays`
+(temporary moves) and `cells` (one headline per month). It has two interchangeable forms.
+
+**1. The link** is the compact form, and the one the app shares and saves.
+
+```
+https://lifegrid-zeta.vercel.app/#s.<payload>    read-only
+https://lifegrid-zeta.vercel.app/#<payload>      the owner's, opens for editing
+```
+
+The payload is plain text, compressed and made URL-safe:
+
+```
+2                       format version
+Sam                     name
+1984  3  Madison, WI    birth year, month, place (tab-separated)
+                        (interview state; ignore)
+0     Madison, WI       homes: months since birth, place
+111   Portland, OR
+                        blank line ends homes; stays follow, then another blank line
+Born Madison            month 0: one line per month from the birth month
+                        an empty line is an empty month
+?First steps            a leading ? marks an entry not yet confirmed
+```
+
+text → UTF-8 → raw DEFLATE → Base64url. No dates are written: a month is its line number, counted from birth.
+
+**2. JSON** (`life-grid/1`) is the readable form, for people and other tools. Export it from the menu.
+
+```json
+{ "schema": "life-grid/1", "name": "Sam",
+  "birth": { "month": "1984-03", "place": "Madison, WI" },
+  "homes": [{ "from": "1984-03", "place": "Madison, WI" }],
+  "stays": [],
+  "cells": [{ "month": "1984-03", "text": "Born Madison" },
+            { "month": "1985-02", "text": "First steps", "confirmed": false }] }
+```
+
+**Why a link and not just JSON**
+
+| | Link | JSON |
+|---|---|---|
+| Size, a life with 165 entries | 1,743 characters | 7,494 (2,623 if compressed the same way) |
+| Storage | None: the address is the data | A file to host or send |
+| Sharing | Paste it anywhere a URL fits | Attach or upload |
+| Privacy | After the `#`, so never sent to a server | Depends where the file goes |
+| Readable by eye | No | Yes |
+
+Use the link to pass a life around; use JSON to inspect, edit by hand or archive. Either converts to the other without loss.
+
+### Use it in your project
+
+One file, no dependencies, served with open CORS. `read` takes a link, a bare payload or a JSON export:
 
 ```html
-<textarea id="link" placeholder="Paste a Life Grid link"></textarea>
-<ol id="out"></ol>
 <script type="module">
   import { read, pickEvents, fmt } from 'https://lifegrid-zeta.vercel.app/lifegrid.js';
 
-  document.getElementById('link').addEventListener('input', async (e) => {
-    const life = await read(e.target.value);       // null if it is not a Life Grid
-    const out = document.getElementById('out');
-    out.textContent = '';
-    for (const ev of life ? pickEvents(life, 10) : []) {
-      const li = document.createElement('li');
-      li.textContent = `${fmt(ev.month)}, age ${ev.age}: ${ev.text}`;
-      out.append(li);
-    }
-  });
+  const life = await read(location.hash || prompt('Paste a Life Grid link'));  // null if not a Life Grid
+  for (const ev of life ? pickEvents(life, 10) : []) {
+    const li = document.createElement('li');
+    li.textContent = `${fmt(ev.month)}, age ${ev.age}: ${ev.text}`;   // textContent, never innerHTML
+    document.body.append(li);
+  }
 </script>
 ```
 
-`read` accepts a link, the part after the `#`, or a JSON export. It returns plain data (`name`, `birth`,
-`homes`, `cells`, …) plus helpers such as `events`, `homeAt` and `ageColor`. Show people's words with
-`textContent`, never `innerHTML`. To bundle the reader instead, copy [`src/lifegrid.ts`](src/lifegrid.ts).
+`life` is plain data (`name`, `birth`, `homes`, `stays`, `cells`). Helpers include `events`, `pickEvents`,
+`homeAt` and `ageColor`. To bundle the reader, copy [`src/lifegrid.ts`](src/lifegrid.ts). Without it, the
+decoding steps above are about ten lines in any language.
 
-| Link form | Meaning |
-|---|---|
-| `…/#s.<data>` | Read-only share link |
-| `…/#<data>` | The owner's link; opens for editing |
-
-Full API and rules: [docs/making-a-view.md](docs/making-a-view.md). Link and JSON formats: [docs/data-format.md](docs/data-format.md).
+Full format: [docs/data-format.md](docs/data-format.md). Reader API and rules for views: [docs/making-a-view.md](docs/making-a-view.md).
 
 ## Run it locally
 
@@ -88,6 +128,7 @@ one in the app.
 
 ## Contributing
 
+The code is at [github.com/inthaiguy/LifeGrid](https://github.com/inthaiguy/LifeGrid). Fork it, or open an issue or pull request there.
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/architecture.md](docs/architecture.md). Plans and
 open questions are in [docs/roadmap.md](docs/roadmap.md).
 

@@ -11,7 +11,7 @@ is adding a file (see `docs/making-a-view.md`).
 |---|---|
 | Grid | always |
 | Horizontal timeline | 5% |
-| Timeline with significant events | 10% |
+| Timeline with events | 10% |
 | Vertical timeline | 20% |
 | Tree view | 35% |
 | Voyager view | 50% |

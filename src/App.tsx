@@ -55,6 +55,7 @@ export default function App() {
   const doCopy = (k: string, t: string) => { copyText(t).then((ok) => { if (!ok) return; setCopied(k); setTimeout(() => setCopied(''), 1500); }); };
   const [bad, setBad] = useState(false);
   const hist = useRef<string[]>(VIEWING ? [] : loadHist(s.id));
+  const [shift, setShift] = useState(0); // clicks on the view switcher, to replay its dot animation
   const [tick, setTick] = useState(0); // bumped when another tab changes the list of sheets
   const sRef = useRef(s); sRef.current = s;
   // Questions live in the left shelf at every size. On a wide screen it docks beside the grid; on a phone it slides over it.
@@ -221,11 +222,26 @@ export default function App() {
 
   return (
     <div className={`app${VIEWING ? ' viewing' : ''}${docked ? ' docked' : ''}${fs ? ' fs' : ''}${mode === 'grid' && s.birth ? ' gridview' : ''}`}>
-      <header>
-        <h1>{title}</h1>
+      <header onClickCapture={(e) => { // every header icon lightens for a moment when clicked
+        const svg = (e.target as Element).closest?.('button.icon')?.querySelector('svg');
+        if (svg && !svg.classList.contains('switch')) { svg.classList.remove('pulse'); void svg.getBoundingClientRect(); svg.classList.add('pulse'); }
+      }}>
+        <h1>{s.birth && !intro
+          ? <button className="home" onClick={() => setMode(VIEWS[0].id)} title={mode === VIEWS[0].id ? undefined : `Back to the ${VIEWS[0].name.toLowerCase()}`}>{title}</button>
+          : title}</h1>
         {!intro && <>
-        <button className="icon" onClick={() => setMode(nextMode)} disabled={!s.birth || ids.length < 2} aria-label={ids.length < 2 ? `Other views unlock at ${FIRST_UNLOCK}%` : `Switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`} title={ids.length < 2 ? `Other views unlock at ${FIRST_UNLOCK}% filled in` : `Switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`}>
-          <svg viewBox="0 0 24 24" width="24" height="24"><path d={VIEWS.find((v) => v.id === nextMode)?.icon} /></svg>
+        <button className="icon" onClick={() => { setShift((n) => n + 1); setMode(nextMode); }} disabled={!s.birth || ids.length < 2}
+          aria-label={ids.length < 2 ? `View switcher: other views unlock at ${FIRST_UNLOCK}%` : `View switcher: switch to ${VIEWS.find((v) => v.id === nextMode)!.name}`}
+          title={ids.length < 2 ? `View switcher · other views unlock at ${FIRST_UNLOCK}% filled in` : 'View switcher'}>
+          {/* One mark on every view: two tiles over a row of dots. Each view still declares its own `icon` (src/views/*.tsx), kept for later use. */}
+          <svg key={shift} viewBox="0 0 24 24" width="24" height="24" className={`switch${shift ? ' go' : ''}`}>
+            <rect x="4" y="4" width="6.6" height="6.6" rx="1.2" /><rect x="13.4" y="4" width="6.6" height="6.6" rx="1.2" />
+            <clipPath id="switch-dots"><rect x="2.4" y="17" width="19.2" height="6" /></clipPath>
+            {/* six dots, four in view: each click slides the row one dot along (key restarts the animation) */}
+            <g clipPath="url(#switch-dots)"><g className="slide">
+              {[-0.3, 4.6, 9.5, 14.5, 19.4, 24.3].map((x) => <circle key={x} cx={x} cy="19.6" r="1.45" />)}
+            </g></g>
+          </svg>
         </button>
         {document.fullscreenEnabled && (
           <button className="icon" onClick={toggleFs} aria-label={fs ? 'Exit full screen' : 'Full screen'} title={fs ? 'Exit full screen' : 'Full screen'}>
@@ -333,17 +349,18 @@ export default function App() {
               </details>)}
             {s.birth && (
               <details className="more" open><summary>Views<em className="dim"> · {shown.name}</em></summary>
-                <div className="field"><label>{UNLOCK_ALL ? 'All views are open for testing' : 'Unlocked as your grid fills in'}</label>
+                <div className="field">{!UNLOCK_ALL && <label>Unlocked as your grid fills in</label>}
                   <div className="views">
                     {VIEWS.map((v) => { const ok = UNLOCK_ALL || st.pct >= v.at; return (
                       <button key={v.id} disabled={!ok} className={`chip${ok ? '' : ' locked'}${ok && v.id === mode ? ' here' : ''}`}
                         title={ok ? `Show the ${v.name.toLowerCase()}` : `Unlocks at ${v.at}% filled in`}
-                        onClick={() => { setMode(v.id); if (!wide) setMenu(false); }}>{v.name}{!ok && <em className="dim"> {v.at}%</em>}</button>); })}
+                        onClick={() => { setMode(v.id); if (!wide) setMenu(false); }}>
+                        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d={v.icon} /></svg>{v.name}{!ok && <em className="dim"> {v.at}%</em>}</button>); })}
                   </div>
                   {upcoming ? (<>
                     <div className="unlock-meter" aria-hidden="true"><i style={{ width: `${Math.max(0, Math.min(100, ((st.pct - open[open.length - 1].at) / (upcoming.at - open[open.length - 1].at)) * 100))}%` }} /></div>
                     <p className="dim small">Next: {upcoming.name} unlocks at {upcoming.at}%. You’re at {st.pct}%.</p>
-                  </>) : <p className="dim small">Every view is unlocked.</p>}
+                  </>) : null}
                 </div>
               </details>)}
             {s.birth && (
@@ -436,6 +453,7 @@ export default function App() {
             {!s.birth && <button className="link" onClick={() => setImporting(true)}>Already have a life sheet? Import it</button>}
             {hist.current.length > 0 && !asking && <button className="link" onClick={back}>Undo last change</button>}
             {s.birth && <button className="link danger" onClick={() => { if (confirm(sheets.length > 1 ? 'Delete this grid from this device? Other grids are kept.' : 'Erase this grid and start over?')) deleteCurrent(); }}>{sheets.length > 1 ? 'Delete this grid' : 'Start over'}</button>}
+  <a className="link repo" href="https://github.com/inthaiguy/LifeGrid" target="_blank" rel="noopener noreferrer">Contribute or fork on GitHub</a>
           </nav>
         </div>)}
     </div>

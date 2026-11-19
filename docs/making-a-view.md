@@ -111,6 +111,11 @@ order they were lived in. Using these keeps a view recognisably part of the fami
 8. **Say what the picture means** in a short caption, and give drawings an accessible label
    (`role="img"` and `aria-label` on an SVG).
 9. **Keep it cheap.** Do heavy work once (`useMemo`), not on every render.
+10. **The scroll bar is at the far right and starts under the header.** The header never scrolls and no
+    scroll bar may run up beside it or sit partway across the window. The app does this for you: the
+    area under the header is the page's scroll box and spans the window, so a view that is simply
+    taller than the screen needs nothing. If your view scrolls inside its own box instead
+    (`overflow: auto` on a fixed height), that box must reach the window's right edge; see Size in section 4.
 
 A view is drawn directly on the page background, `--bg`. CSS variables available inside the app: `--bg` (page), `--surface` (cards), `--ink` (text), `--dim`
 (secondary text), `--line` (hairlines), `--accent`. Text is the system font at 15 px.
@@ -209,7 +214,10 @@ Notes for a view inside the app:
   start buttons with `all: unset`.
 - **Size.** The view is placed in the page's main column below a header about 58 px tall, so
   `height: calc(100dvh - 58px)` on your outer element fills the screen; put your caption inside that
-  element. Do not rely on the window size, because a menu may be docked beside the view. Measure
+  element. If that element scrolls itself (`overflow: auto`), rule 10 applies: it has to span the
+  window so its scroll bar is at the far right. Add your view's class to the `:has(.techv, .carv)` rule
+  near the end of `src/styles.css`, which widens the box and keeps the content centred with padding.
+  A view that just grows taller than the screen needs none of this. Do not rely on the window size, because a menu may be docked beside the view. Measure
   your own element instead:
 
   ```tsx
@@ -297,6 +305,7 @@ Test with the sample lives in `data/samples/` (open `http://localhost:5173/examp
 - [ ] Every sample draws without errors in the browser console, including the nearly empty one.
 - [ ] Unconfirmed entries look different from confirmed ones, or are left out.
 - [ ] It reads correctly in light and dark mode.
+- [ ] On a wide screen, any vertical scroll bar is at the far right of the window and starts under the header.
 - [ ] The life is not modified, stored or sent anywhere.
 - [ ] There is a caption saying what the picture shows, and the drawing has an accessible label.
 - [ ] Inside the app: clicking an event calls `onCell(month)` when `onCell` exists; nothing is clickable when it does not.
