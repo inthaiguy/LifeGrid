@@ -113,7 +113,7 @@ button.danger { color: #d64545; }
 @media (min-width: 760px) {
   .body { flex-direction: row; }
   .legend, .body.asking .legend { display: flex; flex-direction: column; gap: 9px; width: 168px; padding: 34px 14px 12px 18px; overflow-y: auto; white-space: normal; font-size: 12.5px; color: var(--ink); border-left: 1px solid var(--line); }
-  .app:not(.fs) main { flex: none; }
+  .app.gridview:not(.fs) main { flex: none; } /* only the grid shrinks to its own width; other views fill the row */
   .app.gridview:not(.fs) { width: fit-content; } /* the header ends where the location key ends */
   .app:not(.fs) .grid.map { --cw: 34px; width: max-content; min-width: 0; }
   .legend i { width: 12px; height: 12px; border-radius: 3px; flex: none; }
@@ -397,14 +397,15 @@ main:has(.voyager) { min-width: 0; }
 
 /* My sheets: the grids kept on this device */
 .sheets { display: flex; flex-direction: column; gap: 6px; align-items: stretch; }
-button.sheet { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; padding: 8px 12px; border-radius: 10px; text-align: left; }
-button.sheet.cur { border-color: var(--accent); }
-button.sheet span { font-size: 12px; }
+button.sheetbtn { height: auto; min-height: 52px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; padding: 8px 12px; border-radius: 10px; text-align: left; }
+button.sheetbtn.cur { border-color: var(--accent); opacity: 1; cursor: default; }
+button.sheetbtn b, button.sheetbtn span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+button.sheetbtn span { font-size: 12px; }
 .sheets .link { align-self: flex-start; }
 
 .sheetrow { display: flex; gap: 6px; align-items: stretch; }
-.sheetrow .sheet { flex: 1; min-width: 0; }
-.sheetrow .x { flex: none; width: 36px; border: 1px solid var(--line, #ccc); background: none; border-radius: 8px; font-size: 18px; cursor: pointer; color: inherit; opacity: .6; }
+.sheetrow .sheetbtn { flex: 1; min-width: 0; }
+.sheetrow .x { flex: none; width: 36px; height: auto; padding: 0; border: 1px solid var(--line, #ccc); background: none; border-radius: 8px; font-size: 18px; cursor: pointer; color: inherit; opacity: .6; }
 .sheetrow .x:hover { opacity: 1; }
 .sheets .row { display: flex; gap: 6px; }
 .sheets .row input { flex: 1; min-width: 0; }
@@ -422,3 +423,28 @@ button.seedling .mid { fill: var(--im-mid); }
 button.seedling:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 @keyframes seedling { 0%, 100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.035); } }
 @media (prefers-reduced-motion: reduce) { button.seedling svg { animation: none; } }
+
+/* Side bar summary: months lived in big figures, then a three-part completeness bar with tooltips. */
+.stats b small { font-size: 14px; font-weight: 500; color: var(--ink); }
+.stats .fill { display: flex; gap: 2px; height: 12px; margin: 10px 0 0; width: 100%; }
+.stats .fill span { position: relative; min-width: 10px; flex-basis: 0; border-radius: 3px; outline: none; cursor: default; }
+.stats .fill .done { background: var(--accent); }
+.stats .fill .maybe { background: repeating-linear-gradient(135deg, var(--accent) 0 3px, color-mix(in srgb, var(--accent), var(--bg) 60%) 3px 6px); }
+.stats .fill .empty { background: color-mix(in srgb, var(--ink), transparent 86%); }
+.stats .fill span:first-child { border-radius: 6px 3px 3px 6px; } .stats .fill span:last-child { border-radius: 3px 6px 6px 3px; } .stats .fill span:only-child { border-radius: 6px; }
+.stats .fill span:focus-visible { box-shadow: 0 0 0 2px var(--accent); }
+.stats .fill span::after { content: attr(data-tip); position: absolute; top: calc(100% + 7px); left: 0; z-index: 5; white-space: nowrap; padding: 5px 8px; border-radius: 6px;
+  background: var(--ink); color: var(--bg); font-size: 12px; font-weight: 400; opacity: 0; pointer-events: none; transition: opacity .12s; }
+.stats .fill span:last-child:not(:first-child)::after { left: auto; right: 0; }
+.stats .fill span:hover::after, .stats .fill span:focus::after { opacity: 1; }
+
+/* Full-width header: the bar spans the window on every view; the content below keeps its own width, centred. */
+@media (min-width: 760px) {
+  .app, .app.docked { max-width: none; }
+  .app.gridview:not(.fs) { width: auto; }
+  .app:not(.fs) .body { width: 100%; max-width: 1080px; margin: 0 auto; }
+  .app.gridview:not(.fs) .body { width: fit-content; max-width: 100%; }
+  header { padding-left: 20px; padding-right: 22px; }
+}
+
+.more summary:focus:not(:focus-visible) { outline: none; }

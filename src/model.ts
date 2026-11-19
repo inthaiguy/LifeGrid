@@ -141,10 +141,10 @@ export function setBirth(s: State, y: number, m: number) {
 
 export function stats(s: State) {
   if (!s.birth) return { total: 0, filled: 0, placeholders: 0, pct: 0 };
-  const b = birthYM(s), n = lastYM(s);
-  const total = (yOf(n) - yOf(b)) * 12 + mOf(n) - mOf(b) + 1;
+  const b = birthYM(s), n = lastYM(s), open = n === nowYM() ? 1 : 0; // the month still in progress is not yet a month lived
+  const total = Math.max(0, (yOf(n) - yOf(b)) * 12 + mOf(n) - mOf(b) + 1 - open);
   let filled = 0, placeholders = 0;
-  for (const [k, c] of Object.entries(s.cells)) if (k >= b && k <= n) c.p ? placeholders++ : filled++; // months after a death don't count
+  for (const [k, c] of Object.entries(s.cells)) if (k >= b && (open ? k < n : k <= n)) c.p ? placeholders++ : filled++; // months after a death don't count
   return { total, filled, placeholders, pct: total ? Math.round((filled / total) * 100) : 0 };
 }
 

@@ -84,7 +84,7 @@ export default function Grid({ s, read, full, onCell }: { s: State; read: boolea
       ))}
       {tip && (
         <div className="tip" style={{ left: Math.min(tip.x + 14, innerWidth - 232), top: tip.y > innerHeight - 90 ? tip.y - 70 : tip.y + 18 }}>
-          <b className={tc ? '' : 'none'}>{tc ? tc.t : 'Nothing yet'}{tc?.p && <em> · to confirm</em>}</b>
+          {tc && <b>{tc.t}{tc.p && <em> · to confirm</em>}</b>}
           <span><i style={{ background: colorOf(s, th || undefined) }} />{fmt(tip.at)} · age {yOf(tip.at) - s.birth.y}{th ? ` · ${th}` : ''}</span>
         </div>)}
     </div>

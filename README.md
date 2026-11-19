@@ -71,9 +71,23 @@ npm run build    # type-checks, then builds to dist/
 
 A static single-page app (React, TypeScript, Vite). It deploys to any static host.
 
+## Add a view or a theme
+
+Both are drop-in files: add one file, rebuild, and it appears in the app. Nothing else needs registering.
+
+- **A new view** is one `.tsx` file in `src/views/`. It exports a small description (id, name, icon, the
+  percent filled at which it unlocks) and a component that receives the life to draw. It shows up in the
+  header's view switcher and under Views in the menu. Guide, written so a person or an LLM can follow it
+  without reading the rest of the code: [docs/making-a-view.md](docs/making-a-view.md).
+- **A new theme** is one `.json` file in `themes/`. It sets colours, fonts, corner sizes and, optionally,
+  the season-of-life colour ramp, for light and dark. It shows up under Appearance in the menu. Themes are
+  data only and are validated on load. Format: [docs/themes.md](docs/themes.md).
+
+Sample lives to test against are in `data/samples/`, and `/examples/` on the development server opens each
+one in the app.
+
 ## Contributing
 
-A new view is one file dropped into `src/views/`; a new theme is one JSON file in `themes/`.
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/architecture.md](docs/architecture.md). Plans and
 open questions are in [docs/roadmap.md](docs/roadmap.md).
 

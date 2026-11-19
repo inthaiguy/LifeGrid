@@ -131,7 +131,7 @@ export default function App() {
     setPasteBad(!ok); if (ok) { setPaste(''); if (!wide) setMenu(false); }
   };
   const removeSheet = (id: string, name?: string) => {
-    if (!confirm(`Remove ${name ? `“${name}”` : 'this sheet'} from this device? Copy its link first if you want to keep it.`)) return;
+    if (!confirm(`Remove ${name ? `“${name}”` : 'this grid'} from this device? Copy its link first if you want to keep it.`)) return;
     if (id === s.id) { deleteCurrent(); return; }
     deleteSheet(id); setTick((n) => n + 1);
   };
@@ -298,32 +298,38 @@ export default function App() {
             <div className="shelf-head"><h3>{title}</h3><button className="ghost sm" onClick={() => setMenu(false)} aria-label="Close menu">✕</button></div>
             {s.birth ? (
               <div className="stats">
-                <b>{st.pct}%</b>
-                <p>{st.filled} {st.filled === 1 ? 'month' : 'months'} filled{st.placeholders ? `, ${st.placeholders} to confirm` : ''}, {st.total - st.filled - st.placeholders} empty, {st.total} months in all.</p>
+                <b>{st.total.toLocaleString()}<small> {st.total === 1 ? 'month' : 'months'} of living</small></b>
+                <div className="fill" role="img" aria-label={`${st.pct}% complete: ${st.filled} filled, ${st.placeholders} to confirm, ${st.total - st.filled - st.placeholders} empty`}>
+                  {([['done', st.filled, 'filled in'], ['maybe', st.placeholders, 'to confirm'], ['empty', st.total - st.filled - st.placeholders, 'still empty']] as const)
+                    .filter(([, n]) => n > 0).map(([k, n, label]) => (
+                      <span key={k} className={k} style={{ flexGrow: n }} tabIndex={0}
+                        data-tip={`${n.toLocaleString()} ${n === 1 ? 'month' : 'months'} ${label} · ${Math.round((n / st.total) * 100)}%`} />))}
+                </div>
+                <p>{st.pct}% complete</p>
                 {s.log.length > 0 && <p className="dim">{s.done ? 'Setup complete. ' : ''}{answered} {answered === 1 ? 'question' : 'questions'} answered, {s.log.length - answered} skipped.</p>}
               </div>
             ) : <p className="help">Answer the first question to start your grid.</p>}
             {sheets.length > 0 && (
-              <details className="more"><summary>My sheets<em className="dim"> · {sheets.length}</em></summary>
+              <details className="more"><summary>My grids<em className="dim"> · {sheets.length}</em></summary>
                 <div className="sheets">
                   {sheets.map((x) => (
                     <div key={x.id} className="sheetrow">
-                      <button className={`sheet${x.id === s.id ? ' cur' : ''}`} aria-current={x.id === s.id} disabled={x.id === s.id}
+                      <button className={`sheetbtn${x.id === s.id ? ' cur' : ''}`} aria-current={x.id === s.id} disabled={x.id === s.id}
                         onClick={() => switchTo(x.id)}>
                         <b>{x.name || 'Untitled'}</b>
                         <span className="dim">born {x.born} · {x.cells} {x.cells === 1 ? 'month' : 'months'}{x.id === s.id ? ' · open' : ''}</span>
                       </button>
-                      <button className="x" aria-label={`Remove ${x.name || 'this sheet'}`} title="Remove from this device" onClick={() => removeSheet(x.id, x.name)}>×</button>
+                      <button className="x" aria-label={`Remove ${x.name || 'this grid'}`} title="Remove from this device" onClick={() => removeSheet(x.id, x.name)}>×</button>
                     </div>))}
-                  {s.birth && <button className="link" onClick={newSheet}>Start a new sheet</button>}
-                  <div className="field"><label>Load a sheet from a link</label>
+                  {s.birth && <button className="link" onClick={newSheet}>Start a new grid</button>}
+                  <div className="field"><label>Load a grid from a link</label>
                     <div className="row"><input value={paste} placeholder="Paste an owner link" aria-invalid={pasteBad}
                       onChange={(e) => { setPaste(e.target.value); setPasteBad(false); }} onKeyDown={(e) => { if (e.key === 'Enter') loadPasted(); }} />
                       <button className="ghost" disabled={!paste.trim()} onClick={loadPasted}>Load</button></div>
                     {pasteBad && <p className="help">That isn’t an owner link. Share links (with “#s.”) are read-only and can’t be loaded here.</p>}
                   </div>
                 </div>
-                <p className="dim small">Each sheet is kept on this device, separately. Switch between them here, remove the ones you are done with, or load another from a link. Nothing is ever replaced.</p>
+                <p className="dim small">Each grid is kept on this device, separately. Switch between them here, remove the ones you are done with, or load another from a link. Nothing is ever replaced.</p>
               </details>)}
             {s.birth && (
               <details className="more" open><summary>Views<em className="dim"> · {shown.name}</em></summary>
@@ -381,7 +387,7 @@ export default function App() {
                     </button>))}
                 </div>
                 <label className="chk"><input type="checkbox" checked={sound} onChange={(e) => { setSound(e.target.checked); setSoundState(e.target.checked); }} /> Sounds</label>
-                <p className="dim small">Saved on this device only. Shared links carry your data, not your theme. Some themes load fonts from Google Fonts.</p>
+                <p className="dim small">Saved on this device only. Shared links carry your data, not your theme.</p>
               </div>
             </details>
             {s.birth && (
@@ -394,8 +400,6 @@ export default function App() {
                   </div>
                   <div className="acts">
                     <a className="link" href={mail('My Life Grid', `Keep this link to come back to my life grid:\n\n${own}`)}>Email it to myself</a>
-                    <button className="link" onClick={downloadJSON}>Download JSON</button>
-                    <button className="link" onClick={download}>Download CSV</button>
                   </div>
                   <p className="dim small">Nothing is stored on our servers. Bookmark this page or add it to your home screen, and save the link again after a big session — it changes as you add cells. Keep it private: anyone with it can edit.</p>
                 </div>
@@ -414,10 +418,24 @@ export default function App() {
                   <p className="dim small">Anyone with this link can look, but not change anything.</p>
                 </div>
               </details>)}
+            {s.birth && (
+              <details className="more"><summary>Import and export</summary>
+                <div className="field"><label>Import — bring in a life sheet you already have</label>
+                  <div className="acts"><button className="link" onClick={() => setImporting(true)}>Import a sheet</button></div>
+                  <p className="dim small">Paste from Google Sheets or Excel, or load a CSV or JSON file.</p>
+                </div>
+                <div className="field"><label>Export — take this grid to other tools</label>
+                  <div className="acts">
+                    <button className="link" onClick={downloadJSON}>Download JSON</button>
+                    <button className="link" onClick={download}>Download CSV</button>
+                  </div>
+                  <p className="dim small">JSON keeps everything and can be imported again. CSV opens as a spreadsheet.</p>
+                </div>
+              </details>)}
             <span className="grow" />
-            <button className="link" onClick={() => setImporting(true)}>{s.birth ? 'Import a sheet' : 'Already have a life sheet? Import it'}</button>
+            {!s.birth && <button className="link" onClick={() => setImporting(true)}>Already have a life sheet? Import it</button>}
             {hist.current.length > 0 && !asking && <button className="link" onClick={back}>Undo last change</button>}
-            {s.birth && <button className="ghost danger" onClick={() => { if (confirm(sheets.length > 1 ? 'Delete this sheet from this device? Other sheets are kept.' : 'Erase this grid and start over?')) deleteCurrent(); }}>{sheets.length > 1 ? 'Delete this sheet' : 'Start over'}</button>}
+            {s.birth && <button className="link danger" onClick={() => { if (confirm(sheets.length > 1 ? 'Delete this grid from this device? Other grids are kept.' : 'Erase this grid and start over?')) deleteCurrent(); }}>{sheets.length > 1 ? 'Delete this grid' : 'Start over'}</button>}
           </nav>
         </div>)}
     </div>
